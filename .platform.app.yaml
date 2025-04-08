@@ -60,7 +60,7 @@ hooks:
         export FASTLY_API_SERVICE=dummyservice
 
         # For each multi site - run db-updates and import config.
-        for site in autismreviewer
+        for site in legalcommissionerni
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -107,7 +107,7 @@ hooks:
         export FASTLY_API_SERVICE=$temp
 
         # For each multi site - clear cache (including Fastly cache)
-        for site in autismreviewer
+        for site in legalcommissionerni
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -156,12 +156,12 @@ web:
                     expires: 2w
 relationships:
     redis: 'redis:redis'
-    autismreviewer: 'db:autismreviewer'
-    autismreviewer_solr: 'solr_8_11:autismreviewer'
+    legalcommissionerni: 'db:legalcommissionerni'
+    legalcommissionerni_solr: 'solr_8_11:legalcommissionerni'
 crons:
-    autismreviewer:
+    legalcommissionerni:
         spec: '10 * * * *'
-        cmd: 'cd web/sites/autismreviewer ; drush core-cron'
+        cmd: 'cd web/sites/legalcommissionerni ; drush core-cron'
     logging:
         spec: '*/5 * * * *'
         commands:

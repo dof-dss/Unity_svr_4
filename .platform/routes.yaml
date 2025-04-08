@@ -5,14 +5,14 @@
 # original repository.Any changes here will be overwritten when the project #
 # is built.                                                                 #
 #############################################################################
-'https://www.autismreviewer.org/':
+'https://www.legalcommissioner-ni.org.uk/':
     type: upstream
     upstream: 'unity_svr_4:http'
     cache:
         enabled: 'false'
-'https://autismreviewer.org/':
+'https://legalcommissioner-ni.org.uk/':
     type: redirect
-    to: 'https://www.autismreviewer.org/'
+    to: 'https://www.legalcommissioner-ni.org.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_4:http'
