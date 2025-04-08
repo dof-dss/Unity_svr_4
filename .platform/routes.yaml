@@ -5,14 +5,14 @@
 # original repository.Any changes here will be overwritten when the project #
 # is built.                                                                 #
 #############################################################################
-'https://www.legalcommissioner-ni.org.uk/':
+'https://www.legalcommissioner-ni.org.uk.{default}/':
     type: upstream
     upstream: 'unity_svr_4:http'
     cache:
         enabled: 'false'
-'https://legalcommissioner-ni.org.uk/':
+'https://legalcommissioner-ni.org.uk.{default}/':
     type: redirect
-    to: 'https://www.legalcommissioner-ni.org.uk/'
+    to: 'https://www.legalcommissioner-ni.org.uk.{default}/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_4:http'

@@ -13,4 +13,4 @@ sites:
         cron_cmd: 'cd web/sites/legalcommissionerni ; drush core-cron'
         database: legalcommissionerni
         status: development
-        default: false
+        default: true
