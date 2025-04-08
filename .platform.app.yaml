@@ -1,0 +1,169 @@
+#############################################################################
+###                           --== IMPORTANT ==--                         ###
+#############################################################################
+# If you require changes to this file you must edit the file within the     #
+# original repository.Any changes here will be overwritten when the project #
+# is built.                                                                 #
+#############################################################################
+name: unity_svr_4
+type: 'php:8.3'
+dependencies:
+    php:
+        composer/composer: ^2
+runtime:
+    extensions:
+        - apcu
+        - redis
+        - blackfire
+disk: 8000
+mounts:
+    /web/files:
+        source: local
+        source_path: files
+    /tmp:
+        source: local
+        source_path: tmp
+    /private:
+        source: local
+        source_path: private
+    /.drush:
+        source: local
+        source_path: drush
+    /drush-backups:
+        source: local
+        source_path: drush-backups
+    /.console:
+        source: local
+        source_path: console
+    /log:
+        source: local
+        source_path: log
+    /web/.well-known:
+        source: local
+        source_path: well-known
+build:
+    flavor: composer
+hooks:
+    build: |
+        set -e
+        echo "Update robots.txt with Unity customisations"
+        cp -f web/robots_unity.txt web/robots.txt
+    post_deploy: |
+        set -e
+
+        # Save the Fastly service value and overwrite with a dummy one in order to break
+        # the connection to Fastly, otherwise any cache clear of any site will purge the
+        # entire Fastly cache - we don't want this to happen as we'd like Fastly to continue
+        # serving the sites to anonymous users during a release.
+        echo "***** Breaking connection to Fastly ******"
+        temp=$FASTLY_API_SERVICE
+        export FASTLY_API_SERVICE=dummyservice
+
+        # For each multi site - run db-updates and import config.
+        for site in autismreviewer
+        do
+          result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
+          if [ "$result" = "Successful" ]; then
+            # Any properly configured Unity site will have the unity_common module installed.
+            result2=$(drush -l $site pml | grep "unity_common" | awk {'print $5'})
+            if [ "$result2" = "Enabled" ]; then
+              echo "****** $site deployment ******"
+              cd /app/web/sites/$site
+              # Disable Fastly logging
+              drush -l $site disable-fastly-logging
+              # Readonlymode module should be installed on all sites,
+              # but we'll just make sure.
+              drush en readonlymode -l $site -y
+              # Set site to readonly just in case editors are logged on.
+              drush -l $site cset readonlymode.settings enabled 1 -y
+              drush -l $site -y cache-rebuild
+              drush -l $site -y updatedb
+              drush -l $site -y config-import
+              # Clear up any erroneous redirects
+              drush -l $site delete-redirects
+              # Import blocks and taxonomies
+              drush -l $site import-all-if-installed safe
+              if [ "$PLATFORM_ENVIRONMENT_TYPE" = production ]; then
+                # Disable QA logons
+                drush -l $site bulk_update_qa_accounts disable
+              else
+                # Enable QA logons
+                drush -l $site bulk_update_qa_accounts enable
+              fi
+              # Turn off readonly mode.
+              drush -l $site cset readonlymode.settings enabled 0 -y
+            else
+              echo "****** Skipping $site as not fully installed ******"
+              echo ""
+            fi
+          else
+            echo "****** Skipping $site as there is no database ******"
+            echo ""
+          fi
+        done
+
+        # Reconnect to Fastly
+        echo "***** Reinstate connection to Fastly ******"
+        export FASTLY_API_SERVICE=$temp
+
+        # For each multi site - clear cache (including Fastly cache)
+        for site in autismreviewer
+        do
+          result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
+          if [ "$result" = "Successful" ]; then
+            # Any properly configured Unity site will have the unity_common module installed.
+            result2=$(drush -l $site pml | grep "unity_common" | awk {'print $5'})
+            if [ "$result2" = "Enabled" ]; then
+              echo "****** $site cache clear ******"
+              cd /app/web/sites/$site
+              drush -l $site -y cache-rebuild
+              # Enable Fastly logging
+              drush -l $site enable-fastly-logging
+            fi
+          fi
+        done
+web:
+    locations:
+        /:
+            root: web
+            expires: 5m
+            passthru: /index.php
+            allow: false
+            rules:
+                '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
+                    allow: true
+                ^/robots\.txt$:
+                    allow: true
+                ^/sitemap\.xml$:
+                    allow: true
+                ^\/sites\/.+\/themes\/.+\/images\/favicons\/.+\.webmanifest$:
+                    allow: true
+                    expires: 2w
+                ^/\.well-known/security\.txt$:
+                    allow: true
+                ^/sites/sites\.php$:
+                    scripts: false
+                '^/sites/[^/]+/settings.*?\.php$':
+                    scripts: false
+        /files:
+            allow: true
+            expires: 1d
+            passthru: /index.php
+            root: web/files
+            scripts: false
+            rules:
+                ^/sites/default/files/(css|js):
+                    expires: 2w
+relationships:
+    redis: 'redis:redis'
+    autismreviewer: 'db:autismreviewer'
+    autismreviewer_solr: 'solr_8_11:autismreviewer'
+crons:
+    autismreviewer:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/autismreviewer ; drush core-cron'
+    logging:
+        spec: '*/5 * * * *'
+        commands:
+            start: '/bin/bash /app/cronjob.sh'
+        shutdown_timeout: 290

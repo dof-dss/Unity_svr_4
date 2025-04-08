@@ -1,0 +1,16 @@
+project_type: unity
+project_name: 'Unity Svr 4'
+project_id: xxxxxxxxx
+project_disk_size: 8000
+db_disk_size: 4000
+sites:
+    autismreviewer:
+        name: 'Autism Reviewer'
+        url: autismreviewer.org
+        solr: autismreviewer
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/autismreviewer ; drush core-cron'
+        database: autismreviewer
+        status: development
+        default: false

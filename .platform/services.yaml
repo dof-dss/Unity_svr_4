@@ -1,0 +1,30 @@
+#############################################################################
+###                           --== IMPORTANT ==--                         ###
+#############################################################################
+# If you require changes to this file you must edit the file within the     #
+# original repository.Any changes here will be overwritten when the project #
+# is built.                                                                 #
+#############################################################################
+db:
+    type: 'mariadb:10.4'
+    disk: 4000
+    configuration:
+        schemas:
+            - autismreviewerdb
+        endpoints:
+            autismreviewer:
+                default_schema: autismreviewerdb
+                privileges:
+                    autismreviewerdb: admin
+solr_8_11:
+    type: 'solr:8.11'
+    disk: 1024
+    configuration:
+        cores:
+            autismreviewer_index:
+                conf_dir: !archive solr_config/
+        endpoints:
+            autismreviewer:
+                core: autismreviewer_index
+redis:
+    type: 'redis:6.0'
