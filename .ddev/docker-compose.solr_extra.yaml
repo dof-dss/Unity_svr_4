@@ -8,5 +8,5 @@
 services:
     solr:
         volumes:
-            - './solr-cores/autismreviewer:/solr-autismreviewer-conf'
-        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core autismreviewer /solr-autismreviewer-conf; exec solr -f"'
+            - './solr-cores/legalcommissionerni:/solr-legalcommissionerni-conf'
+        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core legalcommissionerni /solr-legalcommissionerni-conf; exec solr -f"'
