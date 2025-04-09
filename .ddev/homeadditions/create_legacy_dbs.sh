@@ -13,6 +13,7 @@ for dir in $(find /var/www/html/web/sites/ -mindepth 1 -maxdepth 1 -type l) ; do
                       GRANT ALL PRIVILEGES ON ${database}_legacy.* TO '$DB_USER'@'localhost' IDENTIFIED by '$DB_PASS';" | cut -f1 -d":";
      # Create the standard databases if they don't already exist.
      mysql -uroot -proot -e "CREATE DATABASE IF NOT EXISTS ${database}; \
-                      GRANT ALL PRIVILEGES ON ${database}.* TO '$DB_USER'@'localhost' IDENTIFIED by '$DB_PASS';" | cut -f1 -d":";
+                      GRANT ALL PRIVILEGES ON ${database}.* TO '$DB_USER'@'localhost' IDENTIFIED by '$DB_PASS';
+                      GRANT ALL PRIVILEGES ON ${database}.* TO '$DB_USER'@'%' IDENTIFIED by '$DB_PASS';" | cut -f1 -d":";
   fi
 done
