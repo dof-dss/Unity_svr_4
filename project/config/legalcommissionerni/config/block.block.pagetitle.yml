@@ -1,0 +1,18 @@
+uuid: 88f096a8-0ac6-49e1-8425-976912aca8fc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - legalcommissionerni_theme
+id: pagetitle
+theme: legalcommissionerni_theme
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
