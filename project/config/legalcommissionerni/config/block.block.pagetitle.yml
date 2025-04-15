@@ -2,6 +2,8 @@ uuid: 88f096a8-0ac6-49e1-8425-976912aca8fc
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - legalcommissionerni_theme
 id: pagetitle
@@ -15,4 +17,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/publications\r\n/publications/date/*\r\n<front>"

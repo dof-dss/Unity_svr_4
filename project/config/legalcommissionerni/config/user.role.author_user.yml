@@ -11,6 +11,7 @@ dependencies:
     - media.type.remote_video
     - node.type.basic_page
     - node.type.publication
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
     - filter
@@ -61,6 +62,10 @@ permissions:
   - 'revert basic_page revisions'
   - 'revert publication revisions'
   - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition submit_for_review'
   - 'use text format basic_html'
   - 'view any unpublished content'
   - 'view basic_page revisions'
