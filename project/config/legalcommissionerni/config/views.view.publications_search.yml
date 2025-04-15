@@ -120,11 +120,11 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Search
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
+          expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
@@ -272,12 +272,17 @@ display:
         - 'config:field.storage.node.body'
         - 'config:search_api.index.publications_index'
         - 'search_api_list:publications_index'
-  publications_search:
-    id: publications_search
+  publication_search_page:
+    id: publication_search_page
     display_title: Page
     display_plugin: page
     position: 1
     display_options:
+      cache:
+        type: none
+      defaults:
+        cache: false
+      exposed_block: true
       display_extenders:
         metatag_display_extender:
           metatags: {  }
