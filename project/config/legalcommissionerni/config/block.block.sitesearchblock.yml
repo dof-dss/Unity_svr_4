@@ -1,13 +1,12 @@
-uuid: 843fc31c-52fd-49d0-acf2-ff13881d1255
+uuid: 9afc51aa-dd66-4080-94fc-2e45dbd55c2a
 langcode: en
 status: true
 dependencies:
   module:
-    - system
     - unity_search_pages
   theme:
     - legalcommissionerni_theme
-id: legalcommissionerni_theme_sitesearchblock
+id: sitesearchblock
 theme: legalcommissionerni_theme
 region: search
 weight: 0
@@ -18,8 +17,4 @@ settings:
   label: 'Site search block'
   label_display: '0'
   provider: unity_search_pages
-visibility:
-  request_path:
-    id: request_path
-    negate: true
-    pages: "/search\r\n/search*"
+visibility: {  }
