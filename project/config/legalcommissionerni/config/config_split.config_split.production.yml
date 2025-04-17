@@ -1,0 +1,16 @@
+uuid: 27a4e17e-0bed-4306-9ddd-7c34eddf3b0c
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: 'Used for the production site only.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/legalcommissionerni/production
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

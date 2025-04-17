@@ -1,0 +1,16 @@
+uuid: 78477984-d580-4c34-a22f-f15ab6672550
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: "Use for any that are 'hosted' and not running locally, apart from production (which has its own split)."
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/legalcommissionerni/hosted
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }
