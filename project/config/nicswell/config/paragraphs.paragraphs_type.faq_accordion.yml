@@ -1,0 +1,12 @@
+uuid: 4618a126-27a1-4c3a-aa2f-6c04cbe4a6a8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: fmeJ2RXC7hDZcUwUPm6td0Z59s6Lu0n9qj_iGCcsP6s
+id: faq_accordion
+label: 'FAQ accordion'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
