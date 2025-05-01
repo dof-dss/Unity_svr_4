@@ -1,0 +1,19 @@
+uuid: 631e0fc3-3edc-4ed3-b4b4-3d0bc5f9c078
+langcode: en
+status: true
+dependencies:
+  module:
+    - noreferrer
+_core:
+  default_config_hash: efYuQV0AxaZ2Y3fMqDIxI0ik2Z3MPWF1nJzVFV7EdeA
+title: 'Default cron handler'
+id: noreferrer_cron
+weight: -7
+module: noreferrer
+callback: noreferrer_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

@@ -11,11 +11,16 @@ db:
     configuration:
         schemas:
             - legalcommissionernidb
+            - nicswelldb
         endpoints:
             legalcommissionerni:
                 default_schema: legalcommissionernidb
                 privileges:
                     legalcommissionernidb: admin
+            nicswell:
+                default_schema: nicswelldb
+                privileges:
+                    nicswelldb: admin
 solr_8_11:
     type: 'solr:8.11'
     disk: 1024
@@ -23,8 +28,12 @@ solr_8_11:
         cores:
             legalcommissionerni_index:
                 conf_dir: !archive solr_config/
+            nicswell_index:
+                conf_dir: !archive solr_config/
         endpoints:
             legalcommissionerni:
                 core: legalcommissionerni_index
+            nicswell:
+                core: nicswell_index
 redis:
     type: 'redis:6.0'

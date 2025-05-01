@@ -13,6 +13,14 @@
 'https://legalcommissioner-ni.org.uk.{default}/':
     type: redirect
     to: 'https://www.legalcommissioner-ni.org.uk.{default}/'
+'https://www.nicswell.co.uk/':
+    type: upstream
+    upstream: 'unity_svr_4:http'
+    cache:
+        enabled: 'false'
+'https://nicswell.co.uk/':
+    type: redirect
+    to: 'https://www.nicswell.co.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_4:http'

@@ -1,0 +1,10 @@
+uuid: b54148dc-bce5-43e3-b7f1-2121a3443a45
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: fEy2MTb064yf1AP98hFFQ9B39FMOTPK92EIPIpB1a9s
+id: menu-footer-links
+label: 'Footer links'
+description: ''
+locked: false
