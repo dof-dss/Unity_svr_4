@@ -1,0 +1,28 @@
+uuid: f73ce4dc-1cf1-4027-a259-c21a5f2bb0d5
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: local
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/nicswell/local
+module:
+  clone_nodes: 0
+  dblog: 0
+  easy_install: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  migrate_upgrade: 0
+  views_ui: 0
+  devel: 0
+  unity_file_migrations: 0
+  stage_file_proxy: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

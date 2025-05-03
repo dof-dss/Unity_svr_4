@@ -1,0 +1,18 @@
+uuid: 96466bd2-1186-4edc-aff2-6a7e0816197f
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/nicswell/production
+module:
+  fastly: 0
+theme: {  }
+complete_list:
+  - fastly.settings
+partial_list: {  }
