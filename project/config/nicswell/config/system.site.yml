@@ -1,5 +1,7 @@
 _core:
   default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+langcode: en
+uuid: 82d3616a-9e0b-47bb-87e7-30ac3dee0a4e
 name: 'NICS Well'
 mail: test@test.com
 slogan: ''
@@ -9,7 +11,5 @@ page:
   front: /node
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-uuid: 82d3616a-9e0b-47bb-87e7-30ac3dee0a4e
 frontpage_title: 'Welcome to Drupal site'
