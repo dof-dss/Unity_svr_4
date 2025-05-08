@@ -1,11 +1,9 @@
-uuid: d076e0e8-18ab-45d0-ae85-d75c6e3a4bd4
+uuid: 12fd66e8-c670-453c-9b9e-22de53a45b08
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.basic_page
-_core:
-  default_config_hash: DqIvw0LtQFBZ7QdHStCbtIFrjEAx1a12TZ_d_sI4O4M
 id: node.basic_page
 target_entity_type_id: node
 target_bundle: basic_page

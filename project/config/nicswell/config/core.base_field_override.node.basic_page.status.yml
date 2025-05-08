@@ -1,11 +1,9 @@
-uuid: f05f6cf3-82ce-4aca-8364-030dd529b7de
+uuid: 7359225a-53b6-4c32-b3bc-f93a7718175e
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.basic_page
-_core:
-  default_config_hash: ST8TFV1_eDhaoSpXCUhCIq8uih1sGLcDRrY0-8rO6TU
 id: node.basic_page.status
 field_name: status
 entity_type: node

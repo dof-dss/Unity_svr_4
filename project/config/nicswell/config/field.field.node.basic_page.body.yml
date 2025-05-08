@@ -1,4 +1,4 @@
-uuid: fb0730f5-f830-4e8f-abbb-bba4faf6fe2d
+uuid: 64fdf973-a9f0-488a-a6b7-f80ccdc7f618
 langcode: en
 status: true
 dependencies:
@@ -6,28 +6,19 @@ dependencies:
     - field.storage.node.body
     - node.type.basic_page
   module:
-    - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    basic_html: basic_html
-    restricted_html: '0'
-    full_html: '0'
-    plain_text: '0'
-_core:
-  default_config_hash: cBCwT51Mu2HwrJxGKBSMyRYRXaRLS5Qs2rfG9FhIUhQ
 id: node.basic_page.body
 field_name: body
 entity_type: node
 bundle: basic_page
 label: Body
 description: ''
-required: true
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: false
+  display_summary: true
   required_summary: false
   allowed_formats: {  }
 field_type: text_with_summary

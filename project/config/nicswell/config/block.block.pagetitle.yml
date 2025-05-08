@@ -1,0 +1,24 @@
+uuid: 5caca7cd-8375-4d51-9c6b-b9698795f7e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nicswell_theme
+id: pagetitle
+theme: nicswell_theme
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/news\r\n/events"
