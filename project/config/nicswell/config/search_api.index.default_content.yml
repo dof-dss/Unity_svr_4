@@ -71,6 +71,7 @@ field_settings:
       separator: |+
 
 
+
       fields:
         - 'entity:node/title'
   body:
