@@ -125,6 +125,8 @@ print "Setting hash salt\n";
 $settings['hash_salt'] = $settings['hash_salt'] ?? $platformsh->projectEntropy . $subsite_id;
 
 print "Hash salt is " . $settings['hash_salt'] . "\n";
+print "Entropy is " . $platformsh->projectEntropy . "\n";
+print "ENV entropy is " . getenv('PLATFORM_PROJECT_ENTROPY') . "\n";
 
 // Set the deployment identifier, which is used by some Drupal cache systems.
 $settings['deployment_identifier'] = $settings['deployment_identifier'] ?? $platformsh->treeId;
