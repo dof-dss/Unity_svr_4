@@ -122,6 +122,12 @@ foreach ($platformsh->variables() as $name => $value) {
 // Set the project-specific entropy value, used for generating one-time
 // keys and such.
 print "Setting hash salt\n";
+if (isset($settings['hash_salt'])) {
+  print "Hash salt is set\n";
+}
+if (empty($settings['hash_salt'])) {
+  print "Hash salt is empty\n";
+}
 $settings['hash_salt'] = $settings['hash_salt'] ?? $platformsh->projectEntropy . $subsite_id;
 
 print "Hash salt is " . $settings['hash_salt'] . "\n";
