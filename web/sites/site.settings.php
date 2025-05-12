@@ -72,9 +72,12 @@ $env_colour = !empty(getenv('SIMPLEI_ENV_COLOR')) ? getenv('SIMPLEI_ENV_COLOR') 
 $env_name = !empty(getenv('SIMPLEI_ENV_NAME')) ? getenv('SIMPLEI_ENV_NAME') : getenv('PLATFORM_BRANCH');
 
 // If we're running on platform.sh, check for and load relevant settings.
+print "Checking if Platform site\n";
 if (!empty(getenv('PLATFORM_BRANCH'))) {
 
+  print "IS a Platform site, checking for Platform settings\n";
   if (file_exists($app_root . '/sites/settings.platformsh.php')) {
+    print "Including Platform settings\n";
     include $app_root . '/sites/settings.platformsh.php';
   }
 
