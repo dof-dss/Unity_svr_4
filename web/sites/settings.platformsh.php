@@ -128,7 +128,7 @@ if (isset($settings['hash_salt'])) {
 if (empty($settings['hash_salt'])) {
   print "Hash salt is empty\n";
 }
-$settings['hash_salt'] = $settings['hash_salt'] ?? $platformsh->projectEntropy . $subsite_id;
+$settings['hash_salt'] = empty($settings['hash_salt']) ? $platformsh->projectEntropy . $subsite_id : $settings['hash_salt'];
 
 print "Hash salt is " . $settings['hash_salt'] . "\n";
 print "Entropy is " . $platformsh->projectEntropy . "\n";
