@@ -15,11 +15,13 @@ if (!isset($subsite_id)) {
 
 $platformsh = new \Platformsh\ConfigReader\Config();
 
+print "Checking if Platform runtime\n";
 if (!$platformsh->inRuntime()) {
   return;
 }
 
 // Configure the database.
+print "Checking db creds\n";
 $creds = $platformsh->credentials($subsite_id);
 if ($creds) {
   $databases['default']['default'] = [
@@ -119,7 +121,10 @@ foreach ($platformsh->variables() as $name => $value) {
 
 // Set the project-specific entropy value, used for generating one-time
 // keys and such.
+print "Setting hash salt\n";
 $settings['hash_salt'] = $settings['hash_salt'] ?? $platformsh->projectEntropy . $subsite_id;
+
+print "Hash salt is " . $settings['hash_salt'] . "\n";
 
 // Set the deployment identifier, which is used by some Drupal cache systems.
 $settings['deployment_identifier'] = $settings['deployment_identifier'] ?? $platformsh->treeId;
