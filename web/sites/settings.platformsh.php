@@ -119,7 +119,7 @@ foreach ($platformsh->variables() as $name => $value) {
 
 // Set the project-specific entropy value, used for generating one-time
 // keys and such.
-$settings['hash_salt'] = $settings['hash_salt'] ?? $platformsh->projectEntropy . $subsite_id;
+$settings['hash_salt'] = empty($settings['hash_salt']) ? $platformsh->projectEntropy . $subsite_id : $settings['hash_salt'];
 
 // Set the deployment identifier, which is used by some Drupal cache systems.
 $settings['deployment_identifier'] = $settings['deployment_identifier'] ?? $platformsh->treeId;
