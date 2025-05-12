@@ -1,0 +1,29 @@
+uuid: 13596c51-8088-4cb6-bb4f-2503357d8279
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.date
+  module:
+    - facets
+    - system
+  theme:
+    - legalcommissionerni_theme
+id: legalcommissionerni_theme_date
+theme: legalcommissionerni_theme
+region: search_facets
+weight: -3
+provider: null
+plugin: 'facet_block:date'
+settings:
+  id: 'facet_block:date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: legalcommissionerni_theme_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*"

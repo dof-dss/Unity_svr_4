@@ -14,3 +14,13 @@ sites:
         database: legalcommissionerni
         status: development
         default: true
+    nicswell:
+        name: NICSwell
+        url: nicswell.co.uk
+        solr: nicswell
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/nicswell ; drush core-cron'
+        database: nicswell
+        status: development
+        default: false

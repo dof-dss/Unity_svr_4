@@ -1,0 +1,24 @@
+uuid: cd56491f-0a67-44ed-84c8-4705bf1a0844
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - eu_cookie_compliance
+    - filter
+    - media
+    - search
+    - system
+_core:
+  default_config_hash: am6KFAgAEMZ_pS-xuDp-YhRgpp6bh0kRRCv0RBwVr3U
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'display eu cookie compliance popup'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view media'

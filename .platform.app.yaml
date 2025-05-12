@@ -60,7 +60,7 @@ hooks:
         export FASTLY_API_SERVICE=dummyservice
 
         # For each multi site - run db-updates and import config.
-        for site in legalcommissionerni
+        for site in legalcommissionerni nicswell
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -107,7 +107,7 @@ hooks:
         export FASTLY_API_SERVICE=$temp
 
         # For each multi site - clear cache (including Fastly cache)
-        for site in legalcommissionerni
+        for site in legalcommissionerni nicswell
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -158,6 +158,8 @@ relationships:
     redis: 'redis:redis'
     legalcommissionerni: 'db:legalcommissionerni'
     legalcommissionerni_solr: 'solr_8_11:legalcommissionerni'
+    nicswell: 'db:nicswell'
+    nicswell_solr: 'solr_8_11:nicswell'
 crons:
     legalcommissionerni:
         spec: '10 * * * *'
@@ -167,3 +169,6 @@ crons:
         commands:
             start: '/bin/bash /app/cronjob.sh'
         shutdown_timeout: 290
+    nicswell:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/nicswell ; drush core-cron'

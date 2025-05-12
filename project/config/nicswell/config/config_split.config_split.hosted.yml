@@ -1,0 +1,16 @@
+uuid: 58fc24b8-acea-4da2-aa0c-b9178a6571c6
+langcode: en
+status: false
+dependencies: {  }
+id: hosted
+label: hosted
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/nicswell/hosted
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

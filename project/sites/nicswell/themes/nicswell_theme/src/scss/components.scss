@@ -1,0 +1,30 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+.front {
+  .block {
+    h2 {
+      @include responsive-typo-map($h2-text);
+      padding: 0;
+    }
+  }
+
+  #slick-views-slideshow-slideshow-1 {
+    .slide__caption {
+      @include breakpoint($tab) {
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 2rem;
+        padding: 1rem 1rem 1rem 1rem;
+      }
+
+      .slide__caption {
+        font-size: 2rem;
+        padding: 1rem 1rem 1rem 1rem;
+      }
+    }
+  }
+}
