@@ -1,22 +1,22 @@
-uuid: f56d235f-faa3-46c9-966b-1822e4c427c6
+uuid: 98c677a2-8dab-4f86-a84b-023561935134
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.news_search
+    - views.view.events_search
   module:
     - system
     - views
   theme:
     - nicswell_theme
-id: exposedformnews_searchnews_search_page
+id: exposedformevents_searchevents_search_page
 theme: nicswell_theme
 region: search_facets
-weight: -4
+weight: -5
 provider: null
-plugin: 'views_exposed_filter_block:news_search-news_search_page'
+plugin: 'views_exposed_filter_block:events_search-events_search_page'
 settings:
-  id: 'views_exposed_filter_block:news_search-news_search_page'
+  id: 'views_exposed_filter_block:events_search-events_search_page'
   label: ''
   label_display: '0'
   provider: views
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/news\r\n/news/date/*"
+    pages: "/events\r\n/events/date/*"

@@ -1,29 +1,29 @@
-uuid: 7024fbc2-5a95-4d21-a80e-135b9a20946c
+uuid: c27c42ac-6dda-4528-9cf3-fc6c4f863bd2
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.published_date
+    - facets.facet.event_date
   module:
     - facets
     - system
   theme:
     - nicswell_theme
-id: publisheddate
+id: eventdate
 theme: nicswell_theme
 region: search_facets
-weight: -2
+weight: -3
 provider: null
-plugin: 'facet_block:published_date'
+plugin: 'facet_block:event_date'
 settings:
-  id: 'facet_block:published_date'
-  label: 'Published date'
+  id: 'facet_block:event_date'
+  label: 'Event Date'
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: publisheddate
+  block_id: eventdate
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/news\r\n/news/date*"
+    pages: "/events\r\n/events/date/*"
