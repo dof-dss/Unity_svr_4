@@ -18,11 +18,15 @@ db_pull_command:
         export PLATFORMSH_CLI_NO_INTERACTION=1
         ls /var/www/html/.ddev >/dev/null             # This just refreshes stale NFS if possible.
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=legalcommissionerni --gzip --file=/var/www/html/.ddev/.downloads/db_legalcommissionerni.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=nicswell --gzip --file=/var/www/html/.ddev/.downloads/db_nicswell.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=autismreviewerni --gzip --file=/var/www/html/.ddev/.downloads/db_autismreviewerni.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
 db_import_command:
     command: |
         set -eu -o pipefail
         # set -x                                      # You can enable bash debugging output by uncommenting.
-        gzip -dc .ddev/.downloads/db_legalcommissionerni.sql.gz | ddev import-db --database=legalcommissionerni --skip-hooks
+        gzip -dc .ddev/.downloads/db_legalcommissionerni.sql.gz | ddev import-db --database=legalcommissionerni --skip-hooks 
+        gzip -dc .ddev/.downloads/db_nicswell.sql.gz | ddev import-db --database=nicswell --skip-hooks 
+        gzip -dc .ddev/.downloads/db_autismreviewerni.sql.gz | ddev import-db --database=autismreviewerni --skip-hooks 
     service: host
 files_pull_command:
     command: |
