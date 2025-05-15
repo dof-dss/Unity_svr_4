@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - system
     - unity_search_pages
   theme:
     - legalcommissionerni_theme
@@ -17,4 +18,8 @@ settings:
   label: 'Site search block'
   label_display: '0'
   provider: unity_search_pages
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/search\r\n/search*"
