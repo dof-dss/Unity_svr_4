@@ -103,6 +103,7 @@ field_settings:
 
 
 
+
       fields:
         - 'entity:node/body'
         - 'entity:node/title'
@@ -131,6 +132,7 @@ field_settings:
     configuration:
       type: union
       separator: |+
+
 
 
 

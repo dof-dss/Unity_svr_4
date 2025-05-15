@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
     - field.field.node.publication.field_meta_tags
-    - field.field.node.publication.field_publication_type
     - field.field.node.publication.field_published_date
     - node.type.publication
   module:
@@ -70,14 +69,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 7
-    region: content
-  field_publication_type:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 6
     region: content
   field_published_date:
     type: datetime_default
