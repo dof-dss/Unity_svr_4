@@ -1,0 +1,25 @@
+uuid: ab251aaa-f857-4515-9ff8-b3d068cf324f
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.events
+    - views.view.events_search
+  module:
+    - search_api
+id: events_summary
+name: 'Events summary'
+facet_source_id: 'search_api:views_page__events_search__events_search_page'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+facets:
+  event_date:
+    checked: true
+    label: 'Event date'
+    separator: ', '
+    show_count: false
+    weight: 0
