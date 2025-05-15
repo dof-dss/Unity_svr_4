@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+name: 'Independent Autism Reviewer'
+mail: webdev@webdev-finance.gov.uk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+uuid: 53237e64-4a9b-4f67-8969-07f53ef630ea
+frontpage_title: 'Welcome to Drupal site'

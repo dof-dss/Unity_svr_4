@@ -1,0 +1,13 @@
+uuid: 474b0655-05dc-483c-a738-a6a89fb336a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faq
+_core:
+  default_config_hash: I8ayC8VJob5KptRxGUk2F0KqO2kJb3v04g54EkZbaps
+id: node.faq
+target_entity_type_id: node
+target_bundle: faq
+default_langcode: site_default
+language_alterable: false
