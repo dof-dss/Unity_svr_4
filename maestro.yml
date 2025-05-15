@@ -9,6 +9,10 @@ services:
     class: 'Maestro\Hosting\Provider\Lando'
     tags:
       - { name: maestro.hosting }
+  hosting.ddev:
+    class: 'Maestro\Hosting\Provider\DDev'
+    tags:
+      - { name: maestro.hosting }
   hosting.common:
     class: 'Maestro\Hosting\Provider\Common'
     tags:

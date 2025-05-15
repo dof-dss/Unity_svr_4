@@ -1,0 +1,108 @@
+uuid: 7453fce7-871b-4ff4-9cf1-2e58e0064271
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.basic_page
+    - node.type.news
+    - node.type.publication
+  module:
+    - content_moderation
+    - file
+    - filter
+    - media
+    - menu_admin_per_menu
+    - moderation_sidebar
+    - node
+    - origins_metatag
+    - origins_workflow
+    - path
+    - redirect
+    - scheduled_transitions
+    - system
+    - toolbar
+    - whatlinkshere
+_core:
+  default_config_hash: 6dGYtGiX0D6hjlvLXGLSklpZZUhzbdlDZbbVZdBDcuM
+id: supervisor_user
+label: 'supervisor user'
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'administer main menu items'
+  - 'administer redirects'
+  - 'audit content'
+  - 'create audio media'
+  - 'create basic_page content'
+  - 'create document media'
+  - 'create file media'
+  - 'create image media'
+  - 'create news content'
+  - 'create publication content'
+  - 'create remote_video media'
+  - 'create url aliases'
+  - 'delete all revisions'
+  - 'delete any audio media'
+  - 'delete any basic_page content'
+  - 'delete any document media'
+  - 'delete any file'
+  - 'delete any file media'
+  - 'delete any image media'
+  - 'delete any news content'
+  - 'delete any publication content'
+  - 'delete any remote_video media'
+  - 'delete basic_page revisions'
+  - 'delete news revisions'
+  - 'delete own audio media'
+  - 'delete own basic_page content'
+  - 'delete own document media'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own news content'
+  - 'delete own publication content'
+  - 'delete own remote_video media'
+  - 'delete publication revisions'
+  - 'edit any audio media'
+  - 'edit any basic_page content'
+  - 'edit any document media'
+  - 'edit any file media'
+  - 'edit any image media'
+  - 'edit any news content'
+  - 'edit any publication content'
+  - 'edit any remote_video media'
+  - 'edit basic meta tags'
+  - 'edit own audio media'
+  - 'edit own basic_page content'
+  - 'edit own document media'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own news content'
+  - 'edit own publication content'
+  - 'edit own remote_video media'
+  - 'revert all revisions'
+  - 'revert basic_page revisions'
+  - 'revert news revisions'
+  - 'revert publication revisions'
+  - 'use moderation sidebar'
+  - 'use text format basic_html'
+  - 'view all revisions'
+  - 'view all scheduled transitions'
+  - 'view any unpublished content'
+  - 'view basic_page revisions'
+  - 'view content references'
+  - 'view latest version'
+  - 'view news revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'

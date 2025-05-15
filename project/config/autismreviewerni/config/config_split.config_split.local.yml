@@ -1,0 +1,30 @@
+uuid: c61c07f5-0c28-4d56-b61e-5b5708d50683
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: local
+description: 'Local development split. Enables debugging and development modules.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/autismreviewerni/local
+module:
+  clone_nodes: 0
+  dblog: 0
+  easy_install: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  migrate_upgrade: 0
+  views_ui: 0
+  devel: 0
+  migrate_absolute_links: 0
+  migrate_drupal_ui: 0
+  unity_file_migrations: 0
+  stage_file_proxy: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }
