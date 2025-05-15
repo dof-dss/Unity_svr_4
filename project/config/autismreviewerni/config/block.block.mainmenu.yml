@@ -1,0 +1,25 @@
+uuid: b39d1f7c-fea3-4b7e-a978-5e70c074d17b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - autismreviewerni_theme
+id: mainmenu
+theme: autismreviewerni_theme
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

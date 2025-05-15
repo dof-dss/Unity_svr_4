@@ -1,0 +1,20 @@
+uuid: e57c29e3-29eb-4958-b0a1-eb0ab5b9ce3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - autismreviewerni_theme
+id: mainpagecontent
+theme: autismreviewerni_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
