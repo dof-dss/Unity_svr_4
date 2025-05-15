@@ -17104,7 +17104,7 @@
         },
         {
             "name": "dof-dss/maestro-hosting",
-            "version": "1.0.37",
+            "version": "1.0.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/maestro-hosting.git",
@@ -17138,7 +17138,7 @@
             "description": "Maestro hosting resources",
             "support": {
                 "issues": "https://github.com/dof-dss/maestro-hosting/issues",
-                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0.37"
+                "source": "https://github.com/dof-dss/maestro-hosting/tree/1.0.36"
             },
             "time": "2025-02-17T11:22:32+00:00"
         },
