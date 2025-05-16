@@ -208,14 +208,11 @@ display:
     position: 2
     display_options:
       style:
-        type: html_list
+        type: default
         options:
           row_class: ''
           default_row_class: false
           uses_fields: false
-          type: ul
-          wrapper_class: ''
-          class: ''
       row:
         type: 'entity:node'
         options:
@@ -235,7 +232,20 @@ display:
       use_more_text: 'Read more'
       link_display: '0'
       link_url: /news
-      footer: {  }
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<a class="btn" href="/news">More news</a>'
+            format: basic_html
+          tokenize: false
       display_extenders:
         metatag_display_extender:
           metatags: {  }
