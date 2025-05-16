@@ -12,6 +12,12 @@
   }
 }
 
+@media screen and (max-width: 766px) {
+  #headerHero {
+    background-color: $brand-primary;
+  }
+}
+
 #main-menu {
   .menu-link {
     color: $black;
@@ -23,6 +29,7 @@
     }
 
   }
+
   .menu .menu-item .active {
     color: $white;
     background: $brand-primary;
@@ -66,5 +73,91 @@
         }
       }
     }
+  }
+}
+
+#top-area {
+  max-width: 100%;
+
+  @include breakpoint($tab) {
+    padding: 4rem 0;
+  }
+
+  .column {
+    text-align: left;
+    padding: 1rem 2.5rem;
+    margin: 1rem;
+    border: 1px solid $grey-medium;
+    width: 100%;
+
+    @include breakpoint($tab) {
+      margin: 0;
+    }
+
+    .content {
+      padding-top: 0;
+    }
+
+    a.btn {
+      background: $charcoal;
+      border-radius: 2.3rem;
+
+      &:hover,
+      &:focus {
+        background: $ash-grey;
+      }
+
+      &:focus {
+        border-color: $black;
+      }
+    }
+
+    h2 {
+      font-weight: bold;
+      color: $headings;
+      @include adjust-font-size-to(24px);
+      padding-top: 0;
+    }
+
+    article.node--type-news {
+      padding: 0 1.5rem 1.5rem 0;
+
+      h3 {
+        @include adjust-font-size-to(18px);
+        margin: 0;
+      }
+
+      p.published-date {
+        margin-bottom: 0;
+      }
+
+      .content {
+        padding: .5rem 0;
+
+        time {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+.home-news-items {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+
+  article {
+    width: 100%;
+
+    @include breakpoint($tab) {
+      width: 47rem;
+    }
+  }
+}
+
+#block-emmacubittprofile {
+  .content {
+    width: 31rem;
   }
 }
