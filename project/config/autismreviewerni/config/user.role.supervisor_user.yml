@@ -12,6 +12,7 @@ dependencies:
     - node.type.basic_page
     - node.type.news
     - node.type.publication
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
     - file
@@ -40,6 +41,9 @@ permissions:
   - 'access files overview'
   - 'access media overview'
   - 'access toolbar'
+  - 'add scheduled transitions node basic_page'
+  - 'add scheduled transitions node news'
+  - 'add scheduled transitions node publication'
   - 'administer main menu items'
   - 'administer redirects'
   - 'audit content'
@@ -68,6 +72,7 @@ permissions:
   - 'delete own basic_page content'
   - 'delete own document media'
   - 'delete own file media'
+  - 'delete own files'
   - 'delete own image media'
   - 'delete own news content'
   - 'delete own publication content'
@@ -90,11 +95,22 @@ permissions:
   - 'edit own news content'
   - 'edit own publication content'
   - 'edit own remote_video media'
+  - 'reschedule scheduled transitions node basic_page'
+  - 'reschedule scheduled transitions node news'
+  - 'reschedule scheduled transitions node publication'
   - 'revert all revisions'
   - 'revert basic_page revisions'
   - 'revert news revisions'
   - 'revert publication revisions'
   - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition archive'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition publish'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition restore'
+  - 'use nics_editorial_workflow transition restore_to_draft'
+  - 'use nics_editorial_workflow transition submit_for_review'
   - 'use text format basic_html'
   - 'view all revisions'
   - 'view all scheduled transitions'
@@ -105,4 +121,7 @@ permissions:
   - 'view news revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'
+  - 'view scheduled transitions node basic_page'
+  - 'view scheduled transitions node news'
+  - 'view scheduled transitions node publication'
   - 'view the administration theme'

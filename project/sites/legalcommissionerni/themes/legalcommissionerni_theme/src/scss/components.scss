@@ -18,6 +18,12 @@
   }
 }
 
+@media screen and (max-width: 766px) {
+  #headerHero {
+    background-color: $brand-primary;
+  }
+}
+
 #main-menu {
   .menu-link {
     color: $text;
