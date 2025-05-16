@@ -1,10 +1,11 @@
-uuid: d7ede036-6b0e-4089-bc51-de26a4f0e69e
+uuid: ed841537-7d4d-4a68-ac8e-4d68f39ca874
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_published_date
+    - field.storage.node.field_teaser
     - search_api.server.solr_default
   module:
     - search_api_solr
@@ -15,7 +16,6 @@ third_party_settings:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
-    debug_finalize: false
     highlighter:
       maxAnalyzedChars: 51200
       fragmenter: gap
@@ -42,9 +42,6 @@ third_party_settings:
       maxntp: 2000
       boost: false
       interestingTerms: none
-    term_modifiers:
-      slop: 3
-      fuzzy: 1
     advanced:
       index_prefix: ''
       collection: ''
@@ -53,11 +50,10 @@ third_party_settings:
       limit_to_content_language: false
       include_language_independent: true
       use_language_undefined_as_fallback_language: false
-      specific_languages:
-        en: '0'
+      specific_languages: {  }
       use_universal_collation: false
-id: default_content
-name: 'Default content'
+id: news
+name: News
 description: ''
 read_only: false
 field_settings:
@@ -69,27 +65,28 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
-  created:
-    label: 'Authored on'
-    datasource_id: 'entity:node'
-    property_path: created
-    type: date
-    dependencies:
-      module:
-        - node
   field_published_date:
-    label: 'Published date'
+    label: 'published date'
     datasource_id: 'entity:node'
     property_path: field_published_date
     type: date
     dependencies:
       config:
         - field.storage.node.field_published_date
-  nid:
-    label: ID
+  field_teaser:
+    label: Teaser
     datasource_id: 'entity:node'
-    property_path: nid
-    type: integer
+    property_path: field_teaser
+    type: text
+    boost: 3.0
+    dependencies:
+      config:
+        - field.storage.node.field_teaser
+  langcode:
+    label: Language
+    datasource_id: 'entity:node'
+    property_path: langcode
+    type: string
     dependencies:
       module:
         - node
@@ -99,31 +96,14 @@ field_settings:
     type: solr_text_spellcheck
     configuration:
       type: union
-      separator: |+
-
-
-
-
-
-
-
       fields:
-        - 'entity:node/body'
         - 'entity:node/title'
-  status:
-    label: Published
-    datasource_id: 'entity:node'
-    property_path: status
-    type: boolean
-    dependencies:
-      module:
-        - node
   title:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
     type: text
-    boost: 8.0
+    boost: 5.0
     dependencies:
       module:
         - node
@@ -131,60 +111,59 @@ field_settings:
     label: 'Title fulltext'
     property_path: aggregated_field
     type: text
-    boost: 21.0
+    boost: 13.0
     configuration:
       type: union
-      separator: |+
-
-
-
-
-
-
-
-      fields: {  }
-  type:
-    label: 'Content type'
-    datasource_id: 'entity:node'
-    property_path: type
-    type: string
-    dependencies:
-      module:
-        - node
-  uid:
-    label: 'Authored by'
-    datasource_id: 'entity:node'
-    property_path: uid
-    type: integer
-    dependencies:
-      module:
-        - node
-  vid:
-    label: 'Revision ID'
-    datasource_id: 'entity:node'
-    property_path: vid
-    type: integer
-    dependencies:
-      module:
-        - node
+      fields:
+        - 'entity:node/body'
+        - 'entity:node/title'
 datasource_settings:
   'entity:node':
     bundles:
-      default: true
+      default: false
       selected:
-        - webform
+        - news
     languages:
       default: true
       selected: {  }
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
-  auto_aggregated_fulltext_field: {  }
-  custom_value: {  }
-  entity_type: {  }
+  entity_status: {  }
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong>'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    highlight: always
+    highlight_partial: false
+  html_filter:
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+    all_fields: false
+    fields:
+      - body
+      - field_teaser
+      - title
+    title: false
+    alt: true
+    tags:
+      b: 2
+      em: 1
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      u: 1
   language_with_fallback: {  }
   rendered_item: {  }
-  solr_date_range: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
 tracker_settings:
   default:
     indexing_order: fifo
