@@ -4,3 +4,37 @@
  */
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+.front {
+  .front-banner {
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+}
+
+#main-menu {
+  .menu-link {
+    color: $black;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      border-bottom-color: $black;
+    }
+
+  }
+  .menu .menu-item .active {
+    color: $white;
+    background: $brand-primary;
+    border-bottom-color: $black;
+  }
+}
+
+.footer-area .column:last-child {
+  float: none;
+  width: 100%;
+
+  @include breakpoint($tab) {
+    padding-left: 0;
+  }
+}
