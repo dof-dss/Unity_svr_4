@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+langcode: en
+uuid: 53237e64-4a9b-4f67-8969-07f53ef630ea
+name: 'Independent Autism Reviewer for Northern Ireland'
+mail: webdev@webdev-finance.gov.uk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/4
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+frontpage_title: 'Welcome to Independent Autism Reviewer for Northern Ireland'
+frontpage_show_title: 0

@@ -1,0 +1,29 @@
+uuid: 433e1cc2-6e87-4a8f-a6b2-defc92dc27c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.date
+  module:
+    - facets
+    - system
+  theme:
+    - autismreviewerni_theme
+id: facet_date
+theme: autismreviewerni_theme
+region: search_facets
+weight: -4
+provider: null
+plugin: 'facet_block:date'
+settings:
+  id: 'facet_block:date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: facet_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*"

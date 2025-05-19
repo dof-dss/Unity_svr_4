@@ -1,0 +1,16 @@
+uuid: acd750e3-caa1-4042-a3e1-a852fc157926
+langcode: en
+status: false
+dependencies: {  }
+id: production
+label: Production
+description: 'Used for the production site only.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/autismreviewerni/production
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

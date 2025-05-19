@@ -10,4 +10,5 @@ services:
         volumes:
             - './solr-cores/legalcommissionerni:/solr-legalcommissionerni-conf'
             - './solr-cores/nicswell:/solr-nicswell-conf'
-        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core legalcommissionerni /solr-legalcommissionerni-conf; precreate-core nicswell /solr-nicswell-conf; exec solr -f"'
+            - './solr-cores/autismreviewerni:/solr-autismreviewerni-conf'
+        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core legalcommissionerni /solr-legalcommissionerni-conf; precreate-core nicswell /solr-nicswell-conf; precreate-core autismreviewerni /solr-autismreviewerni-conf; exec solr -f"'
