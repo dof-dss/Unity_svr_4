@@ -1,0 +1,29 @@
+uuid: ea3a34f2-d4a4-43e4-91b0-8c46bec6a3b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.published_date
+  module:
+    - facets
+    - system
+  theme:
+    - autismreviewerni_theme
+id: news_date
+theme: autismreviewerni_theme
+region: search_facets
+weight: -3
+provider: null
+plugin: 'facet_block:published_date'
+settings:
+  id: 'facet_block:published_date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: news_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/date/*"

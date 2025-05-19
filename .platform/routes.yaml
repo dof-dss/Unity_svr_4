@@ -21,6 +21,14 @@
 'https://nicswell.co.uk/':
     type: redirect
     to: 'https://www.nicswell.co.uk/'
+'https://www.autismreviewer-ni.org.uk/':
+    type: upstream
+    upstream: 'unity_svr_4:http'
+    cache:
+        enabled: 'false'
+'https://autismreviewer-ni.org.uk/':
+    type: redirect
+    to: 'https://www.autismreviewer-ni.org.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_4:http'

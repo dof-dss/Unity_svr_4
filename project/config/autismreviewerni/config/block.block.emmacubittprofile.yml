@@ -1,0 +1,30 @@
+uuid: 44874708-46bd-4f59-91d7-b1ab96dfa7f9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:8a18d213-3ab8-4974-a1db-2f8ef30a35b6'
+  module:
+    - block_content
+    - system
+  theme:
+    - autismreviewerni_theme
+id: emmacubittprofile
+theme: autismreviewerni_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:8a18d213-3ab8-4974-a1db-2f8ef30a35b6'
+settings:
+  id: 'block_content:8a18d213-3ab8-4974-a1db-2f8ef30a35b6'
+  label: 'Emma Cubitt profile'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
