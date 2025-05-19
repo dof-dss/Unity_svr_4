@@ -1,0 +1,25 @@
+uuid: 5672662d-d5af-4d30-baf5-4944967810eb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:7e274ed6-556e-4af5-aa4c-deb2fa479072'
+  module:
+    - block_content
+  theme:
+    - autismreviewerni_theme
+id: footercontactinformation
+theme: autismreviewerni_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:7e274ed6-556e-4af5-aa4c-deb2fa479072'
+settings:
+  id: 'block_content:7e274ed6-556e-4af5-aa4c-deb2fa479072'
+  label: 'Footer contact information'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
