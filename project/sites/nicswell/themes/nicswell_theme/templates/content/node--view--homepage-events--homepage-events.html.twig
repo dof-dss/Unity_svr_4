@@ -67,36 +67,20 @@
  */
 #}
 
-<article class="event-search-item">
-  <div class="event-search-content">
-    {% if content.field_photo %}
-      <div class="event-image">
-        {{ content.field_photo }}
-      </div>
-    {% endif %}
-
-    <div class="event-info">
-      <h3>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h3>
-      {{ content.field_event_teaser }}
-      <p>
-        {% apply spaceless %}
-          <span>{{ content.field_event_date.0.start.date.value }}
-            {% if content.field_event_date.0.start.date.value < content.field_event_date.0.end.date.value %}
-              {{ ' - '|t }}{{ content.field_event_date.0.end.date.value }}
-            {% endif %}
-          </span>
-          {% if content.field_event_date.0.start.time.value %}
-            <span>{{ ', '|t }}{{ content.field_event_date.0.start.time.value }}
-              {% if content.field_event_date.0.end.time.value %}
-                {{ '-'|t }} {{ content.field_event_date.0.end.time.value }}
-              {% endif %}
-            </span>
-          {% endif %}
-        {% endapply %}
-      </p>
+<article>
+  <a href="{{ url }}" rel="bookmark" class="event-link">
+    <div class="home-event">
+      {{ content.field_photo }}
+      <h3>{{ label }}</h3>
+      {% if content.field_location %}
+        <p>{{ content.field_location }}</p>
+      {% endif %}
+      {% if content.field_event_date %}
+        <p class="published-date" data-once="emptyTags">
+          {{ content.field_event_date }}
+        </p>
+      {% endif %}
     </div>
-  </div>
+  </a>
 </article>
 
