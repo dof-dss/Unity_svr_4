@@ -1,26 +1,26 @@
-uuid: 733d1660-34fe-40f6-a20c-bcf1d3f8968e
+uuid: e0414496-31a5-42eb-aac8-2cac324b4da3
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.latest_news
+    - views.view.homepage_events
   module:
     - system
     - views
   theme:
     - nicswell_theme
-id: views_block__latest_news_home_latest_news
+id: views_block__homepage_events_homepage_events
 theme: nicswell_theme
-region: front_welcome
+region: featured
 weight: -6
 provider: null
-plugin: 'views_block:latest_news-home_latest_news'
+plugin: 'views_block:homepage_events-homepage_events'
 settings:
-  id: 'views_block:latest_news-home_latest_news'
-  label: ''
+  id: 'views_block:homepage_events-homepage_events'
+  label: 'Upcoming Events'
   label_display: visible
   provider: views
-  views_label: ''
+  views_label: 'Upcoming Events'
   items_per_page: none
 visibility:
   request_path:

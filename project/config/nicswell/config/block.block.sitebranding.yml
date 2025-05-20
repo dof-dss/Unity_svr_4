@@ -9,7 +9,7 @@ dependencies:
 id: sitebranding
 theme: nicswell_theme
 region: header
-weight: 0
+weight: -7
 provider: null
 plugin: system_branding_block
 settings:
