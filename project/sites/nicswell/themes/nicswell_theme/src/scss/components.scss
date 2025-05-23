@@ -10,6 +10,7 @@
     h2 {
       @include responsive-typo-map($h2-text);
       padding: 0;
+      max-width: fit-content;
     }
   }
 
@@ -26,6 +27,16 @@
         padding: 1rem 1rem 1rem 1rem;
       }
     }
+  }
+}
+
+.region-front-welcome {
+  text-align: left;
+}
+
+#block-homepageintro {
+  h2 {
+    color: $brand-primary;
   }
 }
 
@@ -51,6 +62,23 @@
     }
 
   }
+}
+
+.event-search-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.event-image img {
+  max-width: 140px; /* Increased from 100px */
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.event-info {
+  flex: 1;
 }
 
 .event-content {
@@ -91,7 +119,7 @@
     }
 
     div.event-info {
-      background: #1b2c57;
+      background: $brand-primary;
       padding: 2rem;
       margin-bottom: 3rem;
 
@@ -260,5 +288,105 @@
       margin: 0;
       padding: 0;
     }
+  }
+}
+.block-latest-news {
+  .news-block-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .view-all-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.4em 0.8em;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    margin: 2rem 0 0 2rem;
+  }
+
+  .btn.view-all-link {
+    background-color: $brand-primary;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    text-align: center;
+
+    &:hover {
+      background-color: $black;
+    }
+  }
+}
+
+#content .homepage-events {
+  @include breakpoint($tab) {
+    display: flex;
+    justify-content: space-between;
+
+    .field-photo {
+      float: none;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .views-row {
+      flex-basis: 48%;
+    }
+  }
+
+  h3 {
+    margin: 1rem 0;
+    color: $link;
+
+    @include breakpoint($tab) {
+      @include adjust-font-size-to(18px, 4);
+    }
+  }
+
+  article {
+    clear: right;
+    margin-bottom: 2.4rem;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .home-event {
+      background: $white;
+      border: black 2px solid;
+    }
+
+    a.event-link{
+      &:hover,
+      &:focus {
+        border-bottom: none;
+        outline: none;
+        background: none;
+
+        .home-event {
+          background: #bbb;
+          margin: 0 -1px -3px;
+          padding: 0 1px;
+
+          h3 {
+            color: $link-hover;
+          }
+        }
+      }
+    }
+  }
+
+  .published-date {
+    margin-bottom: 0;
+  }
+}
+
+#upcoming {
+  background: $brand-primary;
+  padding: 2%;
+
+  h2 {
+    color: $white;
   }
 }

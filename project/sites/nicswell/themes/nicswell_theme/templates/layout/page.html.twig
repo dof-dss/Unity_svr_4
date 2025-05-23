@@ -95,6 +95,14 @@
   {% endif %}
   {{ page.front_welcome }}
 
+  {% if page.featured %}
+    <div id="upcoming">
+        <div class="column">
+          {{ page.featured }}
+        </div>
+    </div>
+    {% endif %}
+
   {% if page.top_first or page.top_second or page.top_third %}
     <div id="top-area" class="clearfix">
       {% if page.top_first %}
