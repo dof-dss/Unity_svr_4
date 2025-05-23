@@ -71,6 +71,7 @@ content:
     region: content
 hidden:
   body: true
+  content_moderation_control: true
   field_contact_details: true
   field_cost: true
   langcode: true

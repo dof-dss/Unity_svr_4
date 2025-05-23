@@ -1,9 +1,9 @@
-uuid: 3b9a1f96-cf65-439c-8415-673a499de8a7
+uuid: 82f7a5f0-ddcf-47db-88af-967c28450a6d
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.diff
     - field.field.node.event.body
     - field.field.node.event.field_contact_details
     - field.field.node.event.field_cost
@@ -12,16 +12,44 @@ dependencies:
     - field.field.node.event.field_photo
     - node.type.event
   module:
+    - layout_builder
     - smart_date
+    - text
     - user
-id: node.event.teaser
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.event.diff
 targetEntityType: node
 bundle: event
-mode: teaser
+mode: diff
 content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_contact_details:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_cost:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_event_date:
     type: smartdate_custom
-    label: hidden
+    label: above
     settings:
       separator: ' - '
       time_diff:
@@ -45,15 +73,15 @@ content:
       ampm_reduce: '1'
       site_time_toggle: '1'
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_location:
     type: string
-    label: hidden
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_photo:
     type: entity_reference_entity_view
@@ -62,13 +90,10 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden:
-  body: true
   content_moderation_control: true
-  field_contact_details: true
-  field_cost: true
   langcode: true
   links: true
   search_api_excerpt: true

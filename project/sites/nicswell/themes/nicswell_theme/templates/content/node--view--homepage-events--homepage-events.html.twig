@@ -71,15 +71,17 @@
   <a href="{{ url }}" rel="bookmark" class="event-link">
     <div class="home-event">
       {{ content.field_photo }}
-      <h3>{{ label }}</h3>
-      {% if content.field_location %}
-        <p>{{ content.field_location }}</p>
-      {% endif %}
-      {% if content.field_event_date %}
-        <p class="published-date" data-once="emptyTags">
-          {{ content.field_event_date }}
-        </p>
-      {% endif %}
+      <div class="event-text">
+        <h3>{{ label }}</h3>
+        {% if content.field_location %}
+          <p>{{ content.field_location }}</p>
+        {% endif %}
+        {% if content.field_event_date %}
+          <p class="published-date" data-once="emptyTags">
+            {{ content.field_event_date }}
+          </p>
+        {% endif %}
+      </div>
     </div>
   </a>
 </article>
