@@ -340,7 +340,7 @@
     color: $link;
 
     @include breakpoint($tab) {
-      @include adjust-font-size-to(18px, 4);
+      @include adjust-font-size-to(22px, 4);
     }
   }
 
@@ -357,6 +357,14 @@
       border: black 2px solid;
     }
 
+    .event-text {
+      padding: 1rem 2rem 2rem 1rem;
+    }
+
+    .media-image {
+      margin: 0;
+    }
+
     a.event-link{
       &:hover,
       &:focus {
@@ -371,6 +379,7 @@
 
           h3 {
             color: $link-hover;
+            text-decoration: underline;
           }
         }
       }
