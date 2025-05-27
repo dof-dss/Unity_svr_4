@@ -228,6 +228,7 @@ display:
           view_modes:
             'entity:node':
               basic_page: teaser
+              news: search_index
               publication: search_index
       query:
         type: search_api_query

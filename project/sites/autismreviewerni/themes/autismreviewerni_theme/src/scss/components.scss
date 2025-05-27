@@ -20,20 +20,24 @@
 
 #main-menu {
   .menu-link {
-    color: $black;
+    color: $text;
 
     &:hover,
     &:focus {
-      color: $white;
-      border-bottom-color: $black;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 5px;
     }
 
   }
 
   .menu .menu-item .active {
-    color: $white;
-    background: $brand-primary;
-    border-bottom-color: $black;
+    color: $text;
+    background: transparent;
+    border-bottom-color: transparent;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
   }
 }
 
