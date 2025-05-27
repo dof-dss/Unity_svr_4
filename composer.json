@@ -50,10 +50,10 @@
         "cweagans/composer-patches": "^1.7",
         "dof-dss/nicsdru_origins_modules": "^10.4",
         "dof-dss/nicsdru_unity_modules": "^10.1",
-        "dof-dss/nicsdru_unity_profile": "dev-D8UN-3048",
+        "dof-dss/nicsdru_unity_profile": "^10.1",
         "dof-dss/nicsdru_unity_theme": "^10.1",
         "drupal/address": "^1.12",
-        "drupal/admin_toolbar": "^3.4",
+        "drupal/admin_toolbar": "^3.5",
         "drupal/allowed_formats": "^3.0",
         "drupal/antibot": "^2.0",
         "drupal/auto_entityqueue": "^2.1",
@@ -100,7 +100,7 @@
         "drupal/geolocation": "^3.12",
         "drupal/google_tag": "^2.0",
         "drupal/handy_cache_tags": "^1.4",
-        "drupal/honeypot": "^2.1",
+        "drupal/honeypot": "2.1.2",
         "drupal/http_cache_control": "^2.1",
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/jquery_ui_accordion": "^2.0",
@@ -134,7 +134,7 @@
         "drupal/search_api_autocomplete": "^1.4",
         "drupal/search_api_glossary": "^4.2",
         "drupal/search_api_location": "^1.0@alpha",
-        "drupal/search_api_solr": "^4.3.4",
+        "drupal/search_api_solr": "4.3.0",
         "drupal/search_api_spellcheck": "^4.0",
         "drupal/seven": "^1.0",
         "drupal/shs": "^2.0@RC",
@@ -189,6 +189,9 @@
     },
     "extra": {
         "patches": {
+            "drupal/block_visibility_groups": {
+                "Visibility incorrectly returns false on OR logic when context missing from a different condition #3503194": "https://www.drupal.org/files/issues/2025-02-07/or-logic-when-context-missing--3503194-5.patch"
+            },
             "drupal/clientside_validation": {
                 "core/jquery.once is required": "https://www.drupal.org/files/issues/2021-02-23/3200022-01.patch"
             },
@@ -233,6 +236,9 @@
             },
             "drupal/slick": {
                 "PHP 8.2 compatibility": "https://git.drupalcode.org/issue/slick-3373261/-/commit/4035fef4eb48df2a2859d6c2785357d6071f9e72.patch"
+            },
+            "drupal/search_api": {
+                "Declaration of Drupal\\search_api_solr\\Plugin\\search_api\\backend\\SearchApiSolrBackend::__sleep() must be compatible": "https://www.drupal.org/files/issues/2024-06-18/type_declaration.patch"
             },
             "drupal/smart_date":{
                 "Hide duration field": "https://www.drupal.org/files/issues/2024-10-07/3379263-duration-fix.patch",

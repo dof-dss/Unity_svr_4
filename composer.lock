@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88c01b349a0172747dd253f3bcc18583",
+    "content-hash": "832ec68e9a94abf1a9b7c89a74dcfb92",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -118,16 +118,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.343.14",
+            "version": "3.343.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "8bb5b542b28c4538b44de4335396e77bf9fbedf6"
+                "reference": "eb50d111a09ef39675358e74801260ac129ee346"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8bb5b542b28c4538b44de4335396e77bf9fbedf6",
-                "reference": "8bb5b542b28c4538b44de4335396e77bf9fbedf6",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/eb50d111a09ef39675358e74801260ac129ee346",
+                "reference": "eb50d111a09ef39675358e74801260ac129ee346",
                 "shasum": ""
             },
             "require": {
@@ -209,9 +209,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.343.14"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.343.13"
             },
-            "time": "2025-05-19T18:02:45+00:00"
+            "time": "2025-05-16T18:24:39+00:00"
         },
         {
             "name": "caxy/php-htmldiff",
@@ -1738,16 +1738,16 @@
         },
         {
             "name": "dof-dss/nicsdru_unity_profile",
-            "version": "dev-D8UN-3048",
+            "version": "10.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dof-dss/nicsdru_unity_profile.git",
-                "reference": "157522c2530d89b3d9c92201a6da9c54e1595366"
+                "reference": "4981db80005ab5c034ba98a5e04b10cb44523d01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/157522c2530d89b3d9c92201a6da9c54e1595366",
-                "reference": "157522c2530d89b3d9c92201a6da9c54e1595366",
+                "url": "https://api.github.com/repos/dof-dss/nicsdru_unity_profile/zipball/4981db80005ab5c034ba98a5e04b10cb44523d01",
+                "reference": "4981db80005ab5c034ba98a5e04b10cb44523d01",
                 "shasum": ""
             },
             "require": {
@@ -1761,9 +1761,9 @@
             "description": "Custom install profile used by all Unity sites",
             "support": {
                 "issues": "https://github.com/dof-dss/nicsdru_unity_profile/issues",
-                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/D8UN-3048"
+                "source": "https://github.com/dof-dss/nicsdru_unity_profile/tree/10.1.6"
             },
-            "time": "2025-05-19T14:51:25+00:00"
+            "time": "2025-05-22T13:31:17+00:00"
         },
         {
             "name": "dof-dss/nicsdru_unity_theme",
@@ -3096,6 +3096,10 @@
                 {
                     "name": "mfb",
                     "homepage": "https://www.drupal.org/user/12302"
+                },
+                {
+                    "name": "pandaski",
+                    "homepage": "https://www.drupal.org/user/1987218"
                 },
                 {
                     "name": "volkerk",
@@ -5255,30 +5259,29 @@
         },
         {
             "name": "drupal/honeypot",
-            "version": "2.2.2",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/honeypot.git",
-                "reference": "2.2.2"
+                "reference": "2.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/honeypot-2.2.2.zip",
-                "reference": "2.2.2",
-                "shasum": "828872d31d1a2c37a818cacae7fcd77a60996c66"
+                "url": "https://ftp.drupal.org/files/projects/honeypot-2.1.2.zip",
+                "reference": "2.1.2",
+                "shasum": "9511fd6db37c153f2290950bf79611b27510cede"
             },
             "require": {
-                "drupal/core": "^10.3 || ^11"
+                "drupal/core": "^9.2 || ^10"
             },
             "require-dev": {
-                "drupal/rules": "^4.0",
-                "drupal/webform": "^6.2"
+                "drupal/rules": "^3.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.2.2",
-                    "datestamp": "1739854442",
+                    "version": "2.1.2",
+                    "datestamp": "1664658244",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7765,30 +7768,30 @@
         },
         {
             "name": "drupal/search_api_solr",
-            "version": "4.3.10",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_solr.git",
-                "reference": "4.3.10"
+                "reference": "4.3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api_solr-4.3.10.zip",
-                "reference": "4.3.10",
-                "shasum": "8d37467f0f2ab34ed6a0b61872ce7ff8e5e64730"
+                "url": "https://ftp.drupal.org/files/projects/search_api_solr-4.3.0.zip",
+                "reference": "4.3.0",
+                "shasum": "222e14f9ab49efb519e3a78674606880a2b07416"
             },
             "require": {
                 "composer-runtime-api": ">=2.0",
                 "composer/semver": "^1.0|^3.0",
                 "consolidation/annotated-command": "^2.12|^4.1",
-                "drupal/core": "^10.2 || ^11.0",
-                "drupal/search_api": "^1.37|1.x-dev",
+                "drupal/core": "^9.3 || ^10.0",
+                "drupal/search_api": "~1.29",
                 "ext-dom": "*",
                 "ext-json": "*",
                 "ext-simplexml": "*",
                 "laminas/laminas-stdlib": "^3.2",
                 "maennchen/zipstream-php": "^2.2.1|^3.0.2",
-                "solarium/solarium": "^6.3.7"
+                "solarium/solarium": "^6.3.0"
             },
             "conflict": {
                 "drupal/acquia_search_solr": "<1.0.0-beta8",
@@ -7798,12 +7801,10 @@
             "require-dev": {
                 "drupal/devel": "^4.0|^5.0",
                 "drupal/facets": "^3.0.x-dev",
-                "drupal/facets_exposed_filters": "*",
                 "drupal/geofield": "1.x-dev",
                 "drupal/search_api_autocomplete": "1.x-dev",
                 "drupal/search_api_location": "1.x-dev",
                 "drupal/search_api_spellcheck": "3.x-dev",
-                "drupal/views-views": "*",
                 "monolog/monolog": "^1.25|^3"
             },
             "suggest": {
@@ -7816,8 +7817,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.3.10",
-                    "datestamp": "1745427496",
+                    "version": "4.3.0",
+                    "datestamp": "1696589367",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10584,16 +10585,16 @@
         },
         {
             "name": "league/container",
-            "version": "4.2.5",
+            "version": "4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/container.git",
-                "reference": "d3cebb0ff4685ff61c749e54b27db49319e2ec00"
+                "reference": "7ea728b013b9a156c409c6f0fc3624071b742dec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/container/zipball/d3cebb0ff4685ff61c749e54b27db49319e2ec00",
-                "reference": "d3cebb0ff4685ff61c749e54b27db49319e2ec00",
+                "url": "https://api.github.com/repos/thephpleague/container/zipball/7ea728b013b9a156c409c6f0fc3624071b742dec",
+                "reference": "7ea728b013b9a156c409c6f0fc3624071b742dec",
                 "shasum": ""
             },
             "require": {
@@ -10654,7 +10655,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/container/issues",
-                "source": "https://github.com/thephpleague/container/tree/4.2.5"
+                "source": "https://github.com/thephpleague/container/tree/4.2.4"
             },
             "funding": [
                 {
@@ -10662,7 +10663,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-20T12:55:37+00:00"
+            "time": "2024-11-10T12:42:13+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -22738,7 +22739,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "dof-dss/nicsdru_unity_profile": 20,
         "drupal/block_field": 5,
         "drupal/ckeditor5_allowed_html": 20,
         "drupal/clone_nodes": 20,
