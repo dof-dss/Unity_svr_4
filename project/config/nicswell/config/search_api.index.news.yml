@@ -96,6 +96,7 @@ field_settings:
       separator: |+
 
 
+
       fields:
         - 'entity:node/title'
   title:
@@ -115,6 +116,7 @@ field_settings:
     configuration:
       type: union
       separator: |+
+
 
 
       fields:
