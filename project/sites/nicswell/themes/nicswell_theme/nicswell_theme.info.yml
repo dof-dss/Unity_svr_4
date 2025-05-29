@@ -30,6 +30,7 @@ regions:
   sidebar_first: 'First sidebar'
   sidebar_second: 'Sidebar second'
   featured: 'Featured'
+  featured_second: 'Featured second'
   content: 'Content'
   bottom_widget_1: 'Bottom widget 1'
   bottom_widget_2: 'Bottom widget 2'
