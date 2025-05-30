@@ -12,7 +12,7 @@ dependencies:
 id: views_block__homepage_events_homepage_events
 theme: nicswell_theme
 region: featured
-weight: -6
+weight: -9
 provider: null
 plugin: 'views_block:homepage_events-homepage_events'
 settings:
