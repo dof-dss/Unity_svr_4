@@ -1,0 +1,25 @@
+uuid: 406992df-a72e-48a1-a354-ccd6a6e5795c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:262a178b-41f4-4762-9809-979f62972221'
+  module:
+    - block_content
+  theme:
+    - nicswell_theme
+id: sociallinks
+theme: nicswell_theme
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:262a178b-41f4-4762-9809-979f62972221'
+settings:
+  id: 'block_content:262a178b-41f4-4762-9809-979f62972221'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
