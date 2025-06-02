@@ -37,6 +37,8 @@
 #block-homepageintro {
   h2 {
     color: $brand-primary;
+    border-bottom: solid 5px;
+    padding-bottom: 5rem;
   }
 }
 
@@ -251,11 +253,15 @@
     clear: right;
     margin-bottom: 2.4rem;
 
-    p {
+    p.news-teaser {
       margin-bottom: 0;
+      color: #666;
     }
 
     a.news-link{
+      display: block;
+      border-bottom: none !important;
+
       .news-article {
         background-image: resolve('arrow_forward_link_blue.svg');
         background-position: bottom right;
@@ -305,11 +311,10 @@
   }
 
   .view-all-link {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-decoration: none;
     padding: 0.4em 0.8em;
-    border-radius: 4px;
-    transition: background-color 0.2s ease;
+    border-radius: 20px;
     margin: 2rem 0 0 2rem;
   }
 
@@ -401,115 +406,9 @@
 #upcoming {
   background: $brand-primary;
   padding: 2%;
+  margin-bottom: 4rem;
 
   h2 {
     color: $white;
   }
 }
-
-#content .card {
-  @include breakpoint($tab) {
-    display: flex;
-    justify-content: space-between;
-
-    .field-photo {
-      float: none;
-      max-width: 100%;
-      margin: 0;
-    }
-
-    .views-row {
-      flex-basis: 31.5%;
-    }
-  }
-
-  h3 {
-    margin: 1rem 0;
-    color: $link;
-
-    @include breakpoint($tab) {
-      @include adjust-font-size-to(18px, 4);
-    }
-  }
-
-  article {
-    clear: right;
-    margin-bottom: 2.4rem;
-
-    p {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.card-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-.card {
-  flex: 1 1 30%;
-  min-width: 280px;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  background-color: #fff;
-  margin-bottom: 2rem;
-  overflow: hidden;
-
-  background-image: resolve('arrow_forward_link_blue.svg');
-  background-position: bottom right;
-  background-size: 2.4rem auto;
-  background-repeat: no-repeat;
-
-  &:hover,
-  &:focus {
-    background-color: #e7e7e7;
-    background-image: resolve('arrow_forward_black.svg');
-
-    h3 {
-      color: $link-hover;
-      text-decoration: underline;
-    }
-  }
-
-  @media (max-width: 768px) {
-    flex: 1 1 100%;
-  }
-}
-
-.card__image {
-  position: relative;
-  width: 100%;
-  padding-top: 100%;
-  overflow: hidden;
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-}
-
-.card__body {
-  padding: 15px;
-}
-
-.card__title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.card__teaser {
-  font-size: 1.6rem;
-  color: #666;
-}
-
