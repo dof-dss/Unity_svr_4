@@ -1,7 +1,0 @@
-nicswell_homepage.homepage_controller_default:
-  path: '/homepage'
-  defaults:
-    _controller: '\Drupal\nicswell_homepage\Controller\HomepageController::default'
-    _title: 'Home'
-  requirements:
-    _permission: 'access content'
