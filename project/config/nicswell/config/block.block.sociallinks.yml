@@ -10,8 +10,8 @@ dependencies:
     - nicswell_theme
 id: sociallinks
 theme: nicswell_theme
-region: footer_first
-weight: -7
+region: footer
+weight: -6
 provider: null
 plugin: 'block_content:262a178b-41f4-4762-9809-979f62972221'
 settings:
