@@ -30,6 +30,29 @@
   }
 }
 
+#main-menu {
+  .menu-link {
+    color: $white;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 5px;
+    }
+
+  }
+
+  .menu .menu-item .active {
+    color: $white;
+    background: transparent;
+    border-bottom-color: transparent;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+  }
+}
+
 .region-front-welcome {
   text-align: left;
 }
@@ -271,7 +294,6 @@
 
       &:hover,
       &:focus {
-        border-bottom: none;
         outline: none;
         background: none;
 
@@ -280,6 +302,7 @@
           background-image: resolve('arrow_forward_black.svg');
           margin: 0 -1px -3px;
           padding: 0 1px;
+          border-bottom: 3px solid $black;
 
           h3 {
             color: $link-hover;
