@@ -1,0 +1,30 @@
+uuid: 33a625b2-aeaa-4298-9c3d-cc29ecc9ce52
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:aa708903-9020-493d-b58d-b306655e624c'
+  module:
+    - block_content
+    - system
+  theme:
+    - nicswell_theme
+id: homepageintro
+theme: nicswell_theme
+region: front_welcome
+weight: -7
+provider: null
+plugin: 'block_content:aa708903-9020-493d-b58d-b306655e624c'
+settings:
+  id: 'block_content:aa708903-9020-493d-b58d-b306655e624c'
+  label: 'Homepage intro'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -11,7 +11,7 @@ dependencies:
 id: mainmenu
 theme: nicswell_theme
 region: primary_menu
-weight: 0
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:

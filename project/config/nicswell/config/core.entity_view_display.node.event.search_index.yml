@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_cost
     - field.field.node.event.field_event_date
     - field.field.node.event.field_location
+    - field.field.node.event.field_photo
     - node.type.event
   module:
     - layout_builder
@@ -59,8 +60,18 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: news_thumbnail
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   body: true
+  content_moderation_control: true
   field_contact_details: true
   field_cost: true
   langcode: true

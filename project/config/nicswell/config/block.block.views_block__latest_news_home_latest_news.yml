@@ -12,7 +12,7 @@ dependencies:
 id: views_block__latest_news_home_latest_news
 theme: nicswell_theme
 region: front_welcome
-weight: -5
+weight: -6
 provider: null
 plugin: 'views_block:latest_news-home_latest_news'
 settings:
