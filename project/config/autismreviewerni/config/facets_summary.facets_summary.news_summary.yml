@@ -17,7 +17,7 @@ processor_configs:
       build: '45'
     settings: {  }
 facets:
-  publication_date:
+  published_date:
     checked: true
     label: Date
     separator: ', '

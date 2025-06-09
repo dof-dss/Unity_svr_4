@@ -95,6 +95,22 @@
   {% endif %}
   {{ page.front_welcome }}
 
+  {% if page.featured %}
+    <div id="upcoming">
+        <div class="column">
+          {{ page.featured }}
+        </div>
+    </div>
+    {% endif %}
+
+  {% if page.featured_second %}
+    <div id="health_lifestyle">
+      <div class="column">
+        {{ page.featured_second }}
+      </div>
+    </div>
+  {% endif %}
+
   {% if page.top_first or page.top_second or page.top_third %}
     <div id="top-area" class="clearfix">
       {% if page.top_first %}
@@ -235,7 +251,9 @@
 
       {% if page.footer %}
         <div class="footer_credit">
-          {{ page.footer }}
+          <div class="footer-credit-inner">
+            {{ page.footer }}
+          </div>
         </div>
       {% endif %}
     {% endif %}

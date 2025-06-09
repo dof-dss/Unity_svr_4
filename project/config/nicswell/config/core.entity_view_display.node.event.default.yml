@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_cost
     - field.field.node.event.field_event_date
     - field.field.node.event.field_location
+    - field.field.node.event.field_photo
     - node.type.event
   module:
     - smart_date
@@ -23,14 +24,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_contact_details:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_cost:
     type: string
@@ -38,7 +39,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_event_date:
     type: smartdate_custom
@@ -66,7 +67,7 @@ content:
       ampm_reduce: '1'
       site_time_toggle: '1'
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_location:
     type: string
@@ -76,7 +77,17 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
+  content_moderation_control: true
   langcode: true
   links: true
   search_api_excerpt: true

@@ -30,15 +30,19 @@
 
     &:hover,
     &:focus {
-      color: $white;
-      background: $brand-primary;
-      border-bottom-color: $brand-secondary;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 5px;
     }
+
   }
 
   .menu .menu-item .active {
-    color: $white;
-    background: $brand-primary;
-    border-bottom-color: $brand-secondary;
+    color: $text;
+    background: transparent;
+    border-bottom-color: transparent;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
   }
 }
