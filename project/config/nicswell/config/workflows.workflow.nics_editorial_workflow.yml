@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.basic_page
+    - node.type.board_member
     - node.type.event
     - node.type.feature
     - node.type.news
@@ -97,6 +98,7 @@ type_settings:
   entity_types:
     node:
       - basic_page
+      - board_member
       - event
       - feature
       - news

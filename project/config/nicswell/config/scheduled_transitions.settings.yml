@@ -12,6 +12,9 @@ bundles:
     bundle: basic_page
   -
     entity_type: node
+    bundle: board_member
+  -
+    entity_type: node
     bundle: event
   -
     entity_type: node

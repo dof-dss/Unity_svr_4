@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.slideshow
     - filter.format.basic_html
     - media.type.audio
     - media.type.document
@@ -10,6 +11,7 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - node.type.basic_page
+    - node.type.board_member
     - node.type.event
     - node.type.feature
     - node.type.news
@@ -55,6 +57,7 @@ permissions:
   - 'create and edit custom blocks'
   - 'create audio media'
   - 'create basic_page content'
+  - 'create board_member content'
   - 'create document media'
   - 'create event content'
   - 'create feature content'
@@ -66,6 +69,7 @@ permissions:
   - 'delete all revisions'
   - 'delete any audio media'
   - 'delete any basic_page content'
+  - 'delete any board_member content'
   - 'delete any document media'
   - 'delete any event content'
   - 'delete any feature content'
@@ -75,11 +79,13 @@ permissions:
   - 'delete any news content'
   - 'delete any remote_video media'
   - 'delete basic_page revisions'
+  - 'delete board_member revisions'
   - 'delete event revisions'
   - 'delete feature revisions'
   - 'delete news revisions'
   - 'delete own audio media'
   - 'delete own basic_page content'
+  - 'delete own board_member content'
   - 'delete own document media'
   - 'delete own event content'
   - 'delete own feature content'
@@ -89,6 +95,7 @@ permissions:
   - 'delete own remote_video media'
   - 'edit any audio media'
   - 'edit any basic_page content'
+  - 'edit any board_member content'
   - 'edit any document media'
   - 'edit any event content'
   - 'edit any feature content'
@@ -99,6 +106,7 @@ permissions:
   - 'edit basic meta tags'
   - 'edit own audio media'
   - 'edit own basic_page content'
+  - 'edit own board_member content'
   - 'edit own document media'
   - 'edit own event content'
   - 'edit own feature content'
@@ -112,6 +120,7 @@ permissions:
   - 'reschedule scheduled transitions node news'
   - 'revert all revisions'
   - 'revert basic_page revisions'
+  - 'revert board_member revisions'
   - 'revert event revisions'
   - 'revert feature revisions'
   - 'revert news revisions'
@@ -130,6 +139,7 @@ permissions:
   - 'view all scheduled transitions'
   - 'view any unpublished content'
   - 'view basic_page revisions'
+  - 'view board_member revisions'
   - 'view content references'
   - 'view event revisions'
   - 'view feature revisions'

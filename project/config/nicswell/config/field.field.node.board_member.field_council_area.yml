@@ -1,0 +1,29 @@
+uuid: b8cd2725-0da2-4e64-ae8e-7387bc35f8cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_council_area
+    - node.type.board_member
+    - taxonomy.vocabulary.council_areas
+id: node.board_member.field_council_area
+field_name: field_council_area
+entity_type: node
+bundle: board_member
+label: 'Council area'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      council_areas: council_areas
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
