@@ -568,3 +568,72 @@
     }
   }
 }
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  margin-top: 2rem;
+
+  .video-box {
+    position: relative;
+    flex: 0 0 49%;
+    box-sizing: border-box;
+    border: 2px solid $black;
+    background: #fff;
+    padding: 0;
+    overflow: hidden;
+
+    * {
+      border: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+    }
+
+    .video-embed {
+      width: 100%;
+
+      iframe,
+      .media-oembed-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        display: block;
+      }
+    }
+
+    .title,
+    .description {
+      margin: 1rem 0 2rem 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .video-grid {
+    .video-box {
+      flex: 0 1 48%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 766px) {
+  .video-grid {
+    .video-box {
+      flex: 0 1 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (min-width: 766px) {
+  body.path-videos-on-demand.no-sidebars {
+    .content-sidebar-wrap {
+      width: 100%;
+    }
+  }
+}
