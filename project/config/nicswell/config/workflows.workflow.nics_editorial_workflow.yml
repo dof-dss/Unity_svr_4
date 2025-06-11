@@ -8,6 +8,7 @@ dependencies:
     - node.type.event
     - node.type.feature
     - node.type.news
+    - node.type.video
   module:
     - content_moderation
 _core:
@@ -102,4 +103,5 @@ type_settings:
       - event
       - feature
       - news
+      - video
   default_moderation_state: draft
