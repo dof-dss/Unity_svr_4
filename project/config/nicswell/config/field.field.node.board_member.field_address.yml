@@ -1,0 +1,19 @@
+uuid: 11bb54ba-9c16-4f4b-8ada-d79748ae4560
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.board_member
+id: node.board_member.field_address
+field_name: field_address
+entity_type: node
+bundle: board_member
+label: Address
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

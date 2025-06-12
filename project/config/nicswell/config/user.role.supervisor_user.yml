@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.slideshow
     - filter.format.basic_html
     - media.type.audio
     - media.type.document
@@ -10,9 +11,11 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - node.type.basic_page
+    - node.type.board_member
     - node.type.event
     - node.type.feature
     - node.type.news
+    - node.type.video
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
@@ -55,6 +58,7 @@ permissions:
   - 'create and edit custom blocks'
   - 'create audio media'
   - 'create basic_page content'
+  - 'create board_member content'
   - 'create document media'
   - 'create event content'
   - 'create feature content'
@@ -63,9 +67,11 @@ permissions:
   - 'create news content'
   - 'create remote_video media'
   - 'create url aliases'
+  - 'create video content'
   - 'delete all revisions'
   - 'delete any audio media'
   - 'delete any basic_page content'
+  - 'delete any board_member content'
   - 'delete any document media'
   - 'delete any event content'
   - 'delete any feature content'
@@ -74,12 +80,15 @@ permissions:
   - 'delete any image media'
   - 'delete any news content'
   - 'delete any remote_video media'
+  - 'delete any video content'
   - 'delete basic_page revisions'
+  - 'delete board_member revisions'
   - 'delete event revisions'
   - 'delete feature revisions'
   - 'delete news revisions'
   - 'delete own audio media'
   - 'delete own basic_page content'
+  - 'delete own board_member content'
   - 'delete own document media'
   - 'delete own event content'
   - 'delete own feature content'
@@ -87,8 +96,11 @@ permissions:
   - 'delete own image media'
   - 'delete own news content'
   - 'delete own remote_video media'
+  - 'delete own video content'
+  - 'delete video revisions'
   - 'edit any audio media'
   - 'edit any basic_page content'
+  - 'edit any board_member content'
   - 'edit any document media'
   - 'edit any event content'
   - 'edit any feature content'
@@ -96,9 +108,11 @@ permissions:
   - 'edit any image media'
   - 'edit any news content'
   - 'edit any remote_video media'
+  - 'edit any video content'
   - 'edit basic meta tags'
   - 'edit own audio media'
   - 'edit own basic_page content'
+  - 'edit own board_member content'
   - 'edit own document media'
   - 'edit own event content'
   - 'edit own feature content'
@@ -106,15 +120,18 @@ permissions:
   - 'edit own image media'
   - 'edit own news content'
   - 'edit own remote_video media'
+  - 'edit own video content'
   - 'manipulate entityqueues'
   - 'reschedule scheduled transitions node basic_page'
   - 'reschedule scheduled transitions node event'
   - 'reschedule scheduled transitions node news'
   - 'revert all revisions'
   - 'revert basic_page revisions'
+  - 'revert board_member revisions'
   - 'revert event revisions'
   - 'revert feature revisions'
   - 'revert news revisions'
+  - 'revert video revisions'
   - 'update slideshow entityqueue'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition archive'
@@ -130,6 +147,7 @@ permissions:
   - 'view all scheduled transitions'
   - 'view any unpublished content'
   - 'view basic_page revisions'
+  - 'view board_member revisions'
   - 'view content references'
   - 'view event revisions'
   - 'view feature revisions'
@@ -141,3 +159,4 @@ permissions:
   - 'view scheduled transitions node event'
   - 'view scheduled transitions node news'
   - 'view the administration theme'
+  - 'view video revisions'

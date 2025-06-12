@@ -1,0 +1,28 @@
+uuid: 1e7dbf6c-6509-473b-94d0-26681e280848
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.champions_search
+  module:
+    - system
+    - views
+  theme:
+    - nicswell_theme
+id: exposedformchampions_searchchampions_search_page
+theme: nicswell_theme
+region: search_facets
+weight: -6
+provider: null
+plugin: 'views_exposed_filter_block:champions_search-champions_search_page'
+settings:
+  id: 'views_exposed_filter_block:champions_search-champions_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/champions\r\n/champions/department/*\r\n/champions/council/*"
