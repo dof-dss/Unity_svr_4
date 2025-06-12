@@ -70,7 +70,12 @@
 <article class="event-content">
   <div class="event-left">
     {{ content.body }}
-    {{ content.field_contact_details }}
+    {{ content.field_photo }}
+
+    {% if content.field_contact_details %}
+      <h3>Contact Details</h3>
+      {{ content.field_contact_details }}
+    {% endif %}
   </div>
   <div class="event-right">
     <div class="event-info">
