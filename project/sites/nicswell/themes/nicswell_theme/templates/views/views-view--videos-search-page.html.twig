@@ -30,11 +30,38 @@
  * @see template_preprocess_views_view()
  */
 #}
+{%
+  set classes = [
+  dom_id ? 'js-view-dom-id-' ~ dom_id,
+]
+%}
+{% set attributes = attributes.addClass(classes) %}
+{% set attributes = attributes.setAttribute('aria-label', 'search results'|t) %}
+<section{{ attributes }}>
+  {{ title_prefix }}
+  {{ title }}
+  {{ title_suffix }}
 
-<div class="video-grid">
-  {% for row in rows %}
-    <div class="video-box">
-      {{ row.content }}
-    </div>
-  {% endfor %}
-</div>
+  <header>
+    {{ header }}
+    {{ drupal_block('facets_summary_block:videos_summary') }}
+  </header>
+
+  {% if rows -%}
+    {{ rows }}
+  {% elseif empty -%}
+    {{ empty }}
+  {% endif %}
+  {{ pager }}
+
+  {{ attachment_after }}
+  {{ more }}
+
+  {% if footer %}
+    <footer>
+      {{ footer }}
+    </footer>
+  {% endif %}
+
+  {{ feed_icons }}
+</section>
