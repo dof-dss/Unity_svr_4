@@ -70,29 +70,28 @@
 <article class="video-page">
 
   {% if content.field_video_category %}
-    <div class="video-page__category">
+    <div class="video-category">
       Video Category:
-      <span class="video-page__category-tag">
-          {{ content.field_video_category }}
-        </span>
+      <span class="video-category-tag">
+        {{ content.field_video_category }}
+      </span>
     </div>
   {% endif %}
-  </header>
 
   {% if content.field_description %}
-    <div class="video-page__description">
+    <div class="video-description">
       <p>{{ content.field_description }}</p>
     </div>
   {% endif %}
 
   {% if content.field_photo %}
-    <div class="video-page__image">
+    <div class="video-image">
       {{ content.field_photo }}
     </div>
   {% endif %}
 
   {% if content.field_video %}
-    <div class="video-page__video">
+    <div class="video-embed">
       {{ content.field_video }}
     </div>
   {% endif %}

@@ -613,16 +613,16 @@
   }
 }
 
-.video-page__title {
+.video-title {
   margin-bottom: 0.75rem;
   color: #222;
 }
 
-.video-page__category {
+.video-category {
   margin-bottom: 1.5rem;
 }
 
-.video-page__category-tag {
+.video-category-tag {
   background-color: $brand-primary;
   color: $white;
   display: inline-block;
@@ -631,15 +631,7 @@
   border-radius: 4rem;
 }
 
-.video-page__description {
+.video-description {
   margin-bottom: 1.5rem;
   color: #333;
-}
-
-.video-page__image img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  float: left !important;
-  margin: 2rem 0 2rem 0 !important;
 }
