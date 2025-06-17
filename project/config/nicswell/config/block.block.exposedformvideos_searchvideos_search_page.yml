@@ -1,22 +1,22 @@
-uuid: f56d235f-faa3-46c9-966b-1822e4c427c6
+uuid: 510b2ffc-4de7-4df6-97f1-042a82780349
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.news_search
+    - views.view.videos_search
   module:
     - system
     - views
   theme:
     - nicswell_theme
-id: exposedformnews_searchnews_search_page
+id: exposedformvideos_searchvideos_search_page
 theme: nicswell_theme
 region: search_facets
-weight: -8
+weight: -6
 provider: null
-plugin: 'views_exposed_filter_block:news_search-news_search_page'
+plugin: 'views_exposed_filter_block:videos_search-videos_search_page'
 settings:
-  id: 'views_exposed_filter_block:news_search-news_search_page'
+  id: 'views_exposed_filter_block:videos_search-videos_search_page'
   label: ''
   label_display: '0'
   provider: views
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/news\r\n/news/date/*"
+    pages: "/videos\r\n/videos/category/*"

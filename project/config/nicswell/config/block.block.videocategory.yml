@@ -1,29 +1,29 @@
-uuid: 82549e2b-b502-4ba7-91c2-bfb5e58cbda9
+uuid: 2db06154-d880-49fe-9b78-91faeabe4985
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.department
+    - facets.facet.video_category
   module:
     - facets
     - system
   theme:
     - nicswell_theme
-id: department
+id: videocategory
 theme: nicswell_theme
 region: search_facets
-weight: -2
+weight: 0
 provider: null
-plugin: 'facet_block:department'
+plugin: 'facet_block:video_category'
 settings:
-  id: 'facet_block:department'
-  label: Department
+  id: 'facet_block:video_category'
+  label: 'Video Category'
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: department
+  block_id: videocategory
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/champions\r\n/champions/department/*\r\n/champions/council/*"
+    pages: "/videos\r\n/videos/category/*"
