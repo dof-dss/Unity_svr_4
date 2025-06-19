@@ -12,7 +12,7 @@ dependencies:
 id: council
 theme: nicswell_theme
 region: search_facets
-weight: 0
+weight: -3
 provider: null
 plugin: 'facet_block:council'
 settings:

@@ -1,25 +1,25 @@
-uuid: eac14645-cd15-40ad-8695-c28b2d8940f4
+uuid: 1e7e150d-7c9f-4825-9603-be21d545cc1d
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.events
-    - views.view.events_search
+    - search_api.index.videos
+    - views.view.videos_search
   module:
     - facets_pretty_paths
     - search_api
 third_party_settings:
   facets_pretty_paths:
-    coder: default_coder
-id: event_date
-name: 'Event date'
+    coder: taxonomy_term_coder
+id: video_category
+name: 'Video Category'
 weight: 0
 min_count: 1
 missing: false
 missing_label: others
-url_alias: date
-facet_source_id: 'search_api:views_page__events_search__events_search_page'
-field_identifier: field_event_date
+url_alias: category
+facet_source_id: 'search_api:views_page__videos_search__videos_search_page'
+field_identifier: field_video_category
 query_operator: and
 hard_limit: 0
 exclude: false
@@ -53,31 +53,22 @@ processor_configs:
       sort: 20
     settings:
       sort: ASC
-  date_facet_drilldown:
-    processor_id: date_facet_drilldown
+  display_value_widget_order:
+    processor_id: display_value_widget_order
     weights:
-      build: 1
-    settings: {  }
-  date_item:
-    processor_id: date_item
-    weights:
-      build: 35
+      sort: 40
     settings:
-      date_display: actual_date
-      granularity: 6
-      date_format: ''
-      hierarchy: false
+      sort: ASC
   hierarchy_processor:
     processor_id: hierarchy_processor
     weights:
       build: 100
     settings: {  }
-  raw_value_widget_order:
-    processor_id: raw_value_widget_order
+  translate_entity:
+    processor_id: translate_entity
     weights:
-      sort: 50
-    settings:
-      sort: DESC
+      build: 5
+    settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
     weights:

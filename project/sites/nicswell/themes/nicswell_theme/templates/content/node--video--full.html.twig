@@ -67,64 +67,33 @@
  * @see template_preprocess_node()
  */
 #}
+<article class="video-page">
 
-<article class="event-content">
-  <div class="event-right">
-    <div class="event-info">
-      <h2>Event Information</h2>
-
-      <p>
-        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-        <span>
-          <span>{{ 'When'|t }}</span>
-          <span>
-            {% if start_date %}
-              {{ start_date }}
-            {% endif %}
-            {% if end_date and end_date != start_date %}
-              {{ ' - '|t }}{{ end_date }}
-            {% endif %}
-          </span>
-        </span>
-      </p>
-
-      {% if start_time %}
-        <p>
-          <i class="fas fa-clock" aria-hidden="true"></i>
-          <span>
-            <span>{{ 'Time'|t }}</span>
-            <span>
-              {{ start_time }}
-              {% if end_time %}
-                {{ ' - '|t }}{{ end_time }}
-              {% endif %}
-            </span>
-          </span>
-        </p>
-      {% endif %}
-
-      <p>
-        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-        <span>{{ content.field_location }}</span>
-      </p>
-
-      <p>
-        <i class="fas fa-pound-sign" aria-hidden="true"></i>
-        <span>{{ content.field_cost }}</span>
-      </p>
+  {% if content.field_video_category %}
+    <div class="video-category">
+      Video Category:
+      <span class="video-category-tag">
+        {{ content.field_video_category }}
+      </span>
     </div>
-  </div>
+  {% endif %}
 
-  <div class="event-left">
-    {{ content.body }}
-    {{ content.field_photo }}
+  {% if content.field_description %}
+    <div class="video-description">
+      <p>{{ content.field_description }}</p>
+    </div>
+  {% endif %}
 
-    {% if node.field_contact_details.value %}
-      <h3>Contact Details</h3>
-      {{ content.field_contact_details }}
-    {% endif %}
+  {% if content.field_photo %}
+    <div class="video-image">
+      {{ content.field_photo }}
+    </div>
+  {% endif %}
 
-  </div>
+  {% if content.field_video %}
+    <div class="video-embed">
+      {{ content.field_video }}
+    </div>
+  {% endif %}
+
 </article>
-
-

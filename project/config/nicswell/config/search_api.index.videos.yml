@@ -1,12 +1,10 @@
-uuid: f3f1a0ec-d9be-4f63-8381-f030dfce6b8e
+uuid: 6eeeb78d-6a7b-4736-a1a2-19f483de4dbc
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - field.storage.node.field_contact_details
-    - field.storage.node.field_event_date
-    - field.storage.node.field_location
+    - field.storage.node.field_description
+    - field.storage.node.field_video_category
     - search_api.server.solr_default
   module:
     - node
@@ -57,45 +55,27 @@ third_party_settings:
       specific_languages:
         en: '0'
       use_universal_collation: false
-id: events
-name: Events
+id: videos
+name: Videos
 description: ''
 read_only: false
 field_settings:
-  body:
-    label: 'Event description'
+  field_description:
+    label: Description
     datasource_id: 'entity:node'
-    property_path: body
-    type: text
-    boost: 0.3
-    dependencies:
-      config:
-        - field.storage.node.body
-  field_contact_details:
-    label: 'Contact Details'
-    datasource_id: 'entity:node'
-    property_path: field_contact_details
-    type: text
-    boost: 0.5
-    dependencies:
-      config:
-        - field.storage.node.field_contact_details
-  field_event_date:
-    label: 'Event date(s) and time'
-    datasource_id: 'entity:node'
-    property_path: field_event_date
-    type: date
-    dependencies:
-      config:
-        - field.storage.node.field_event_date
-  field_location:
-    label: Location
-    datasource_id: 'entity:node'
-    property_path: field_location
+    property_path: field_description
     type: text
     dependencies:
       config:
-        - field.storage.node.field_location
+        - field.storage.node.field_description
+  field_video_category:
+    label: 'Video Category'
+    datasource_id: 'entity:node'
+    property_path: field_video_category
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_video_category
   title:
     label: Title
     datasource_id: 'entity:node'
@@ -105,12 +85,22 @@ field_settings:
     dependencies:
       module:
         - node
+  title_fulltext:
+    label: 'Title fulltext'
+    property_path: aggregated_field
+    type: text
+    boost: 13.0
+    configuration:
+      type: union
+      fields:
+        - 'entity:node/field_description'
+        - 'entity:node/title'
 datasource_settings:
   'entity:node':
     bundles:
       default: false
       selected:
-        - event
+        - video
     languages:
       default: true
       selected: {  }
@@ -119,42 +109,10 @@ processor_settings:
   aggregated_field: {  }
   auto_aggregated_fulltext_field: {  }
   custom_value: {  }
-  entity_status: {  }
   entity_type: {  }
-  highlight:
-    weights:
-      postprocess_query: 0
-    prefix: '<strong>'
-    suffix: '</strong>'
-    excerpt: true
-    excerpt_always: false
-    excerpt_length: 256
-    exclude_fields: {  }
-    highlight: always
-    highlight_partial: false
-  html_filter:
-    weights:
-      preprocess_index: -15
-      preprocess_query: -15
-    all_fields: true
-    fields:
-      - body
-      - field_contact_details
-      - field_location
-      - title
-    title: false
-    alt: true
-    tags:
-      b: 2
-      h1: 5
-      h2: 3
-      h3: 2
-      strong: 2
   language_with_fallback: {  }
   rendered_item: {  }
-  solr_date_range:
-    weights:
-      preprocess_index: 0
+  solr_date_range: {  }
 tracker_settings:
   default:
     indexing_order: fifo

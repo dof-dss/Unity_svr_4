@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.video.field_description
+    - field.field.node.video.field_photo
     - field.field.node.video.field_video
+    - field.field.node.video.field_video_category
     - node.type.video
   module:
     - user
@@ -18,7 +20,16 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 2
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: article_float
+      link: false
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_video:
     type: entity_reference_entity_view
@@ -27,9 +38,18 @@ content:
       view_mode: embed
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 3
+    region: content
+  field_video_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   langcode: true
   links: true
   search_api_excerpt: true

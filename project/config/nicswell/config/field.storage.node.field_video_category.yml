@@ -1,17 +1,17 @@
-uuid: b1de59b1-a5ca-44b8-8da0-1e4d76d46bf2
+uuid: 3cb667b8-9840-4bbf-8175-44b54edd1c27
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime_range
     - node
-id: node.field_event_date
-field_name: field_event_date
+    - taxonomy
+id: node.field_video_category
+field_name: field_video_category
 entity_type: node
-type: daterange
+type: entity_reference
 settings:
-  datetime_type: datetime
-module: datetime_range
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

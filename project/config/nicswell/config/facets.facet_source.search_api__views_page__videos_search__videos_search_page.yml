@@ -1,0 +1,12 @@
+uuid: 33512fb0-a1a6-42b3-b7e8-5ba05374681e
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__videos_search__videos_search_page
+name: 'search_api:views_page__videos_search__videos_search_page'
+filter_key: ''
+url_processor: facets_pretty_paths
+breadcrumb:
+  active: true
+  before: false
+  group: false

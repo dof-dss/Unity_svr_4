@@ -1,9 +1,9 @@
-uuid: b262203c-cc6a-42c4-b2c9-8eed2bb3fbbc
+uuid: 81f7673e-7f52-4564-aeae-42af5acc7e25
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.diff
     - field.field.node.video.field_description
     - field.field.node.video.field_photo
     - field.field.node.video.field_video
@@ -11,39 +11,33 @@ dependencies:
     - node.type.video
   module:
     - user
-id: node.video.teaser
+id: node.video.diff
 targetEntityType: node
 bundle: video
-mode: teaser
+mode: diff
 content:
-  field_description:
-    type: basic_string
-    label: hidden
+  content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: -20
     region: content
   field_photo:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: unity_3_col_images
+      view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
-  field_video:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: embed
-      link: false
+  links:
+    settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 100
     region: content
 hidden:
-  content_moderation_control: true
+  field_description: true
+  field_video: true
   field_video_category: true
   langcode: true
-  links: true
   search_api_excerpt: true
