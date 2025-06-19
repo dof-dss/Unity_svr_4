@@ -5,13 +5,11 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_contact_details
-    - field.storage.node.field_event_date
     - field.storage.node.field_location
     - search_api.server.solr_default
   module:
-    - search_api_solr
     - node
-    - search_api
+    - search_api_solr
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -81,14 +79,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_contact_details
-  field_event_date:
-    label: 'Event date(s)'
-    datasource_id: 'entity:node'
-    property_path: field_event_date
-    type: date
-    dependencies:
-      config:
-        - field.storage.node.field_event_date
   field_location:
     label: Location
     datasource_id: 'entity:node'
@@ -161,6 +151,7 @@ tracker_settings:
     indexing_order: fifo
 options:
   cron_limit: 50
+  delete_on_fail: true
   index_directly: true
   track_changes_in_references: true
 server: solr_default
