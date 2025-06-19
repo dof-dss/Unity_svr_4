@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.event.field_photo
     - node.type.event
   module:
+    - datetime_range
     - layout_builder
     - user
 third_party_settings:
@@ -23,6 +24,17 @@ targetEntityType: node
 bundle: event
 mode: search_index
 content:
+  field_event_date:
+    type: daterange_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: unity_date
+      from_to: both
+      separator: '-'
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_location:
     type: string
     label: hidden
@@ -38,14 +50,13 @@ content:
       view_mode: news_thumbnail
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
 hidden:
   body: true
   content_moderation_control: true
   field_contact_details: true
   field_cost: true
-  field_event_date: true
   langcode: true
   links: true
   search_api_excerpt: true

@@ -1,4 +1,4 @@
-uuid: 7605a0a5-473c-4093-989e-2f6a0b938b8c
+uuid: eac14645-cd15-40ad-8695-c28b2d8940f4
 langcode: en
 status: true
 dependencies:
@@ -21,7 +21,7 @@ url_alias: date
 facet_source_id: 'search_api:views_page__events_search__events_search_page'
 field_identifier: field_event_date
 query_operator: and
-hard_limit: 50
+hard_limit: 0
 exclude: false
 use_hierarchy: false
 keep_hierarchy_parents_active: false

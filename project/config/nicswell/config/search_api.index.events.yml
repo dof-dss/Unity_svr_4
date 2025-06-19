@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_contact_details
+    - field.storage.node.field_event_date
     - field.storage.node.field_location
     - search_api.server.solr_default
   module:
@@ -79,6 +80,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_contact_details
+  field_event_date:
+    label: 'Event date(s) and time'
+    datasource_id: 'entity:node'
+    property_path: field_event_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_event_date
   field_location:
     label: Location
     datasource_id: 'entity:node'
