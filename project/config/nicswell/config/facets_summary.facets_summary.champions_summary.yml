@@ -1,0 +1,31 @@
+uuid: a004f1b7-68f9-4f50-982a-affb2acca92f
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.champions
+    - views.view.champions_search
+  module:
+    - search_api
+id: champions_summary
+name: 'champions summary'
+facet_source_id: 'search_api:views_page__champions_search__champions_search_page'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+facets:
+  council:
+    checked: true
+    label: 'Council area'
+    separator: ', '
+    show_count: false
+    weight: 0
+  department:
+    checked: true
+    label: Department
+    separator: ', '
+    show_count: false
+    weight: 0

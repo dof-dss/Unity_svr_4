@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.event.field_photo
     - node.type.event
   module:
-    - smart_date
+    - datetime_range
     - text
     - user
 id: node.event.default
@@ -28,7 +28,7 @@ content:
     region: content
   field_contact_details:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 5
@@ -39,35 +39,18 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_event_date:
-    type: smartdate_custom
+    type: daterange_default
     label: above
     settings:
-      separator: ' - '
-      time_diff:
-        future_format: '@interval hence'
-        past_format: '@interval ago'
-        granularity: '2'
-        refresh: '60'
-        enabled: 0
-        description: ''
-      date_format: 'd F Y'
-      custom_date_format: ''
-      timezone: ''
-      tooltip:
-        date_format: long
-        custom_date_format: ''
-      join: ', '
-      time_format: 'g:ia'
-      time_hour_format: 'g:ia'
-      allday_label: ''
-      date_first: '1'
-      ampm_reduce: '1'
-      site_time_toggle: '1'
+      timezone_override: ''
+      format_type: unity_date
+      from_to: both
+      separator: '-'
     third_party_settings: {  }
-    weight: 3
+    weight: 1
     region: content
   field_location:
     type: string
@@ -84,7 +67,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
 hidden:
   content_moderation_control: true

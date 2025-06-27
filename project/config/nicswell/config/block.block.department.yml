@@ -1,0 +1,29 @@
+uuid: 82549e2b-b502-4ba7-91c2-bfb5e58cbda9
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.department
+  module:
+    - facets
+    - system
+  theme:
+    - nicswell_theme
+id: department
+theme: nicswell_theme
+region: search_facets
+weight: -2
+provider: null
+plugin: 'facet_block:department'
+settings:
+  id: 'facet_block:department'
+  label: Department
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: department
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/champions\r\n/champions/department/*\r\n/champions/council/*"

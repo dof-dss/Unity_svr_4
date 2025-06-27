@@ -1,4 +1,4 @@
-uuid: 187658cb-fc87-4a5f-8c2c-677bec7d2ed0
+uuid: 383aea5d-5025-475a-813e-9fad44d5e274
 langcode: en
 status: true
 dependencies:
@@ -6,23 +6,16 @@ dependencies:
     - field.storage.node.field_event_date
     - node.type.event
   module:
-    - smart_date
+    - datetime_range
 id: node.event.field_event_date
 field_name: field_event_date
 entity_type: node
 bundle: event
-label: 'Event date(s)'
-description: "Please use the date picker for start and end dates of the event. Please use the time fields as start and end times of the event. If the event is more than 1 day then add a start and end time as a daily range as this is how it will be displayed to the user. \r\nIf the event is an all day event and no times should be displayed then check the All day event checkbox."
-required: false
+label: 'Event date(s) and time'
+description: ''
+required: true
 translatable: false
-default_value:
-  -
-    default_duration: 0
-    default_duration_increments: custom
-    default_date_type: now
-    default_date: ''
-    min: ''
-    max: ''
+default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: smartdate
+field_type: daterange

@@ -1,0 +1,29 @@
+<?php
+
+// To output raw dates for event page twig and fix timezone issue on date range field
+
+use Drupal\Core\Datetime\DrupalDateTime;
+
+function nicswell_theme_preprocess_node(&$variables) {
+  if ($variables['node']->bundle() === 'event' && $variables['view_mode'] === 'full') {
+    $node = $variables['node'];
+
+    if ($node->hasField('field_event_date') && !$node->field_event_date->isEmpty()) {
+      $site_timezone = \Drupal::config('system.date')->get('timezone.default');
+      $start_raw = $node->field_event_date->first()->value;
+      $end_raw = $node->field_event_date->first()->end_value;
+
+      $start = new DrupalDateTime($start_raw, new \DateTimeZone('UTC'));
+      $start->setTimezone(new \DateTimeZone($site_timezone));
+      $variables['start_date'] = $start->format('d/m/Y');
+      $variables['start_time'] = $start->format('H:i');
+
+      if ($end_raw) {
+        $end = new DrupalDateTime($end_raw, new \DateTimeZone('UTC'));
+        $end->setTimezone(new \DateTimeZone($site_timezone));
+        $variables['end_date'] = $end->format('d/m/Y');
+        $variables['end_time'] = $end->format('H:i');
+      }
+    }
+  }
+}

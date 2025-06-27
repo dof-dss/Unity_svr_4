@@ -12,7 +12,7 @@ dependencies:
 id: exposedformevents_searchevents_search_page
 theme: nicswell_theme
 region: search_facets
-weight: -7
+weight: -9
 provider: null
 plugin: 'views_exposed_filter_block:events_search-events_search_page'
 settings:

@@ -1,0 +1,29 @@
+uuid: 749b2451-da5c-4985-9030-b22534f1d4d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.council
+  module:
+    - facets
+    - system
+  theme:
+    - nicswell_theme
+id: council
+theme: nicswell_theme
+region: search_facets
+weight: -3
+provider: null
+plugin: 'facet_block:council'
+settings:
+  id: 'facet_block:council'
+  label: Council
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: council
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/champions\r\n/champions/department/*\r\n/champions/council/*"

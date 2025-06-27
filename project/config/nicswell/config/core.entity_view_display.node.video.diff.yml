@@ -1,0 +1,43 @@
+uuid: 81f7673e-7f52-4564-aeae-42af5acc7e25
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.diff
+    - field.field.node.video.field_description
+    - field.field.node.video.field_photo
+    - field.field.node.video.field_video
+    - field.field.node.video.field_video_category
+    - node.type.video
+  module:
+    - user
+id: node.video.diff
+targetEntityType: node
+bundle: video
+mode: diff
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_video: true
+  field_video_category: true
+  langcode: true
+  search_api_excerpt: true

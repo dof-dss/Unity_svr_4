@@ -1,4 +1,4 @@
-uuid: c27c42ac-6dda-4528-9cf3-fc6c4f863bd2
+uuid: 200caf81-8d86-4bcb-90a4-55223b39e532
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: eventdate
 theme: nicswell_theme
 region: search_facets
-weight: -5
+weight: 0
 provider: null
 plugin: 'facet_block:event_date'
 settings:
