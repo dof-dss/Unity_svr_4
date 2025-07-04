@@ -67,50 +67,64 @@
  * @see template_preprocess_node()
  */
 #}
+
 <article class="event-content">
-  <div class="event-left">
-    {{ content.body }}
-    {{ content.field_contact_details }}
-  </div>
   <div class="event-right">
     <div class="event-info">
       <h2>Event Information</h2>
-      <p>
-        {% apply spaceless %}
+
       <p>
         <i class="fas fa-calendar-alt" aria-hidden="true"></i>
         <span>
-            <span>{{ 'When'|t }}</span>
-        <span>{{ content.field_event_date.0.start.date.value }}
-          {% if content.field_event_date.0.start.date.value < content.field_event_date.0.end.date.value %}
-            {{ ' - '|t }}{{ content.field_event_date.0.end.date.value }}
-          {% endif %}
-        </span>
+          <span>{{ 'When'|t }}</span>
+          <span>
+            {% if start_date %}
+              {{ start_date }}
+            {% endif %}
+            {% if end_date and end_date != start_date %}
+              {{ ' - '|t }}{{ end_date }}
+            {% endif %}
+          </span>
         </span>
       </p>
 
-      {% if content.field_event_date.0.start.time.value %}
+      {% if start_time %}
         <p>
           <i class="fas fa-clock" aria-hidden="true"></i>
           <span>
             <span>{{ 'Time'|t }}</span>
-            <span>{{ content.field_event_date.0.start.time.value }}
-              {% if content.field_event_date.0.end.time.value %}
-              {{ '-'|t }} {{ content.field_event_date.0.end.time.value }}
+            <span>
+              {{ start_time }}
+              {% if end_time %}
+                {{ ' - '|t }}{{ end_time }}
+              {% endif %}
             </span>
           </span>
-          {% endif %}
         </p>
       {% endif %}
-      {% endapply %}
+
       <p>
         <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
         <span>{{ content.field_location }}</span>
       </p>
+
       <p>
         <i class="fas fa-pound-sign" aria-hidden="true"></i>
         <span>{{ content.field_cost }}</span>
       </p>
     </div>
   </div>
+
+  <div class="event-left">
+    {{ content.body }}
+    {{ content.field_photo }}
+
+    {% if node.field_contact_details.value %}
+      <h3>Contact Details</h3>
+      {{ content.field_contact_details }}
+    {% endif %}
+
+  </div>
 </article>
+
+

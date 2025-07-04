@@ -1,0 +1,9 @@
+uuid: 794f67e3-63b5-4f84-89ae-cea2159be7fb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Council areas'
+vid: council_areas
+description: null
+weight: 0
+new_revision: false

@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - node.type.basic_page
+    - node.type.board_member
     - node.type.event
     - node.type.feature
     - node.type.news
+    - node.type.video
   module:
     - content_moderation
 _core:
@@ -97,7 +99,9 @@ type_settings:
   entity_types:
     node:
       - basic_page
+      - board_member
       - event
       - feature
       - news
+      - video
   default_moderation_state: draft

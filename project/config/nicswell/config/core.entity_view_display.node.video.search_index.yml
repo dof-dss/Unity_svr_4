@@ -1,0 +1,35 @@
+uuid: 46548d27-c0b9-40ab-901f-4a352957a067
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.video.field_description
+    - field.field.node.video.field_photo
+    - field.field.node.video.field_video
+    - field.field.node.video.field_video_category
+    - node.type.video
+  module:
+    - user
+id: node.video.search_index
+targetEntityType: node
+bundle: video
+mode: search_index
+content:
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: news_thumbnail
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_description: true
+  field_video: true
+  field_video_category: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -31,13 +31,30 @@
 
   }
 
-  .menu .menu-item .active {
-    color: $text;
-    background: transparent;
-    border-bottom-color: transparent;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 5px;
+  .menu {
+    .menu-item {
+      .active {
+        color: $text;
+        background: transparent;
+        border-bottom-color: transparent;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+      }
+
+      &.open .menu-toggle-btn {
+        color: $text;
+      }
+    }
+
+    .menu-main_sub {
+      background: #58595b;
+
+      a,
+      .menu-item span.active {
+        color: $white;
+      }
+    }
   }
 }
 

@@ -10,9 +10,11 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - node.type.basic_page
+    - node.type.board_member
     - node.type.event
     - node.type.feature
     - node.type.news
+    - node.type.video
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
@@ -39,6 +41,7 @@ permissions:
   - 'administer main menu items'
   - 'create audio media'
   - 'create basic_page content'
+  - 'create board_member content'
   - 'create document media'
   - 'create event content'
   - 'create feature content'
@@ -47,8 +50,10 @@ permissions:
   - 'create news content'
   - 'create remote_video media'
   - 'create url aliases'
+  - 'create video content'
   - 'delete own audio media'
   - 'delete own basic_page content'
+  - 'delete own board_member content'
   - 'delete own document media'
   - 'delete own event content'
   - 'delete own feature content'
@@ -56,12 +61,16 @@ permissions:
   - 'delete own image media'
   - 'delete own news content'
   - 'delete own remote_video media'
+  - 'delete own video content'
   - 'edit any basic_page content'
+  - 'edit any board_member content'
   - 'edit any event content'
   - 'edit any feature content'
   - 'edit any news content'
+  - 'edit any video content'
   - 'edit own audio media'
   - 'edit own basic_page content'
+  - 'edit own board_member content'
   - 'edit own document media'
   - 'edit own event content'
   - 'edit own feature content'
@@ -69,10 +78,13 @@ permissions:
   - 'edit own image media'
   - 'edit own news content'
   - 'edit own remote_video media'
+  - 'edit own video content'
   - 'revert basic_page revisions'
+  - 'revert board_member revisions'
   - 'revert event revisions'
   - 'revert feature revisions'
   - 'revert news revisions'
+  - 'revert video revisions'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition create_new_draft'
   - 'use nics_editorial_workflow transition draft_of_published'
@@ -81,6 +93,7 @@ permissions:
   - 'use text format basic_html'
   - 'view any unpublished content'
   - 'view basic_page revisions'
+  - 'view board_member revisions'
   - 'view event revisions'
   - 'view feature revisions'
   - 'view latest version'
@@ -88,3 +101,4 @@ permissions:
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view the administration theme'
+  - 'view video revisions'

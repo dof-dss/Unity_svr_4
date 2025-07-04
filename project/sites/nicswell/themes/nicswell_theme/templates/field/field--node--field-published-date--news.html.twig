@@ -46,18 +46,14 @@
 {% if label_hidden %}
     <p{{ attributes }}>
     {% for item in items %}
-      <strong>
         <span{{ item.attributes }}>{{ item.content }}</span>
-      </strong>
     {% endfor %}
     </p>
 {% else %}
     <p{{ attributes }}>
       <span{{ title_attributes.addClass(title_classes) }}>{{ label }}: </span>
       {% for item in items %}
-        <strong>
           <span{{ item.attributes }}>{{ item.content }}</span>
-        </strong>
       {% endfor %}
     </p>
 {% endif %}

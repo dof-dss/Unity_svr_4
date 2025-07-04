@@ -1,0 +1,25 @@
+uuid: f4f7434e-0364-466b-9979-e02d38aef63b
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.videos
+    - views.view.videos_search
+  module:
+    - search_api
+id: videos_summary
+name: 'Videos Summary'
+facet_source_id: 'search_api:views_page__videos_search__videos_search_page'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+facets:
+  video_category:
+    checked: true
+    label: 'Video Category'
+    separator: ', '
+    show_count: false
+    weight: 0
