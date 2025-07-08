@@ -106,9 +106,7 @@
 
   .column {
     text-align: left;
-    padding: 1rem 2.5rem;
     margin: 1rem;
-    border: 1px solid $grey-medium;
     width: 100%;
 
     @include breakpoint($tab) {
@@ -122,6 +120,7 @@
     a.btn {
       background: $charcoal;
       border-radius: 2.3rem;
+      margin: 2%;
 
       &:hover,
       &:focus {
@@ -137,7 +136,7 @@
       font-weight: bold;
       color: $headings;
       @include adjust-font-size-to(24px);
-      padding-top: 0;
+      padding: 2%;
     }
 
     article.node--type-news {
@@ -161,12 +160,16 @@
       }
     }
   }
+  #block-views-block-latest-news-home-latest-news {
+    border: 1px solid $grey-medium;
+  }
 }
 
 .home-news-items {
   display: flex;
   justify-content: space-between;
   flex-flow: wrap;
+  padding: 2%;
 
   article {
     width: 100%;
