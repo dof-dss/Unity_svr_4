@@ -244,6 +244,9 @@
                 "Hide duration field": "https://www.drupal.org/files/issues/2024-10-07/3379263-duration-fix.patch",
                 "Fix multiple error messages": "https://www.drupal.org/files/issues/2024-10-07/3477741-fix.patch"
             },
+            "drupal/stage_file_proxy": {
+                "Deprecated str_ends_with()": "https://www.drupal.org/files/issues/2025-05-29/stage_file_proxy-passing-null-to-parameter-fix-3520313-13.patch"
+            },
             "drupal/ultimate_cron": {
                 "Fix $last_ran deprecation error": "https://www.drupal.org/files/issues/2023-04-03/3351276-4.patch"
             },
