@@ -649,3 +649,22 @@
     margin: 2rem 0 2rem 0;
   }
 }
+
+.feature-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  flex: 1 1 calc(33.333% - 1.33rem);
+  box-sizing: border-box;
+}
+

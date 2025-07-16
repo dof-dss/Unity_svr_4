@@ -1,21 +1,27 @@
-uuid: 0d747a76-55f4-40fa-9353-9850939297c4
+uuid: 2dc2bb51-ec9f-47b6-9866-8984de2e9f7c
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.feature.field_feature_type
     - field.field.node.feature.field_link_url
     - field.field.node.feature.field_photo
     - node.type.feature
   module:
+    - layout_builder
     - link
     - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 _core:
   default_config_hash: bKYw2YnlhyxL8rYEwBvP6i5DJjbGzBYcfaoLSAZJCN4
-id: node.feature.default
+id: node.feature.full
 targetEntityType: node
 bundle: feature
-mode: default
+mode: full
 content:
   field_link_url:
     type: link
