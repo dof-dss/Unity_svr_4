@@ -1,17 +1,16 @@
-uuid: bff60c16-0a9c-4dec-a844-5d4a495ba094
+uuid: 1b95d97a-a38b-416e-8561-d2f52d2f9dd3
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_cost
-field_name: field_cost
+    - taxonomy
+id: node.field_feature_type
+field_name: field_feature_type
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 100
-  case_sensitive: false
-  is_ascii: false
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

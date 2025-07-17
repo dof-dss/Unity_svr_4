@@ -1,8 +1,9 @@
-uuid: 0d747a76-55f4-40fa-9353-9850939297c4
+uuid: 60380b14-2749-4a8f-b121-a6bd6a9d3cb3
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.diff
     - field.field.node.feature.field_feature_type
     - field.field.node.feature.field_link_url
     - field.field.node.feature.field_photo
@@ -11,16 +12,22 @@ dependencies:
   module:
     - link
     - user
-_core:
-  default_config_hash: bKYw2YnlhyxL8rYEwBvP6i5DJjbGzBYcfaoLSAZJCN4
-id: node.feature.default
+id: node.feature.diff
 targetEntityType: node
 bundle: feature
-mode: default
+mode: diff
 content:
+  field_feature_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_link_url:
     type: link
-    label: hidden
+    label: above
     settings:
       trim_length: 80
       url_only: false
@@ -28,20 +35,19 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
   field_photo:
-    type: entity_reference_entity_view
-    label: hidden
+    type: entity_reference_label
+    label: above
     settings:
-      view_mode: unity_3_col_images
-      link: false
+      link: true
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
   field_teaser:
     type: string
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -49,7 +55,6 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_feature_type: true
   langcode: true
   links: true
   search_api_excerpt: true
