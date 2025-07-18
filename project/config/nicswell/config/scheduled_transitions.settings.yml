@@ -21,7 +21,7 @@ bundles:
     bundle: feature
   -
     entity_type: node
-    bundle: news
+    bundle: stories
   -
     entity_type: node
     bundle: video

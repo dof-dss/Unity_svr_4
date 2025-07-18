@@ -1,15 +1,13 @@
-uuid: d6130ee3-9217-4d1b-afe1-bb22e1489ae4
+uuid: 1c2dd531-a41c-47f6-a8cd-fdd148959da8
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.news
-_core:
-  default_config_hash: 6TLpJasXIYoKxuaDwrqfE0zc4dgMLh0X27CVf0ItDb8
-id: node.news.status
+    - node.type.stories
+id: node.stories.status
 field_name: status
 entity_type: node
-bundle: news
+bundle: stories
 label: Published
 description: ''
 required: false

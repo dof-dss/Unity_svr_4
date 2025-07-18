@@ -1,26 +1,22 @@
-uuid: bff49ddb-68f8-41b1-95bc-f23b9081b746
+uuid: a7831744-51a0-4d85-8157-7c5809cb9a11
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.diff
-    - field.field.node.news.body
-    - field.field.node.news.field_meta_tags
-    - field.field.node.news.field_photo
-    - field.field.node.news.field_published_date
-    - field.field.node.news.field_teaser
-    - node.type.news
+    - field.field.node.stories.body
+    - field.field.node.stories.field_meta_tags
+    - field.field.node.stories.field_photo
+    - field.field.node.stories.field_published_date
+    - field.field.node.stories.field_teaser
+    - node.type.stories
   module:
     - datetime
     - field_group
-    - layout_builder
     - metatag
-    - text
+    - search_api_solr
     - user
 third_party_settings:
-  layout_builder:
-    enabled: false
-    allow_custom: false
   field_group:
     group_additional_content_details:
       children:
@@ -33,7 +29,9 @@ third_party_settings:
       format_type: html_element
       format_settings:
         classes: field-collection
+        show_empty_fields: false
         id: ''
+        label_as_html: false
         element: div
         show_label: false
         label_element: h3
@@ -41,32 +39,33 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-_core:
-  default_config_hash: ElksGJzjUxwYGlvHiX7g8ocPamDh8hURTB7lEmD_WIM
-id: node.news.diff
+id: node.stories.diff
 targetEntityType: node
-bundle: news
+bundle: stories
 mode: diff
 content:
   body:
-    type: text_default
-    label: hidden
-    settings: {  }
+    type: solr_highlighted_text_default
+    label: above
+    settings:
+      prefix: '<strong>'
+      suffix: '</strong>'
+      strict: false
     third_party_settings: {  }
     weight: 2
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
-    label: inline
+    label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 8
+    weight: 2
     region: content
   field_photo:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: landscape_float
+      view_mode: default
       link: false
     third_party_settings: {  }
     weight: 1
@@ -86,7 +85,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 7
+    weight: 1
     region: content
 hidden:
   content_moderation_control: true

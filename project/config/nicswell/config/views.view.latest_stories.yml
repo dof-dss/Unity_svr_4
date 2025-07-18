@@ -1,17 +1,16 @@
-uuid: b3e05da6-79b9-429b-ae71-d187d84ce49a
+uuid: 56a3163d-6471-48c6-b02e-73b39313726a
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - node.type.news
+    - node.type.stories
   module:
     - datetime
     - node
     - user
-    - views_custom_cache_tag
-id: latest_news
-label: 'Latest News'
+id: latest_stories
+label: 'Latest Stories'
 module: views
 description: ''
 tag: ''
@@ -24,7 +23,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Latest News'
+      title: 'Latest Stories'
       fields:
         title:
           id: title
@@ -93,9 +92,8 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: custom_tag
-        options:
-          custom_tag: 'handy_cache_tags:node:news'
+        type: tag
+        options: {  }
       empty: {  }
       sorts:
         field_published_date_value:
@@ -133,13 +131,12 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            news: news
+            stories: stories
       style:
         type: default
       row:
         type: 'entity:node'
         options:
-          relationship: none
           view_mode: teaser
       query:
         type: views_query
@@ -161,8 +158,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  home_latest_news:
-    id: home_latest_news
+  home_latest_stories:
+    id: home_latest_stories
     display_title: Block
     display_plugin: block
     position: 1

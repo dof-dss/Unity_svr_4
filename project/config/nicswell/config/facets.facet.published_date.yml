@@ -1,16 +1,12 @@
-uuid: 23accb4f-4480-4225-804e-38dfd9f96c06
+uuid: 41874641-bfd1-43ba-a3cb-65001c41edaa
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.news
-    - views.view.news_search
+    - search_api.index.stories
+    - views.view.stories_search
   module:
-    - facets_pretty_paths
     - search_api
-third_party_settings:
-  facets_pretty_paths:
-    coder: default_coder
 id: published_date
 name: 'Published date'
 weight: 0
@@ -18,9 +14,9 @@ min_count: 1
 missing: false
 missing_label: others
 url_alias: date
-facet_source_id: 'search_api:views_page__news_search__news_search_page'
+facet_source_id: 'search_api:views_page__stories_search__stories_search_page'
 field_identifier: field_published_date
-query_operator: and
+query_operator: or
 hard_limit: 0
 exclude: false
 use_hierarchy: false

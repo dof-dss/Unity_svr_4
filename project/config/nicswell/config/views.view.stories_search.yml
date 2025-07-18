@@ -1,20 +1,19 @@
-uuid: a2835053-9ef8-407a-b33d-ed0295187432
+uuid: 58019b12-a690-4a62-96f8-f52d8e4adbf2
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - search_api.index.news
+    - search_api.index.stories
   module:
     - search_api
     - text
-    - views_custom_cache_tag
-id: news_search
-label: 'News Search'
+id: stories_search
+label: 'Stories Search'
 module: views
 description: ''
 tag: ''
-base_table: search_api_index_news
+base_table: search_api_index_stories
 base_field: search_api_id
 display:
   default:
@@ -23,11 +22,11 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: News
+      title: Stories
       fields:
         body:
           id: body
-          table: search_api_index_news
+          table: search_api_index_stories
           field: body
           relationship: none
           group_type: group
@@ -90,18 +89,19 @@ display:
           separator: ', '
           field_api_classes: false
           field_rendering: true
-          fallback_handler: search_api
+          fallback_handler: search_api_text
           fallback_options:
             link_to_item: false
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
+            filter_type: xss
       pager:
         type: full
         options:
           offset: 0
           pagination_heading_level: h4
-          items_per_page: 20
+          items_per_page: 10
           total_pages: null
           id: 0
           tags:
@@ -121,7 +121,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Search
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -132,9 +132,8 @@ display:
         type: none
         options: {  }
       cache:
-        type: custom_tag
-        options:
-          custom_tag: ''
+        type: search_api_none
+        options: {  }
       empty:
         area:
           id: area
@@ -152,7 +151,7 @@ display:
       sorts:
         field_published_date:
           id: field_published_date
-          table: search_api_index_news
+          table: search_api_index_stories
           field: field_published_date
           relationship: none
           group_type: group
@@ -165,13 +164,13 @@ display:
           exposed: false
         search_api_relevance:
           id: search_api_relevance
-          table: search_api_index_news
+          table: search_api_index_stories
           field: search_api_relevance
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: search_api
-          order: DESC
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
@@ -180,7 +179,7 @@ display:
       filters:
         search_api_fulltext:
           id: search_api_fulltext
-          table: search_api_index_news
+          table: search_api_index_stories
           field: search_api_fulltext
           relationship: none
           group_type: group
@@ -192,13 +191,13 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: 'Search news'
+            label: 'Search stories'
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: search
+            identifier: query_stories
             required: false
             remember: false
             multiple: false
@@ -212,6 +211,7 @@ display:
             expose_fields: false
             placeholder: Keywords
             searched_fields_id: search_api_fulltext_searched_fields
+            value_maxlength: 128
           is_grouped: false
           group_info:
             label: ''
@@ -229,17 +229,13 @@ display:
           fields: {  }
       style:
         type: default
-        options:
-          row_class: ''
-          default_row_class: false
-          uses_fields: false
       row:
         type: search_api
         options:
           view_modes:
             'entity:node':
               ':default': default
-              news: search_index
+              stories: search_index
       query:
         type: search_api_query
         options:
@@ -261,17 +257,16 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.body'
-        - 'config:search_api.index.news'
-        - 'search_api_list:news'
-  news_search_page:
-    id: news_search_page
+        - 'config:search_api.index.stories'
+        - 'search_api_list:stories'
+  stories_search_page:
+    id: stories_search_page
     display_title: Page
     display_plugin: page
     position: 1
     display_options:
       cache:
-        type: search_api_tag
-        options: {  }
+        type: search_api_none
       defaults:
         cache: false
       exposed_block: true
@@ -279,9 +274,9 @@ display:
         metatag_display_extender:
           metatags: {  }
           tokenize: false
-      path: news
+      path: stories
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -289,7 +284,6 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
-        - 'config:facets.facet.published_date'
         - 'config:field.storage.node.body'
-        - 'config:search_api.index.news'
-        - 'search_api_list:news'
+        - 'config:search_api.index.stories'
+        - 'search_api_list:stories'
