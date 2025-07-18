@@ -14,7 +14,6 @@ dependencies:
     - node.type.board_member
     - node.type.event
     - node.type.feature
-    - node.type.news
     - node.type.video
     - workflows.workflow.nics_editorial_workflow
   module:
@@ -64,7 +63,6 @@ permissions:
   - 'create feature content'
   - 'create file media'
   - 'create image media'
-  - 'create news content'
   - 'create remote_video media'
   - 'create url aliases'
   - 'create video content'
@@ -78,14 +76,12 @@ permissions:
   - 'delete any file'
   - 'delete any file media'
   - 'delete any image media'
-  - 'delete any news content'
   - 'delete any remote_video media'
   - 'delete any video content'
   - 'delete basic_page revisions'
   - 'delete board_member revisions'
   - 'delete event revisions'
   - 'delete feature revisions'
-  - 'delete news revisions'
   - 'delete own audio media'
   - 'delete own basic_page content'
   - 'delete own board_member content'
@@ -94,7 +90,6 @@ permissions:
   - 'delete own feature content'
   - 'delete own file media'
   - 'delete own image media'
-  - 'delete own news content'
   - 'delete own remote_video media'
   - 'delete own video content'
   - 'delete video revisions'
@@ -106,7 +101,6 @@ permissions:
   - 'edit any feature content'
   - 'edit any file media'
   - 'edit any image media'
-  - 'edit any news content'
   - 'edit any remote_video media'
   - 'edit any video content'
   - 'edit basic meta tags'
@@ -118,7 +112,6 @@ permissions:
   - 'edit own feature content'
   - 'edit own file media'
   - 'edit own image media'
-  - 'edit own news content'
   - 'edit own remote_video media'
   - 'edit own video content'
   - 'manipulate entityqueues'
@@ -130,7 +123,6 @@ permissions:
   - 'revert board_member revisions'
   - 'revert event revisions'
   - 'revert feature revisions'
-  - 'revert news revisions'
   - 'revert video revisions'
   - 'update slideshow entityqueue'
   - 'use moderation sidebar'
@@ -152,7 +144,6 @@ permissions:
   - 'view event revisions'
   - 'view feature revisions'
   - 'view latest version'
-  - 'view news revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view scheduled transitions node basic_page'

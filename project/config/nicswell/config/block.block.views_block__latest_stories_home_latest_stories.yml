@@ -1,22 +1,22 @@
-uuid: 733d1660-34fe-40f6-a20c-bcf1d3f8968e
+uuid: 44d50c4f-bd9a-499f-9b13-f8caca5ed921
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.latest_news
+    - views.view.latest_stories
   module:
     - system
     - views
   theme:
     - nicswell_theme
-id: views_block__latest_news_home_latest_news
+id: views_block__latest_stories_home_latest_stories
 theme: nicswell_theme
 region: front_welcome
-weight: -6
+weight: 0
 provider: null
-plugin: 'views_block:latest_news-home_latest_news'
+plugin: 'views_block:latest_stories-home_latest_stories'
 settings:
-  id: 'views_block:latest_news-home_latest_news'
+  id: 'views_block:latest_stories-home_latest_stories'
   label: ''
   label_display: visible
   provider: views

@@ -1,22 +1,20 @@
-uuid: 11f3c545-cb67-42b8-b1a8-def142f51832
+uuid: 92573c64-bea3-44bd-bcee-a432ecc97a89
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_meta_tags
-    - node.type.news
+    - node.type.stories
   module:
     - metatag
-_core:
-  default_config_hash: N4ifpekUhQVgounHS0ixrnuJUw1vpzLkOSQLOSSCpvA
-id: node.news.field_meta_tags
+id: node.stories.field_meta_tags
 field_name: field_meta_tags
 entity_type: node
-bundle: news
+bundle: stories
 label: 'Meta tags'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

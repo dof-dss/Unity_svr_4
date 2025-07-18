@@ -1,4 +1,4 @@
-uuid: ebb1491e-fd74-4216-a094-8b1e72cc5394
+uuid: 26648ae8-6c32-49aa-b0de-b8ce62a156d5
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,8 @@ dependencies:
     - field.storage.node.field_teaser
     - search_api.server.solr_default
   module:
-    - search_api_solr
     - node
-    - search_api
+    - search_api_solr
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -57,8 +56,8 @@ third_party_settings:
       specific_languages:
         en: '0'
       use_universal_collation: false
-id: news
-name: News
+id: stories
+name: Stories
 description: ''
 read_only: false
 field_settings:
@@ -87,55 +86,21 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_teaser
-  spelling:
-    label: Spelling
-    property_path: aggregated_field
-    type: solr_text_spellcheck
-    configuration:
-      type: union
-      separator: |+
-
-
-
-
-
-
-
-      fields:
-        - 'entity:node/title'
   title:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
     type: text
-    boost: 5.0
+    boost: 21.0
     dependencies:
       module:
         - node
-  title_fulltext:
-    label: 'Title fulltext'
-    property_path: aggregated_field
-    type: text
-    boost: 13.0
-    configuration:
-      type: union
-      separator: |+
-
-
-
-
-
-
-
-      fields:
-        - 'entity:node/body'
-        - 'entity:node/title'
 datasource_settings:
   'entity:node':
     bundles:
       default: false
       selected:
-        - news
+        - stories
     languages:
       default: true
       selected: {  }
@@ -161,7 +126,7 @@ processor_settings:
     weights:
       preprocess_index: -15
       preprocess_query: -15
-    all_fields: false
+    all_fields: true
     fields:
       - body
       - field_teaser
@@ -184,6 +149,7 @@ tracker_settings:
     indexing_order: fifo
 options:
   cron_limit: 50
+  delete_on_fail: true
   index_directly: true
   track_changes_in_references: true
 server: solr_default

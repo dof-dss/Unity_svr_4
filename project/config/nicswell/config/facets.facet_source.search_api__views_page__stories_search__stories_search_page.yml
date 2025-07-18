@@ -1,0 +1,12 @@
+uuid: ec588ba1-3daf-4d83-bfc0-8396b5e9afbb
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__stories_search__stories_search_page
+name: 'search_api:views_page__stories_search__stories_search_page'
+filter_key: ''
+url_processor: facets_pretty_paths
+breadcrumb:
+  active: true
+  before: false
+  group: false
