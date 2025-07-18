@@ -7,12 +7,12 @@ dependencies:
 id: stories_pattern
 label: 'Stories pattern'
 type: 'canonical_entities:node'
-pattern: 'story/[node:title]'
+pattern: 'stories/[node:title]'
 selection_criteria:
-  ea12ce7d-6032-4052-b640-f529487b6ca7:
+  0e7911c1-b850-43ae-85ae-dca4703fa289:
     id: 'entity_bundle:node'
     negate: false
-    uuid: ea12ce7d-6032-4052-b640-f529487b6ca7
+    uuid: 0e7911c1-b850-43ae-85ae-dca4703fa289
     context_mapping:
       node: node
     bundles:
