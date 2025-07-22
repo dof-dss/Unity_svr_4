@@ -25,12 +25,12 @@ sites:
         status: development
         default: false
     autismreviewerni:
-        name: ' NI'
+        name: 'Independendent Autism Reviewer NI'
         url: autismreviewer-ni.org.uk
         solr: autismreviewerni
         www: true
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/autismreviewerni ; drush core-cron'
         database: autismreviewerni
-        status: development
+        status: production
         default: false
