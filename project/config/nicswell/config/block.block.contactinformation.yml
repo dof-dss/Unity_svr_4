@@ -1,0 +1,25 @@
+uuid: 00266e7c-d46b-4ab5-8220-15103b34df47
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:f39a51cc-b90a-4416-98db-3bc41c0355f4'
+  module:
+    - block_content
+  theme:
+    - nicswell_theme
+id: contactinformation
+theme: nicswell_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:f39a51cc-b90a-4416-98db-3bc41c0355f4'
+settings:
+  id: 'block_content:f39a51cc-b90a-4416-98db-3bc41c0355f4'
+  label: 'Contact Information'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

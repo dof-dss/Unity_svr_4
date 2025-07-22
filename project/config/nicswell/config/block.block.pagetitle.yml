@@ -21,4 +21,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "<front>\r\n/news\r\n/news/date/*\r\n/events\r\n/events/date/*\r\n/champions\r\n/champions/department/*\r\n/champions/council/*\r\n/search\r\n/videos\r\n/videos/category/*"
+    pages: "<front>\r\n/stories\r\n/stories/date/*\r\n/events\r\n/events/date/*\r\n/champions\r\n/champions/department/*\r\n/champions/council/*\r\n/search\r\n/videos\r\n/videos/category/*"
