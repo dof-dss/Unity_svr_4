@@ -25,7 +25,7 @@ sites:
         status: development
         default: false
     autismreviewerni:
-        name: 'Independendent Autism Reviewer NI'
+        name: 'Autism Reviewer NI'
         url: autismreviewer-ni.org.uk
         solr: autismreviewerni
         www: true
