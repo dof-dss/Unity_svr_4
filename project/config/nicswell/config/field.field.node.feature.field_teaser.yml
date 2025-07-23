@@ -1,20 +1,18 @@
-uuid: d61e24fa-c632-4753-811e-6ae12e734085
+uuid: c823b6b5-6656-4a21-94f8-410020476206
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_teaser
     - node.type.feature
-_core:
-  default_config_hash: U6M2YL9v3-Ig6qqyE9KpIL_O9XbokeBG0UlspX7Z5Dc
 id: node.feature.field_teaser
 field_name: field_teaser
 entity_type: node
 bundle: feature
 label: Teaser
-description: 'Enter some short teaser text for this feature item. This can be displayed on the site home page.'
-required: true
-translatable: true
+description: 'Enter some short teaser text for this feature item, this text will appear to the right of the photo on the slideshow'
+required: false
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

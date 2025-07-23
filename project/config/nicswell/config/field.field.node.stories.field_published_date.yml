@@ -1,0 +1,24 @@
+uuid: a65bb8dd-3a80-42fc-bbdc-65cb315924e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_published_date
+    - node.type.stories
+  module:
+    - datetime
+id: node.stories.field_published_date
+field_name: field_published_date
+entity_type: node
+bundle: stories
+label: 'Published date'
+description: 'Please select the publication date of this story item, or accept the default value of today.'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

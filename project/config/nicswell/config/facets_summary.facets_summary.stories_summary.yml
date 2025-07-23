@@ -1,0 +1,25 @@
+uuid: eb8ad312-2b23-4bfd-a0fa-b5f663dfcce8
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.stories
+    - views.view.stories_search
+  module:
+    - search_api
+id: stories_summary
+name: 'Stories Summary'
+facet_source_id: 'search_api:views_page__stories_search__stories_search_page'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+facets:
+  published_date:
+    checked: true
+    label: 'Published date'
+    separator: ', '
+    show_count: false
+    weight: 0

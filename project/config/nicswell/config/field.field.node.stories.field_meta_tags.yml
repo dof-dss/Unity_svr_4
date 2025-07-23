@@ -1,0 +1,21 @@
+uuid: 92573c64-bea3-44bd-bcee-a432ecc97a89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.stories
+  module:
+    - metatag
+id: node.stories.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: stories
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag
