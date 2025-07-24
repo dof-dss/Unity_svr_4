@@ -5,14 +5,14 @@
 # original repository.Any changes here will be overwritten when the project #
 # is built.                                                                 #
 #############################################################################
-'https://www.legalcommissioner-ni.org.uk.{default}/':
+'https://www.legalcommissioner-ni.org.uk/':
     type: upstream
     upstream: 'unity_svr_4:http'
     cache:
         enabled: 'false'
-'https://legalcommissioner-ni.org.uk.{default}/':
+'https://legalcommissioner-ni.org.uk/':
     type: redirect
-    to: 'https://www.legalcommissioner-ni.org.uk.{default}/'
+    to: 'https://www.legalcommissioner-ni.org.uk/'
 'https://www.nicswell.co.uk/':
     type: upstream
     upstream: 'unity_svr_4:http'
@@ -21,6 +21,14 @@
 'https://nicswell.co.uk/':
     type: redirect
     to: 'https://www.nicswell.co.uk/'
+'https://www.autismreviewer-ni.org.uk.{default}/':
+    type: upstream
+    upstream: 'unity_svr_4:http'
+    cache:
+        enabled: 'false'
+'https://autismreviewer-ni.org.uk.{default}/':
+    type: redirect
+    to: 'https://www.autismreviewer-ni.org.uk.{default}/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_4:http'
