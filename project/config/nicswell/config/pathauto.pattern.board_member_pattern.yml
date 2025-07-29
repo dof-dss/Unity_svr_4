@@ -7,18 +7,18 @@ dependencies:
 _core:
   default_config_hash: LZwfVv6F9IKZsU6v4f720MvChOytuo0t2-gb7VvBico
 id: board_member_pattern
-label: 'Board member pattern'
+label: 'Champions pattern'
 type: 'canonical_entities:node'
-pattern: 'board-members/[node:title]'
+pattern: 'champions/[node:title]'
 selection_criteria:
-  0f8091e9-9c09-436f-8a4a-b194c8a4826f:
+  deab68c3-c1ff-43c0-9819-7e5702ea4d30:
     id: 'entity_bundle:node'
-    bundles:
-      board_member: board_member
     negate: false
+    uuid: deab68c3-c1ff-43c0-9819-7e5702ea4d30
     context_mapping:
       node: node
-    uuid: 0f8091e9-9c09-436f-8a4a-b194c8a4826f
+    bundles:
+      board_member: board_member
 selection_logic: and
 weight: -5
 relationships: {  }
