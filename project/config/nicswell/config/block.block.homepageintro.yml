@@ -12,7 +12,7 @@ dependencies:
 id: homepageintro
 theme: nicswell_theme
 region: front_welcome
-weight: -7
+weight: -11
 provider: null
 plugin: 'block_content:aa708903-9020-493d-b58d-b306655e624c'
 settings:
