@@ -12,7 +12,7 @@ dependencies:
 id: eventdate
 theme: nicswell_theme
 region: search_facets
-weight: -3
+weight: -5
 provider: null
 plugin: 'facet_block:event_date'
 settings:
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/events\r\n/events/date/*"
+    pages: "/events\r\n/events/date/*\r\n/events/category/*"
