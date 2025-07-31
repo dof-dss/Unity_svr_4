@@ -99,11 +99,14 @@
   }
 }
 
+#footer_wrapper {
+  margin-bottom: 0;
+}
+
 .region-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
   text-align: left;
 
   .menu_wrapper,
@@ -154,6 +157,7 @@
 #footer .block {
   h2 {
     color: $black;
+    margin: 0;
   }
 }
 
