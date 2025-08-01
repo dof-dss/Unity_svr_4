@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_contact_details
+    - field.field.node.event.field_event_category
     - field.field.node.event.field_event_date
     - field.field.node.event.field_location
     - field.field.node.event.field_photo
@@ -46,15 +47,21 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_event_category:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_event_date:
     type: daterange_default
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_location:
     type: string_textfield
-    weight: 2
+    weight: 3
     region: content
     settings:
       size: 60

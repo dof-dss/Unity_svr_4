@@ -12,7 +12,7 @@ dependencies:
 id: exposedformevents_searchevents_search_page
 theme: nicswell_theme
 region: search_facets
-weight: -9
+weight: -11
 provider: null
 plugin: 'views_exposed_filter_block:events_search-events_search_page'
 settings:
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/events\r\n/events/date/*"
+    pages: "/events\r\n/events/date/*\r\n/events/category/*"

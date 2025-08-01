@@ -1,29 +1,29 @@
-uuid: 749b2451-da5c-4985-9030-b22534f1d4d2
+uuid: ba099e3c-668b-423f-a4ca-44edb8f9656c
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.council
+    - facets.facet.event_category
   module:
     - facets
     - system
   theme:
     - nicswell_theme
-id: council
+id: eventcategory
 theme: nicswell_theme
 region: search_facets
-weight: -7
+weight: 0
 provider: null
-plugin: 'facet_block:council'
+plugin: 'facet_block:event_category'
 settings:
-  id: 'facet_block:council'
-  label: Council
+  id: 'facet_block:event_category'
+  label: 'Event Category'
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: council
+  block_id: eventcategory
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/champions\r\n/champions/department/*\r\n/champions/council/*"
+    pages: "/events\r\n/events/date/*\r\n/events/category/*"

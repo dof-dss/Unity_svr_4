@@ -245,11 +245,15 @@
 
   h3 {
     margin: 1rem 0;
-    color: $link;
+    color: $white;
 
     @include breakpoint($tab) {
       @include adjust-font-size-to(18px, 4);
     }
+  }
+
+  div {
+    color: $white;
   }
 
   article {
@@ -266,7 +270,7 @@
       border-bottom: none !important;
 
       .news-article {
-        background-image: resolve('arrow_forward_link_blue.svg');
+        background-image: resolve('arrow_forward_white.svg');
         background-position: bottom right;
         background-size: 2.4rem auto;
         background-repeat: no-repeat;
@@ -285,8 +289,12 @@
           border-bottom: 3px solid $black;
 
           h3 {
-            color: $link-hover;
+            color: $black;
             text-decoration: underline;
+          }
+
+          div {
+            color: $black;
           }
         }
       }
@@ -322,7 +330,7 @@
   }
 
   .btn.view-all-link {
-    background-color: $brand-primary;
+    background-color: $brand-secondary;
     color: #fff;
     border: none;
     display: inline-block;
@@ -403,6 +411,34 @@
 
   .published-date {
     margin-bottom: 0;
+  }
+}
+
+.block-latest-events {
+  .events-block-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .view-all-link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 0.4em 0.8em;
+    border-radius: 20px;
+    margin: 2rem 0 0 2rem;
+  }
+
+  .btn.view-all-link {
+    background-color: $brand-secondary;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    text-align: center;
+
+    &:hover {
+      background-color: $black;
+    }
   }
 }
 

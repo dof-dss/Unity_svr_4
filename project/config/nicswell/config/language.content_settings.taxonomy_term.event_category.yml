@@ -1,0 +1,11 @@
+uuid: 797baa2b-8607-4e89-9048-e0f2da199752
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.event_category
+id: taxonomy_term.event_category
+target_entity_type_id: taxonomy_term
+target_bundle: event_category
+default_langcode: site_default
+language_alterable: false

@@ -11,8 +11,8 @@ dependencies:
     - nicswell_theme
 id: views_block__homepage_events_homepage_events
 theme: nicswell_theme
-region: featured
-weight: -9
+region: front_welcome
+weight: -10
 provider: null
 plugin: 'views_block:homepage_events-homepage_events'
 settings:
