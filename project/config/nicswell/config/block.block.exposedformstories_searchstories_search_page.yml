@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/stories\r\n/stories/date/*"
+    pages: "/stories\r\n/stories/date/*\r\n/stories/category/*"

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_published_date
+    - field.storage.node.field_story_category
     - field.storage.node.field_teaser
     - search_api.server.solr_default
   module:
@@ -77,6 +78,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_published_date
+  field_story_category:
+    label: 'Story Category'
+    datasource_id: 'entity:node'
+    property_path: field_story_category
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_story_category
   field_teaser:
     label: Teaser
     datasource_id: 'entity:node'
@@ -129,6 +138,7 @@ processor_settings:
     all_fields: true
     fields:
       - body
+      - field_story_category
       - field_teaser
       - title
     title: false

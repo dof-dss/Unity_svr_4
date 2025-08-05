@@ -8,7 +8,7 @@ dependencies:
     - node.type.feature
     - taxonomy.vocabulary.feature_type
   content:
-    - 'taxonomy_term:feature_type:52a3044f-fde7-4a3b-a72e-85140628fb25'
+    - 'taxonomy_term:feature_type:7939da07-cd9a-4423-899a-cad5f7475ad2'
   module:
     - link
     - node
@@ -296,7 +296,7 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            24: 24
+            25: 25
           group: 1
           exposed: false
           expose:

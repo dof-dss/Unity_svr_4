@@ -1,0 +1,9 @@
+uuid: 45e51215-a5ca-4619-bc2d-4432c4831052
+langcode: en
+status: true
+dependencies: {  }
+name: 'Story Category'
+vid: story_category
+description: null
+weight: 0
+new_revision: false

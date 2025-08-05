@@ -1,27 +1,27 @@
-uuid: 4061a651-4750-4ee7-8bb2-25ed230a388a
+uuid: 5d1d2484-a34b-4b8b-9a8b-33cebee98bad
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.published_date
+    - facets.facet.story_category
   module:
     - facets
     - system
   theme:
     - nicswell_theme
-id: publisheddate
+id: storycategory
 theme: nicswell_theme
 region: search_facets
-weight: -3
+weight: 0
 provider: null
-plugin: 'facet_block:published_date'
+plugin: 'facet_block:story_category'
 settings:
-  id: 'facet_block:published_date'
-  label: 'Published Date'
+  id: 'facet_block:story_category'
+  label: 'Story Category'
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: publisheddate
+  block_id: storycategory
 visibility:
   request_path:
     id: request_path
