@@ -583,6 +583,19 @@
       color: $white;
       flex-shrink: 0;
     }
+
+    &.email a {
+      color: white !important;
+      text-decoration: none;
+      border-bottom: 2px solid white !important;
+      padding: 0 !important;
+      margin: 0 !important;
+
+      &:hover {
+        color: white !important;
+        border-bottom: 2px solid black !important;
+      }
+    }
   }
 }
 
