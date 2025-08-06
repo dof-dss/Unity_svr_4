@@ -23,3 +23,9 @@ facets:
     separator: ', '
     show_count: false
     weight: 0
+  story_category:
+    checked: true
+    label: 'Story Category'
+    separator: ', '
+    show_count: false
+    weight: 0
