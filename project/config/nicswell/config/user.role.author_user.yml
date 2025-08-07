@@ -13,6 +13,7 @@ dependencies:
     - node.type.board_member
     - node.type.event
     - node.type.feature
+    - node.type.landing_page
     - node.type.stories
     - node.type.video
     - workflows.workflow.nics_editorial_workflow
@@ -47,6 +48,7 @@ permissions:
   - 'create feature content'
   - 'create file media'
   - 'create image media'
+  - 'create landing_page content'
   - 'create remote_video media'
   - 'create stories content'
   - 'create url aliases'
@@ -59,6 +61,7 @@ permissions:
   - 'delete own feature content'
   - 'delete own file media'
   - 'delete own image media'
+  - 'delete own landing_page content'
   - 'delete own remote_video media'
   - 'delete own stories content'
   - 'delete own video content'
@@ -66,6 +69,7 @@ permissions:
   - 'edit any board_member content'
   - 'edit any event content'
   - 'edit any feature content'
+  - 'edit any landing_page content'
   - 'edit any stories content'
   - 'edit any video content'
   - 'edit own audio media'
@@ -76,6 +80,7 @@ permissions:
   - 'edit own feature content'
   - 'edit own file media'
   - 'edit own image media'
+  - 'edit own landing_page content'
   - 'edit own remote_video media'
   - 'edit own stories content'
   - 'edit own video content'
@@ -83,6 +88,7 @@ permissions:
   - 'revert board_member revisions'
   - 'revert event revisions'
   - 'revert feature revisions'
+  - 'revert landing_page revisions'
   - 'revert stories revisions'
   - 'revert video revisions'
   - 'use moderation sidebar'
@@ -96,6 +102,7 @@ permissions:
   - 'view board_member revisions'
   - 'view event revisions'
   - 'view feature revisions'
+  - 'view landing_page revisions'
   - 'view latest version'
   - 'view own unpublished content'
   - 'view own unpublished media'
