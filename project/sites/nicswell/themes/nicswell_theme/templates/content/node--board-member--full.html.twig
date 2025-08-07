@@ -93,6 +93,17 @@
           <div>{{ content.field_address }}</div>
         </div>
 
+        {% if node.field_email_address.value %}
+          <div class="board-member-info email">
+            <i class="fas fa-envelope icon" aria-hidden="true"></i>
+            <div>
+              <a href="mailto:{{ node.field_email_address.value }}">
+                {{ node.field_email_address.value }}
+              </a>
+            </div>
+          </div>
+        {% endif %}
+
       </div>
 
       <div class="board-member-body">

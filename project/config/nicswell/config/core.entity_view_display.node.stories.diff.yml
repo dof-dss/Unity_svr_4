@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.stories.field_meta_tags
     - field.field.node.stories.field_photo
     - field.field.node.stories.field_published_date
+    - field.field.node.stories.field_story_category
     - field.field.node.stories.field_teaser
     - node.type.stories
   module:
@@ -20,6 +21,7 @@ third_party_settings:
   field_group:
     group_additional_content_details:
       children:
+        - field_story_category
         - field_teaser
         - field_meta_tags
       label: 'Additional content details'
@@ -59,7 +61,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 5
     region: content
   field_photo:
     type: entity_reference_entity_view
@@ -85,10 +87,11 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: content
 hidden:
   content_moderation_control: true
+  field_story_category: true
   langcode: true
   links: true
   search_api_excerpt: true
