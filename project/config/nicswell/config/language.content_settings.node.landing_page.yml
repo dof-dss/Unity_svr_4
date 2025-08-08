@@ -1,0 +1,13 @@
+uuid: b7d50efd-40a1-4902-8906-a1f6644943d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.landing_page
+_core:
+  default_config_hash: 1cTirmDE94SY6hOb4MguojXtnYYs7iEOCnjirSJHOPY
+id: node.landing_page
+target_entity_type_id: node
+target_bundle: landing_page
+default_langcode: site_default
+language_alterable: false
