@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.node.landing_page.default
     - entityqueue.entity_queue.slideshow
     - filter.format.basic_html
     - media.type.audio
@@ -14,6 +15,7 @@ dependencies:
     - node.type.board_member
     - node.type.event
     - node.type.feature
+    - node.type.landing_page
     - node.type.stories
     - node.type.video
     - workflows.workflow.nics_editorial_workflow
@@ -50,11 +52,16 @@ permissions:
   - 'access media overview'
   - 'access toolbar'
   - 'add scheduled transitions node basic_page'
+  - 'add scheduled transitions node board_member'
   - 'add scheduled transitions node event'
+  - 'add scheduled transitions node feature'
+  - 'add scheduled transitions node landing_page'
   - 'add scheduled transitions node stories'
+  - 'add scheduled transitions node video'
   - 'administer main menu items'
   - 'administer redirects'
   - 'audit content'
+  - 'configure editable landing_page node layout overrides'
   - 'create and edit custom blocks'
   - 'create audio media'
   - 'create basic_page content'
@@ -64,6 +71,7 @@ permissions:
   - 'create feature content'
   - 'create file media'
   - 'create image media'
+  - 'create landing_page content'
   - 'create remote_video media'
   - 'create stories content'
   - 'create url aliases'
@@ -78,6 +86,7 @@ permissions:
   - 'delete any file'
   - 'delete any file media'
   - 'delete any image media'
+  - 'delete any landing_page content'
   - 'delete any remote_video media'
   - 'delete any stories content'
   - 'delete any video content'
@@ -85,6 +94,7 @@ permissions:
   - 'delete board_member revisions'
   - 'delete event revisions'
   - 'delete feature revisions'
+  - 'delete landing_page revisions'
   - 'delete own audio media'
   - 'delete own basic_page content'
   - 'delete own board_member content'
@@ -93,6 +103,7 @@ permissions:
   - 'delete own feature content'
   - 'delete own file media'
   - 'delete own image media'
+  - 'delete own landing_page content'
   - 'delete own remote_video media'
   - 'delete own stories content'
   - 'delete own video content'
@@ -106,6 +117,7 @@ permissions:
   - 'edit any feature content'
   - 'edit any file media'
   - 'edit any image media'
+  - 'edit any landing_page content'
   - 'edit any remote_video media'
   - 'edit any stories content'
   - 'edit any video content'
@@ -118,18 +130,24 @@ permissions:
   - 'edit own feature content'
   - 'edit own file media'
   - 'edit own image media'
+  - 'edit own landing_page content'
   - 'edit own remote_video media'
   - 'edit own stories content'
   - 'edit own video content'
   - 'manipulate entityqueues'
   - 'reschedule scheduled transitions node basic_page'
+  - 'reschedule scheduled transitions node board_member'
   - 'reschedule scheduled transitions node event'
+  - 'reschedule scheduled transitions node feature'
+  - 'reschedule scheduled transitions node landing_page'
   - 'reschedule scheduled transitions node stories'
+  - 'reschedule scheduled transitions node video'
   - 'revert all revisions'
   - 'revert basic_page revisions'
   - 'revert board_member revisions'
   - 'revert event revisions'
   - 'revert feature revisions'
+  - 'revert landing_page revisions'
   - 'revert stories revisions'
   - 'revert video revisions'
   - 'update slideshow entityqueue'
@@ -151,12 +169,17 @@ permissions:
   - 'view content references'
   - 'view event revisions'
   - 'view feature revisions'
+  - 'view landing_page revisions'
   - 'view latest version'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view scheduled transitions node basic_page'
+  - 'view scheduled transitions node board_member'
   - 'view scheduled transitions node event'
+  - 'view scheduled transitions node feature'
+  - 'view scheduled transitions node landing_page'
   - 'view scheduled transitions node stories'
+  - 'view scheduled transitions node video'
   - 'view stories revisions'
   - 'view the administration theme'
   - 'view video revisions'

@@ -7,6 +7,7 @@ dependencies:
     - node.type.board_member
     - node.type.event
     - node.type.feature
+    - node.type.landing_page
     - node.type.stories
     - node.type.video
   module:
@@ -102,6 +103,7 @@ type_settings:
       - board_member
       - event
       - feature
+      - landing_page
       - stories
       - video
   default_moderation_state: draft
