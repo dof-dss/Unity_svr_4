@@ -147,7 +147,20 @@ display:
             value: 'No results.'
             format: basic_html
           tokenize: false
-      sorts: {  }
+      sorts:
+        field_published_date:
+          id: field_published_date
+          table: search_api_index_publications_index
+          field: field_published_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       arguments: {  }
       filters:
         status:
@@ -279,7 +292,8 @@ display:
     position: 1
     display_options:
       cache:
-        type: search_api_none
+        type: search_api_tag
+        options: {  }
       defaults:
         cache: false
       exposed_block: true
@@ -289,7 +303,7 @@ display:
           tokenize: false
       path: publications
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -297,6 +311,7 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
+        - 'config:facets.facet.date'
         - 'config:field.storage.node.body'
         - 'config:search_api.index.publications_index'
         - 'search_api_list:publications_index'
