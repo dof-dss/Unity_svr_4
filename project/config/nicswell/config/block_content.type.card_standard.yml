@@ -6,5 +6,5 @@ _core:
   default_config_hash: WSk1p1eohJeTUwtav4mbHjVJr3HD3HixgZGaSEWqDlo
 id: card_standard
 label: 'Card - standard'
-revision: true
+revision: 1
 description: ''

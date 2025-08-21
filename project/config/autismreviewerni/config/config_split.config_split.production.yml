@@ -10,9 +10,7 @@ stackable: false
 no_patching: false
 storage: folder
 folder: ../project/config/autismreviewerni/production
-module:
-  fastly: 0
+module: {  }
 theme: {  }
-complete_list:
-  - fastly.settings
+complete_list: {  }
 partial_list: {  }
