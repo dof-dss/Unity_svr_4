@@ -12,7 +12,7 @@ dependencies:
 id: department
 theme: nicswell_theme
 region: search_facets
-weight: -2
+weight: -6
 provider: null
 plugin: 'facet_block:department'
 settings:

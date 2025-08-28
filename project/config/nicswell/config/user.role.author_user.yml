@@ -13,7 +13,8 @@ dependencies:
     - node.type.board_member
     - node.type.event
     - node.type.feature
-    - node.type.news
+    - node.type.landing_page
+    - node.type.stories
     - node.type.video
     - workflows.workflow.nics_editorial_workflow
   module:
@@ -47,8 +48,9 @@ permissions:
   - 'create feature content'
   - 'create file media'
   - 'create image media'
-  - 'create news content'
+  - 'create landing_page content'
   - 'create remote_video media'
+  - 'create stories content'
   - 'create url aliases'
   - 'create video content'
   - 'delete own audio media'
@@ -59,14 +61,16 @@ permissions:
   - 'delete own feature content'
   - 'delete own file media'
   - 'delete own image media'
-  - 'delete own news content'
+  - 'delete own landing_page content'
   - 'delete own remote_video media'
+  - 'delete own stories content'
   - 'delete own video content'
   - 'edit any basic_page content'
   - 'edit any board_member content'
   - 'edit any event content'
   - 'edit any feature content'
-  - 'edit any news content'
+  - 'edit any landing_page content'
+  - 'edit any stories content'
   - 'edit any video content'
   - 'edit own audio media'
   - 'edit own basic_page content'
@@ -76,14 +80,16 @@ permissions:
   - 'edit own feature content'
   - 'edit own file media'
   - 'edit own image media'
-  - 'edit own news content'
+  - 'edit own landing_page content'
   - 'edit own remote_video media'
+  - 'edit own stories content'
   - 'edit own video content'
   - 'revert basic_page revisions'
   - 'revert board_member revisions'
   - 'revert event revisions'
   - 'revert feature revisions'
-  - 'revert news revisions'
+  - 'revert landing_page revisions'
+  - 'revert stories revisions'
   - 'revert video revisions'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition create_new_draft'
@@ -96,9 +102,10 @@ permissions:
   - 'view board_member revisions'
   - 'view event revisions'
   - 'view feature revisions'
+  - 'view landing_page revisions'
   - 'view latest version'
-  - 'view news revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'
+  - 'view stories revisions'
   - 'view the administration theme'
   - 'view video revisions'

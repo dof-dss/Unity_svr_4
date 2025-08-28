@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_contact_details
-    - field.field.node.event.field_cost
+    - field.field.node.event.field_event_category
     - field.field.node.event.field_event_date
     - field.field.node.event.field_location
     - field.field.node.event.field_photo
@@ -33,13 +33,13 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
-  field_cost:
-    type: string
+  field_event_category:
+    type: entity_reference_label
     label: above
     settings:
-      link_to_entity: false
+      link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 0
     region: content
   field_event_date:
     type: daterange_default
@@ -50,7 +50,7 @@ content:
       from_to: both
       separator: '-'
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_location:
     type: string
@@ -58,7 +58,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_photo:
     type: entity_reference_entity_view
@@ -67,7 +67,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
 hidden:
   content_moderation_control: true

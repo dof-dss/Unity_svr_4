@@ -13,7 +13,7 @@ sites:
         cron_cmd: 'cd web/sites/legalcommissionerni ; drush core-cron'
         database: legalcommissionerni
         status: development
-        default: true
+        default: false
     nicswell:
         name: NICSwell
         url: nicswell.co.uk
@@ -25,12 +25,12 @@ sites:
         status: development
         default: false
     autismreviewerni:
-        name: ' NI'
+        name: 'Autism Reviewer NI'
         url: autismreviewer-ni.org.uk
         solr: autismreviewerni
         www: true
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/autismreviewerni ; drush core-cron'
         database: autismreviewerni
-        status: development
-        default: false
+        status: production
+        default: true

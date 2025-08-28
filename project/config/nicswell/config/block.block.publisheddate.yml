@@ -1,4 +1,4 @@
-uuid: 7024fbc2-5a95-4d21-a80e-135b9a20946c
+uuid: 4061a651-4750-4ee7-8bb2-25ed230a388a
 langcode: en
 status: true
 dependencies:
@@ -12,12 +12,12 @@ dependencies:
 id: publisheddate
 theme: nicswell_theme
 region: search_facets
-weight: -4
+weight: -3
 provider: null
 plugin: 'facet_block:published_date'
 settings:
   id: 'facet_block:published_date'
-  label: 'Published date'
+  label: 'Published Date'
   label_display: visible
   provider: facets
   context_mapping: {  }
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/news\r\n/news/date*"
+    pages: "/stories\r\n/stories/date/*\r\n/stories/category/*"

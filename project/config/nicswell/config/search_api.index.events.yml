@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_contact_details
+    - field.storage.node.field_event_category
     - field.storage.node.field_event_date
     - field.storage.node.field_location
     - search_api.server.solr_default
@@ -80,6 +81,15 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_contact_details
+  field_event_category:
+    label: 'Event Category'
+    datasource_id: 'entity:node'
+    property_path: field_event_category
+    type: string
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_event_category
   field_event_date:
     label: 'Event date(s) and time'
     datasource_id: 'entity:node'
@@ -140,6 +150,7 @@ processor_settings:
     fields:
       - body
       - field_contact_details
+      - field_event_category
       - field_location
       - title
     title: false

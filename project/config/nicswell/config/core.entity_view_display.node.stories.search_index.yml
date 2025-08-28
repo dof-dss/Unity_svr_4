@@ -1,0 +1,48 @@
+uuid: b94ea587-c73a-4b99-9fa3-45b77683a2e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.stories.body
+    - field.field.node.stories.field_meta_tags
+    - field.field.node.stories.field_photo
+    - field.field.node.stories.field_published_date
+    - field.field.node.stories.field_story_category
+    - field.field.node.stories.field_teaser
+    - node.type.stories
+  module:
+    - datetime
+    - user
+id: node.stories.search_index
+targetEntityType: node
+bundle: stories
+mode: search_index
+content:
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: news_thumbnail
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_published_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: unity_date
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  content_moderation_control: true
+  field_meta_tags: true
+  field_story_category: true
+  field_teaser: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,10 @@
+uuid: 326274f1-c0f4-4275-8dae-7f067758d8c3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zNAjb33WmBBmXORLBXjPtLz4iSq78FLtanXMom-Kh3w
+id: information_notice
+label: 'Information notice'
+revision: 1
+description: ''

@@ -1,0 +1,28 @@
+uuid: 07b91b5d-b720-4768-965a-8a024d90ee80
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.stories_search
+  module:
+    - system
+    - views
+  theme:
+    - nicswell_theme
+id: exposedformstories_searchstories_search_page
+theme: nicswell_theme
+region: search_facets
+weight: -8
+provider: null
+plugin: 'views_exposed_filter_block:stories_search-stories_search_page'
+settings:
+  id: 'views_exposed_filter_block:stories_search-stories_search_page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/stories\r\n/stories/date/*\r\n/stories/category/*"

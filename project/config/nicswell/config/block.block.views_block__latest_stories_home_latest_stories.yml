@@ -1,0 +1,29 @@
+uuid: 44d50c4f-bd9a-499f-9b13-f8caca5ed921
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_stories
+  module:
+    - system
+    - views
+  theme:
+    - nicswell_theme
+id: views_block__latest_stories_home_latest_stories
+theme: nicswell_theme
+region: featured
+weight: -10
+provider: null
+plugin: 'views_block:latest_stories-home_latest_stories'
+settings:
+  id: 'views_block:latest_stories-home_latest_stories'
+  label: Stories
+  label_display: visible
+  provider: views
+  views_label: Stories
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

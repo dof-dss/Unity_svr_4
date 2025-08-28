@@ -1,0 +1,19 @@
+uuid: b658485b-e343-4663-a709-fca3335b28d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_address
+    - node.type.board_member
+id: node.board_member.field_email_address
+field_name: field_email_address
+entity_type: node
+bundle: board_member
+label: 'Email Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

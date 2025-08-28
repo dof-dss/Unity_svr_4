@@ -99,22 +99,21 @@
   }
 }
 
+#footer_wrapper {
+  margin-bottom: 0;
+}
+
 .region-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
   text-align: left;
 
   .menu_wrapper,
   .social-icons {
-    padding: 0 20px;
+    padding: 0;
   }
-
-  .menu_wrapper {
-    border-right: 1px solid #ccc;
-  }
-
+  
   .social-icons {
     font-size: 3rem;
 
@@ -148,6 +147,13 @@
       padding: 10px 0;
       border: none;
     }
+  }
+}
+
+#footer .block {
+  h2 {
+    color: $black;
+    margin: 0;
   }
 }
 

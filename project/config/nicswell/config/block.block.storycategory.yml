@@ -1,0 +1,29 @@
+uuid: 5d1d2484-a34b-4b8b-9a8b-33cebee98bad
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.story_category
+  module:
+    - facets
+    - system
+  theme:
+    - nicswell_theme
+id: storycategory
+theme: nicswell_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:story_category'
+settings:
+  id: 'facet_block:story_category'
+  label: 'Story Category'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: storycategory
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/stories\r\n/stories/date/*\r\n/stories/category/*"

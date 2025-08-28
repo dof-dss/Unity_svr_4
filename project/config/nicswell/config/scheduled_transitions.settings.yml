@@ -21,7 +21,10 @@ bundles:
     bundle: feature
   -
     entity_type: node
-    bundle: news
+    bundle: landing_page
+  -
+    entity_type: node
+    bundle: stories
   -
     entity_type: node
     bundle: video

@@ -14,3 +14,8 @@ services:
     arguments: [ '@entity_type.manager', '@title_resolver', '@request_stack' ]
     tags:
       - { name: breadcrumb_builder, priority: 105 }
+  nicswell_breadcrumbs.breadcrumb.stories:
+    class: Drupal\nicswell_breadcrumbs\StoriesBreadcrumb
+    arguments: [ '@entity_type.manager', '@title_resolver', '@request_stack' ]
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }

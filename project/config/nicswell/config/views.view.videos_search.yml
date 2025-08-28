@@ -149,10 +149,10 @@ display:
             format: basic_html
           tokenize: false
       sorts:
-        search_api_relevance:
-          id: search_api_relevance
+        created:
+          id: created
           table: search_api_index_videos
-          field: search_api_relevance
+          field: created
           relationship: none
           group_type: group
           admin_label: ''

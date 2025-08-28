@@ -1,0 +1,29 @@
+uuid: ba099e3c-668b-423f-a4ca-44edb8f9656c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_category
+  module:
+    - facets
+    - system
+  theme:
+    - nicswell_theme
+id: eventcategory
+theme: nicswell_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:event_category'
+settings:
+  id: 'facet_block:event_category'
+  label: 'Event Category'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: eventcategory
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/date/*\r\n/events/category/*"
