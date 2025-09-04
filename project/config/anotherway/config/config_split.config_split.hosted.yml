@@ -1,0 +1,16 @@
+uuid: 19758ed4-ccbc-445c-9820-fc01f6439971
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: "Use for any that are 'hosted' and not running locally, apart from production (which has its own split)."
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/anotherway/hosted
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

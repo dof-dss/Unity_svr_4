@@ -1,0 +1,19 @@
+uuid: 93003f69-aa01-49ce-94de-34ef12c52f26
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ONBTZHVgacUeffBAKOmH-ViP7aYx0MP-G84kQ2Dpilc
+title: 'Updates search rankings for nodes'
+id: node_cron
+weight: 3
+module: node
+callback: node_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

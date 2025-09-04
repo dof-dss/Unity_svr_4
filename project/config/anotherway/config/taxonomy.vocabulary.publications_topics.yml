@@ -1,0 +1,11 @@
+uuid: 804bd297-6d26-4f06-95c2-fa1fae256960
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uEGJlodSCDScv46iJjns2NrXa6PeqGEnbQzxwI5GhuI
+name: 'Publication topics'
+vid: publications_topics
+description: 'list of topics for publication content types'
+weight: 0
+new_revision: false
