@@ -60,7 +60,7 @@ hooks:
         export FASTLY_API_SERVICE=dummyservice
 
         # For each multi site - run db-updates and import config.
-        for site in legalcommissionerni nicswell autismreviewerni
+        for site in legalcommissionerni nicswell autismreviewerni anotherway proni
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -107,7 +107,7 @@ hooks:
         export FASTLY_API_SERVICE=$temp
 
         # For each multi site - clear cache (including Fastly cache)
-        for site in legalcommissionerni nicswell autismreviewerni
+        for site in legalcommissionerni nicswell autismreviewerni anotherway proni
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -162,6 +162,10 @@ relationships:
     nicswell_solr: 'solr_8_11:nicswell'
     autismreviewerni: 'db:autismreviewerni'
     autismreviewerni_solr: 'solr_8_11:autismreviewerni'
+    anotherway: 'db:anotherway'
+    anotherway_solr: 'solr_8_11:anotherway'
+    proni: 'db:proni'
+    proni_solr: 'solr_8_11:proni'
 crons:
     legalcommissionerni:
         spec: '10 * * * *'
@@ -177,3 +181,9 @@ crons:
     autismreviewerni:
         spec: '10 * * * *'
         cmd: 'cd web/sites/autismreviewerni ; drush core-cron'
+    anotherway:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/anotherway ; drush core-cron'
+    proni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/proni ; drush core-cron'

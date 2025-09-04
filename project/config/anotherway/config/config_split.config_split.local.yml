@@ -1,0 +1,28 @@
+uuid: 3d09bee1-0724-4dee-8fb7-9061c6efdfbc
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: local
+description: "Local development split. \r\nEnables debugging and development modules"
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/anotherway/local
+module:
+  clone_nodes: 0
+  dblog: 0
+  easy_install: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  migrate_upgrade: 0
+  update: 0
+  views_ui: 0
+  devel: 0
+  stage_file_proxy: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

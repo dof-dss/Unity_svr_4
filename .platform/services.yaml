@@ -13,6 +13,8 @@ db:
             - legalcommissionernidb
             - nicswelldb
             - autismreviewernidb
+            - anotherwaydb
+            - pronidb
         endpoints:
             legalcommissionerni:
                 default_schema: legalcommissionernidb
@@ -26,6 +28,14 @@ db:
                 default_schema: autismreviewernidb
                 privileges:
                     autismreviewernidb: admin
+            anotherway:
+                default_schema: anotherwaydb
+                privileges:
+                    anotherwaydb: admin
+            proni:
+                default_schema: pronidb
+                privileges:
+                    pronidb: admin
 solr_8_11:
     type: 'solr:8.11'
     disk: 1024
@@ -37,6 +47,10 @@ solr_8_11:
                 conf_dir: !archive solr_config/
             autismreviewerni_index:
                 conf_dir: !archive solr_config/
+            anotherway_index:
+                conf_dir: !archive solr_config/
+            proni_index:
+                conf_dir: !archive solr_config/
         endpoints:
             legalcommissionerni:
                 core: legalcommissionerni_index
@@ -44,5 +58,9 @@ solr_8_11:
                 core: nicswell_index
             autismreviewerni:
                 core: autismreviewerni_index
+            anotherway:
+                core: anotherway_index
+            proni:
+                core: proni_index
 redis:
     type: 'redis:6.0'
