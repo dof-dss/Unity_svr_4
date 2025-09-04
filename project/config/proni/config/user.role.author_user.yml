@@ -1,0 +1,120 @@
+uuid: 1401d33d-f6b2-4a75-b6ff-20d710582b4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - media.type.audio
+    - media.type.document
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.basic_page
+    - node.type.board_member
+    - node.type.consultation
+    - node.type.contact
+    - node.type.faq
+    - node.type.link
+    - node.type.news
+    - node.type.profile
+    - node.type.publication
+  module:
+    - content_moderation
+    - filter
+    - media
+    - menu_admin_per_menu
+    - moderation_sidebar
+    - node
+    - path
+    - system
+    - toolbar
+_core:
+  default_config_hash: CKfpacVfMmh209v93lvkrSNFkdxh-8fmgpTUUaFDF-M
+id: author_user
+label: 'author user'
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'administer main menu items'
+  - 'create audio media'
+  - 'create basic_page content'
+  - 'create board_member content'
+  - 'create consultation content'
+  - 'create contact content'
+  - 'create document media'
+  - 'create faq content'
+  - 'create file media'
+  - 'create image media'
+  - 'create link content'
+  - 'create news content'
+  - 'create profile content'
+  - 'create publication content'
+  - 'create remote_video media'
+  - 'create url aliases'
+  - 'delete own audio media'
+  - 'delete own basic_page content'
+  - 'delete own board_member content'
+  - 'delete own consultation content'
+  - 'delete own contact content'
+  - 'delete own document media'
+  - 'delete own faq content'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own link content'
+  - 'delete own news content'
+  - 'delete own profile content'
+  - 'delete own publication content'
+  - 'delete own remote_video media'
+  - 'edit any basic_page content'
+  - 'edit any board_member content'
+  - 'edit any consultation content'
+  - 'edit any contact content'
+  - 'edit any faq content'
+  - 'edit any link content'
+  - 'edit any news content'
+  - 'edit any profile content'
+  - 'edit any publication content'
+  - 'edit own audio media'
+  - 'edit own basic_page content'
+  - 'edit own board_member content'
+  - 'edit own consultation content'
+  - 'edit own contact content'
+  - 'edit own document media'
+  - 'edit own faq content'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own link content'
+  - 'edit own news content'
+  - 'edit own profile content'
+  - 'edit own publication content'
+  - 'edit own remote_video media'
+  - 'revert basic_page revisions'
+  - 'revert board_member revisions'
+  - 'revert consultation revisions'
+  - 'revert contact revisions'
+  - 'revert faq revisions'
+  - 'revert link revisions'
+  - 'revert news revisions'
+  - 'revert profile revisions'
+  - 'revert publication revisions'
+  - 'use moderation sidebar'
+  - 'use text format basic_html'
+  - 'view any unpublished content'
+  - 'view basic_page revisions'
+  - 'view board_member revisions'
+  - 'view consultation revisions'
+  - 'view contact revisions'
+  - 'view faq revisions'
+  - 'view latest version'
+  - 'view link revisions'
+  - 'view news revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view profile revisions'
+  - 'view publication revisions'
+  - 'view the administration theme'

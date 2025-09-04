@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+langcode: en
+uuid: 644002d0-85de-4bab-b551-93fc462959cf
+name: 'The Public Record Office of Northern Ireland'
+mail: webdev@webdev-finance.gov.uk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+frontpage_title: 'Welcome to The Public Record Office of Northern Ireland site'
