@@ -1,0 +1,18 @@
+uuid: 96b09ec0-5cdd-4074-8e5d-b9a0c4ac71b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_embed
+    - node
+_core:
+  default_config_hash: xgvZUh-eaMilacE1XYCQ9nLH-2-meOjCyofXSO82gqg
+label: Node
+id: node
+type_id: entity
+type_settings:
+  entity_type: node
+  bundles: {  }
+  display_plugins: {  }
+icon: {  }
+icon_uuid: null

@@ -1,0 +1,23 @@
+uuid: 1a7a5e15-f3e1-4260-8db8-ec27e41a52cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - anotherway_theme
+id: sitebranding
+theme: anotherway_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: c0ced965-e012-4140-8c2c-ae87c3fb946b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: QBkSJ4W84RYS3M4L1pWJIlsD3ujTJRB-U06WPRNelKw
+id: node.field_toc_enable
+field_name: field_toc_enable
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

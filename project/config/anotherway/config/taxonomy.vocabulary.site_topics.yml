@@ -1,0 +1,11 @@
+uuid: 4b2b6dac-1a9d-4137-ae7b-49b1f73b40e1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2dPc8-O3DyTNkGZRxRmD-9U7PqZoS3Ki1C9xjLprzqw
+name: 'Site topics'
+vid: site_topics
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,16 @@
+uuid: 5c4c0028-ce40-4062-bb9c-4884345b4e1e
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: 'Used for the production site only.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/anotherway/production
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }
