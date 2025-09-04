@@ -34,3 +34,23 @@ sites:
         database: autismreviewerni
         status: production
         default: true
+    anotherway:
+        name: 'Another way'
+        url: another-way.org
+        solr: anotherway
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/anotherway ; drush core-cron'
+        database: anotherway
+        status: development
+        default: false
+    proni:
+        name: 'The Public Record Office of Northern Ireland'
+        url: proni.gov.uk
+        solr: proni
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/proni ; drush core-cron'
+        database: proni
+        status: development
+        default: false

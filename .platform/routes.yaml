@@ -21,6 +21,22 @@
 'https://autismreviewer-ni.org.uk.{default}/':
     type: redirect
     to: 'https://www.autismreviewer-ni.org.uk.{default}/'
+'https://www.another-way.org/':
+    type: upstream
+    upstream: 'unity_svr_4:http'
+    cache:
+        enabled: 'false'
+'https://another-way.org/':
+    type: redirect
+    to: 'https://www.another-way.org/'
+'https://www.proni.gov.uk/':
+    type: upstream
+    upstream: 'unity_svr_4:http'
+    cache:
+        enabled: 'false'
+'https://proni.gov.uk/':
+    type: redirect
+    to: 'https://www.proni.gov.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_4:http'
