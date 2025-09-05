@@ -1,0 +1,25 @@
+uuid: 6823d1f4-2299-4a32-8b72-cfa3abfd84d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - filter
+    - media
+    - node
+    - search
+    - system
+_core:
+  default_config_hash: z-UB57Tg7OS627ItYHGrWlRMLhAT7P1VO2tDm6Wty0c
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'search content'
+  - 'use text format basic_html'
+  - 'view all revisions'
+  - 'view media'
+  - 'view own unpublished content'
