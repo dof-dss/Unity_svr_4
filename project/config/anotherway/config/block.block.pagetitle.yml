@@ -1,0 +1,18 @@
+uuid: 1f09098a-430f-475e-b065-49833039fbb9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - anotherway_theme
+id: pagetitle
+theme: anotherway_theme
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

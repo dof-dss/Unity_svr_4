@@ -1,0 +1,26 @@
+uuid: d8c5b434-25c5-4b8a-938a-f15c64003e4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - eu_cookie_compliance
+    - filter
+    - media
+    - search
+    - sitemap
+    - system
+_core:
+  default_config_hash: am6KFAgAEMZ_pS-xuDp-YhRgpp6bh0kRRCv0RBwVr3U
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access sitemap'
+  - 'display eu cookie compliance popup'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view media'
