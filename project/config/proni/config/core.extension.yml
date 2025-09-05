@@ -101,6 +101,7 @@ module:
   search_api: 0
   search_api_solr: 0
   simplei: 0
+  sitemap: 0
   structure_sync: 0
   system: 0
   taxonomy: 0
@@ -138,4 +139,5 @@ theme:
   claro: 0
   stable: 0
   nicsdru_unity_theme: 0
+  proni_theme: 0
 profile: nicsdru_unity_profile

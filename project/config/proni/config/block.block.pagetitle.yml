@@ -1,0 +1,18 @@
+uuid: 3e10f99f-0ab6-4bce-aa65-21e35f48be9b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - proni_theme
+id: pagetitle
+theme: proni_theme
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
