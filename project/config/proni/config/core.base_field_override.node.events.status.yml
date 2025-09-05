@@ -1,0 +1,22 @@
+uuid: ac446a6c-0403-4b6f-b5be-8814ab68cb20
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.events
+id: node.events.status
+field_name: status
+entity_type: node
+bundle: events
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

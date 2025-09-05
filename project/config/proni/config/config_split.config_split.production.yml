@@ -1,0 +1,16 @@
+uuid: ad899dd0-664e-47ef-9ab6-5549c77a9edf
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: 'Used for the production site only.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/proni/production
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

@@ -1,0 +1,31 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+#main-menu {
+  .menu-link {
+    &:hover,
+    &:focus {
+      border-bottom-color: $footer-background;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+  .menu {
+    .menu-item {
+      .active,
+      .active + .menu-main_sub .title a {
+        border-bottom-color: $footer-background;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+    }
+  }
+}
+
+#main-menu .menu-link:hover, #main-menu .menu-link:focus {
+  border-bottom-color: $footer-background;
+}
