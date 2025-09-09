@@ -2,6 +2,8 @@ uuid: 3e10f99f-0ab6-4bce-aa65-21e35f48be9b
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - proni_theme
 id: pagetitle
@@ -15,4 +17,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/publications\r\n/publications/date/*"
