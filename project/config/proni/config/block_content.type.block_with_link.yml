@@ -1,0 +1,8 @@
+uuid: 4009b070-8dea-4c92-a119-e25cd3f87de5
+langcode: en
+status: true
+dependencies: {  }
+id: block_with_link
+label: 'Block with link'
+revision: false
+description: null
