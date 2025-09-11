@@ -17,6 +17,7 @@ dependencies:
     - cookie_content_blocker
     - editor
     - entity_embed
+    - linkit
     - media
     - noreferrer
     - origins_common
@@ -127,6 +128,14 @@ filters:
     weight: -50
     settings:
       filter_url_length: 72
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true
+      media_substitution: metadata
   media_embed:
     id: media_embed
     provider: media

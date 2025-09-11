@@ -17,9 +17,11 @@ dependencies:
     - cookie_content_blocker
     - editor
     - entity_embed
+    - linkit
     - media
     - noreferrer
     - origins_common
+    - slick
     - token_filter
 _core:
   default_config_hash: HV7-vO-koh-hIwN_RJEAj9lJMzW9ylxbOPenzdgWKnQ
@@ -33,14 +35,14 @@ filters:
     status: false
     weight: 3
     settings:
+      media_switch: ''
+      hybrid_style: ''
+      box_style: ''
+      box_caption: ''
       filter_tags:
         img: img
         iframe: iframe
-      media_switch: ''
-      box_style: ''
-      hybrid_style: ''
       use_data_uri: '0'
-      box_caption: ''
   cookie_content_blocker_filter:
     id: cookie_content_blocker_filter
     provider: cookie_content_blocker
@@ -73,8 +75,8 @@ filters:
     weight: 0
     settings:
       allowed_html: '<br> <p> <h2> <h3> <h4> <h5> <h6> <strong> <em> <sup> <blockquote> <a href> <ul> <ol start> <li> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption> <drupal-media data-entity-type data-entity-uuid alt>'
-      filter_html_help: '0'
-      filter_html_nofollow: '0'
+      filter_html_help: false
+      filter_html_nofollow: false
   filter_autop:
     id: filter_autop
     provider: filter
@@ -127,6 +129,14 @@ filters:
     weight: -50
     settings:
       filter_url_length: 72
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true
+      media_substitution: metadata
   media_embed:
     id: media_embed
     provider: media
@@ -160,10 +170,42 @@ filters:
     weight: 0
     settings:
       replacement_text: 'Click here to view the video content'
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      layout: ''
+      skin: ''
+      background: false
+      loading: ''
+      preload: false
+      responsive_image_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
   token_filter:
     id: token_filter
     provider: token_filter
     status: true
     weight: -48
     settings:
-      replace_empty: '1'
+      replace_empty: true
