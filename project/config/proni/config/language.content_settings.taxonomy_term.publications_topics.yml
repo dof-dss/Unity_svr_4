@@ -1,0 +1,11 @@
+uuid: b77abb9c-0f98-4a63-a373-3f65a75b7e59
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.publications_topics
+id: taxonomy_term.publications_topics
+target_entity_type_id: taxonomy_term
+target_bundle: publications_topics
+default_langcode: site_default
+language_alterable: false

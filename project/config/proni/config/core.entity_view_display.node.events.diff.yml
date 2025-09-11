@@ -1,0 +1,175 @@
+uuid: 6948f8be-506c-40d6-a93b-3a8acac7799e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.diff
+    - field.field.node.events.body
+    - field.field.node.events.field_banner
+    - field.field.node.events.field_event_date
+    - field.field.node.events.field_event_location
+    - field.field.node.events.field_event_teaser
+    - field.field.node.events.field_event_type
+    - field.field.node.events.field_meta_tags
+    - field.field.node.events.field_organisation_name
+    - field.field.node.events.field_organisation_sector
+    - field.field.node.events.field_related_events
+    - field.field.node.events.field_target_audience
+    - node.type.events
+  module:
+    - field_group
+    - metatag
+    - search_api_solr
+    - smart_date
+    - user
+third_party_settings:
+  field_group:
+    group_additional_content_details:
+      children:
+        - field_event_teaser
+        - field_event_type
+        - field_organisation_name
+        - field_organisation_sector
+        - field_target_audience
+        - field_meta_tags
+      label: 'Additional content details'
+      parent_name: ''
+      region: content
+      weight: 5
+      format_type: html_element
+      format_settings:
+        classes: field-collection
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.events.diff
+targetEntityType: node
+bundle: events
+mode: diff
+content:
+  body:
+    type: solr_highlighted_text_default
+    label: hidden
+    settings:
+      prefix: '<strong>'
+      suffix: '</strong>'
+      strict: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_banner:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: banner_thin
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_event_date:
+    type: smartdate_custom
+    label: inline
+    settings:
+      separator: ' - '
+      time_diff:
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: '2'
+        refresh: '60'
+        enabled: 0
+        description: ''
+      date_format: 'd F Y'
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      join: ', '
+      time_format: 'g:ia'
+      time_hour_format: 'g:ia'
+      allday_label: ''
+      date_first: '1'
+      ampm_reduce: '1'
+      site_time_toggle: '1'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_event_location:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_event_teaser:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_event_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_organisation_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_organisation_sector:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_related_events:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_target_audience:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  search_api_excerpt:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+hidden:
+  langcode: true
+  links: true

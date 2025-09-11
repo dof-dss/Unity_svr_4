@@ -1,4 +1,4 @@
-uuid: 01d233b0-b8d7-4a76-b01b-890f62af4f3a
+uuid: b89e796d-53c3-402d-a41e-c91c54ade630
 langcode: en
 status: true
 dependencies:
@@ -15,10 +15,8 @@ third_party_settings:
     toc_exclusions: ''
     toc_screen_depth: '1'
     toc_debug: 0
-_core:
-  default_config_hash: uEGJlodSCDScv46iJjns2NrXa6PeqGEnbQzxwI5GhuI
-name: 'Publication topics'
-vid: publications_topics
-description: 'list of topics for publication content types'
+name: 'Event types'
+vid: event_types
+description: null
 weight: 0
 new_revision: true
