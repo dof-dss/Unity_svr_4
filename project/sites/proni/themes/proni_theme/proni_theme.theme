@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the proni_theme.
+ */
+
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ */
+function proni_theme_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  if (($node = \Drupal::routeMatch()->getParameter('node')) || ($node = \Drupal::routeMatch()->getParameter('node_preview'))) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__' . $content_type;
+  }
+  if(!empty($node)) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__' . $content_type;
+  }
+}
+
+/**
+ * Implements template_preprocess_page().
+ * Show the parent banner image the header of each child page.
+ * This variable is used in page--events.html.twig.
+ */
+function proni_theme_preprocess_page(&$variables) {
+  if (($node = \Drupal::routeMatch()->getParameter('node')) || ($node = \Drupal::routeMatch()->getParameter('node_preview'))) {
+    $content_type = $node->bundle();
+    if ($content_type === 'events') {
+      $variables['page']['child_event_with_image'] = FALSE;
+      // Determine if this is a child event.
+      if (!empty($node->field_related_events->entity)) {
+        // Get the node ID for the child event and load it.
+        $child_event_id = $node->field_related_events->entity->id();
+        $child_event = node::load($child_event_id);
+        // Check if the child event has a banner image. Set variable to TRUE if it does.
+        if (!empty($child_event->get('field_banner')->target_id) && isset($variables['node'])) {
+          // If it is a child event set the variable to true.
+          $variables['page']['child_event_with_image'] = TRUE;
+        }
+      }
+    }
+  }
+}
