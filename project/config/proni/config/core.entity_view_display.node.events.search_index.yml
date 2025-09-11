@@ -67,6 +67,7 @@ content:
     region: content
 hidden:
   body: true
+  content_moderation_control: true
   field_banner: true
   field_event_location: true
   field_event_type: true

@@ -168,8 +168,9 @@ content:
   search_api_excerpt:
     settings: {  }
     third_party_settings: {  }
-    weight: 12
+    weight: 6
     region: content
 hidden:
+  content_moderation_control: true
   langcode: true
   links: true

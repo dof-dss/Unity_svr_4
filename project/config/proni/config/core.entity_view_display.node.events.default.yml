@@ -86,6 +86,7 @@ content:
     weight: 4
     region: content
 hidden:
+  content_moderation_control: true
   field_event_teaser: true
   field_event_type: true
   field_meta_tags: true

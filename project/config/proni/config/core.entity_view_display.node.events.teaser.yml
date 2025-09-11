@@ -33,6 +33,7 @@ content:
     weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   field_banner: true
   field_event_date: true
   field_event_location: true
