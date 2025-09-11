@@ -8,9 +8,9 @@ dependencies:
     - system
     - views
   theme:
-    - nicybersecuritycentre_theme
+    - proni_theme
 id: exposedformevents_searchevents_search_page
-theme: nicybersecuritycentre_theme
+theme: proni_theme
 region: search_facets
 weight: -9
 provider: null
