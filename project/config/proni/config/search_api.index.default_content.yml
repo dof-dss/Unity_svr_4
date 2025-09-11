@@ -128,18 +128,6 @@ field_settings:
     configuration:
       type: union
       separator: |+
-
-
-
-
-
-
-
-
-
-
-
-
       fields: {  }
   type:
     label: 'Content type'
