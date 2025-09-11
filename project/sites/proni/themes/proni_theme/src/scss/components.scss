@@ -11,8 +11,8 @@
 
   h2 {
     color: $link;
-    font-size: 22px;
-    padding: 3rem 0 0;
+    @include adjust-font-size-to(22px);
+    padding-bottom: 0;
   }
 }
 
@@ -38,10 +38,6 @@
 
 .block-link {
   padding: 1rem;
-
-  .media-image {
-    margin-bottom: 0;
-  }
 
   h2,
   .published-date {
