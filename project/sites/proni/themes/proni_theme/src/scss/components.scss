@@ -7,10 +7,18 @@
 
 #top-area {
   text-align: left;
+  padding: 6rem 0 3rem;
 
   h2 {
     color: $link;
-    font-size: 24px;
+    font-size: 22px;
+    padding: 3rem 0 0;
+  }
+}
+
+.block-views-blockfeatured-content-featured-content {
+  h2 {
+    color: $link;
   }
 }
 
@@ -22,13 +30,13 @@
 }
 
 #content #top-area .column .region a.block-link {
+  display: block;
   border: none;
   margin: 0;
   padding: 1rem;
 }
 
 .block-link {
-  display: block;
   padding: 1rem;
 
   .media-image {
@@ -78,113 +86,99 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 4rem;
-  }
-}
-
-article {
-  @include breakpoint($tab) {
-    grid-column: 2;
-
-    &:first-child {
-      grid-column: 1;
-      grid-row: 1 / 3;
-
-      a {
-        display: block;
-      }
-    }
+    grid-gap: 2rem;
   }
 
-  a {
-    display: flex;
-    text-decoration: none;
-  }
+  article {
+    @include breakpoint($tab) {
+      grid-column: 2;
 
-  .card__image {
-    flex: 0 0 13rem;
-    max-width: 50%;
+      &:first-child {
+        grid-column: 1;
+        grid-row: 1 / 3;
 
-    @include breakpoint($phab) {
-      flex-basis: 16.5rem;
-    }
-  }
-
-  .card__body {
-    padding-left: 1rem;
-
-    .card__title {
-      font-size: 1.8rem;
-      line-height: 2.4rem;
-      color: $link;
-      margin: 0 0 1rem;
-
-      @include breakpoint($lap) {
-        font-size: 2rem;
-        line-height: 2.7rem;
+        a {
+          display: block;
+        }
       }
     }
 
-    .card__meta {
-      margin: 1rem 0;
-    }
-
-    p {
-      margin: 1rem 0 0;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  &:first-of-type {
     a {
-      flex-wrap: wrap;
-
-      @include breakpoint($phab) {
-        flex-wrap: nowrap;
-      }
+      display: flex;
+      text-decoration: none;
     }
 
     .card__image {
-      flex-basis: 100%;
-      max-width: 100%;
-      padding-right: 0;
+      flex: 0 0 13rem;
+      max-width: 50%;
 
       @include breakpoint($phab) {
-        flex-basis: 41%;
-        min-width: 16.5rem;
+        flex-basis: 16.5rem;
       }
     }
 
     .card__body {
-      align-self: auto;
-      padding-left: 0;
-
-      @include breakpoint($tab) {
-        //padding-left: var(--rhythm-spacing-lg);
-      }
+      padding-left: 1rem;
 
       .card__title {
-        font-size: 2.1rem;
-        line-height: 3rem;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: $link;
+        margin: 0 0 1rem;
 
         @include breakpoint($lap) {
-          font-size: 2.2rem;
-          line-height: 3.3rem;
+          font-size: 2rem;
+          line-height: 2.7rem;
         }
+      }
 
-        //@include breakpoint($desk-plus) {
-        //  font-size: 2.4rem;
-        //  line-height: 3.5rem;
-        //}
+      .card__meta {
+        margin: 1rem 0;
+      }
+
+      p {
+        margin: 1rem 0 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
-  }
 
-  &:last-of-type {
-    box-shadow: none;
+    &:first-of-type {
+      a {
+        flex-wrap: wrap;
+
+        @include breakpoint($phab) {
+          flex-wrap: nowrap;
+        }
+      }
+
+      .card__image {
+        flex-basis: 100%;
+        max-width: 100%;
+        padding-right: 0;
+
+        @include breakpoint($phab) {
+          flex-basis: 41%;
+          min-width: 16.5rem;
+        }
+      }
+
+      .card__body {
+        align-self: auto;
+
+        .card__title {
+          font-size: 2.1rem;
+          line-height: 3rem;
+
+          @include breakpoint($lap) {
+            font-size: 2.2rem;
+            line-height: 3.3rem;
+          }
+        }
+      }
+    }
   }
 }
 
