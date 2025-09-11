@@ -100,21 +100,9 @@ field_settings:
     configuration:
       type: union
       separator: |+
-
-
-
-
-
-
-
-
-
-
-
-
       fields:
-        - 'entity:node/body'
-        - 'entity:node/title'
+      - 'entity:node/body'
+      - 'entity:node/title'
   status:
     label: Published
     datasource_id: 'entity:node'
