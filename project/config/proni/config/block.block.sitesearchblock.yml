@@ -1,0 +1,25 @@
+uuid: c8759383-f7fd-4f7f-9809-1cdaa3395a6d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - unity_search_pages
+  theme:
+    - proni_theme
+id: sitesearchblock
+theme: proni_theme
+region: search
+weight: 0
+provider: null
+plugin: site_search_block
+settings:
+  id: site_search_block
+  label: 'Site search block'
+  label_display: '0'
+  provider: unity_search_pages
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/search\r\n/search/*"
