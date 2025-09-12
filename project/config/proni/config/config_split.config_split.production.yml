@@ -10,7 +10,9 @@ stackable: false
 no_patching: false
 storage: folder
 folder: ../project/config/proni/production
-module: {  }
+module:
+  fastly: 0
 theme: {  }
-complete_list: {  }
+complete_list:
+  - fastly.settings
 partial_list: {  }
