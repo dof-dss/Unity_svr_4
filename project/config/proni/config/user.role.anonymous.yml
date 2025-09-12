@@ -8,7 +8,6 @@ dependencies:
     - eu_cookie_compliance
     - filter
     - media
-    - search
     - sitemap
     - system
 _core:
@@ -21,6 +20,5 @@ permissions:
   - 'access content'
   - 'access sitemap'
   - 'display eu cookie compliance popup'
-  - 'search content'
   - 'use text format restricted_html'
   - 'view media'

@@ -8,7 +8,6 @@ dependencies:
     - filter
     - media
     - node
-    - search
     - sitemap
     - system
 _core:
@@ -20,7 +19,6 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access sitemap'
-  - 'search content'
   - 'use text format basic_html'
   - 'view all revisions'
   - 'view media'
