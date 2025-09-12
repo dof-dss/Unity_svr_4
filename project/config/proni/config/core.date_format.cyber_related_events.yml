@@ -1,0 +1,8 @@
+uuid: c1c55e51-b087-420b-9305-0d66681d5151
+langcode: en
+status: true
+dependencies: {  }
+id: cyber_related_events
+label: 'Cyber related events'
+locked: false
+pattern: 'H:i - j F Y'

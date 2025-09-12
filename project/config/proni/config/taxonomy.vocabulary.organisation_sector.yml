@@ -1,0 +1,22 @@
+uuid: baab78ea-0646-4009-bb89-9f0a4bf64390
+langcode: en
+status: true
+dependencies:
+  module:
+    - origins_toc
+third_party_settings:
+  origins_toc:
+    toc_enable: 0
+    toc_title: 'Table of contents'
+    toc_location: ''
+    toc_insert: after
+    toc_source_container: ''
+    toc_element: h2
+    toc_exclusions: ''
+    toc_screen_depth: '1'
+    toc_debug: 0
+name: 'Organisation sector'
+vid: organisation_sector
+description: null
+weight: 0
+new_revision: true

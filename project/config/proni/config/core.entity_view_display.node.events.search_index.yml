@@ -1,0 +1,81 @@
+uuid: 9e39e0bc-cc07-4100-95b2-04f10548897d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.events.body
+    - field.field.node.events.field_banner
+    - field.field.node.events.field_event_date
+    - field.field.node.events.field_event_location
+    - field.field.node.events.field_event_teaser
+    - field.field.node.events.field_event_type
+    - field.field.node.events.field_meta_tags
+    - field.field.node.events.field_organisation_name
+    - field.field.node.events.field_organisation_sector
+    - field.field.node.events.field_related_events
+    - field.field.node.events.field_target_audience
+    - node.type.events
+  module:
+    - layout_builder
+    - smart_date
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.events.search_index
+targetEntityType: node
+bundle: events
+mode: search_index
+content:
+  field_event_date:
+    type: smartdate_custom
+    label: inline
+    settings:
+      separator: ' - '
+      time_diff:
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: '2'
+        refresh: '60'
+        enabled: 0
+        description: ''
+      date_format: 'd F Y'
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      join: ', '
+      time_format: 'g:ia'
+      time_hour_format: 'g:ia'
+      allday_label: ''
+      date_first: '1'
+      ampm_reduce: '1'
+      site_time_toggle: '1'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_event_teaser:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  content_moderation_control: true
+  field_banner: true
+  field_event_location: true
+  field_event_type: true
+  field_meta_tags: true
+  field_organisation_name: true
+  field_organisation_sector: true
+  field_related_events: true
+  field_target_audience: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

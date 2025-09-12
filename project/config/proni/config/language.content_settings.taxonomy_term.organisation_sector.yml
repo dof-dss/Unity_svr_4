@@ -1,0 +1,11 @@
+uuid: 2455470a-0350-4452-876a-5bac5579052d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organisation_sector
+id: taxonomy_term.organisation_sector
+target_entity_type_id: taxonomy_term
+target_bundle: organisation_sector
+default_langcode: site_default
+language_alterable: false
