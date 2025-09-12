@@ -54,7 +54,6 @@ module:
   flood_control: 0
   geolocation: 0
   geolocation_google_maps: 0
-  google_tag: 0
   handy_cache_tags: 0
   help: 0
   history: 0
