@@ -21,4 +21,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/publications\r\n/publications/date/*\r\n/news\r\n/news/date/*\r\n/events\r\n/events/*\r\n/events/location/*\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*\r\n/event-registration\r\n/event-registration-success"
+    pages: "/publications\r\n/publications/date/*\r\n/news\r\n/news/date/*\r\n/events\r\n/events/*\r\n/events/location/*\r\n/events/type/*\r\n/events/audience/*\r\n/events/sector/*\r\n/events/date/*\r\n/event-registration\r\n/event-registration-success\r\n/search\r\n/search*"
