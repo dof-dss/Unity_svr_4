@@ -227,7 +227,10 @@ display:
         options:
           view_modes:
             'entity:node':
+              ':default': search_index
               basic_page: teaser
+              events: ':default'
+              featured_content_list: ':default'
               news: search_index
               publication: search_index
       query:
