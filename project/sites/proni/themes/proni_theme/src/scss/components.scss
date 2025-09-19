@@ -89,7 +89,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
 
   article {
@@ -127,7 +127,7 @@
         font-size: 1.8rem;
         line-height: 2.4rem;
         color: $link;
-        margin: 0 0 1rem;
+        margin: 1.5rem 0 0;
 
         @include breakpoint($lap) {
           font-size: 2rem;
