@@ -104,9 +104,17 @@
     {% endif %}
 
   {% if page.featured_second %}
-    <div id="health_lifestyle">
+    <div id="featured_second">
       <div class="column">
         {{ page.featured_second }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.featured_third%}
+    <div id="featured_third">
+      <div class="column">
+        {{ page.featured_third }}
       </div>
     </div>
   {% endif %}

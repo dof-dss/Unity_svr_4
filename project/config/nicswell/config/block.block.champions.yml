@@ -1,0 +1,30 @@
+uuid: 4ebc3127-547a-4a59-b910-29cec8c27e5b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_link:2b803301-9e9a-47ae-9a81-b3b447a05438'
+  module:
+    - block_content
+    - system
+  theme:
+    - nicswell_theme
+id: champions
+theme: nicswell_theme
+region: featured_third
+weight: -14
+provider: null
+plugin: 'block_content:2b803301-9e9a-47ae-9a81-b3b447a05438'
+settings:
+  id: 'block_content:2b803301-9e9a-47ae-9a81-b3b447a05438'
+  label: Champions
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

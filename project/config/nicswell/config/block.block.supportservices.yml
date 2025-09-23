@@ -1,0 +1,30 @@
+uuid: 576ca55f-c3a8-4126-bca3-1af4a39328d0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_link:d0c22195-8216-4538-9de0-0201d6f04ae8'
+  module:
+    - block_content
+    - system
+  theme:
+    - nicswell_theme
+id: supportservices
+theme: nicswell_theme
+region: featured_second
+weight: -15
+provider: null
+plugin: 'block_content:d0c22195-8216-4538-9de0-0201d6f04ae8'
+settings:
+  id: 'block_content:d0c22195-8216-4538-9de0-0201d6f04ae8'
+  label: 'Support Services'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

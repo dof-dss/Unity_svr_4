@@ -1,0 +1,30 @@
+uuid: c88ad679-4d9c-40f1-95bf-47e3d4d59656
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_link:291c989a-2640-40ac-b9b0-811efe89b31f'
+  module:
+    - block_content
+    - system
+  theme:
+    - nicswell_theme
+id: ourservices
+theme: nicswell_theme
+region: featured_third
+weight: -13
+provider: null
+plugin: 'block_content:291c989a-2640-40ac-b9b0-811efe89b31f'
+settings:
+  id: 'block_content:291c989a-2640-40ac-b9b0-811efe89b31f'
+  label: 'Our Services'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
