@@ -1,0 +1,30 @@
+uuid: d1f3faf0-f0b5-4e60-a2ce-b7c12d1efc59
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_link:fe6b0ed7-9d5a-4f8c-9a4a-8583f8666978'
+  module:
+    - block_content
+    - system
+  theme:
+    - nicswell_theme
+id: healthandwellbeing
+theme: nicswell_theme
+region: featured_second
+weight: -14
+provider: null
+plugin: 'block_content:fe6b0ed7-9d5a-4f8c-9a4a-8583f8666978'
+settings:
+  id: 'block_content:fe6b0ed7-9d5a-4f8c-9a4a-8583f8666978'
+  label: 'Health and Wellbeing'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

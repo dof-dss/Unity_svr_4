@@ -1,0 +1,19 @@
+uuid: 4f21112e-a532-49e5-af87-1e995c206702
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_teaser
+    - node.type.events
+id: node.events.field_event_teaser
+field_name: field_event_teaser
+entity_type: node
+bundle: events
+label: Teaser
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

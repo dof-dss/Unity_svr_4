@@ -1,0 +1,25 @@
+uuid: 9292b30c-923c-4182-b583-3f96a646826c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_with_link:7dba451a-6502-46d2-9506-97a8791c8a25'
+  module:
+    - block_content
+  theme:
+    - proni_theme
+id: proni_theme_yourvisit
+theme: proni_theme
+region: top_first
+weight: 0
+provider: null
+plugin: 'block_content:7dba451a-6502-46d2-9506-97a8791c8a25'
+settings:
+  id: 'block_content:7dba451a-6502-46d2-9506-97a8791c8a25'
+  label: 'Your Visit'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

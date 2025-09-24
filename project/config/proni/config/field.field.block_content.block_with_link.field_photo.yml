@@ -1,0 +1,29 @@
+uuid: cdf3cda6-b34e-48d8-89a6-c2ab7196d189
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_with_link
+    - field.storage.block_content.field_photo
+    - media.type.image
+id: block_content.block_with_link.field_photo
+field_name: field_photo
+entity_type: block_content
+bundle: block_with_link
+label: Photo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

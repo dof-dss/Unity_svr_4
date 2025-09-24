@@ -33,9 +33,9 @@ content:
     third_party_settings: {  }
   flag:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   langcode:
     type: language_select
     weight: 2

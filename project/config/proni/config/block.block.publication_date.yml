@@ -1,0 +1,29 @@
+uuid: eef9d3cc-1780-410e-9088-a1a4f827d42d
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.date
+  module:
+    - facets
+    - system
+  theme:
+    - proni_theme
+id: publication_date
+theme: proni_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:date'
+settings:
+  id: 'facet_block:date'
+  label: Date
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: publication_date
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*"

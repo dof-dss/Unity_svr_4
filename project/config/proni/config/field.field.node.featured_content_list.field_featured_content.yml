@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_featured_content
+    - node.type.events
     - node.type.featured_content_list
     - node.type.news
 _core:
@@ -22,10 +23,11 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
+      events: events
       news: news
     sort:
       field: type
       direction: ASC
     auto_create: false
-    auto_create_bundle: null
+    auto_create_bundle: events
 field_type: entity_reference
