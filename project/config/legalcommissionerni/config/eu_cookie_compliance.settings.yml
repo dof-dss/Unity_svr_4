@@ -1,9 +1,6 @@
 _core:
   default_config_hash: zmkyvoZ03LGqfVeB0mtslC-pkWMOrGIU9lJl9_jqUkc
 langcode: en
-dependencies:
-  config:
-    - filter.format.basic_html
 uuid: 651486f2-81c6-4ee1-9ba0-5d4425756a48
 popup_enabled: true
 popup_clicking_confirmation: false
@@ -84,3 +81,6 @@ close_button_action: close_banner
 reject_button_label: ''
 reject_button_enabled: false
 close_button_enabled: false
+dependencies:
+  config:
+    - filter.format.basic_html
