@@ -1,11 +1,24 @@
 uuid: 01d233b0-b8d7-4a76-b01b-890f62af4f3a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - origins_toc
+third_party_settings:
+  origins_toc:
+    toc_enable: 0
+    toc_title: 'Table of contents'
+    toc_location: ''
+    toc_insert: after
+    toc_source_container: ''
+    toc_element: h2
+    toc_exclusions: ''
+    toc_screen_depth: '1'
+    toc_debug: 0
 _core:
   default_config_hash: uEGJlodSCDScv46iJjns2NrXa6PeqGEnbQzxwI5GhuI
 name: 'Publication topics'
 vid: publications_topics
 description: 'list of topics for publication content types'
 weight: 0
-new_revision: false
+new_revision: true

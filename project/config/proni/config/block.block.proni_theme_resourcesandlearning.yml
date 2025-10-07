@@ -1,0 +1,25 @@
+uuid: 6b41afde-c447-4fb9-9464-dd3950e7d4e9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_with_link:d2661e2a-49ee-41cd-8cca-0cd0868db892'
+  module:
+    - block_content
+  theme:
+    - proni_theme
+id: proni_theme_resourcesandlearning
+theme: proni_theme
+region: top_third
+weight: 0
+provider: null
+plugin: 'block_content:d2661e2a-49ee-41cd-8cca-0cd0868db892'
+settings:
+  id: 'block_content:d2661e2a-49ee-41cd-8cca-0cd0868db892'
+  label: 'Resources and Learning'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

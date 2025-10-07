@@ -1,0 +1,30 @@
+uuid: 21fad719-1837-426d-88af-d63200c725b0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_link:670661da-7a4e-4a3e-9bcd-6c3f4620e5a5'
+  module:
+    - block_content
+    - system
+  theme:
+    - nicswell_theme
+id: mentalhealthhub
+theme: nicswell_theme
+region: featured_second
+weight: -13
+provider: null
+plugin: 'block_content:670661da-7a4e-4a3e-9bcd-6c3f4620e5a5'
+settings:
+  id: 'block_content:670661da-7a4e-4a3e-9bcd-6c3f4620e5a5'
+  label: 'Mental Health Hub'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
