@@ -12,5 +12,4 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-frontpage_title: 'Welcome to Legal Commissioner Northern Ireland'
-frontpage_show_title: 0
+frontpage_title: 'Welcome to Legal Commissioner Northern Ireland site'
