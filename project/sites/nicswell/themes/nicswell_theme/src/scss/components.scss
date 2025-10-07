@@ -285,7 +285,7 @@
           background-color: #e7e7e7;
           background-image: resolve('arrow_forward_black.svg');
           margin: 0 -1px -3px;
-          padding: 0 1px;
+          padding: 1rem;
           border-bottom: 3px solid $black;
 
           h3 {
@@ -809,12 +809,12 @@
       }
     }
   }
-}
 
-.media-image {
-  width: 100%;
-  position: relative;
-  margin: 0 !important;
+  .media-image {
+    width: 100%;
+    position: relative;
+    margin: 0 !important;
+  }
 }
 
 #featured_second {
