@@ -99,7 +99,8 @@ field_settings:
     type: solr_text_spellcheck
     configuration:
       type: union
-      separator: |+
+      separator: |
+
       fields:
         - 'entity:node/body'
         - 'entity:node/title'
@@ -127,7 +128,8 @@ field_settings:
     boost: 21.0
     configuration:
       type: union
-      separator: |+
+      separator: |
+
       fields: {  }
   type:
     label: 'Content type'

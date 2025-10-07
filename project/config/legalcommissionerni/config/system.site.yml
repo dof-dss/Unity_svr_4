@@ -2,7 +2,7 @@ _core:
   default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
 langcode: en
 uuid: 1510ec57-1ab4-4067-86bd-a642cfd84f4f
-name: 'Legal Commissioner Northern Ireland'
+name: 'Legal Services Oversight Commissioner for NI'
 mail: marian@legalcommissioner-ni.org.uk
 slogan: ''
 page:
@@ -12,4 +12,5 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-frontpage_title: 'Welcome to Legal Commissioner Northern Ireland site'
+frontpage_title: 'Welcome to Legal Services Oversight Commissioner for NI'
+frontpage_show_title: 0
