@@ -1,11 +1,11 @@
-uuid: cf944fb4-8578-44fc-9b3e-0f89a2488c85
+uuid: eb73aec8-a805-46e0-b852-c101d4b3e238
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: slideshow
-label: Slideshow
+id: health_advice
+label: 'Health Advice'
 handler: simple
 handler_configuration: {  }
 entity_settings:
@@ -16,9 +16,9 @@ entity_settings:
       view_name: filtered_feature_reference
       display_name: entity_reference_view
       arguments:
-        - '34'
+        - '24'
 queue_settings:
   min_size: 0
-  max_size: 5
+  max_size: 20
   act_as_queue: false
   reverse: false

@@ -1,11 +1,11 @@
-uuid: cf944fb4-8578-44fc-9b3e-0f89a2488c85
+uuid: 381b6ab1-6ee0-4e4b-a284-f1fe041f2c4a
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: slideshow
-label: Slideshow
+id: support_services
+label: 'Support Services'
 handler: simple
 handler_configuration: {  }
 entity_settings:
@@ -16,9 +16,9 @@ entity_settings:
       view_name: filtered_feature_reference
       display_name: entity_reference_view
       arguments:
-        - '34'
+        - '25'
 queue_settings:
   min_size: 0
-  max_size: 5
+  max_size: 0
   act_as_queue: false
   reverse: false
