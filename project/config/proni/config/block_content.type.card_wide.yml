@@ -1,0 +1,10 @@
+uuid: 7541ea07-0960-48e1-a082-7d86697ab428
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uLbE2Xc_HQ8lNj5llh6ZGxw6Jwx3ObYFX7DMs__dQBI
+id: card_wide
+label: 'Card - wide'
+revision: 1
+description: ''
