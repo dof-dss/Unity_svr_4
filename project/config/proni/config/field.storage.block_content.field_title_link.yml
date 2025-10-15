@@ -1,4 +1,4 @@
-uuid: 7a51cf2d-de58-47d7-80f9-f38699cff34c
+uuid: dd389b54-35a3-4171-b944-fc11eb9c7502
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - block_content
     - link
 _core:
-  default_config_hash: rNTCaj7V8Pw5SaWT6V9fp4zAi4RDuomT45FUDmi9fRM
-id: block_content.field_link
-field_name: field_link
+  default_config_hash: P-pL421OL2gJ8T8ea7h8GBOpRDL637FOvXhmmXrTsyc
+id: block_content.field_title_link
+field_name: field_title_link
 entity_type: block_content
 type: link
 settings: {  }

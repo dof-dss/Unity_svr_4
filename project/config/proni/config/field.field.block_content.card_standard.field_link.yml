@@ -1,23 +1,25 @@
-uuid: 48e352d3-1a58-429e-a9a3-228a2203dbfb
+uuid: 4cbbee6f-b62d-469b-bf85-095fbc41d548
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.block_with_link
+    - block_content.type.card_standard
     - field.storage.block_content.field_link
   module:
     - link
-id: block_content.block_with_link.field_link
+_core:
+  default_config_hash: RLmydOAUqh2wFcPSY2ujlLAPhf9eI9Q16LJ0Y4n3LBE
+id: block_content.card_standard.field_link
 field_name: field_link
 entity_type: block_content
-bundle: block_with_link
+bundle: card_standard
 label: Link
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  title: 2
+  title: 1
   link_type: 17
 field_type: link
