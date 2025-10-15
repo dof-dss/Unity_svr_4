@@ -18,6 +18,9 @@ bundles:
     bundle: featured_content_list
   -
     entity_type: node
+    bundle: landing_page
+  -
+    entity_type: node
     bundle: news
   -
     entity_type: node
