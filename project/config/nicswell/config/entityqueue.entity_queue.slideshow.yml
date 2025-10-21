@@ -10,15 +10,13 @@ handler: simple
 handler_configuration: {  }
 entity_settings:
   target_type: node
-  handler: 'default:node'
+  handler: views
   handler_settings:
-    target_bundles:
-      feature: feature
-    sort:
-      field: _none
-      direction: ASC
-    auto_create: false
-    auto_create_bundle: ''
+    view:
+      view_name: filtered_feature_reference
+      display_name: entity_reference_view
+      arguments:
+        - '34'
 queue_settings:
   min_size: 0
   max_size: 5
