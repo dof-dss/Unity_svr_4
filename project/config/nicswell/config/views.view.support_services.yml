@@ -3,16 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.support_services
     - field.storage.node.field_link_url
     - field.storage.node.field_photo
     - node.type.feature
-    - taxonomy.vocabulary.feature_type
-  content:
-    - 'taxonomy_term:feature_type:7939da07-cd9a-4423-899a-cad5f7475ad2'
   module:
+    - entityqueue
     - link
     - node
-    - taxonomy
     - user
 id: support_services
 label: 'Support Services'
@@ -248,22 +246,20 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        created:
-          id: created
+        entityqueue_relationship:
+          id: entityqueue_relationship
           table: node_field_data
-          field: created
+          field: entityqueue_relationship
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
+          plugin_id: entity_queue_position
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
           exposed: false
-          granularity: second
       arguments: {  }
       filters:
         status:
@@ -286,17 +282,17 @@ display:
           plugin_id: bundle
           value:
             feature: feature
-        field_feature_type_target_id:
-          id: field_feature_type_target_id
-          table: node__field_feature_type
-          field: field_feature_type_target_id
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: taxonomy_index_tid
-          operator: or
-          value:
-            25: 25
+          entity_type: node
+          plugin_id: entity_queue_in_queue
+          operator: '='
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -313,7 +309,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -326,12 +321,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
-          vid: feature_type
-          type: select
-          hierarchy: false
-          limit: true
-          error_message: true
       style:
         type: default
         options:
@@ -348,7 +337,18 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          entity_type: node
+          plugin_id: entity_queue
+          required: true
+          limit_queue: support_services
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -360,6 +360,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:entityqueue.entity_queue.support_services'
         - 'config:field.storage.node.field_link_url'
         - 'config:field.storage.node.field_photo'
   support_services:
@@ -381,5 +382,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:entityqueue.entity_queue.support_services'
         - 'config:field.storage.node.field_link_url'
         - 'config:field.storage.node.field_photo'

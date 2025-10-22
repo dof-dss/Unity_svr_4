@@ -17,7 +17,7 @@ mode: default
 content:
   field_link:
     type: link_default
-    weight: 2
+    weight: 6
     region: content
     settings:
       placeholder_url: ''

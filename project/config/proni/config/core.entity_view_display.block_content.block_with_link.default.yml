@@ -20,10 +20,10 @@ content:
       trim_length: 80
       url_only: false
       url_plain: false
-      rel: '0'
-      target: '0'
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: content
   field_photo:
     type: entity_reference_entity_view
