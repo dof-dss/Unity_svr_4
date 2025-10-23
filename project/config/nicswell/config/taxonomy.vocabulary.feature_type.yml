@@ -1,9 +1,0 @@
-uuid: 6c0cde92-3d80-41c8-998e-715155e84227
-langcode: en
-status: true
-dependencies: {  }
-name: 'Feature Type'
-vid: feature_type
-description: null
-weight: 0
-new_revision: false
