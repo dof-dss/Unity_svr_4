@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.feature.field_feature_type
     - field.field.node.feature.field_link_url
     - field.field.node.feature.field_photo
     - field.field.node.feature.field_teaser
@@ -25,12 +24,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_feature_type:
-    type: options_select
-    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
