@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
+    - field.field.node.publication.field_html_document
     - field.field.node.publication.field_meta_tags
     - field.field.node.publication.field_publication_type
     - field.field.node.publication.field_published_date
@@ -35,6 +36,15 @@ content:
       link: false
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_html_document:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: embed
+      link: false
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_published_date:
     type: datetime_default
