@@ -1,24 +1,22 @@
-uuid: e78fc29c-386f-4ec9-9f30-d2600e818ef9
+uuid: c2d8a287-1d83-44c6-82a9-2d5d8c397216
 langcode: en
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: gweAA1BNqfXlXXbbbIrQnJZxpvvYJpq6awSW7On3NhQ
-id: html_doument_pattern
-label: 'HTML Doument pattern'
+id: html_document
+label: 'HTML Document'
 type: 'canonical_entities:node'
 pattern: 'publications/html-document/[node:title]'
 selection_criteria:
-  247b000e-8f86-4791-be82-89d51c64c5ae:
+  794dd4db-d7dd-4149-9bf6-12db5d5a42e1:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 247b000e-8f86-4791-be82-89d51c64c5ae
+    uuid: 794dd4db-d7dd-4149-9bf6-12db5d5a42e1
     context_mapping:
       node: node
     bundles:
       html_document: html_document
 selection_logic: and
-weight: -5
+weight: 0
 relationships: {  }
