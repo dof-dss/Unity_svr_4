@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.basic_html_publications
     - media.type.audio
     - media.type.document
     - media.type.file
@@ -133,6 +134,7 @@ permissions:
   - 'use nics_editorial_workflow transition restore_to_draft'
   - 'use nics_editorial_workflow transition submit_for_review'
   - 'use text format basic_html'
+  - 'use text format basic_html_publications'
   - 'view all revisions'
   - 'view all scheduled transitions'
   - 'view any unpublished content'

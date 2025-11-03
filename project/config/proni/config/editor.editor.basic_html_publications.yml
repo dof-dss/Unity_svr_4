@@ -1,0 +1,69 @@
+uuid: 25c6957b-2069-4634-8d88-b67ddc59b021
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html_publications
+  module:
+    - ckeditor5
+format: basic_html_publications
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - bold
+      - italic
+      - blockQuote
+      - removeFormat
+      - subscript
+      - '|'
+      - heading
+      - style
+      - '|'
+      - insertTable
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - drupalMedia
+      - sourceEditing
+      - '|'
+      - undo
+      - redo
+      - '|'
+      - importWord
+      - fullScreen
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      properties:
+        reversed: false
+        startIndex: true
+      multiBlock: true
+    ckeditor5_premium_features_import_word__import_word:
+      upload_media:
+        enabled: false
+        media_bundle: image
+        media_field_name: field_media_image
+        image_destination_dir: cke5-word-import-images
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Information notice'
+          element: '<p class="info-notice">'
+        -
+          label: Button
+          element: '<a class="btn">'
+    media_media:
+      allow_view_mode_override: true
+image_upload:
+  status: false

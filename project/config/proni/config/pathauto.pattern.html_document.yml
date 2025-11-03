@@ -1,0 +1,22 @@
+uuid: c2d8a287-1d83-44c6-82a9-2d5d8c397216
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: html_document
+label: 'HTML Document'
+type: 'canonical_entities:node'
+pattern: 'publications/html-document/[node:title]'
+selection_criteria:
+  794dd4db-d7dd-4149-9bf6-12db5d5a42e1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 794dd4db-d7dd-4149-9bf6-12db5d5a42e1
+    context_mapping:
+      node: node
+    bundles:
+      html_document: html_document
+selection_logic: and
+weight: 0
+relationships: {  }

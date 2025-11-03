@@ -1,0 +1,13 @@
+uuid: db387483-37f2-4b93-a1ee-a5aa311703a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: wSOSA244-Qtf7keeRAPlhIf6ft-gkw9BT-NbRdlvAMc
+id: node.embed
+label: Embed
+description: ''
+targetEntityType: node
+cache: true
