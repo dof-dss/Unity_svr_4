@@ -1,0 +1,26 @@
+uuid: 2571094f-819d-415a-ab4e-785b5416cabd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_html
+    - filter.format.basic_html_publications
+    - node.type.html_document
+  module:
+    - text
+_core:
+  default_config_hash: hHwzKrvji-l5oM4xlBJZo0ZScQoOIutOKrfKkfQgUak
+id: node.html_document.field_html
+field_name: field_html
+entity_type: node
+bundle: html_document
+label: HTML
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html_publications
+field_type: text_long

@@ -1,0 +1,30 @@
+uuid: 2c77d0b0-5f47-4b75-b220-38e3cf27a498
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - origins_toc
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  origins_toc:
+    toc_enable: 1
+    toc_title: 'Table of contents'
+    toc_location: '#block-pagetitle'
+    toc_insert: after
+    toc_source_container: '#block-mainpagecontent .content'
+    toc_element: h2
+    toc_exclusions: ''
+    toc_screen_depth: '2'
+    toc_debug: 0
+_core:
+  default_config_hash: YEkPNgmn6k6Z84rkpKaM0qV-EhH5gAsscFDIXBRHAfs
+name: 'HTML document'
+type: html_document
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

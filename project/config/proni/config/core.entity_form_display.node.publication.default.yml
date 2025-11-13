@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.publication.body
     - field.field.node.publication.field_attachment
+    - field.field.node.publication.field_html_document
     - field.field.node.publication.field_meta_tags
     - field.field.node.publication.field_publication_type
     - field.field.node.publication.field_published_date
@@ -50,6 +51,16 @@ content:
     third_party_settings:
       media_library_edit:
         show_edit: '1'
+  field_html_document:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose
     weight: 16

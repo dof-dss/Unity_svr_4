@@ -1,0 +1,24 @@
+uuid: 91286c20-3fed-46d8-bddb-e20c690868d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.html_document
+_core:
+  default_config_hash: v3m8yKIgTdfNCLc1O9WokQnsSxfhRffjkLaq7QOKPfw
+id: node.html_document.status
+field_name: status
+entity_type: node
+bundle: html_document
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
