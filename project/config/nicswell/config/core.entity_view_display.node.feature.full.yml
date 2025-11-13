@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - field.field.node.feature.field_feature_type
     - field.field.node.feature.field_link_url
     - field.field.node.feature.field_photo
     - field.field.node.feature.field_teaser
@@ -55,7 +54,6 @@ content:
     region: content
 hidden:
   content_moderation_control: true
-  field_feature_type: true
   langcode: true
   links: true
   search_api_excerpt: true

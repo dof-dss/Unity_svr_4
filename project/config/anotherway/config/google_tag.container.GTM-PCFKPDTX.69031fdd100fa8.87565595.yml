@@ -1,0 +1,42 @@
+uuid: 3b10458c-dcc1-4924-8e98-4def13cd5fff
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: GTM-PCFKPDTX.69031fdd100fa8.87565595
+label: GTM-PCFKPDTX
+weight: 0
+tag_container_ids:
+  - GTM-PCFKPDTX
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-PCFKPDTX:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+events:
+  search: {  }
+  webform_purchase: {  }
+  generate_lead:
+    value: ''
+    currency: ''
+  custom: {  }
+  sign_up:
+    method: CMS
+  login:
+    method: CMS
