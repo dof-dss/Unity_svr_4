@@ -4,3 +4,86 @@
  */
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+.top_left #logo img {
+  height: 10rem;
+  @media screen and (max-width: $tab) {
+    position: relative;
+  }
+}
+
+#block-frontpagebanner{
+  background: resolve('AW-header.png') no-repeat 50%;
+  height: 30rem;
+}
+
+#main-menu {
+  background: $white;
+
+  .menu-link,
+  .menu .active,
+  .menu-item.open .menu-toggle-btn {
+    color: $black;
+    @include adjust-font-size-to(16px);
+  }
+
+  .menu
+  .menu-item
+  .active {
+    border-bottom-color: rgba(191,191,191,0.10);
+    text-decoration: underline;
+  }
+
+  .menu-link {
+    &:hover,
+    &:focus {
+      background: $brand-primary;
+      color: $white;
+    }
+  }
+  .menu-main_sub
+  .menu-item
+  span.active {
+    @include adjust-font-size-to(14px);
+    padding: 1rem;
+  }
+
+  .menu-main_sub {
+    background: $brand-primary;
+
+    .menu-item {
+      background: $brand-primary;
+
+      .active {
+        background: $brand-primary;
+        color: $white;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          color: $white;
+          background: $brand-secondary;
+        }
+      }
+    }
+  }
+}
+
+.region-front-welcome {
+  text-align: left;
+  background: #e7e7e7;
+
+  p {
+    width: 70%;
+    @media screen and (max-width: $tab) {
+      width: 100%;
+    }
+  }
+
+  .block h2 {
+    text-align: left;
+    padding: 0;
+    color: $brand-primary;
+  }
+}
