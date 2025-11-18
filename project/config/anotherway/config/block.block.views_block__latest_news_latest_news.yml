@@ -1,0 +1,29 @@
+uuid: c1ddda2b-d2af-4fd4-bea3-ab2e612bd61c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_news
+  module:
+    - system
+    - views
+  theme:
+    - anotherway_theme
+id: views_block__latest_news_latest_news
+theme: anotherway_theme
+region: top_first
+weight: -3
+provider: null
+plugin: 'views_block:latest_news-latest_news'
+settings:
+  id: 'views_block:latest_news-latest_news'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

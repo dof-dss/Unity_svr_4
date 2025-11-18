@@ -7,7 +7,7 @@ dependencies:
 id: pagetitle
 theme: anotherway_theme
 region: content
-weight: -1
+weight: -3
 provider: null
 plugin: page_title_block
 settings:

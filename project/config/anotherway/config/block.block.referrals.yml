@@ -1,0 +1,30 @@
+uuid: b8771cc9-38e8-4dbd-afe6-45623444322f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:5c42f61d-f604-456b-80f3-a327330a745a'
+  module:
+    - block_content
+    - system
+  theme:
+    - anotherway_theme
+id: referrals
+theme: anotherway_theme
+region: top_second
+weight: 0
+provider: null
+plugin: 'block_content:5c42f61d-f604-456b-80f3-a327330a745a'
+settings:
+  id: 'block_content:5c42f61d-f604-456b-80f3-a327330a745a'
+  label: Referrals
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

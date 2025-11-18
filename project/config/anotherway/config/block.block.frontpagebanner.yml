@@ -1,0 +1,30 @@
+uuid: 75276a47-56d0-4a09-ab2b-cadb8344afbb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:0bef6d51-a691-4376-8309-f3c8c31e22d7'
+  module:
+    - block_content
+    - system
+  theme:
+    - anotherway_theme
+id: frontpagebanner
+theme: anotherway_theme
+region: slideshow
+weight: 0
+provider: null
+plugin: 'block_content:0bef6d51-a691-4376-8309-f3c8c31e22d7'
+settings:
+  id: 'block_content:0bef6d51-a691-4376-8309-f3c8c31e22d7'
+  label: 'Frontpage banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
