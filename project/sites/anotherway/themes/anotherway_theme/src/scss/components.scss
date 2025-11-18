@@ -12,9 +12,14 @@
   }
 }
 
+.region-primary-menu .menu_wrapper {
+  border-top: solid 1px $brand-secondary;
+  border-bottom: solid 1px $brand-secondary;
+}
+
 #block-frontpagebanner {
   background: resolve('AW-header.png') no-repeat 50%;
-  height: 30rem;
+  height: 26rem;
   background-size: contain;
   @media screen and (max-width: $tab) {
     display: none;
@@ -75,20 +80,20 @@
 }
 
 .region-front-welcome {
+  margin: auto;
+}
+
+#top-area #block-welcome {
   text-align: left;
   background: #e7e7e7;
+  padding: 1%;
+  margin-bottom: 3rem;
 
   p {
     width: 70%;
-    padding: 0 0 3rem 1rem;
     @media screen and (max-width: $tab) {
       width: 100%;
     }
-  }
-
-  .block h2 {
-    text-align: left;
-    color: $brand-primary;
   }
 }
 
@@ -96,11 +101,10 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 2.5rem;
   text-align: left;
 }
 
-#top-area .latest-news-home-wrapper h2,
 #top-area .latest-news-home-wrapper h3 {
   font-size: 2.4rem;
 }
@@ -124,17 +128,20 @@
   margin-top: 3rem;
 }
 
-#block-referrals {
-  text-align: left;
+#top-area {
+  #block-referrals {
+    text-align: left;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 
-  h2 {
-    margin-top: 5rem;
-    padding-top: 5rem;
-    border-top: solid $black 3px;
-  }
+    h2 {
+      padding-top: 5rem;
+      border-top: solid $black 3px;
+    }
 
-  a.btn {
-    background: #0a850c;
+    a.btn {
+      background: #0a850c;
+    }
   }
 }
 
