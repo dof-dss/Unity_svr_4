@@ -12,9 +12,13 @@
   }
 }
 
-#block-frontpagebanner{
+#block-frontpagebanner {
   background: resolve('AW-header.png') no-repeat 50%;
   height: 30rem;
+  background-size: contain;
+  @media screen and (max-width: $tab) {
+    display: none;
+  }
 }
 
 #main-menu {
@@ -76,6 +80,7 @@
 
   p {
     width: 70%;
+    padding: 0 0 3rem 1rem;
     @media screen and (max-width: $tab) {
       width: 100%;
     }
@@ -83,7 +88,53 @@
 
   .block h2 {
     text-align: left;
-    padding: 0;
     color: $brand-primary;
   }
 }
+
+.latest-news-home-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  text-align: left;
+}
+
+#top-area .latest-news-home-wrapper h2,
+#top-area .latest-news-home-wrapper h3 {
+  font-size: 2.4rem;
+}
+
+#top-area h2 {
+  color: $brand-primary;
+}
+
+@media (max-width: 600px) {
+  .latest-news-home-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+#top-area .column {
+  width: 100%;
+}
+
+.btn.view-all-link {
+  border-radius: 3rem;
+  margin-top: 3rem;
+}
+
+#block-referrals {
+  text-align: left;
+
+  h2 {
+    margin-top: 5rem;
+    padding-top: 5rem;
+    border-top: solid $black 3px;
+  }
+
+  a.btn {
+    background: #0a850c;
+  }
+}
+
