@@ -11,8 +11,8 @@ dependencies:
     - anotherway_theme
 id: frontpagebanner
 theme: anotherway_theme
-region: slideshow
-weight: 0
+region: front_welcome
+weight: -5
 provider: null
 plugin: 'block_content:0bef6d51-a691-4376-8309-f3c8c31e22d7'
 settings:

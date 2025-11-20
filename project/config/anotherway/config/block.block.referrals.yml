@@ -11,8 +11,8 @@ dependencies:
     - anotherway_theme
 id: referrals
 theme: anotherway_theme
-region: top_second
-weight: 0
+region: top_third
+weight: -4
 provider: null
 plugin: 'block_content:5c42f61d-f604-456b-80f3-a327330a745a'
 settings:

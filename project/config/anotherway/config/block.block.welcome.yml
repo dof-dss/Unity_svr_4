@@ -11,8 +11,8 @@ dependencies:
     - anotherway_theme
 id: welcome
 theme: anotherway_theme
-region: front_welcome
-weight: 0
+region: top_first
+weight: -4
 provider: null
 plugin: 'block_content:ad76e08d-0237-442e-a154-848e008541e7'
 settings:

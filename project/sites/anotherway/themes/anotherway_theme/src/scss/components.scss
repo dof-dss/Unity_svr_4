@@ -126,6 +126,7 @@
 .btn.view-all-link {
   border-radius: 3rem;
   margin-top: 3rem;
+  background: $brand-primary;
 }
 
 #top-area {
@@ -139,8 +140,12 @@
       border-top: solid $black 3px;
     }
 
-    a.btn {
+    .btn {
       background: #0a850c;
+
+      &:hover {
+        background: #666;
+      }
     }
   }
 }

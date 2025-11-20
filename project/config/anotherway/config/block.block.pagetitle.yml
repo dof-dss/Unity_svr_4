@@ -2,6 +2,8 @@ uuid: 1f09098a-430f-475e-b065-49833039fbb9
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - anotherway_theme
 id: pagetitle
@@ -15,4 +17,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/search\r\n/news\r\n/news/date/*\r\n/publications\r\n/publications/date/*\r\n/publications/type/*\r\n\r\n"

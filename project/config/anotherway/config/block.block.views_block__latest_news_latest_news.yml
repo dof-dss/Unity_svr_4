@@ -11,8 +11,8 @@ dependencies:
     - anotherway_theme
 id: views_block__latest_news_latest_news
 theme: anotherway_theme
-region: top_first
-weight: -3
+region: top_second
+weight: -4
 provider: null
 plugin: 'views_block:latest_news-latest_news'
 settings:
