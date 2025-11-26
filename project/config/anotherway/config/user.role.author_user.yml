@@ -12,6 +12,7 @@ dependencies:
     - node.type.basic_page
     - node.type.news
     - node.type.publication
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
     - filter
@@ -67,6 +68,10 @@ permissions:
   - 'revert news revisions'
   - 'revert publication revisions'
   - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition submit_for_review'
   - 'use text format basic_html'
   - 'view any unpublished content'
   - 'view basic_page revisions'

@@ -12,10 +12,13 @@ dependencies:
     - node.type.basic_page
     - node.type.news
     - node.type.publication
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
+    - contextual
     - file
     - filter
+    - layout_builder
     - media
     - menu_admin_per_menu
     - moderation_sidebar
@@ -37,12 +40,18 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
+  - 'access contextual links'
   - 'access files overview'
   - 'access media overview'
   - 'access toolbar'
+  - 'add scheduled transitions node basic_page'
+  - 'add scheduled transitions node news'
+  - 'add scheduled transitions node publication'
+  - 'add scheduled transitions node webform'
   - 'administer main menu items'
   - 'administer redirects'
   - 'audit content'
+  - 'create and edit custom blocks'
   - 'create audio media'
   - 'create basic_page content'
   - 'create document media'
@@ -90,11 +99,23 @@ permissions:
   - 'edit own news content'
   - 'edit own publication content'
   - 'edit own remote_video media'
+  - 'reschedule scheduled transitions node basic_page'
+  - 'reschedule scheduled transitions node news'
+  - 'reschedule scheduled transitions node publication'
+  - 'reschedule scheduled transitions node webform'
   - 'revert all revisions'
   - 'revert basic_page revisions'
   - 'revert news revisions'
   - 'revert publication revisions'
   - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition archive'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition publish'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition restore'
+  - 'use nics_editorial_workflow transition restore_to_draft'
+  - 'use nics_editorial_workflow transition submit_for_review'
   - 'use text format basic_html'
   - 'view all revisions'
   - 'view all scheduled transitions'
@@ -105,4 +126,9 @@ permissions:
   - 'view news revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'
+  - 'view publication revisions'
+  - 'view scheduled transitions node basic_page'
+  - 'view scheduled transitions node news'
+  - 'view scheduled transitions node publication'
+  - 'view scheduled transitions node webform'
   - 'view the administration theme'
