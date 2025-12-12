@@ -29,6 +29,14 @@
 'https://proni.gov.uk/':
     type: redirect
     to: 'https://www.proni.gov.uk/'
+'https://www.oice.org.uk/':
+    type: upstream
+    upstream: 'unity_svr_4:http'
+    cache:
+        enabled: 'false'
+'https://oice.org.uk/':
+    type: redirect
+    to: 'https://www.oice.org.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_4:http'

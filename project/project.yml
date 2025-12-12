@@ -54,3 +54,13 @@ sites:
         database: proni
         status: development
         default: false
+    oice:
+        name: OICE
+        url: oice.org.uk
+        solr: oice
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/oice ; drush core-cron'
+        database: oice
+        status: development
+        default: false

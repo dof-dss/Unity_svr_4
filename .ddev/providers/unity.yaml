@@ -22,6 +22,7 @@ db_pull_command:
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=autismreviewerni --gzip --file=/var/www/html/.ddev/.downloads/db_autismreviewerni.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=anotherway --gzip --file=/var/www/html/.ddev/.downloads/db_anotherway.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
         platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=proni --gzip --file=/var/www/html/.ddev/.downloads/db_proni.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
+        platform db:dump --yes ${PLATFORM_APP:+"--app=${PLATFORM_APP}"} --relationship=oice --gzip --file=/var/www/html/.ddev/.downloads/db_oice.sql.gz --project="${PLATFORM_PROJECT:-setme}" --environment="${PLATFORM_ENVIRONMENT:-setme}"
 db_import_command:
     command: |
         set -eu -o pipefail
@@ -31,6 +32,7 @@ db_import_command:
         gzip -dc .ddev/.downloads/db_autismreviewerni.sql.gz | ddev import-db --database=autismreviewerni --skip-hooks 
         gzip -dc .ddev/.downloads/db_anotherway.sql.gz | ddev import-db --database=anotherway --skip-hooks 
         gzip -dc .ddev/.downloads/db_proni.sql.gz | ddev import-db --database=proni --skip-hooks 
+        gzip -dc .ddev/.downloads/db_oice.sql.gz | ddev import-db --database=oice --skip-hooks 
     service: host
 files_pull_command:
     command: |
