@@ -380,3 +380,39 @@ div.event-info {
     }
   }
 }
+
+.text-count-wrapper {
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+  color: #fff;
+  background-color: $charcoal;
+  padding: .3334em .6rem;
+  margin: -3px 0 0;
+
+  @include breakpoint($lap) {
+    font-size: 1.8rem;
+  }
+
+  @include breakpoint($desk) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  &.webform-counter-warning .text-count {
+    color: lighten(orange, 10%);
+    font-weight: bold;
+  }
+
+  input + & {
+    max-width: 560px;
+  }
+}
+
+.webform-counter {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.textarea-wrapper {
+  line-height: 0;
+}
