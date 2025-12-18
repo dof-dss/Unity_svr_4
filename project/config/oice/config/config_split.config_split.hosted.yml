@@ -1,0 +1,16 @@
+uuid: 26731700-4a9e-47c9-a881-7e50d88b8fe2
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/oice/hosted
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

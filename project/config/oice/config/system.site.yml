@@ -1,15 +1,14 @@
 _core:
   default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
-name: OICE
+langcode: en
+uuid: 80d19253-ac53-4e86-91a2-8bd3d5ed0e16
+name: 'The Office of Identity and Cultural Expression'
 mail: test@test.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-uuid: 80d19253-ac53-4e86-91a2-8bd3d5ed0e16
-frontpage_title: 'Welcome to Drupal site'
