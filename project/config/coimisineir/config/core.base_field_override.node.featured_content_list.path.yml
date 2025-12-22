@@ -1,0 +1,20 @@
+uuid: f2b2350c-6e8a-4e43-acc0-04f28f3a0e40
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.featured_content_list
+  module:
+    - path
+id: node.featured_content_list.path
+field_name: path
+entity_type: node
+bundle: featured_content_list
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

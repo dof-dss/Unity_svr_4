@@ -1,0 +1,24 @@
+uuid: bf4ff4db-c603-47ff-ba2d-a7f8cf26fac6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: YKHeA9MJ1HVua1H5YHicxKH1SSxsR9XIKXDv93b72RM
+id: consultations_pattern
+label: 'Consultations pattern'
+type: 'canonical_entities:node'
+pattern: 'consultations/[node:title]'
+selection_criteria:
+  3b57b096-f604-463f-bd3a-d13aa23f2905:
+    id: 'entity_bundle:node'
+    bundles:
+      consultation: consultation
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 3b57b096-f604-463f-bd3a-d13aa23f2905
+selection_logic: and
+weight: -5
+relationships: {  }

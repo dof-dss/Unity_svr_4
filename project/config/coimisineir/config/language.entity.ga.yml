@@ -1,0 +1,9 @@
+uuid: 2287faca-f3c1-49ee-9aad-a8e83429ed0a
+langcode: ga
+status: true
+dependencies: {  }
+id: ga
+label: Irish
+direction: ltr
+weight: 1
+locked: false
