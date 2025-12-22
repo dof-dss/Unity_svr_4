@@ -60,7 +60,7 @@ hooks:
         export FASTLY_API_SERVICE=dummyservice
 
         # For each multi site - run db-updates and import config.
-        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice
+        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -107,7 +107,7 @@ hooks:
         export FASTLY_API_SERVICE=$temp
 
         # For each multi site - clear cache (including Fastly cache)
-        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice
+        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -168,6 +168,8 @@ relationships:
     proni_solr: 'solr_8_11:proni'
     oice: 'db:oice'
     oice_solr: 'solr_8_11:oice'
+    coimisineir: 'db:coimisineir'
+    coimisineir_solr: 'solr_8_11:coimisineir'
 crons:
     legalcommissionerni:
         spec: '10 * * * *'
@@ -192,3 +194,6 @@ crons:
     oice:
         spec: '10 * * * *'
         cmd: 'cd web/sites/oice ; drush core-cron'
+    coimisineir:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/coimisineir ; drush core-cron'

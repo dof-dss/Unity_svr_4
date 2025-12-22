@@ -1,0 +1,18 @@
+uuid: eeee3e9d-b668-4278-981e-62bd06f25114
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.board_member
+id: node.board_member.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: board_member
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

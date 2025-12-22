@@ -16,6 +16,7 @@ db:
             - anotherwaydb
             - pronidb
             - oicedb
+            - coimisineirdb
         endpoints:
             legalcommissionerni:
                 default_schema: legalcommissionernidb
@@ -41,6 +42,10 @@ db:
                 default_schema: oicedb
                 privileges:
                     oicedb: admin
+            coimisineir:
+                default_schema: coimisineirdb
+                privileges:
+                    coimisineirdb: admin
 solr_8_11:
     type: 'solr:8.11'
     disk: 1024
@@ -58,6 +63,8 @@ solr_8_11:
                 conf_dir: !archive solr_config/
             oice_index:
                 conf_dir: !archive solr_config/
+            coimisineir_index:
+                conf_dir: !archive solr_config/
         endpoints:
             legalcommissionerni:
                 core: legalcommissionerni_index
@@ -71,5 +78,7 @@ solr_8_11:
                 core: proni_index
             oice:
                 core: oice_index
+            coimisineir:
+                core: coimisineir_index
 redis:
     type: 'redis:6.0'

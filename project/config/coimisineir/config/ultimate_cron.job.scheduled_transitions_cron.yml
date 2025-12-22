@@ -1,0 +1,31 @@
+uuid: 1557fbf6-faac-4caf-a420-a722bea86f20
+langcode: en
+status: true
+dependencies:
+  module:
+    - scheduled_transitions
+_core:
+  default_config_hash: qSeU_GM2NqCVUU_0YQFn8FadzQ7nDRkEJKBBQwd2Q2A
+title: 'Default cron handler'
+id: scheduled_transitions_cron
+weight: -6
+module: scheduled_transitions
+callback: scheduled_transitions_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '* * * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000
