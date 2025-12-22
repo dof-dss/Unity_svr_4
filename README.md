@@ -8,4 +8,5 @@
 | Another way | anotherway | another-way.org | ![#e8f5e9](https://placehold.co/140x30/c8e6c9/1b5e20.png?text=Production&font=source-sans-pro) |   | 
 | The Public Record Office of Northern Ireland | proni | proni.gov.uk | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
 | OICE | oice | oice.org.uk | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
-Last updated: 11/12/2025 12:08
+| Irish Language Commissioner | coimisineir | coimisineir.org | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
+Last updated: 17/12/2025 16:48

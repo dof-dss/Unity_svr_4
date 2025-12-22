@@ -37,6 +37,14 @@
 'https://oice.org.uk/':
     type: redirect
     to: 'https://www.oice.org.uk/'
+'https://www.coimisineir.org/':
+    type: upstream
+    upstream: 'unity_svr_4:http'
+    cache:
+        enabled: 'false'
+'https://coimisineir.org/':
+    type: redirect
+    to: 'https://www.coimisineir.org/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_4:http'
