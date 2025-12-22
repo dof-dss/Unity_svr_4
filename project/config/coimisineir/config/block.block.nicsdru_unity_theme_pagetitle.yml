@@ -1,0 +1,18 @@
+uuid: 55152ab2-8b91-4c25-ba1a-75077e5b287c
+langcode: en
+status: false
+dependencies:
+  theme:
+    - nicsdru_unity_theme
+id: nicsdru_unity_theme_pagetitle
+theme: nicsdru_unity_theme
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

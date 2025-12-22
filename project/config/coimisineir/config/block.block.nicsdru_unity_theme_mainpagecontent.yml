@@ -1,0 +1,20 @@
+uuid: 8de8dcb8-0326-4a12-b6d0-707b9e08df37
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nicsdru_unity_theme
+id: nicsdru_unity_theme_mainpagecontent
+theme: nicsdru_unity_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: visible
+  provider: system
+visibility: {  }

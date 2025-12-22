@@ -1,0 +1,20 @@
+uuid: fd36a1c8-e848-4e53-96d9-b83dad5ac9dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.publications_topics
+  module:
+    - path
+id: taxonomy_term.publications_topics.path
+field_name: path
+entity_type: taxonomy_term
+bundle: publications_topics
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
