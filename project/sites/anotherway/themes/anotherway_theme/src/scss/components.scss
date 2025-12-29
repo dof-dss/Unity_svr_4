@@ -21,6 +21,8 @@
   background: resolve('AW-header.png') no-repeat 50%;
   height: 26rem;
   background-size: contain;
+  background-position: left -6rem center;
+  background-size: 110% auto;
   @media screen and (max-width: $tab) {
     display: none;
   }
@@ -90,7 +92,7 @@
   margin-bottom: 3rem;
 
   p {
-    width: 70%;
+    width: 60%;
     @media screen and (max-width: $tab) {
       width: 100%;
     }
@@ -103,10 +105,11 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
   text-align: left;
+  margin-bottom: 5rem;
 }
 
 #top-area .latest-news-home-wrapper h3 {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 #top-area h2 {
@@ -129,15 +132,22 @@
   background: $brand-primary;
 }
 
+.region-top-third {
+  border-top: solid #000 3px;
+}
+
 #top-area {
   #block-referrals {
     text-align: left;
     margin-bottom: 3rem;
     margin-top: 3rem;
+    width: 60%;
+    @media screen and (max-width: $tab) {
+      width: 100%;
+    }
 
     h2 {
       padding-top: 5rem;
-      border-top: solid $black 3px;
     }
 
     .btn {
@@ -149,4 +159,5 @@
     }
   }
 }
+
 
