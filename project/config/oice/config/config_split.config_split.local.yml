@@ -1,0 +1,30 @@
+uuid: b2536e76-ab58-4180-9fc6-e59b4b68245a
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: local
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/oice/local
+module:
+  clone_nodes: 0
+  dblog: 0
+  easy_install: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  migrate_upgrade: 0
+  update: 0
+  views_ui: 0
+  devel: 0
+  migrate_absolute_links: 0
+  migrate_drupal_ui: 0
+  unity_file_migrations: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

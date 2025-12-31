@@ -1,0 +1,23 @@
+uuid: acec0204-3df1-4655-9c5a-b9d1e7234398
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - coimisineir_theme
+id: coimisineir_theme_sitebranding
+theme: coimisineir_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

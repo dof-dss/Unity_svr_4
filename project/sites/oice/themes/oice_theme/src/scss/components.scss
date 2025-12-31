@@ -1,0 +1,31 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+.top_left #logo img {
+  height: 100px;
+}
+
+#main-menu {
+  .menu {
+    .menu-item {
+      .active {
+        border-bottom-color: $brand-secondary;
+        background: transparent;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 766px) {
+  #headerHero {
+    margin-top: 2rem;
+  }
+}
+
+#main-menu .hamburger {
+  height: 8rem;
+}

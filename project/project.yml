@@ -54,3 +54,23 @@ sites:
         database: proni
         status: development
         default: false
+    oice:
+        name: OICE
+        url: oice.org.uk
+        solr: oice
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/oice ; drush core-cron'
+        database: oice
+        status: development
+        default: false
+    coimisineir:
+        name: 'Irish Language Commissioner'
+        url: coimisineir.org
+        solr: coimisineir
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/coimisineir ; drush core-cron'
+        database: coimisineir
+        status: development
+        default: false
