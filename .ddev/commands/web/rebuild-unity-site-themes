@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## Description: RRe-builds the Unity themes for each site.
+## Description: Rebuilds the Unity themes for each site.
 ## Usage: rebuild-unity-site-themes
 ## Aliases: ddrbst
 ## Example: "ddev rebuild-unity-site-themes"
