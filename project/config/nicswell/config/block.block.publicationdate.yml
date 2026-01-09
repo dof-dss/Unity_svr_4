@@ -1,29 +1,29 @@
-uuid: 2db06154-d880-49fe-9b78-91faeabe4985
+uuid: 8a323162-3322-4a27-80be-9251133a6f27
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.video_category
+    - facets.facet.publication_date
   module:
     - facets
     - system
   theme:
     - nicswell_theme
-id: videocategory
+id: publicationdate
 theme: nicswell_theme
 region: search_facets
-weight: -7
+weight: 0
 provider: null
-plugin: 'facet_block:video_category'
+plugin: 'facet_block:publication_date'
 settings:
-  id: 'facet_block:video_category'
-  label: 'Video Category'
+  id: 'facet_block:publication_date'
+  label: 'Publication Date'
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: videocategory
+  block_id: publicationdate
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/videos\r\n/videos/category/*"
+    pages: "/publications\r\n/publications/date/*"
