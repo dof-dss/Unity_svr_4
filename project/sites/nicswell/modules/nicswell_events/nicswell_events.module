@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * Implements hook_cron().
+ */
+function nicswell_events_cron() {
+  $storage = \Drupal::entityTypeManager()->getStorage('node');
+
+  // Load all event nodes.
+  $events = $storage->loadByProperties([
+    'type' => 'event',
+  ]);
+
+  $now = \Drupal::time()->getRequestTime();
+
+  foreach ($events as $event) {
+
+    // Skip nodes that are already archived
+    if ($event->moderation_state->value === 'archived') {
+      continue;
+    }
+
+    // Convert end_value to a UTC datetime string.
+    $event_end_timestamp = strtotime(
+      $event->get('field_event_date')->end_value
+    );
+
+    // Archive node when end date passes
+    if ($event_end_timestamp <= $now) {
+
+      \Drupal::logger('unity_events')->notice(
+        'Archiving event @nid (ended @date)',
+        [
+          '@nid' => $event->id(),
+          '@date' => date('Y-m-d H:i:s', $event_end_timestamp),
+        ]
+      );
+
+      $event->moderation_state->value = 'archived';
+      $event->save();
+    }
+  }
+}
