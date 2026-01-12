@@ -87,6 +87,7 @@ module:
   moderation_sidebar: 0
   mysql: 0
   nicswell_breadcrumbs: 0
+  nicswell_events: 0
   node: 0
   node_edit_protection: 0
   noreferrer: 0
