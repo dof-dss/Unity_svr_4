@@ -1,0 +1,17 @@
+uuid: 3649e0e6-dbf9-4eb8-9b6d-8db042be6043
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Feature
+type: feature
+description: 'Use this content type to generate items of featured content.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false
