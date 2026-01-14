@@ -6,7 +6,9 @@ dependencies:
     - field.field.node.feature.field_link_url
     - field.field.node.feature.field_photo
     - field.field.node.feature.field_teaser
+    - field.field.node.feature.field_teaser_header
     - node.type.feature
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
     - link
@@ -26,7 +28,7 @@ content:
     third_party_settings: {  }
   field_link_url:
     type: link_default
-    weight: 12
+    weight: 13
     region: content
     settings:
       placeholder_url: ''
@@ -42,6 +44,14 @@ content:
       media_library_edit:
         show_edit: '1'
   field_teaser:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_teaser_header:
     type: string_textfield
     weight: 11
     region: content

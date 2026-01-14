@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.feature.field_link_url
     - field.field.node.feature.field_photo
     - field.field.node.feature.field_teaser
+    - field.field.node.feature.field_teaser_header
     - node.type.feature
   module:
     - link
@@ -25,7 +26,7 @@ content:
       rel: '0'
       target: '0'
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_photo:
     type: entity_reference_entity_view
@@ -37,6 +38,14 @@ content:
     weight: 0
     region: content
   field_teaser:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_teaser_header:
     type: string
     label: hidden
     settings:
