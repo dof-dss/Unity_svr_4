@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.feature.field_link_url
     - field.field.node.feature.field_photo
     - field.field.node.feature.field_teaser
+    - field.field.node.feature.field_teaser_header
     - node.type.feature
   module:
     - user
@@ -15,6 +16,11 @@ targetEntityType: node
 bundle: feature
 mode: diff
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_photo:
     type: entity_reference_entity_view
     label: hidden
@@ -39,5 +45,6 @@ content:
     region: content
 hidden:
   field_link_url: true
+  field_teaser_header: true
   langcode: true
   search_api_excerpt: true
