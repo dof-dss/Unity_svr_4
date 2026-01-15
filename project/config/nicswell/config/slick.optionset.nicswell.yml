@@ -10,7 +10,7 @@ _core:
 id: nicswell
 name: nicswell
 weight: 0
-label: NICSwell`
+label: NICSwell
 group: ''
 skin: default
 breakpoints: 0
