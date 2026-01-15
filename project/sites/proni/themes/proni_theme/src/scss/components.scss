@@ -425,3 +425,9 @@ div.event-info {
   text-transform: none;
   color: $white;
 }
+
+.media-image[data-picture-mapping="slideshow"] {
+  img {
+    border-top: 1px solid $black;
+  }
+}
