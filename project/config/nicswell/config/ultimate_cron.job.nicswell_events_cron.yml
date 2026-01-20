@@ -1,0 +1,17 @@
+uuid: 3776e6bc-9258-48f3-a6f5-47a8a860e684
+langcode: en
+status: true
+dependencies:
+  module:
+    - nicswell_events
+title: 'Default cron handler'
+id: nicswell_events_cron
+weight: 0
+module: nicswell_events
+callback: 'nicswell_events#cron'
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database
