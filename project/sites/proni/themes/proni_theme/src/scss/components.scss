@@ -416,3 +416,56 @@ div.event-info {
 .textarea-wrapper {
   line-height: 0;
 }
+
+// This code EXCEPT the H2 code can be removed after a successful 10.2.26 release.
+.slick--view--slideshow .slick__slide .slide__caption {
+  @include adjust-font-size-to(20px);
+  background: rgba(0, 0, 0, .85);
+  margin: 0;
+  right: 0;
+  padding: 2%;
+  color: $white;
+  width: 355px;
+  top: 0;
+  left: auto;
+  position: absolute;
+  @media screen and (max-width: $tab) {
+    @include adjust-font-size-to(16px);
+  }
+
+  @media screen and (max-width: $lap) {
+    background: #6a6a6a;
+    opacity: 1;
+  }
+
+  @media screen and (max-width: $tab) {
+    width: 100%;
+    position: relative;
+    padding: 2%;
+  }
+
+  h2 {
+    @include adjust-font-size-to(24px);
+    margin-top: 0;
+    padding: 0;
+    text-shadow: none;
+    text-transform: none;
+    color: $white;
+  }
+}
+
+// This code can be removed after a successful 10.2.26 release.
+.slick--view--slideshow {
+  .slick__slider .slide__caption {
+    height: 100%;
+  }
+  .slick__slide .slide__caption {
+    height: 98%;
+  }
+}
+
+.media-image[data-picture-mapping="slideshow"] {
+  img {
+    border-top: 1px solid $black;
+  }
+}
