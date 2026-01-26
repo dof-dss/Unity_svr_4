@@ -1,0 +1,20 @@
+uuid: b1fd9865-4e6f-4751-9c03-4f5aa9321029
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - coimisineir_theme
+id: coimisineir_theme_languageswitcher
+theme: coimisineir_theme
+region: search
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }
