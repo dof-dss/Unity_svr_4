@@ -1,0 +1,24 @@
+#block-coimisineir-theme-languageswitcher ul {
+  display: inline-flex;
+  float: right;
+  list-style: none;
+  margin: 0;
+}
+
+#block-coimisineir-theme-languageswitcher a {
+  border: #000 solid 2px;
+  /*color: #0d4c2d;*/
+  display: block;
+  margin-right: 1em;
+  padding: .4em;
+}
+
+#block-coimisineir-theme-languageswitcher a.is-active {
+  /*background: #0d4c2d;*/
+  background: #0e6bb3;
+  color: #fff;
+}
+
+#footer {
+    border-color: #0d4c2d !important;
+}

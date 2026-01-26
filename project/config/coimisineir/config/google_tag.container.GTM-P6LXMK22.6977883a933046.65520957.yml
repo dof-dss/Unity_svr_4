@@ -1,0 +1,33 @@
+uuid: 0bec972a-327d-4129-9a6e-150c90fa1c2e
+langcode: en
+status: true
+dependencies: {  }
+id: GTM-P6LXMK22.6977883a933046.65520957
+label: GTM-P6LXMK22
+weight: 0
+tag_container_ids:
+  - GTM-P6LXMK22
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-P6LXMK22:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions: {  }
+events:
+  login:
+    method: CMS
+  webform_purchase: {  }
+  generate_lead:
+    value: ''
+    currency: ''
+  sign_up:
+    method: CMS
+  search: {  }
+  custom: {  }
