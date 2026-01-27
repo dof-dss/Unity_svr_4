@@ -18,7 +18,6 @@ module:
   ckeditor5_premium_features_import_word: 0
   clientside_validation: 0
   clientside_validation_jquery: 0
-  clone_nodes: 0
   config: 0
   config_filter: 0
   config_ignore: 0
@@ -34,11 +33,9 @@ module:
   datetime: 0
   datetime_range: 0
   dblog: 0
-  devel: 0
   diff: 0
   dynamic_entity_reference: 0
   dynamic_page_cache: 0
-  easy_install: 0
   editor: 0
   embed: 0
   entity_browser: 0
@@ -48,7 +45,6 @@ module:
   entityqueue: 0
   facets: 0
   facets_pretty_paths: 0
-  fastly: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -90,10 +86,6 @@ module:
   metatag_verification: 0
   metatag_views: 0
   migrate: 0
-  migrate_drupal: 0
-  migrate_plus: 0
-  migrate_tools: 0
-  migrate_upgrade: 0
   moderation_sidebar: 0
   mysql: 0
   node: 0
@@ -133,7 +125,6 @@ module:
   unity_breadcrumbs: 0
   unity_common: 0
   unity_eu_cookie_compliance: 0
-  unity_file_migrations: 0
   unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
@@ -141,7 +132,6 @@ module:
   update: 0
   user: 0
   views_custom_cache_tag: 0
-  views_ui: 0
   webform: 0
   webform_access: 0
   webform_node: 0

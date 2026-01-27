@@ -1,0 +1,18 @@
+uuid: 872a47bd-5c03-4dcb-97bf-8a2f82cff205
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: 'Used for the production site only.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/coimisineir/production
+module:
+  fastly: 0
+theme: {  }
+complete_list:
+  - fastly.settings
+partial_list: {  }
