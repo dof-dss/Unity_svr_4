@@ -15,4 +15,5 @@ module:
 theme: {  }
 complete_list:
   - fastly.settings
+  - search_api.server.solr_default
 partial_list: {  }
