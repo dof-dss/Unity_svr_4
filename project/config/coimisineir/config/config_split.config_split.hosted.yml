@@ -1,0 +1,17 @@
+uuid: f55a33c4-9aa6-4d2f-94c9-67c7fe286171
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: "Use for any that are 'hosted' and not running locally, apart from production (which has its own split)."
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/coimisineir/hosted
+module: {  }
+theme: {  }
+complete_list:
+  - search_api.server.solr_default
+partial_list: {  }
