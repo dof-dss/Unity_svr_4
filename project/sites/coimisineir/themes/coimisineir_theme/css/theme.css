@@ -22,3 +22,7 @@
 #footer {
     border-color: #0d4c2d !important;
 }
+
+#sliding-popup .popup-content .eu-cookie-compliance-buttons .btn {
+  padding: .8rem 1rem;
+}
