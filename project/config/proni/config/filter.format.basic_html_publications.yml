@@ -11,7 +11,6 @@ dependencies:
   module:
     - blazy
     - ckeditor5_allowed_html
-    - cookie_content_blocker
     - editor
     - entity_embed
     - linkit
@@ -41,13 +40,6 @@ filters:
         img: img
         iframe: iframe
       use_data_uri: '0'
-  cookie_content_blocker_filter:
-    id: cookie_content_blocker_filter
-    provider: cookie_content_blocker
-    status: false
-    weight: -35
-    settings:
-      disable_xss: '1'
   editor_file_reference:
     id: editor_file_reference
     provider: editor
