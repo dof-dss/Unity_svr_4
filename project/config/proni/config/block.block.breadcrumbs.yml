@@ -1,0 +1,20 @@
+uuid: d711dda6-3054-403a-a8d3-2e3f2b29547d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - proni_theme
+id: breadcrumbs
+theme: proni_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

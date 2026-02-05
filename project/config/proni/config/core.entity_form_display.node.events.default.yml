@@ -11,10 +11,10 @@ dependencies:
     - field.field.node.events.field_event_type
     - field.field.node.events.field_meta_tags
     - field.field.node.events.field_organisation_name
-    - field.field.node.events.field_organisation_sector
     - field.field.node.events.field_related_events
     - field.field.node.events.field_target_audience
     - node.type.events
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
     - field_group
@@ -70,7 +70,7 @@ content:
       media_types: {  }
     third_party_settings:
       media_library_edit:
-        show_edit: '1'
+        show_edit: true
         edit_form_mode: default
   field_event_date:
     type: smartdate_default
@@ -126,12 +126,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_organisation_sector:
-    type: options_select
-    weight: 16
-    region: content
-    settings: {  }
     third_party_settings: {  }
   field_related_events:
     type: entity_reference_autocomplete
