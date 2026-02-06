@@ -3,19 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_event_date
     - field.storage.node.body
-    - field.storage.node.field_event_type
+    - field.storage.node.field_event_date
     - field.storage.node.field_event_location
+    - field.storage.node.field_event_type
     - field.storage.node.field_organisation_name
-    - field.storage.node.field_organisation_sector
     - field.storage.node.field_target_audience
     - search_api.server.solr_default
   module:
-    - search_api_solr
     - node
+    - search_api_solr
     - taxonomy
-    - search_api
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -113,14 +111,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_organisation_name
-  field_organisation_sector:
-    label: 'Organisation sector'
-    datasource_id: 'entity:node'
-    property_path: field_organisation_sector
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_organisation_sector
   field_target_audience:
     label: 'Target audience'
     datasource_id: 'entity:node'
@@ -145,16 +135,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_event_location
-      module:
-        - taxonomy
-  sector_name:
-    label: 'Organisation sector » Taxonomy term » Name'
-    datasource_id: 'entity:node'
-    property_path: 'field_organisation_sector:entity:name'
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_organisation_sector
       module:
         - taxonomy
   spelling:
@@ -221,16 +201,15 @@ processor_settings:
       - body
       - field_event_type
       - field_organisation_name
-      - sector_name
       - title
     title: false
     alt: true
     tags:
-      b: 2
-      h1: 5
-      h2: 3
-      h3: 2
-      strong: 2
+      b: 2.0
+      h1: 5.0
+      h2: 3.0
+      h3: 2.0
+      strong: 2.0
   language_with_fallback: {  }
   rendered_item: {  }
   solr_date_range:
@@ -241,6 +220,7 @@ tracker_settings:
     indexing_order: fifo
 options:
   cron_limit: 50
+  delete_on_fail: true
   index_directly: true
   track_changes_in_references: true
 server: solr_default
