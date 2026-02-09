@@ -1,5 +1,6 @@
 _core:
   default_config_hash: JX8QNO3Slv-1W2iW34vToxxH4GbRpIwBr_sf_4mfi-4
+default_google_tag_entity: GTM-P6LXMK22.6989fb4aa79907.19376473
 uri: 'public:/'
 compact_snippet: true
 include_file: true
