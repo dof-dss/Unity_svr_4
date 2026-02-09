@@ -1,8 +1,8 @@
-uuid: 0bec972a-327d-4129-9a6e-150c90fa1c2e
+uuid: b2d25f5a-4b5b-4124-8174-8d62b93fc321
 langcode: en
 status: true
 dependencies: {  }
-id: GTM-P6LXMK22.6977883a933046.65520957
+id: GTM-P6LXMK22.6989fb4aa79907.19376473
 label: GTM-P6LXMK22
 weight: 0
 tag_container_ids:
@@ -21,13 +21,13 @@ advanced_settings:
 dimensions_metrics: {  }
 conditions: {  }
 events:
-  login:
-    method: CMS
-  webform_purchase: {  }
+  custom: {  }
   generate_lead:
     value: ''
     currency: ''
-  sign_up:
+  login:
     method: CMS
   search: {  }
-  custom: {  }
+  sign_up:
+    method: CMS
+  webform_purchase: {  }
