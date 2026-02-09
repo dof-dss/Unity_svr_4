@@ -3,7 +3,7 @@ langcode: ga
 status: true
 dependencies: {  }
 id: ga
-label: Irish
+label: Gaeilge
 direction: ltr
 weight: 1
 locked: false
