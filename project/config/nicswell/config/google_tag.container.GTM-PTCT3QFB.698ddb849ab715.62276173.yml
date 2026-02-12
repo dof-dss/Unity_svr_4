@@ -1,0 +1,33 @@
+uuid: fd6e75fd-cdbf-49a9-bed2-b8ac6d3ed17d
+langcode: en
+status: true
+dependencies: {  }
+id: GTM-PTCT3QFB.698ddb849ab715.62276173
+label: GTM-PTCT3QFB
+weight: 0
+tag_container_ids:
+  - GTM-PTCT3QFB
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-PTCT3QFB:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions: {  }
+events:
+  sign_up:
+    method: CMS
+  login:
+    method: CMS
+  generate_lead:
+    value: ''
+    currency: ''
+  search: {  }
+  webform_purchase: {  }
+  custom: {  }
