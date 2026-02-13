@@ -14,3 +14,6 @@
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-legalcommissionerni" "/app/log/legalcommissionerni/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-autismreviewerni" "/app/log/autismreviewerni/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
 /bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-proni" "/app/log/proni/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
+/bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-anotherway" "/app/log/anotherway/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
+/bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-oice" "/app/log/oice/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
+/bin/bash /app/nicsdru-logging/scripts/shiplog.sh "drupal-coimisineir" "/app/log/coimisineir/drupal.log" "$(date +'%a, %d/%m/%Y -')" "drupal"
