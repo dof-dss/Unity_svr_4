@@ -70,6 +70,8 @@
 <article class="event-content">
   <div class="event-left">
     {{ drupal_block('page_title_block', wrapper=false) }}
+    {{ content.field_event_type }}
+    {{ content.field_banner }}
     {{ content.body }}
     {% if drupal_view_result('related_events', 'related_events_list')|length > 0 %}
       <h2>{{ node.label ~ ' Events'|t }}</h2>
@@ -112,6 +114,5 @@
         <span>{{ content.field_event_location }}</span>
       </p>
     </div>
-    <p><a href="/event-registration" class="btn">Register your event</a></p>
   </div>
 </article>

@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.events.field_event_type
     - field.field.node.events.field_meta_tags
     - field.field.node.events.field_organisation_name
-    - field.field.node.events.field_organisation_sector
     - field.field.node.events.field_related_events
     - field.field.node.events.field_target_audience
     - node.type.events
@@ -27,7 +26,6 @@ third_party_settings:
     group_additional_content_details:
       children:
         - field_event_teaser
-        - field_event_type
         - field_organisation_name
         - field_organisation_sector
         - field_target_audience
@@ -35,7 +33,7 @@ third_party_settings:
       label: 'Additional content details'
       parent_name: ''
       region: content
-      weight: 5
+      weight: 6
       format_type: html_element
       format_settings:
         classes: field-collection
@@ -62,7 +60,7 @@ content:
       suffix: '</strong>'
       strict: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_banner:
     type: entity_reference_entity_view
@@ -99,7 +97,7 @@ content:
       ampm_reduce: '1'
       site_time_toggle: '1'
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_event_location:
     type: entity_reference_label
@@ -107,7 +105,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_event_teaser:
     type: string
@@ -123,7 +121,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 7
+    weight: 1
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
@@ -140,14 +138,6 @@ content:
     third_party_settings: {  }
     weight: 8
     region: content
-  field_organisation_sector:
-    type: entity_reference_label
-    label: hidden
-    settings:
-      link: false
-    third_party_settings: {  }
-    weight: 9
-    region: content
   field_related_events:
     type: entity_reference_entity_view
     label: hidden
@@ -155,7 +145,7 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_target_audience:
     type: entity_reference_label
@@ -168,7 +158,7 @@ content:
   search_api_excerpt:
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
 hidden:
   content_moderation_control: true
