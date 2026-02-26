@@ -23,6 +23,7 @@ module:
   views_ui: 0
   devel: 0
   stage_file_proxy: 0
+  update: 0
 theme: {  }
 complete_list: {  }
 partial_list: {  }
