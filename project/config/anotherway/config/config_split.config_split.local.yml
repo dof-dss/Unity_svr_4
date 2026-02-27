@@ -19,7 +19,6 @@ module:
   migrate_plus: 0
   migrate_tools: 0
   migrate_upgrade: 0
-  update: 0
   views_ui: 0
   devel: 0
   stage_file_proxy: 0
