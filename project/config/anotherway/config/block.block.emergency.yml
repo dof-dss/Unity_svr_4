@@ -1,24 +1,24 @@
-uuid: b8771cc9-38e8-4dbd-afe6-45623444322f
+uuid: 19bb61b4-eb27-46a8-82d6-2b14920be210
 langcode: en
-status: false
+status: true
 dependencies:
   content:
-    - 'block_content:basic_block:5c42f61d-f604-456b-80f3-a327330a745a'
+    - 'block_content:basic_block:4bb1d31c-3c4b-4a41-9922-95784474d73d'
   module:
     - block_content
     - system
   theme:
     - anotherway_theme
-id: referrals
+id: emergency
 theme: anotherway_theme
 region: top_third
-weight: -6
+weight: -7
 provider: null
-plugin: 'block_content:5c42f61d-f604-456b-80f3-a327330a745a'
+plugin: 'block_content:4bb1d31c-3c4b-4a41-9922-95784474d73d'
 settings:
-  id: 'block_content:5c42f61d-f604-456b-80f3-a327330a745a'
-  label: Referrals
-  label_display: visible
+  id: 'block_content:4bb1d31c-3c4b-4a41-9922-95784474d73d'
+  label: Emergency
+  label_display: '0'
   provider: block_content
   status: true
   info: ''

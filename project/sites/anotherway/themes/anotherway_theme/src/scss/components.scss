@@ -146,16 +146,26 @@
       width: 100%;
     }
 
-    h2 {
-      padding-top: 5rem;
-    }
-
     .btn {
       background: #0a850c;
 
       &:hover {
         background: #666;
       }
+    }
+  }
+
+  #block-emergency {
+    text-align: left;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    width: 60%;
+    @media screen and (max-width: $tab) {
+      width: 100%;
+    }
+
+    h2 {
+      padding-top: 5rem;
     }
   }
 }
