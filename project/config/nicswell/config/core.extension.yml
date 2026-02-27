@@ -27,7 +27,6 @@ module:
   content_lock_timeout: 0
   content_moderation: 0
   contextual: 0
-  cookie_content_blocker: 0
   csp: 0
   ctools: 0
   date_facet_drilldown: 0
@@ -46,6 +45,7 @@ module:
   facets: 0
   facets_pretty_paths: 0
   facets_summary: 0
+  fastly: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -58,7 +58,6 @@ module:
   handy_cache_tags: 0
   help: 0
   history: 0
-  honeypot: 0
   http_cache_control: 0
   image: 0
   inline_entity_form: 0
@@ -137,7 +136,6 @@ module:
   unity_internal_link_checker: 0
   unity_landing_pages: 0
   unity_search_pages: 0
-  update: 0
   user: 0
   views_custom_cache_tag: 0
   webform: 0

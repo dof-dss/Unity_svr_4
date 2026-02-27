@@ -3,7 +3,6 @@ _core:
 module:
   address: 0
   admin_toolbar: 0
-  admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   allowed_formats: 0
   automated_cron: 0
@@ -27,7 +26,6 @@ module:
   content_lock_timeout: 0
   content_moderation: 0
   contextual: 0
-  cookie_content_blocker: 0
   csp: 0
   ctools: 0
   datetime: 0
@@ -57,7 +55,6 @@ module:
   handy_cache_tags: 0
   help: 0
   history: 0
-  honeypot: 0
   image: 0
   inline_entity_form: 0
   inline_form_errors: 0
@@ -127,7 +124,6 @@ module:
   unity_image_styles: 0
   unity_internal_link_checker: 0
   unity_search_pages: 0
-  update: 0
   user: 0
   views_custom_cache_tag: 0
   webform: 0
