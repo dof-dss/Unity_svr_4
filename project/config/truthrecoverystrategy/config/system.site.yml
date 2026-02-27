@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+name: 'Truth Recovery Strategy'
+mail: test@test.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+uuid: 2664a61f-3de2-4737-986d-0f43938da9ef
+frontpage_title: 'Welcome to Drupal site'

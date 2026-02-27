@@ -45,6 +45,14 @@
 'https://coimisineir.org/':
     type: redirect
     to: 'https://www.coimisineir.org/'
+'https://www.www.truthrecoverystrategy.com/':
+    type: upstream
+    upstream: 'unity_svr_4:http'
+    cache:
+        enabled: 'false'
+'https://www.truthrecoverystrategy.com/':
+    type: redirect
+    to: 'https://www.www.truthrecoverystrategy.com/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_4:http'
