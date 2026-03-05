@@ -1,0 +1,30 @@
+uuid: 30bad8a9-2c44-4688-9df8-d5bc7c72a9b2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:383e40c1-2beb-495a-bd60-ab6a440cfe9a'
+  module:
+    - block_content
+    - system
+  theme:
+    - truthrecoverystrategy_theme
+id: ourvision
+theme: truthrecoverystrategy_theme
+region: top_second
+weight: 0
+provider: null
+plugin: 'block_content:383e40c1-2beb-495a-bd60-ab6a440cfe9a'
+settings:
+  id: 'block_content:383e40c1-2beb-495a-bd60-ab6a440cfe9a'
+  label: 'Our Vision'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
