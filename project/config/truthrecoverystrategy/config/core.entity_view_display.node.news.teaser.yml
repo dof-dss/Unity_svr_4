@@ -11,6 +11,7 @@ dependencies:
     - node.type.news
   module:
     - datetime
+    - text
     - user
 _core:
   default_config_hash: AF_DHgr-5ZIsJvnD5UmT0RDbIkmWZ0HeItZgySVGGIA
@@ -19,6 +20,14 @@ targetEntityType: node
 bundle: news
 mode: teaser
 content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_photo:
     type: entity_reference_entity_view
     label: hidden
@@ -30,15 +39,14 @@ content:
     region: content
   field_published_date:
     type: datetime_default
-    label: inline
+    label: hidden
     settings:
       timezone_override: ''
       format_type: unity_date
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
 hidden:
-  body: true
   content_moderation_control: true
   field_meta_tags: true
   langcode: true

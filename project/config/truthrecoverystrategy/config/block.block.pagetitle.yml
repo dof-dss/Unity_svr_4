@@ -9,7 +9,7 @@ dependencies:
 id: pagetitle
 theme: truthrecoverystrategy_theme
 region: content
-weight: -2
+weight: -7
 provider: null
 plugin: page_title_block
 settings:
