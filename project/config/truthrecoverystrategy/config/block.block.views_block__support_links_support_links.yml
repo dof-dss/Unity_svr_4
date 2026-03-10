@@ -1,0 +1,29 @@
+uuid: 6510c247-e025-4b5b-9691-92d92b622fe6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.support_links
+  module:
+    - system
+    - views
+  theme:
+    - truthrecoverystrategy_theme
+id: views_block__support_links_support_links
+theme: truthrecoverystrategy_theme
+region: top_third
+weight: -6
+provider: null
+plugin: 'views_block:support_links-support_links'
+settings:
+  id: 'views_block:support_links-support_links'
+  label: Support
+  label_display: '0'
+  provider: views
+  views_label: Support
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
