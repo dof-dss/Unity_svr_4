@@ -8,12 +8,25 @@ dependencies:
     - field.field.node.link.field_photo
     - node.type.link
   module:
+    - link
     - user
 id: node.link.diff
 targetEntityType: node
 bundle: link
 mode: diff
 content:
+  field_link_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_photo:
     type: entity_reference_entity_view
     label: hidden
@@ -21,14 +34,10 @@ content:
       view_mode: landscape_float
       link: false
     third_party_settings: {  }
-    weight: 1
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
-  field_link_url: true
+  content_moderation_control: true
   langcode: true
+  links: true
   search_api_excerpt: true
