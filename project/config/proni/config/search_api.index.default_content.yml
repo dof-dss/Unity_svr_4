@@ -44,6 +44,7 @@ third_party_settings:
     term_modifiers:
       slop: 3
       fuzzy: 1
+      fuzzy_analyzer: true
     advanced:
       index_prefix: ''
       collection: ''
@@ -159,7 +160,9 @@ datasource_settings:
     bundles:
       default: true
       selected:
+        - feature
         - featured_content_list
+        - html_document
         - webform
     languages:
       default: true
@@ -185,11 +188,11 @@ processor_settings:
     title: false
     alt: true
     tags:
-      b: 2
-      h1: 5
-      h2: 3
-      h3: 2
-      strong: 2
+      b: 2.0
+      h1: 5.0
+      h2: 3.0
+      h3: 2.0
+      strong: 2.0
   language_with_fallback: {  }
   rendered_item: {  }
   solr_date_range:
