@@ -1,8 +1,9 @@
-uuid: 8b2f1a5f-2fd7-472d-8cdc-9e934ceaa1be
+uuid: 51199270-c2d9-4784-895a-38b39eda3542
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.search_index
     - field.field.node.landing_page.field_body
     - field.field.node.landing_page.layout_builder__layout
     - node.type.landing_page
@@ -12,8 +13,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    enabled: true
-    allow_custom: true
+    enabled: false
+    allow_custom: false
   layout_builder_restrictions:
     allowed_block_categories:
       - 'Chaos Tools'
@@ -30,8 +31,8 @@ third_party_settings:
       - 'Inline blocks'
       - 'Lists (Views)'
       - Menus
+      - Origins
       - 'Read Only Mode'
-      - Sitemap
       - System
       - 'Unity Search Pages'
       - User
@@ -90,8 +91,8 @@ third_party_settings:
         core: {  }
       restricted_categories:
         - 'EU Cookie Compliance'
+        - Origins
         - 'Read Only Mode'
-        - Sitemap
         - 'Unity Search Pages'
         - Views
       blacklisted_blocks: {  }
@@ -246,10 +247,10 @@ third_party_settings:
             core: {  }
 _core:
   default_config_hash: 3JEMteeXLHqDSQdG4D7dsB_s0-Lup_XX2TPgJbc2WYY
-id: node.landing_page.default
+id: node.landing_page.search_index
 targetEntityType: node
 bundle: landing_page
-mode: default
+mode: search_index
 content: {  }
 hidden:
   content_moderation_control: true

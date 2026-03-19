@@ -230,8 +230,8 @@ display:
             'entity:node':
               ':default': search_index
               basic_page: teaser
-              events: ':default'
-              featured_content_list: ':default'
+              events: search_index
+              landing_page: search_index
               news: search_index
               publication: search_index
       query:
