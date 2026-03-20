@@ -36,7 +36,7 @@ third_party_settings:
         show_empty_fields: false
         id: ''
         label_as_html: false
-        description: 'You must provide an attachment or external link'
+        description: 'You must provide an attachment or an HTML Document'
         required_fields: true
 _core:
   default_config_hash: 8EG7CL4bkYhCFJykpOT74o26u9Kqd5i5boJpPLhtZWc
