@@ -38,8 +38,8 @@ function proni_common_validate_attachment(&$form, FormStateInterface $form_state
 
   // Validate file attachments and external links.
   if (empty($values['field_attachment']["selection"][0]) && empty($values['field_html_document'][0]['target_id'])) {
-    $form_state->setErrorByName('field_attachment', t('You must provide an attachment or external link'));
-    $form_state->setErrorByName('field_html_document', t('You must provide an attachment or external link'));
+    $form_state->setErrorByName('field_attachment', t('You must provide an attachment or an HTML Document'));
+    $form_state->setErrorByName('field_html_document', t('You must provide an attachment or an HTML Document'));
   }
 }
 
@@ -50,135 +50,5 @@ function proni_common_preprocess_fieldset(&$variables) {
   $element = &$variables['element'];
   if ($element['#id'] == 'group-publications') {
     $variables['legend_span']['attributes']['class'][] = 'js-form-required form-required';
-  }
-}
-
-/**
- * Implements hook_file_download().
- */
-function nisra_common_file_download($uri) {
-  // Check if the file is coming from the private stream wrapper, these are
-  // the only ones that we want to check.
-  if (StreamWrapperManager::getScheme($uri) == 'private') {
-    // Get the file record based on the URI. If not in the database just return.
-    $file_repository = \Drupal::service('file.repository');
-    $file = $file_repository->loadByUri($uri);
-    if (!$file) {
-      return;
-    }
-
-    // Identify the media that is being downloaded
-    $database = \Drupal::database();
-    $references = file_get_file_references($file, NULL, EntityStorageInterface::FIELD_LOAD_CURRENT, NULL);
-    foreach ($references as $field) {
-      if (isset($field['media'])) {
-        // Retrieve the media ids (mids).
-        $mids = array_keys($field['media']);
-        foreach ($mids as $mid) {
-          if (!check_media_access($database, $mid)) {
-            return -1;
-          }
-        }
-      }
-    }
-  }
-
-  return NULL;
-}
-
-/**
- * Check access for this media id (mid).
- */
-function check_media_access($database, $mid) {
-  // Find all nodes of type 'Secure Statistics' or
-  // 'Secure - market sensitive statistics' that this media item is attached to.
-  $query = $database->query("select entity_id, bundle
-                        from node__field_secure_attachment
-                        where bundle in ('secure_statistics','secure_market_statistics' )
-                        and field_secure_attachment_target_id = :mid", [':mid' => $mid]);
-  $result = $query->fetchAll();
-  // Loop through all nodes, if the current user is denied access on one,
-  // then they are denied on all !
-  foreach ($result as $entity) {
-    // Load up the entity/node.
-    $node = Node::load($entity->entity_id);
-    if (!empty($node)) {
-      // If the entity is published then allow access and don't bother
-      // with any more checks.
-      if (!$node->isPublished()) {
-        if (Drupal::currentUser()->isAnonymous()) {
-          // If this is an anonymous user then deny access.
-          \Drupal::logger('nisra_common')
-            ->notice(t("Denying anonymous user access to mid " .
-              $mid . " in nisra_common_file_download() function"));
-          return FALSE;
-        }
-        else {
-          // This is a logged in user so we need to check permissions.
-          // Permissions that we are looking for are
-          // 'view secure_market_statistics revisions' or
-          // 'view secure_statistics revision'
-          if (!\Drupal::currentUser()
-            ->hasPermission('view ' . $entity->bundle . ' revisions')) {
-            // User does not have permission, deny access.
-            \Drupal::logger('nisra_common')->notice(t("Denying user " .
-              \Drupal::currentUser()->id() . " access to mid " .
-              $mid . " due to insufficient permissions in nisra_common_file_download() function"));
-            return FALSE;
-          }
-        }
-      }
-    }
-  }
-  return TRUE;
-}
-
-/**
- * Implements template_preprocess_views_view_table()
- *
- * @param $variables
- */
-function nisra_common_preprocess_views_view_table(&$variables) {
-  /** @var ViewExecutable $view */
-  $view = $variables['view'];
-
-  //Only alter admin/content view
-  if ($view->id() !== 'content' && $view->id() !== 'workflow_moderation') {
-    return;
-  }
-  $rows = $variables['rows'];
-  foreach ($rows as $key => $row) {
-    if (preg_match('/market sensitive/', $row['columns']['type']['content'][0]['field_output']['#markup']) && preg_match('/Unpublished/', $row['columns']['status']['content'][0]['field_output']['#markup'])) {
-      if (!\Drupal::currentUser()
-        ->hasPermission('edit any secure_market_statistics content')) {
-        unset($variables['rows'][$key]);
-      }
-    }
-    if (preg_match('/Secure statistics/', $row['columns']['type']['content'][0]['field_output']['#markup']) && preg_match('/Unpublished/', $row['columns']['status']['content'][0]['field_output']['#markup'])) {
-      if (!\Drupal::currentUser()
-        ->hasPermission('edit any secure_statistics content')) {
-        unset($variables['rows'][$key]);
-      }
-    }
-  }
-}
-
-/**
- * Implements hook_system_breadcrumb_alter().
- *
- */
-function nisra_common_system_breadcrumb_alter(Breadcrumb &$breadcrumb, RouteMatchInterface $route_match, array $context) {
-  $route_name = $route_match->getRouteName();
-  $links = $breadcrumb->getLinks();
-  $breadcrumb = new Breadcrumb();
-  if ($route_name === 'entity.taxonomy_term.canonical') {
-
-    $new_links[] = Link::createFromRoute('Home', '<front>');
-    $new_links[] = Link::fromTextAndUrl('Statistics and Research', Url::fromUri('internal:/Statistics'));
-
-    array_shift($links);
-    $links = array_merge($new_links, $links);
-    $breadcrumb->setLinks($links);
-    $breadcrumb->addCacheContexts(['url.path']);
   }
 }
