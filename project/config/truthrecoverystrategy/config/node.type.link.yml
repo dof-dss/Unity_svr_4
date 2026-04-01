@@ -1,0 +1,17 @@
+uuid: 083acd52-485c-485f-8d8f-48c8f27d0b81
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Link
+type: link
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

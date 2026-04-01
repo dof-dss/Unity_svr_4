@@ -1,0 +1,26 @@
+uuid: 4b3c8581-d12e-4fec-adfb-40eb35fde55d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: support_links
+label: 'Support Links'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      link: link
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 2
+  act_as_queue: false
+  reverse: false

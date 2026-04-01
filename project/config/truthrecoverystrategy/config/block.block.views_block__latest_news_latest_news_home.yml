@@ -1,0 +1,29 @@
+uuid: 9aebbbd9-e9fc-4a11-998e-cf4c4551b935
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_news
+  module:
+    - system
+    - views
+  theme:
+    - truthrecoverystrategy_theme
+id: views_block__latest_news_latest_news_home
+theme: truthrecoverystrategy_theme
+region: bottom_widget_1
+weight: 0
+provider: null
+plugin: 'views_block:latest_news-latest_news_home'
+settings:
+  id: 'views_block:latest_news-latest_news_home'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
