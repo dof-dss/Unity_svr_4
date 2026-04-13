@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 80d19253-ac53-4e86-91a2-8bd3d5ed0e16
 name: 'The Office of Identity and Cultural Expression'
-mail: test@test.com
+mail: noreply@email.oice.org.uk
 slogan: ''
 page:
   403: ''
@@ -13,3 +13,4 @@ admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
 frontpage_title: 'Welcome to The Office of Identity and Cultural Expression site'
+frontpage_show_title: false

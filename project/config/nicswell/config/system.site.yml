@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 82d3616a-9e0b-47bb-87e7-30ac3dee0a4e
 name: 'NICS Well'
-mail: test@test.com
+mail: noreply@email.nicswell.co.uk
 slogan: ''
 page:
   403: ''
@@ -13,4 +13,4 @@ admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
 frontpage_title: 'Welcome to NICS Well'
-frontpage_show_title: 0
+frontpage_show_title: false
