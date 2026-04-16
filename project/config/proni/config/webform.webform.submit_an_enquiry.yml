@@ -254,7 +254,7 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: feedback@nidirect.gov.uk
+      from_mail: _default
       from_options: {  }
       from_name: _default
       reply_to: ''
