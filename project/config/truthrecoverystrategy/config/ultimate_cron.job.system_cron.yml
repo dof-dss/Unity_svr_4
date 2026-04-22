@@ -1,0 +1,19 @@
+uuid: 8213e485-5ca7-46c5-9380-f4f8ff0139b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+_core:
+  default_config_hash: RVqjzb2Bwf4WydDvnCDVzgE9pPpiWeuXnfZTcPxFvHE
+title: 'Cleanup (caches, batch, flood, temp-files, etc.)'
+id: system_cron
+weight: -10
+module: system
+callback: system_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

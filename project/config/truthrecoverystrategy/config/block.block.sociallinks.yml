@@ -1,0 +1,25 @@
+uuid: 05b94d79-674a-468e-bfe8-72e35564386d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:3b6e365e-710f-43f9-9354-f9101d8d83cb'
+  module:
+    - block_content
+  theme:
+    - truthrecoverystrategy_theme
+id: sociallinks
+theme: truthrecoverystrategy_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:3b6e365e-710f-43f9-9354-f9101d8d83cb'
+settings:
+  id: 'block_content:3b6e365e-710f-43f9-9354-f9101d8d83cb'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

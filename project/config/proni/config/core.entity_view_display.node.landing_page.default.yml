@@ -30,8 +30,8 @@ third_party_settings:
       - 'Inline blocks'
       - 'Lists (Views)'
       - Menus
-      - Origins
       - 'Read Only Mode'
+      - Sitemap
       - System
       - 'Unity Search Pages'
       - User
@@ -90,8 +90,8 @@ third_party_settings:
         core: {  }
       restricted_categories:
         - 'EU Cookie Compliance'
-        - Origins
         - 'Read Only Mode'
+        - Sitemap
         - 'Unity Search Pages'
         - Views
       blacklisted_blocks: {  }

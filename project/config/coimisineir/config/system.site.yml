@@ -3,7 +3,7 @@ _core:
 langcode: en
 uuid: 4c21b2d8-1f73-41c6-95f0-565eff62bb0a
 name: 'Irish Language Commissioner'
-mail: user@coimisineir.org
+mail: noreply@email.coimisineir.org
 slogan: ''
 page:
   403: ''
@@ -13,3 +13,4 @@ admin_compact_mode: false
 weight_select_max: 100
 default_langcode: ga
 frontpage_title: 'Welcome to Drupal site'
+frontpage_show_title: false

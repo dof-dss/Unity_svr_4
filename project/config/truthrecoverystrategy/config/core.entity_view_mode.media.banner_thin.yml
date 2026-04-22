@@ -1,0 +1,13 @@
+uuid: 3efd0c73-ca59-4398-969e-a845d01733f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: DWbuvXsSQKd7FKYsX6COWIZWaC8vgaUmp8C4n2UQZ4Q
+id: media.banner_thin
+label: 'Banner thin'
+description: ''
+targetEntityType: media
+cache: true

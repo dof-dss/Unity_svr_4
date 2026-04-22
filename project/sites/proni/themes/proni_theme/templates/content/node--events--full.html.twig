@@ -73,10 +73,6 @@
     {{ content.field_event_type }}
     {{ content.field_banner }}
     {{ content.body }}
-    {% if drupal_view_result('related_events', 'related_events_list')|length > 0 %}
-      <h2>{{ node.label ~ ' Events'|t }}</h2>
-      {{ drupal_view('related_events', 'related_events_list') }}
-    {% endif %}
   </div>
   <div class="event-right">
     <div class="event-info">
