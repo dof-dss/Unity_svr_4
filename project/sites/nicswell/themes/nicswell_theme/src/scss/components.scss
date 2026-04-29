@@ -33,23 +33,12 @@
 #main-menu {
   .menu-link {
     color: $white;
-
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 5px;
-    }
-
   }
 
   .menu .menu-item .active {
     color: $white;
     background: transparent;
-    border-bottom-color: transparent;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 5px;
+    border-bottom-color: #ffc700;
   }
 }
 
