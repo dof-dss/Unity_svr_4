@@ -5,7 +5,11 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
-#top-area {
+.search-form input[type='submit']:focus {
+  box-shadow: 0 0 0 2px #fff;
+}
+
+top-area {
   text-align: left;
   padding: 6rem 0 3rem;
 
@@ -200,7 +204,6 @@
       .active,
       .active + .menu-main_sub .title a {
         border-bottom-color: $footer-background;
-        text-decoration: underline;
         text-underline-offset: 3px;
       }
     }
