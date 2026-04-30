@@ -9,7 +9,7 @@
   box-shadow: 0 0 0 2px #fff;
 }
 
-top-area {
+#top-area {
   text-align: left;
   padding: 6rem 0 3rem;
 
@@ -194,7 +194,6 @@ top-area {
     &:hover,
     &:focus {
       border-bottom-color: $footer-background;
-      text-decoration: underline;
       text-underline-offset: 3px;
     }
   }
