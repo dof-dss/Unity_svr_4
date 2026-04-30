@@ -84,3 +84,13 @@ sites:
         database: truthrecoverystrategy
         status: development
         default: false
+    cusubt:
+        name: CUSUBT
+        url: cusubt.org.uk
+        solr: cusubt
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/cusubt ; drush core-cron'
+        database: cusubt
+        status: development
+        default: false
