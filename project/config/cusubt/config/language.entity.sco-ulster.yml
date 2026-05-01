@@ -1,8 +1,8 @@
-uuid: 2bbd1683-a0aa-48fb-aae7-25e81dbcfcc1
+uuid: a9669f72-3b37-43ca-8334-97f6b69b0600
 langcode: en
 status: true
 dependencies: {  }
-id: sco
+id: sco-ulster
 label: 'Ulster Scots'
 direction: ltr
 weight: 1
