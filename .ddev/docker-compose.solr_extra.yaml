@@ -16,4 +16,5 @@ services:
             - './solr-cores/oice:/solr-oice-conf'
             - './solr-cores/coimisineir:/solr-coimisineir-conf'
             - './solr-cores/truthrecoverystrategy:/solr-truthrecoverystrategy-conf'
-        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core legalcommissionerni /solr-legalcommissionerni-conf; precreate-core nicswell /solr-nicswell-conf; precreate-core autismreviewerni /solr-autismreviewerni-conf; precreate-core anotherway /solr-anotherway-conf; precreate-core proni /solr-proni-conf; precreate-core oice /solr-oice-conf; precreate-core coimisineir /solr-coimisineir-conf; precreate-core truthrecoverystrategy /solr-truthrecoverystrategy-conf; exec solr -f"'
+            - './solr-cores/cusubt:/solr-cusubt-conf'
+        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core legalcommissionerni /solr-legalcommissionerni-conf; precreate-core nicswell /solr-nicswell-conf; precreate-core autismreviewerni /solr-autismreviewerni-conf; precreate-core anotherway /solr-anotherway-conf; precreate-core proni /solr-proni-conf; precreate-core oice /solr-oice-conf; precreate-core coimisineir /solr-coimisineir-conf; precreate-core truthrecoverystrategy /solr-truthrecoverystrategy-conf; precreate-core cusubt /solr-cusubt-conf; exec solr -f"'

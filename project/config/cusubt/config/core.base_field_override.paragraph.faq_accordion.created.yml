@@ -1,0 +1,18 @@
+uuid: 255967f0-01ad-4db5-ac93-7a84842980e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.faq_accordion
+id: paragraph.faq_accordion.created
+field_name: created
+entity_type: paragraph
+bundle: faq_accordion
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

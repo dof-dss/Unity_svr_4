@@ -18,6 +18,7 @@ db:
             - oicedb
             - coimisineirdb
             - truthrecoverystrategydb
+            - cusubtdb
         endpoints:
             legalcommissionerni:
                 default_schema: legalcommissionernidb
@@ -51,6 +52,10 @@ db:
                 default_schema: truthrecoverystrategydb
                 privileges:
                     truthrecoverystrategydb: admin
+            cusubt:
+                default_schema: cusubtdb
+                privileges:
+                    cusubtdb: admin
 solr_8_11:
     type: 'solr:8.11'
     disk: 1024
@@ -72,6 +77,8 @@ solr_8_11:
                 conf_dir: !archive solr_config/
             truthrecoverystrategy_index:
                 conf_dir: !archive solr_config/
+            cusubt_index:
+                conf_dir: !archive solr_config/
         endpoints:
             legalcommissionerni:
                 core: legalcommissionerni_index
@@ -89,5 +96,7 @@ solr_8_11:
                 core: coimisineir_index
             truthrecoverystrategy:
                 core: truthrecoverystrategy_index
+            cusubt:
+                core: cusubt_index
 redis:
     type: 'redis:6.0'

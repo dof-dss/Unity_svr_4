@@ -1,0 +1,16 @@
+uuid: 3aba5f75-61fc-41c9-8b46-2286fde03a4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.administrator
+  module:
+    - user
+_core:
+  default_config_hash: 1nywZNyhS4YWdPZchmkxYyRNkW7ADE97EA3uk46Deu4
+id: user_remove_role_action.administrator
+label: 'Remove the Administrator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrator
