@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: '‹ foregane'
+            next: 'neist ›'
+            first: '« foremaist'
+            last: 'hintmaist »'
