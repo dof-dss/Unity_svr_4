@@ -1,0 +1,20 @@
+uuid: 1e1df378-6d00-4ea6-a4a4-9574a27fd2e1
+langcode: sco
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - cusubt_theme
+id: cusubt_theme_languageswitcher
+theme: cusubt_theme
+region: search
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }
