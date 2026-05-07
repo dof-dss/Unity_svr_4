@@ -1,10 +1,11 @@
-uuid: 79a79280-1054-4bc3-8ac6-91c60eed264c
+uuid: 63781082-41bf-473b-8968-684f39f8a8e1
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_published_date
+    - field.storage.node.field_summary
     - search_api.server.solr_default
   module:
     - node
@@ -56,8 +57,8 @@ third_party_settings:
       specific_languages:
         en: '0'
       use_universal_collation: false
-id: news
-name: News
+id: publications
+name: Publications
 description: ''
 read_only: false
 field_settings:
@@ -77,20 +78,21 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_published_date
-  langcode:
-    label: Language
+  field_summary:
+    label: Summary
     datasource_id: 'entity:node'
-    property_path: langcode
-    type: string
+    property_path: field_summary
+    type: text
+    boost: 3.0
     dependencies:
-      module:
-        - node
+      config:
+        - field.storage.node.field_summary
   title:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
     type: text
-    boost: 3.0
+    boost: 21.0
     dependencies:
       module:
         - node
@@ -99,7 +101,7 @@ datasource_settings:
     bundles:
       default: false
       selected:
-        - news
+        - publication
     languages:
       default: true
       selected: {  }
@@ -125,12 +127,12 @@ processor_settings:
     weights:
       preprocess_index: -15
       preprocess_query: -15
-    all_fields: false
+    all_fields: true
     fields:
       - body
-      - langcode
+      - field_summary
       - title
-    title: true
+    title: false
     alt: true
     tags:
       b: 2.0
