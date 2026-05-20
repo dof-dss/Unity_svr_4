@@ -11,9 +11,9 @@
 
     &:hover,
     &:focus {
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 5px;
+      color: #fff;
+      background: #1c475f;
+      border-bottom-color: #1c475f;
     }
 
   }
@@ -21,12 +21,10 @@
   .menu {
     .menu-item {
       .active {
-        color: $text;
-        background: transparent;
-        border-bottom-color: transparent;
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 5px;
+        color: #fff;
+        background: #1c475f;
+        border-bottom-color: #1c475f;
+
       }
 
       &.open .menu-toggle-btn {
@@ -47,6 +45,7 @@
 
 .region-primary-menu .menu_wrapper {
   border-top: 1px solid #5c7a84;
+  height: 5rem;
   background:
     linear-gradient(
         to right,
@@ -56,6 +55,12 @@
         #a0aac0 66%
     )
     bottom / 100% 5px no-repeat;
+}
+@media screen and (max-width: 767px) {
+
+  .region-primary-menu .menu_wrapper {
+    height: 0rem;
+  }
 }
 
 @media screen and (max-width: 766px) {
@@ -225,6 +230,18 @@
   .news-image {
     margin-bottom: 15px;
   }
+}
+
+@media screen and (max-width: 767px) {
+
+  .region-top-second .media-image {
+    display: none;
+  }
+
+  .region-top-second {
+    gap: 0;
+  }
+
 }
 
 #footer {

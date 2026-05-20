@@ -10,8 +10,8 @@ dependencies:
     - proni_theme
 id: views_block__featured_content_featured_content
 theme: proni_theme
-region: bottom_widget_1
-weight: -6
+region: bottom_widget_2
+weight: -12
 provider: null
 plugin: 'views_block:featured_content-featured_content'
 settings:

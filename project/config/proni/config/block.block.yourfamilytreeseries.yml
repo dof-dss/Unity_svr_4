@@ -1,0 +1,25 @@
+uuid: 86ae9a2e-fd61-4e08-946e-f7a444a5481c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:19f99c0a-b87d-4762-aa78-77c772b96eb6'
+  module:
+    - block_content
+  theme:
+    - proni_theme
+id: yourfamilytreeseries
+theme: proni_theme
+region: bottom_widget_1
+weight: -13
+provider: null
+plugin: 'block_content:19f99c0a-b87d-4762-aa78-77c772b96eb6'
+settings:
+  id: 'block_content:19f99c0a-b87d-4762-aa78-77c772b96eb6'
+  label: 'Your Family Tree Series'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

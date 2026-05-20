@@ -1,0 +1,25 @@
+uuid: 7e89477f-0579-4e88-b97d-fd63423f0bbf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:3bae66b3-e054-412c-afd4-02c16944ed9c'
+  module:
+    - block_content
+  theme:
+    - proni_theme
+id: localhistoryseries
+theme: proni_theme
+region: bottom_widget_1
+weight: -12
+provider: null
+plugin: 'block_content:3bae66b3-e054-412c-afd4-02c16944ed9c'
+settings:
+  id: 'block_content:3bae66b3-e054-412c-afd4-02c16944ed9c'
+  label: 'Local History Series'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
