@@ -1,0 +1,20 @@
+uuid: f314cae1-db2a-4f59-9f43-5fc3fa093796
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.board_member
+  module:
+    - metatag
+id: node.board_member.metatag
+field_name: metatag
+entity_type: node
+bundle: board_member
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

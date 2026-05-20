@@ -1,0 +1,20 @@
+uuid: 5c9a26ee-db6c-49f6-ac6d-9953e94423f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faq
+  module:
+    - metatag
+id: node.faq.metatag
+field_name: metatag
+entity_type: node
+bundle: faq
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed
