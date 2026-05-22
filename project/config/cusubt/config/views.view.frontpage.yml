@@ -1,4 +1,4 @@
-uuid: c8252125-d6e2-4861-8a1c-9a5ea5fd09fe
+uuid: 8afe6cab-da14-44ec-ba85-1ad24e65aa60
 langcode: en
 status: true
 dependencies:
@@ -301,10 +301,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      display_extenders:
-        metatag_display_extender:
-          metatags: {  }
-          tokenize: false
+      display_extenders: {  }
       path: node
     cache_metadata:
       max-age: -1

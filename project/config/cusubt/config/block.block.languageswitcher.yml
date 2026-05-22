@@ -1,12 +1,12 @@
-uuid: 1e1df378-6d00-4ea6-a4a4-9574a27fd2e1
-langcode: sco
+uuid: 3d7c59ed-98a3-404d-ad5c-10725122826e
+langcode: en
 status: true
 dependencies:
   module:
     - language
   theme:
     - cusubt_theme
-id: cusubt_theme_languageswitcher
+id: languageswitcher
 theme: cusubt_theme
 region: search
 weight: 0
