@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+langcode: en
+uuid: 2b90f70e-0f91-43f6-81b5-34eb1fd78c36
+name: 'Office of the Commissioner of the Ulster Scots & Ulster British Tradition'
+mail: noreply@email.cusubt.org.uk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/2
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+frontpage_title: 'Office of the Commissioner of the Ulster Scots & Ulster British Tradition'
+frontpage_show_title: false

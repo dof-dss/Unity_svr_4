@@ -1,0 +1,20 @@
+uuid: bdd6d43d-8e64-466e-b0bf-77d06f11603f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact
+  module:
+    - path
+id: node.contact.path
+field_name: path
+entity_type: node
+bundle: contact
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

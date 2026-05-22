@@ -1,0 +1,21 @@
+uuid: d64a5dae-9c86-4d08-a0a3-f01de13f9e2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.site_topics
+  module:
+    - text
+id: taxonomy_term.site_topics.description
+field_name: description
+entity_type: taxonomy_term
+bundle: site_topics
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

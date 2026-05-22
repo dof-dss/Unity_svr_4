@@ -1,0 +1,18 @@
+uuid: da121843-c7d2-437f-b69e-4a7e5d08ee4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.site_topics
+id: taxonomy_term.site_topics.name
+field_name: name
+entity_type: taxonomy_term
+bundle: site_topics
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

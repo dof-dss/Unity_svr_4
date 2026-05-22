@@ -1,0 +1,13 @@
+uuid: 2a659ad5-dbe9-42f7-8fbc-e71014ab90d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: ZlkfQbuDCyUnju3Tx9rh_7x12YT-Ca3-r3UOxZDgg24
+id: media.article_float
+label: 'Article float'
+description: ''
+targetEntityType: media
+cache: true

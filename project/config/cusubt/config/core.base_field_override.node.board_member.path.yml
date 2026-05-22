@@ -1,0 +1,20 @@
+uuid: eb8818be-2f55-49ce-9acc-c43ddb48b44f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.board_member
+  module:
+    - path
+id: node.board_member.path
+field_name: path
+entity_type: node
+bundle: board_member
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
