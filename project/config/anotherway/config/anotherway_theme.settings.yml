@@ -8,7 +8,7 @@ logo:
   path: sites/anotherway/themes/anotherway_theme/Another-way-RGB.jpg
 favicon:
   use_default: 1
-basic_page_structure: 0
+basic_page_structure: 1
 twitter_profile_url: ''
 facebook_profile_url: ''
 linkedin_profile_url: ''
