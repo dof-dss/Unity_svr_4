@@ -16,8 +16,10 @@ dependencies:
     - ckeditor5_allowed_html
     - editor
     - entity_embed
+    - linkit
     - media
     - noreferrer
+    - origins_common
     - token_filter
 _core:
   default_config_hash: HV7-vO-koh-hIwN_RJEAj9lJMzW9ylxbOPenzdgWKnQ
@@ -119,6 +121,14 @@ filters:
     weight: -50
     settings:
       filter_url_length: 72
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true
+      media_substitution: metadata
   media_embed:
     id: media_embed
     provider: media
@@ -145,6 +155,13 @@ filters:
     status: true
     weight: -49
     settings: {  }
+  origins_media_cookie_content_blocker_embed_filter:
+    id: origins_media_cookie_content_blocker_embed_filter
+    provider: origins_common
+    status: false
+    weight: 0
+    settings:
+      replacement_text: 'Click here to view the video content'
   token_filter:
     id: token_filter
     provider: token_filter
