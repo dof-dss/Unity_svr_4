@@ -74,16 +74,6 @@ sites:
         database: coimisineir
         status: development
         default: false
-    truthrecoverystrategy:
-        name: 'Truth Recovery Strategy'
-        url: www.truthrecoverystrategy.com
-        solr: truthrecoverystrategy
-        www: true
-        cron_spec: '10 * * * *'
-        cron_cmd: 'cd web/sites/truthrecoverystrategy ; drush core-cron'
-        database: truthrecoverystrategy
-        status: development
-        default: false
     cusubt:
         name: CUSUBT
         url: cusubt.org.uk
@@ -94,3 +84,12 @@ sites:
         database: cusubt
         status: development
         default: false
+    truthrecoverystrategy:
+        name: 'Truth Recovery Strategy'
+        url: truthrecoverystrategy.com
+        solr: truthrecoverystrategy
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/truthrecoverystrategy ; drush core-cron'
+        database: truthrecoverystrategy
+        status: development
