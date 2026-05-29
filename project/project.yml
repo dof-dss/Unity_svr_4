@@ -76,7 +76,7 @@ sites:
         default: false
     truthrecoverystrategy:
         name: 'Truth Recovery Strategy'
-        url: www.truthrecoverystrategy.com
+        url: truthrecoverystrategy.com
         solr: truthrecoverystrategy
         www: true
         cron_spec: '10 * * * *'
