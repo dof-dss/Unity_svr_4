@@ -9,6 +9,6 @@
 | The Public Record Office of Northern Ireland | proni | proni.gov.uk | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
 | OICE | oice | oice.org.uk | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
 | Irish Language Commissioner | coimisineir | coimisineir.org | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
-| Truth Recovery Strategy | truthrecoverystrategy | www.truthrecoverystrategy.com | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
+| Truth Recovery Strategy | truthrecoverystrategy | truthrecoverystrategy.com | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
 | CUSUBT | cusubt | cusubt.org.uk | ![#fff3e0](https://placehold.co/140x30/ffe0b2/e65100.png?text=Development&font=source-sans-pro) |   | 
-Last updated: 20/05/2026 18:36
+Last updated: 29/05/2026 08:54
