@@ -307,3 +307,24 @@
     )
     top / 100% 5px no-repeat;
 }
+
+#headerHero {
+  @media screen and (max-width: $tab) {
+    background-color: #fff;
+
+    .region-search {
+      input[type='text'],
+      input[type='search'] {
+        border: 1px solid #000;
+        background: #fff;
+
+      }
+    }
+  }
+}
+
+.hamburger {
+  & > span {
+    background: #000 !important;
+  }
+}
