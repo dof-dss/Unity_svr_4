@@ -94,3 +94,13 @@ sites:
         database: cusubt
         status: development
         default: false
+    truthrecoveryredress:
+        name: 'Truth Recovery Redress'
+        url: truthrecoveryredress.org
+        solr: truthrecoveryredress
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/truthrecoveryredress ; drush core-cron'
+        database: truthrecoveryredress
+        status: development
+        default: false
