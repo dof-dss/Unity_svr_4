@@ -1,0 +1,22 @@
+uuid: b4c2c569-a4d3-4089-9c18-be4f1aee678d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+_core:
+  default_config_hash: NdzErWmh4yJtMOdjY7KTujgy9CJNWrnSi3mKfpSaMe4
+id: node.field_photo
+field_name: field_photo
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
