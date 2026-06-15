@@ -1,0 +1,16 @@
+uuid: 326e58d8-67f3-4265-ab68-afb42358723a
+langcode: en
+status: false
+dependencies: {  }
+id: hosted
+label: hosted
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/truthrecoveryredress/hosted
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

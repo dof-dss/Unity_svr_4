@@ -1,0 +1,18 @@
+uuid: cf89c7b9-fb1f-4969-bd95-7ffe3d4c84f4
+langcode: en
+status: false
+dependencies: {  }
+id: production
+label: production
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/truthrecoveryredress/production
+module:
+  fastly: 0
+theme: {  }
+complete_list:
+  - fastly.settings
+partial_list: {  }

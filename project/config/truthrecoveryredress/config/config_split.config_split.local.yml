@@ -1,0 +1,29 @@
+uuid: 7766263e-b03c-4eaa-9f01-ae5b5e54c210
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: local
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/truthrecoveryredress/local
+module:
+  clone_nodes: 0
+  easy_install: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  migrate_upgrade: 0
+  update: 0
+  views_ui: 0
+  devel: 0
+  unity_file_migrations: 0
+  stage_file_proxy: 0
+theme: {  }
+complete_list: {  }
+partial_list:
+  - search_api.server.solr_default
