@@ -1,0 +1,17 @@
+uuid: 9e7192a5-1fcb-4d15-a125-72f4e1e4933f
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/cusubt/production
+module:
+  fastly: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

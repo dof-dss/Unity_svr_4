@@ -1,4 +1,4 @@
-uuid: e029560c-e50f-4101-a63a-80d3469fd99e
+uuid: c1197f4b-d833-4f59-875c-5fccd89c7c1d
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 _core:
   default_config_hash: DGMKp3ma_4-AQt-O0HIq29nZX9XwDdFha0WkRAg_AKI
 name: 'Layout page'

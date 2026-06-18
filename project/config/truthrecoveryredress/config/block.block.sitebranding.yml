@@ -1,0 +1,23 @@
+uuid: bafb947f-e743-451f-9a78-b86628817402
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - truthrecoveryredress_theme
+id: sitebranding
+theme: truthrecoveryredress_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

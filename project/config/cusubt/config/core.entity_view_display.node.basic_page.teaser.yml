@@ -1,4 +1,4 @@
-uuid: db59177d-f317-4d10-8704-f222cc3e3cea
+uuid: 8e5c4f2a-1dd0-4755-a6f5-63bb36cba914
 langcode: en
 status: true
 dependencies:
@@ -19,25 +19,17 @@ bundle: basic_page
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
-    region: content
-  content_moderation_control:
-    weight: -20
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
+  content_moderation_control: true
   field_meta_tags: true
   field_next_audit_due: true
   langcode: true
+  links: true
   search_api_excerpt: true

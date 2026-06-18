@@ -16,8 +16,10 @@ dependencies:
     - ckeditor5_allowed_html
     - editor
     - entity_embed
+    - linkit
     - media
     - noreferrer
+    - origins_common
     - token_filter
 _core:
   default_config_hash: HV7-vO-koh-hIwN_RJEAj9lJMzW9ylxbOPenzdgWKnQ
@@ -119,6 +121,14 @@ filters:
     weight: -50
     settings:
       filter_url_length: 72
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true
+      media_substitution: metadata
   media_embed:
     id: media_embed
     provider: media

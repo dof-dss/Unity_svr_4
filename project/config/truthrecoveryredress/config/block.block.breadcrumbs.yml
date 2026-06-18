@@ -1,0 +1,24 @@
+uuid: 95874ad6-058c-4fd1-80e2-039a8ee9d2b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - truthrecoveryredress_theme
+id: breadcrumbs
+theme: truthrecoveryredress_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

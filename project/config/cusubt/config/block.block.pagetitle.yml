@@ -1,4 +1,4 @@
-uuid: 03c06f40-dc3b-494b-aa70-6e9e63cbb31b
+uuid: c6ae659a-cdbe-41b3-86b2-06709bd35cec
 langcode: en
 status: true
 dependencies:
@@ -21,4 +21,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: ''
+    pages: '<front>'

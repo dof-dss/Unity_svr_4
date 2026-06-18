@@ -1,4 +1,4 @@
-uuid: 33456b89-a533-4a44-93b6-00eea46159fe
+uuid: 9773d8c2-2ba3-42c1-8138-883a16866e2d
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,8 @@ dependencies:
     - origins_toc
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
   origins_toc:
     toc_enable: 0
     toc_title: 'Table of contents'

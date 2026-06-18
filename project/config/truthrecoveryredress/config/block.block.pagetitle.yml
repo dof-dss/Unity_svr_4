@@ -1,0 +1,24 @@
+uuid: 93ac56b5-32a8-4b82-9378-e200e83a280a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - truthrecoveryredress_theme
+id: pagetitle
+theme: truthrecoveryredress_theme
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "<front>\r\n/search\r\n/publications\r\n/publications/date/*\r\n\r\n"

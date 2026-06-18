@@ -1,0 +1,31 @@
+uuid: 83687183-4550-47b2-953e-5c87a54c900e
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.contact
+  module:
+    - system
+    - webform
+  theme:
+    - truthrecoverystrategy_theme
+id: contact_webform
+theme: truthrecoverystrategy_theme
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Contact Webform'
+  label_display: '0'
+  provider: webform
+  webform_id: contact
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contact

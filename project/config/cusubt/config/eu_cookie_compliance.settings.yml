@@ -4,7 +4,7 @@ langcode: en
 dependencies:
   config:
     - filter.format.basic_html
-uuid: 6fc9489b-ece0-4780-bee5-bd3ac4554c78
+uuid: f5d28c8e-031e-473e-be52-02b0847e8d1e
 popup_enabled: true
 popup_clicking_confirmation: false
 popup_scrolling_confirmation: false
