@@ -6,9 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 _core:
   default_config_hash: DGMKp3ma_4-AQt-O0HIq29nZX9XwDdFha0WkRAg_AKI
 name: 'Layout page'

@@ -1,0 +1,20 @@
+uuid: 3d7c59ed-98a3-404d-ad5c-10725122826e
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - cusubt_theme
+id: languageswitcher
+theme: cusubt_theme
+region: search
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }

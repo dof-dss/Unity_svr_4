@@ -1,4 +1,4 @@
-uuid: 91dd8882-cb0c-4524-a3f0-d13459c5ad59
+uuid: d5a0ead2-1788-44fe-86c6-b0af5d49700a
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 _core:
   default_config_hash: WZNB9ctrBtz3s3ruBQgjYZyaZcU2DbNU_iOgyaN8yJM
 name: Profile

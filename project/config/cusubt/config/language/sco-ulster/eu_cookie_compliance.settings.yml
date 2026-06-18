@@ -1,0 +1,18 @@
+popup_info:
+  value: '<p>Biscakes oan tha [site:name] wabsteid</p><p>We uise a wheen necessar biscakes furtae caa this sarvice. We’d be leukkin tae pit forrits eikit biscakes, tha wye we’ll kin mine yer walins, tak up whut wye fowk uises tha sarvice an richtify it. A wheen o oor blauds lats waled yins ootby fettle biscakes – tha like o blauds ’at hauds YouTube fillums ur Google Chairts.</p><p><a href="/cookies">Fyn oot mair aboot whut wye we uise biscakes.</a></p>'
+  format: basic_html
+popup_agreed:
+  value: '<h2>Ableeged til ye fur tholin wi biscakes</h2><p>Noo ye’ll kin hiddle this awnin ur fyn oor mair aboot biscakes.</p>'
+  format: basic_html
+withdraw_message:
+  value: '<p>Biscakes oan tha [site:name] wabsteid</p><p>Ye hae compluthert wi iz tae pit forrits eikit biscakes, tha wye we’ll kin mine yer walins, tak up whut wye fowk uises tha sarvice an richtify it. Gin ye hae renaiged, ye’ll kin quat tholin wi complutherin.</p><p><a href="/cookies">Fyn oot mair anent whut wye we’ll kin uise biscakes</a></p>'
+  format: basic_html
+popup_agree_button_message: 'Thole wi biscakes'
+popup_more_info_button_message: 'Fyn oot mair aboot whut wye we uise biscakes.'
+disagree_button_label: 'Tak the rue wi biscakes'
+popup_find_more_button_message: 'Mair wittins'
+popup_hide_button_message: Hiddle
+withdraw_tab_button_label: 'Biscakes walins'
+withdraw_action_button_label: 'Renaig oan complutherin'
+save_preferences_button_label: 'Hain whut’s liefer haed'
+accept_all_categories_button_label: 'Thole wi aa biscakes'

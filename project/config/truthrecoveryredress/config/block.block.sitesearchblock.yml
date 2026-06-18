@@ -1,0 +1,25 @@
+uuid: d9affdb4-350f-4290-b5ea-930f4bd31f38
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - unity_search_pages
+  theme:
+    - truthrecoveryredress_theme
+id: sitesearchblock
+theme: truthrecoveryredress_theme
+region: search
+weight: 0
+provider: null
+plugin: site_search_block
+settings:
+  id: site_search_block
+  label: 'Site search block'
+  label_display: '0'
+  provider: unity_search_pages
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /search
