@@ -1,0 +1,30 @@
+uuid: cd6aebce-8afa-4206-a888-ada073adb73a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_card:9209382c-8530-400a-ab62-0162969a61ac'
+  module:
+    - block_content
+    - system
+  theme:
+    - truthrecoveryredress_theme
+id: makeanapplication
+theme: truthrecoveryredress_theme
+region: top_second
+weight: 0
+provider: null
+plugin: 'block_content:9209382c-8530-400a-ab62-0162969a61ac'
+settings:
+  id: 'block_content:9209382c-8530-400a-ab62-0162969a61ac'
+  label: 'Make an application'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
