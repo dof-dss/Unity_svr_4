@@ -1,0 +1,30 @@
+uuid: 16df5390-dd00-4c9f-afee-72cc0ae0e30a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:f716aad9-eb77-4281-a5a4-212cf871f0bb'
+  module:
+    - block_content
+    - system
+  theme:
+    - truthrecoveryredress_theme
+id: abouttheprogramme
+theme: truthrecoveryredress_theme
+region: front_welcome
+weight: -4
+provider: null
+plugin: 'block_content:f716aad9-eb77-4281-a5a4-212cf871f0bb'
+settings:
+  id: 'block_content:f716aad9-eb77-4281-a5a4-212cf871f0bb'
+  label: 'About the Programme'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

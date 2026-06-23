@@ -1,0 +1,30 @@
+uuid: 9670c1e8-3083-42aa-89a5-6e273c5af5b4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_card:62728855-73e3-4435-8f3f-d9e3d6b8562f'
+  module:
+    - block_content
+    - system
+  theme:
+    - truthrecoveryredress_theme
+id: supportservices
+theme: truthrecoveryredress_theme
+region: top_fourth
+weight: 0
+provider: null
+plugin: 'block_content:62728855-73e3-4435-8f3f-d9e3d6b8562f'
+settings:
+  id: 'block_content:62728855-73e3-4435-8f3f-d9e3d6b8562f'
+  label: 'Support Services'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
