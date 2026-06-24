@@ -1,9 +1,6 @@
 adding:
   backend_config:
     connector_config:
-      host: solr
-      port: 8983
-      core: truthrecoveryredress
       skip_schema_check: true
       solr_install_dir: /opt/solr
       checkpoints_collection: ''
@@ -15,8 +12,5 @@ adding:
 removing:
   backend_config:
     connector_config:
-      host: truthrecoveryredress_solr.internal
-      port: 8080
-      core: truthrecoveryredress_index
       skip_schema_check: false
       solr_install_dir: ''
