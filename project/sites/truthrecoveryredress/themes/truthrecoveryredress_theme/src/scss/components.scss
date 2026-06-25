@@ -5,6 +5,11 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
+#header_wrapper {
+  border-bottom: 1px solid $brand-primary;
+  padding-bottom: 2rem;
+}
+
 #main-menu .menu-link,
 #main-menu .menu {
   background-color: #fff;
@@ -27,7 +32,8 @@
   }
 
   .menu .menu-item .active {
-    border-color: $brand-primary;
+    border-bottom: none;
+    height: 4.5rem;
   }
 
   .menu-main_sub {
@@ -54,6 +60,8 @@
 }
 
 .region-front-welcome {
+  border-bottom: 1px solid $brand-primary;
+
   .block {
     width: 65%;
 
