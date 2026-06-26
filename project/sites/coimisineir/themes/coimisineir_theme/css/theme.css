@@ -5,12 +5,18 @@
   margin: 0;
 }
 
+@media screen and (max-width: 766px) {
+  #headerHero {
+    background: none;
+  }
+}
+
 #block-coimisineir-theme-languageswitcher a {
   border: #000 solid 2px;
   /*color: #0d4c2d;*/
   display: block;
   margin-right: 1em;
-  padding: .4em;
+  padding: .5em;
 }
 
 #block-coimisineir-theme-languageswitcher a.is-active {
