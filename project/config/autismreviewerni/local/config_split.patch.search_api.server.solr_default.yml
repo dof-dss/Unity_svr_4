@@ -11,7 +11,7 @@ adding:
       distrib: true
       context: solr
       username: solr
-      password: SolrRocks
+      password: solr
 removing:
   backend_config:
     connector_config:
