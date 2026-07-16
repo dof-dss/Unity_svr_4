@@ -61,10 +61,15 @@ db:
                 default_schema: truthrecoveryredressdb
                 privileges:
                     truthrecoveryredressdb: admin
-solr_8_11:
-    type: 'solr:8.11'
+solr_9_9:
+    type: 'solr:9.9'
     disk: 1024
     configuration:
+        modules:
+            - extraction
+            - analysis-extras
+            - langid
+            - ltr
         cores:
             legalcommissionerni_index:
                 conf_dir: !archive solr_config/
