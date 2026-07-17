@@ -1,0 +1,39 @@
+uuid: b776e0e0-6ab1-4cbc-8b78-78d8be5b707c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.feature_card
+    - field.field.block_content.feature_card.field_image
+    - field.field.block_content.feature_card.field_link
+  module:
+    - link
+id: block_content.feature_card.default
+targetEntityType: block_content
+bundle: feature_card
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: news_thumbnail
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

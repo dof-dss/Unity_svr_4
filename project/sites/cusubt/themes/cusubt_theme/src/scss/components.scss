@@ -9,6 +9,19 @@
   height: 120px;
 }
 
+#headerHero {
+  @media screen and (max-width: 766px) {
+    background: none;
+  }
+}
+
+#sliding-popup .popup-content {
+  @media screen and (min-width: 1000px) {
+    grid-template-columns: 2fr 2fr !important;
+  }
+}
+
+
 #block-languageswitcher ul {
   display: inline-flex;
   float: right;
@@ -20,7 +33,7 @@
   border: #000 solid 2px;
   display: block;
   margin-right: 1em;
-  padding: .4em;
+  padding: .5em;
 }
 
 #block-languageswitcher a.is-active {
