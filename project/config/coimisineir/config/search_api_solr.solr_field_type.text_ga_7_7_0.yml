@@ -51,8 +51,8 @@ field_type:
           class: solr.IrishLowerCaseFilterFactory
         -
           class: solr.SnowballPorterFilterFactory
-          language: Irish
           protected: protwords_ga.txt
+          language: Irish
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
     -
@@ -66,9 +66,9 @@ field_type:
       filters:
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_ga.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -91,8 +91,8 @@ field_type:
           class: solr.IrishLowerCaseFilterFactory
         -
           class: solr.SnowballPorterFilterFactory
-          language: Irish
           protected: protwords_ga.txt
+          language: Irish
         -
           class: solr.RemoveDuplicatesTokenFilterFactory
 unstemmed_field_type:
@@ -147,9 +147,9 @@ unstemmed_field_type:
       filters:
         -
           class: solr.SynonymGraphFilterFactory
+          ignoreCase: true
           synonyms: synonyms_ga.txt
           expand: true
-          ignoreCase: true
         -
           class: solr.StopFilterFactory
           ignoreCase: true
@@ -369,8 +369,6 @@ text_files:
     ón
     óna
     ónár
-  synonyms: |
-    drupal, durpal
   protwords: |
 
   accents: |
@@ -559,3 +557,5 @@ text_files:
     "\u014D" => "o"
     # ū => u
     "\u016B" => "u"
+  synonyms: |
+    drupal, durpal

@@ -42,7 +42,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: coimisineir_solr.intranet
+    host: coimisineir_solr.internal
     port: 8080
     path: /
     core: coimisineir_index
