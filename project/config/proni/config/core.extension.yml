@@ -73,6 +73,7 @@ module:
   layout_builder_restrictions_by_region: 0
   layout_discovery: 0
   link: 0
+  link_field_autocomplete_filter: 0
   link_fix_absolute_urls: 0
   linkit: 0
   media: 0
