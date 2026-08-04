@@ -10,8 +10,6 @@ adding:
       stats_cache: org.apache.solr.search.stats.LRUStatsCache
       distrib: true
       context: solr
-      username: solr
-      password: solr
 removing:
   backend_config:
     connector_config:
