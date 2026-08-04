@@ -72,25 +72,25 @@ solr_9_9:
             - ltr
         cores:
             legalcommissionerni_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/legalcommissionerni/conf/
             nicswell_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/nicswell/conf/
             autismreviewerni_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/autismreviewerni/conf/
             anotherway_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/anotherway/conf/
             proni_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/proni/conf/
             oice_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/oice/conf/
             coimisineir_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/coimisineir/conf/
             truthrecoverystrategy_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/truthrecoverystrategy/conf/
             cusubt_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/cusubt/conf/
             truthrecoveryredress_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/truthrecoveryredress/conf/
         endpoints:
             legalcommissionerni:
                 core: legalcommissionerni_index
