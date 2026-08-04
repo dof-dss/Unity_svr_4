@@ -7,6 +7,20 @@ dependencies:
     - node.type.feature
   module:
     - link
+    - link_field_autocomplete_filter
+third_party_settings:
+  link_field_autocomplete_filter:
+    negate: true
+    allowed_content_types:
+      feature: feature
+      basic_page: '0'
+      events: '0'
+      featured_content_list: '0'
+      html_document: '0'
+      landing_page: '0'
+      news: '0'
+      publication: '0'
+      webform: '0'
 id: node.feature.field_link_url
 field_name: field_link_url
 entity_type: node

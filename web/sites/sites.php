@@ -57,8 +57,8 @@
  * @see https://www.drupal.org/documentation/install/multi-site
  */
 
-// Different sites setup depending on whether we are running on Platform.sh or
-// local DDEV.
+// Different sites setup depending on whether we are running on
+// Platform.sh or local DDEV.
 use Symfony\Component\Yaml\Yaml;
 
 $sites = [];
