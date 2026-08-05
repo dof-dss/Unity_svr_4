@@ -41,6 +41,7 @@ db_import_command:
         gzip -dc .ddev/.downloads/db_truthrecoverystrategy.sql.gz | ddev import-db --database=truthrecoverystrategy --skip-hooks 
         gzip -dc .ddev/.downloads/db_cusubt.sql.gz | ddev import-db --database=cusubt --skip-hooks 
         gzip -dc .ddev/.downloads/db_truthrecoveryredress.sql.gz | ddev import-db --database=truthrecoveryredress --skip-hooks 
+        scripts/solr/configure-local-connectors --all
     service: host
 files_pull_command:
     command: |
