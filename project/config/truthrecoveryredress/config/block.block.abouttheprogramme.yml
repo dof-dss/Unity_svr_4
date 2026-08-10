@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:f716aad9-eb77-4281-a5a4-212cf871f0bb'
 settings:
   id: 'block_content:f716aad9-eb77-4281-a5a4-212cf871f0bb'
-  label: 'About the Programme'
+  label: 'The Truth Recovery Redress Service '
   label_display: visible
   provider: block_content
   status: true
