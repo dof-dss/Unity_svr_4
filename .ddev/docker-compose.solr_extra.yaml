@@ -7,15 +7,10 @@
 #############################################################################
 services:
     solr:
+        environment:
+            SOLR_SITES: 'legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress'
         volumes:
-            - './solr-cores/legalcommissionerni:/solr-legalcommissionerni-conf'
-            - './solr-cores/nicswell:/solr-nicswell-conf'
-            - './solr-cores/autismreviewerni:/solr-autismreviewerni-conf'
-            - './solr-cores/anotherway:/solr-anotherway-conf'
-            - './solr-cores/proni:/solr-proni-conf'
-            - './solr-cores/oice:/solr-oice-conf'
-            - './solr-cores/coimisineir:/solr-coimisineir-conf'
-            - './solr-cores/truthrecoverystrategy:/solr-truthrecoverystrategy-conf'
-            - './solr-cores/cusubt:/solr-cusubt-conf'
-            - './solr-cores/truthrecoveryredress:/solr-truthrecoveryredress-conf'
-        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core legalcommissionerni /solr-legalcommissionerni-conf; precreate-core nicswell /solr-nicswell-conf; precreate-core autismreviewerni /solr-autismreviewerni-conf; precreate-core anotherway /solr-anotherway-conf; precreate-core proni /solr-proni-conf; precreate-core oice /solr-oice-conf; precreate-core coimisineir /solr-coimisineir-conf; precreate-core truthrecoverystrategy /solr-truthrecoverystrategy-conf; precreate-core cusubt /solr-cusubt-conf; precreate-core truthrecoveryredress /solr-truthrecoveryredress-conf; exec solr -f"'
+            - '${DDEV_APPROOT}/.platform/solr_configsets:/solr-configsets:ro'
+        entrypoint:
+            - bash
+            - /mnt/ddev_config/solr/create-or-refresh-cores.sh

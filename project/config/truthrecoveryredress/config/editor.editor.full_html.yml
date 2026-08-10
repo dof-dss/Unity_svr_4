@@ -33,7 +33,6 @@ settings:
       - undo
       - redo
       - '|'
-      - importWord
       - specialCharacters
       - fullScreen
       - sourceEditing
