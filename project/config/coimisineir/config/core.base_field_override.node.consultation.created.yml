@@ -1,0 +1,18 @@
+uuid: 51a05518-e22b-4e9b-af85-0fdb92c699d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.consultation
+id: node.consultation.created
+field_name: created
+entity_type: node
+bundle: consultation
+label: 'Authored on'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

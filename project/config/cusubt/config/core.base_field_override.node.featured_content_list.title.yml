@@ -1,0 +1,18 @@
+uuid: fcdfc70e-1989-453c-8422-954c27fc23f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.featured_content_list
+id: node.featured_content_list.title
+field_name: title
+entity_type: node
+bundle: featured_content_list
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

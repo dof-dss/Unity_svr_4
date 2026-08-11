@@ -1,0 +1,43 @@
+uuid: 5f471617-4b55-4f9c-a6d5-80e82e013ccf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_url
+    - node.type.link
+  module:
+    - link
+    - link_field_autocomplete_filter
+third_party_settings:
+  link_field_autocomplete_filter:
+    negate: true
+    allowed_content_types:
+      link: link
+      feature: feature
+      basic_page: '0'
+      board_member: '0'
+      consultation: '0'
+      contact: '0'
+      faq: '0'
+      featured_content_list: '0'
+      layout_page: '0'
+      news: '0'
+      profile: '0'
+      publication: '0'
+      webform: '0'
+_core:
+  default_config_hash: 4f3PrFAyYc875dIeRYbz_qh1HOh7oDZQmmSnWl4nnro
+id: node.link.field_link_url
+field_name: field_link_url
+entity_type: node
+bundle: link
+label: 'Link URL'
+description: 'Enter the URL for this link. Start the link with a / to link to content on this site, or use http:// or https:// to link to other sites.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

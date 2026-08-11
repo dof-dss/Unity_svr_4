@@ -27,7 +27,6 @@ module:
   content_lock_timeout: 0
   content_moderation: 0
   contextual: 0
-  cookie_content_blocker: 0
   csp: 0
   ctools: 0
   date_facet_drilldown: 0
@@ -46,6 +45,7 @@ module:
   facets: 0
   facets_pretty_paths: 0
   facets_summary: 0
+  fastly: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -58,7 +58,6 @@ module:
   handy_cache_tags: 0
   help: 0
   history: 0
-  honeypot: 0
   http_cache_control: 0
   image: 0
   inline_entity_form: 0
@@ -70,6 +69,7 @@ module:
   layout_builder_restrictions_by_region: 0
   layout_discovery: 0
   link: 0
+  link_field_autocomplete_filter: 0
   link_fix_absolute_urls: 0
   linkit: 0
   media: 0
@@ -87,18 +87,19 @@ module:
   moderation_sidebar: 0
   mysql: 0
   nicswell_breadcrumbs: 0
+  nicswell_events: 0
   node: 0
   node_edit_protection: 0
   noreferrer: 0
   options: 0
   origins_ckeditor_enhancements: 0
   origins_common: 0
+  origins_forms: 0
   origins_media: 0
   origins_metatag: 0
   origins_qa: 0
   origins_search_views_routing: 0
   origins_toc: 0
-  origins_unique_title: 0
   page_cache: 0
   path: 0
   path_alias: 0
@@ -136,7 +137,6 @@ module:
   unity_internal_link_checker: 0
   unity_landing_pages: 0
   unity_search_pages: 0
-  update: 0
   user: 0
   views_custom_cache_tag: 0
   webform: 0

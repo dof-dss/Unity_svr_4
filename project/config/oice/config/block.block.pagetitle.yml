@@ -1,0 +1,18 @@
+uuid: 818a2433-ae2e-4690-9f48-bb0c0559866b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oice_theme
+id: pagetitle
+theme: oice_theme
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

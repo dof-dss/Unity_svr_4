@@ -10,7 +10,7 @@ id: node.events.field_banner
 field_name: field_banner
 entity_type: node
 bundle: events
-label: Banner
+label: 'Featured image'
 description: ''
 required: true
 translatable: false

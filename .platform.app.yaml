@@ -60,7 +60,7 @@ hooks:
         export FASTLY_API_SERVICE=dummyservice
 
         # For each multi site - run db-updates and import config.
-        for site in legalcommissionerni nicswell autismreviewerni anotherway proni
+        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -107,7 +107,7 @@ hooks:
         export FASTLY_API_SERVICE=$temp
 
         # For each multi site - clear cache (including Fastly cache)
-        for site in legalcommissionerni nicswell autismreviewerni anotherway proni
+        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -157,15 +157,25 @@ web:
 relationships:
     redis: 'redis:redis'
     legalcommissionerni: 'db:legalcommissionerni'
-    legalcommissionerni_solr: 'solr_8_11:legalcommissionerni'
+    legalcommissionerni_solr: 'solr_9_9:legalcommissionerni'
     nicswell: 'db:nicswell'
-    nicswell_solr: 'solr_8_11:nicswell'
+    nicswell_solr: 'solr_9_9:nicswell'
     autismreviewerni: 'db:autismreviewerni'
-    autismreviewerni_solr: 'solr_8_11:autismreviewerni'
+    autismreviewerni_solr: 'solr_9_9:autismreviewerni'
     anotherway: 'db:anotherway'
-    anotherway_solr: 'solr_8_11:anotherway'
+    anotherway_solr: 'solr_9_9:anotherway'
     proni: 'db:proni'
-    proni_solr: 'solr_8_11:proni'
+    proni_solr: 'solr_9_9:proni'
+    oice: 'db:oice'
+    oice_solr: 'solr_9_9:oice'
+    coimisineir: 'db:coimisineir'
+    coimisineir_solr: 'solr_9_9:coimisineir'
+    truthrecoverystrategy: 'db:truthrecoverystrategy'
+    truthrecoverystrategy_solr: 'solr_9_9:truthrecoverystrategy'
+    cusubt: 'db:cusubt'
+    cusubt_solr: 'solr_9_9:cusubt'
+    truthrecoveryredress: 'db:truthrecoveryredress'
+    truthrecoveryredress_solr: 'solr_9_9:truthrecoveryredress'
 crons:
     legalcommissionerni:
         spec: '10 * * * *'
@@ -187,3 +197,18 @@ crons:
     proni:
         spec: '10 * * * *'
         cmd: 'cd web/sites/proni ; drush core-cron'
+    oice:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/oice ; drush core-cron'
+    coimisineir:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/coimisineir ; drush core-cron'
+    truthrecoverystrategy:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/truthrecoverystrategy ; drush core-cron'
+    cusubt:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/cusubt ; drush core-cron'
+    truthrecoveryredress:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/truthrecoveryredress ; drush core-cron'

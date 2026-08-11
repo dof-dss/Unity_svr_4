@@ -1,0 +1,29 @@
+uuid: 945566d2-2df0-4bcd-96b3-f469e66a5ecc
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publication_date
+  module:
+    - facets
+    - system
+  theme:
+    - truthrecoveryredress_theme
+id: publicationdate
+theme: truthrecoveryredress_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:publication_date'
+settings:
+  id: 'facet_block:publication_date'
+  label: 'Publication date'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: publicationdate
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*"

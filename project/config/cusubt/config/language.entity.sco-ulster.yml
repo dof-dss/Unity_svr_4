@@ -1,0 +1,9 @@
+uuid: 9fd53059-547c-41ef-aa6f-87248eddb612
+langcode: en
+status: true
+dependencies: {  }
+id: sco-ulster
+label: 'Ulster Scots'
+direction: ltr
+weight: 1
+locked: false

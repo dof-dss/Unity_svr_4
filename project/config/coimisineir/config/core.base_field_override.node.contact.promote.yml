@@ -1,0 +1,24 @@
+uuid: af4360b6-34d9-48a2-a87e-137315610839
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact
+_core:
+  default_config_hash: Qh5EGujawePQFIwBvFA0cgl6qEgbK7WNye0l9UGSDnA
+id: node.contact.promote
+field_name: promote
+entity_type: node
+bundle: contact
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,19 @@
+uuid: 77578888-c527-40f3-aea4-a47272a9166e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_header
+    - node.type.feature
+id: node.feature.field_teaser_header
+field_name: field_teaser_header
+entity_type: node
+bundle: feature
+label: 'Teaser header'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 262b97b8-00d9-42ef-abcb-289028118870
+langcode: en
+status: true
+dependencies:
+  module:
+    - history
+_core:
+  default_config_hash: mVYurwRxYajEEN8-bgTAHmoistexP-Cjf3tx6psCUFg
+title: 'Deletes history'
+id: history_cron
+weight: 2
+module: history
+callback: history_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

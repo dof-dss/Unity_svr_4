@@ -1,0 +1,18 @@
+uuid: 0c9d8b0d-20f3-4a8b-9428-5e164e1c1654
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.webform
+id: node.webform.title
+field_name: title
+entity_type: node
+bundle: webform
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

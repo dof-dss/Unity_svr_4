@@ -1,0 +1,18 @@
+uuid: 8bfcbb13-9a97-4974-9e7d-0ecd24bbf437
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.profile
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.profile
+target_entity_type_id: node
+target_bundle: profile
+default_langcode: site_default
+language_alterable: false

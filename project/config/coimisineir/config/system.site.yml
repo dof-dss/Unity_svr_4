@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+langcode: en
+uuid: 4c21b2d8-1f73-41c6-95f0-565eff62bb0a
+name: 'Irish Language Commissioner'
+mail: noreply@email.coimisineir.org
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: ga
+frontpage_title: 'Welcome to Drupal site'
+frontpage_show_title: false

@@ -1,0 +1,18 @@
+uuid: a215aee0-3c1b-40f8-8a27-80644d4720d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.layout_page
+id: node.layout_page.changed
+field_name: changed
+entity_type: node
+bundle: layout_page
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

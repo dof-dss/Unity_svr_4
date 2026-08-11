@@ -24,6 +24,9 @@ bundles:
     bundle: landing_page
   -
     entity_type: node
+    bundle: publication
+  -
+    entity_type: node
     bundle: stories
   -
     entity_type: node

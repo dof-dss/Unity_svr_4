@@ -1,0 +1,9 @@
+site-styling:
+  css:
+    # The SMACSS category, "base", is loaded before other categories. Drupal 8
+    # loads stylesheets based on the SMACSS ordering of:
+    # base, layout, component, state, theme
+
+    # The SMACSS category, "component", is loaded after "base" and "layout" styles.
+    theme:
+      css/theme.css: { minified: true }

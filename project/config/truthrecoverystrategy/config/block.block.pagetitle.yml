@@ -1,0 +1,24 @@
+uuid: e43d50f4-e929-4b7f-9fab-094c56906509
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - truthrecoverystrategy_theme
+id: pagetitle
+theme: truthrecoverystrategy_theme
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/search\r\n/news\r\n/news/date/*\r\n/publications\r\n/publications/date/*"

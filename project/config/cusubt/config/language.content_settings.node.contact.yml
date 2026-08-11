@@ -1,0 +1,20 @@
+uuid: 91f5bcb7-9e16-4594-b950-453f53ba48b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: JZ6RGE9aZ44MkQt5VXxJ9p4bR7aNcEK4M_VvPLXa5gs
+id: node.contact
+target_entity_type_id: node
+target_bundle: contact
+default_langcode: site_default
+language_alterable: false

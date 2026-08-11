@@ -1,0 +1,30 @@
+uuid: 95db0a0e-43c0-4ad1-81ef-3f41d60dd899
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:5d0924a3-f96e-47a6-abd4-3715d89b0596'
+  module:
+    - block_content
+    - system
+  theme:
+    - truthrecoverystrategy_theme
+id: frontpagebanner
+theme: truthrecoverystrategy_theme
+region: top_first
+weight: -3
+provider: null
+plugin: 'block_content:5d0924a3-f96e-47a6-abd4-3715d89b0596'
+settings:
+  id: 'block_content:5d0924a3-f96e-47a6-abd4-3715d89b0596'
+  label: 'Frontpage banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

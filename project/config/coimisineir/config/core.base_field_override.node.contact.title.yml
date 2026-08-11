@@ -1,0 +1,20 @@
+uuid: cc7dd78c-1540-4ae4-a8f1-bf857f2a2cdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contact
+_core:
+  default_config_hash: 2zOouNvee9r1JZnoVe_9wj7ffAcnwtw68Ocp_Vz8rAo
+id: node.contact.title
+field_name: title
+entity_type: node
+bundle: contact
+label: 'Main heading'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

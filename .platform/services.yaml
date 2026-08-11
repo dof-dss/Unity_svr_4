@@ -15,6 +15,11 @@ db:
             - autismreviewernidb
             - anotherwaydb
             - pronidb
+            - oicedb
+            - coimisineirdb
+            - truthrecoverystrategydb
+            - cusubtdb
+            - truthrecoveryredressdb
         endpoints:
             legalcommissionerni:
                 default_schema: legalcommissionernidb
@@ -36,21 +41,56 @@ db:
                 default_schema: pronidb
                 privileges:
                     pronidb: admin
-solr_8_11:
-    type: 'solr:8.11'
+            oice:
+                default_schema: oicedb
+                privileges:
+                    oicedb: admin
+            coimisineir:
+                default_schema: coimisineirdb
+                privileges:
+                    coimisineirdb: admin
+            truthrecoverystrategy:
+                default_schema: truthrecoverystrategydb
+                privileges:
+                    truthrecoverystrategydb: admin
+            cusubt:
+                default_schema: cusubtdb
+                privileges:
+                    cusubtdb: admin
+            truthrecoveryredress:
+                default_schema: truthrecoveryredressdb
+                privileges:
+                    truthrecoveryredressdb: admin
+solr_9_9:
+    type: 'solr:9.9'
     disk: 1024
     configuration:
+        modules:
+            - extraction
+            - analysis-extras
+            - langid
+            - ltr
         cores:
             legalcommissionerni_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/legalcommissionerni/conf/
             nicswell_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/nicswell/conf/
             autismreviewerni_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/autismreviewerni/conf/
             anotherway_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/anotherway/conf/
             proni_index:
-                conf_dir: !archive solr_config/
+                conf_dir: !archive solr_configsets/proni/conf/
+            oice_index:
+                conf_dir: !archive solr_configsets/oice/conf/
+            coimisineir_index:
+                conf_dir: !archive solr_configsets/coimisineir/conf/
+            truthrecoverystrategy_index:
+                conf_dir: !archive solr_configsets/truthrecoverystrategy/conf/
+            cusubt_index:
+                conf_dir: !archive solr_configsets/cusubt/conf/
+            truthrecoveryredress_index:
+                conf_dir: !archive solr_configsets/truthrecoveryredress/conf/
         endpoints:
             legalcommissionerni:
                 core: legalcommissionerni_index
@@ -62,5 +102,15 @@ solr_8_11:
                 core: anotherway_index
             proni:
                 core: proni_index
+            oice:
+                core: oice_index
+            coimisineir:
+                core: coimisineir_index
+            truthrecoverystrategy:
+                core: truthrecoverystrategy_index
+            cusubt:
+                core: cusubt_index
+            truthrecoveryredress:
+                core: truthrecoveryredress_index
 redis:
     type: 'redis:6.0'

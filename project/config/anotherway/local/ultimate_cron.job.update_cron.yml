@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 uuid: 6f9e5010-318b-41ff-9580-104bce546b3c
+=======
+uuid: e94f4a65-0b61-4491-a261-96c28a031583
+>>>>>>> origin/development
 langcode: en
 status: true
 dependencies:

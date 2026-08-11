@@ -11,12 +11,12 @@ dependencies:
   module:
     - blazy
     - ckeditor5_allowed_html
-    - cookie_content_blocker
     - editor
     - entity_embed
+    - linkit
     - media
     - noreferrer
-    - origins_common
+    - slick
     - token_filter
 _core:
   default_config_hash: PFcG1sCRYFMwThyg3amtSckegRrGuefl-bMpkM65Fx0
@@ -33,18 +33,12 @@ filters:
       media_switch: ''
       hybrid_style: ''
       box_style: ''
+      box_media_style: ''
       box_caption: ''
       filter_tags:
         img: img
         iframe: iframe
       use_data_uri: '0'
-  cookie_content_blocker_filter:
-    id: cookie_content_blocker_filter
-    provider: cookie_content_blocker
-    status: false
-    weight: -35
-    settings:
-      disable_xss: '1'
   editor_file_reference:
     id: editor_file_reference
     provider: editor
@@ -118,6 +112,14 @@ filters:
     weight: -40
     settings:
       filter_url_length: 72
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true
+      media_substitution: metadata
   media_embed:
     id: media_embed
     provider: media
@@ -140,13 +142,51 @@ filters:
     status: true
     weight: -49
     settings: {  }
-  origins_media_cookie_content_blocker_embed_filter:
-    id: origins_media_cookie_content_blocker_embed_filter
-    provider: origins_common
+  slick_filter:
+    id: slick_filter
+    provider: slick
     status: false
-    weight: -48
+    weight: 4
     settings:
-      replacement_text: 'Click here to view the video content'
+      caption:
+        alt: '0'
+        title: '0'
+      optionset: default
+      layout: ''
+      admin_uri: '/admin/config/content/formats/manage/basic_html_publications?destination=/admin/config/content/formats&ajax_form=1&_wrapper_format=drupal_ajax'
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: ''
+      skin: ''
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
+      preserve_keys: false
+      visible_items: null
   token_filter:
     id: token_filter
     provider: token_filter

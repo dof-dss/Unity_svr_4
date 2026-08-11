@@ -1,0 +1,20 @@
+uuid: a7a041ca-40e7-40d6-bfb8-0584e09c0de9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+  module:
+    - path
+id: node.news.path
+field_name: path
+entity_type: node
+bundle: news
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

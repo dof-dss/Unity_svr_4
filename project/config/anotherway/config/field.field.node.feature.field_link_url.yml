@@ -1,0 +1,43 @@
+uuid: 3d8c06a8-7d11-42f3-a661-c4f69b487cc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_url
+    - node.type.feature
+  module:
+    - link
+    - link_field_autocomplete_filter
+third_party_settings:
+  link_field_autocomplete_filter:
+    negate: true
+    allowed_content_types:
+      feature: feature
+      link: link
+      basic_page: '0'
+      board_member: '0'
+      consultation: '0'
+      contact: '0'
+      faq: '0'
+      featured_content_list: '0'
+      layout_page: '0'
+      news: '0'
+      profile: '0'
+      publication: '0'
+      webform: '0'
+_core:
+  default_config_hash: ZM_q7jM_t9gUKkS99BB3Llyas8OkZiRC6U9cv_bGdlA
+id: node.feature.field_link_url
+field_name: field_link_url
+entity_type: node
+bundle: feature
+label: Link
+description: 'The URL to where a user should go for more on this feature item.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

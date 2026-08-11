@@ -1,0 +1,21 @@
+uuid: bf13e9ac-0748-4fbb-a474-f0e67ad1b454
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.publications_topics
+  module:
+    - text
+id: taxonomy_term.publications_topics.description
+field_name: description
+entity_type: taxonomy_term
+bundle: publications_topics
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

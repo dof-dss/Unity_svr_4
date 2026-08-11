@@ -1,0 +1,8 @@
+uuid: 0854d524-807b-426b-9704-b50ea5cb5daf
+langcode: en
+status: true
+dependencies: {  }
+id: feature_card
+label: 'Feature card'
+revision: false
+description: null

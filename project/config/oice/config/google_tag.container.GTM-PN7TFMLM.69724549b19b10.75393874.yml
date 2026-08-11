@@ -1,0 +1,42 @@
+uuid: 4284275b-a2f8-4aa5-a4ff-170455b74751
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: GTM-PN7TFMLM.69724549b19b10.75393874
+label: GTM-PN7TFMLM
+weight: 0
+tag_container_ids:
+  - GTM-PN7TFMLM
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-PN7TFMLM:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+events:
+  custom: {  }
+  login:
+    method: CMS
+  webform_purchase: {  }
+  search: {  }
+  generate_lead:
+    value: ''
+    currency: ''
+  sign_up:
+    method: CMS

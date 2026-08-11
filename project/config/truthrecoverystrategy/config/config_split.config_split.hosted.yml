@@ -1,0 +1,16 @@
+uuid: 00ee861f-6340-4ce4-913d-96114885b9c9
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/truthrecoverystrategy/hosted
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

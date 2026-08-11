@@ -13,8 +13,8 @@ field_name: field_publication_type
 entity_type: node
 bundle: publication
 label: 'Publication type'
-description: ''
-required: false
+description: 'Hold down shift and left click to select more than one publication type. '
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

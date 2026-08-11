@@ -1,0 +1,20 @@
+adding:
+  backend_config:
+    connector_config:
+      host: ddev-unity.svr.4-solr
+      port: 8983
+      core: truthrecoveryredress_index
+      skip_schema_check: true
+      solr_install_dir: /opt/solr
+      checkpoints_collection: ''
+      stats_cache: org.apache.solr.search.stats.LRUStatsCache
+      distrib: true
+      context: solr
+removing:
+  backend_config:
+    connector_config:
+      host: truthrecoveryredress_solr.internal
+      port: 8080
+      core: truthrecoveryredress_index
+      skip_schema_check: false
+      solr_install_dir: ''

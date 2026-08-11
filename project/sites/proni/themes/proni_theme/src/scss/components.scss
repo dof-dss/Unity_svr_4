@@ -5,6 +5,10 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
+.search-form input[type='submit']:focus {
+  box-shadow: 0 0 0 2px #fff;
+}
+
 #top-area {
   text-align: left;
   padding: 6rem 0 3rem;
@@ -23,10 +27,8 @@
 }
 
 .bottom_widget .footer-area .column {
-  &:first-child {
     width: 100%;
     float: none;
-  }
 }
 
 #content #top-area .column .region a.block-link {
@@ -76,10 +78,10 @@
   &:hover.block-link .event-date:after,
   &focus .event-date:after,
   &:focus .block-link h2:after {
-      background-color: $charcoal;
-      background-image: resolve('arrow_forward_white.svg');
-    }
+    background-color: $charcoal;
+    background-image: resolve('arrow_forward_white.svg');
   }
+}
 
 .front {
   .card-deck {
@@ -192,7 +194,6 @@
     &:hover,
     &:focus {
       border-bottom-color: $footer-background;
-      text-decoration: underline;
       text-underline-offset: 3px;
     }
   }
@@ -202,7 +203,6 @@
       .active,
       .active + .menu-main_sub .title a {
         border-bottom-color: $footer-background;
-        text-decoration: underline;
         text-underline-offset: 3px;
       }
     }
@@ -247,7 +247,7 @@
   .content-sidebar-wrap {
     width: 100%;
 
-    @media screen and (max-width: $lap){
+    @media screen and (max-width: $lap) {
       padding: 0 1rem;
     }
   }
@@ -280,6 +280,7 @@
     h1 {
       margin-top: 0;
     }
+
     @include breakpoint($tab) {
       flex-basis: 66%;
       padding-right: 3rem;
@@ -378,5 +379,181 @@ div.event-info {
       content: ' -';
 
     }
+  }
+}
+
+.text-count-wrapper {
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+  color: #fff;
+  background-color: $charcoal;
+  padding: .3334em .6rem;
+  margin: -3px 0 0;
+
+  @include breakpoint($lap) {
+    font-size: 1.8rem;
+  }
+
+  @include breakpoint($desk) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  &.webform-counter-warning .text-count {
+    color: lighten(orange, 10%);
+    font-weight: bold;
+  }
+
+  input + & {
+    max-width: 560px;
+  }
+}
+
+.webform-counter {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.textarea-wrapper {
+  line-height: 0;
+}
+
+li p {
+  margin: 0 !important;
+}
+
+// This code EXCEPT the H2 code can be removed after a successful 10.2.26 release.
+.slick--view--slideshow .slick__slide .slide__caption {
+  @include adjust-font-size-to(20px);
+  background: rgba(0, 0, 0, .85);
+  margin: 0;
+  right: 0;
+  padding: 2%;
+  color: $white;
+  width: 355px;
+  top: 0;
+  left: auto;
+  position: absolute;
+  @media screen and (max-width: $tab) {
+    @include adjust-font-size-to(16px);
+  }
+
+  @media screen and (max-width: $lap) {
+    background: #6a6a6a;
+    opacity: 1;
+  }
+
+  @media screen and (max-width: $tab) {
+    width: 100%;
+    position: relative;
+    padding: 2%;
+  }
+
+  h2 {
+    @include adjust-font-size-to(24px);
+    margin-top: 0;
+    padding: 0;
+    text-shadow: none;
+    text-transform: none;
+    color: $white;
+  }
+}
+
+// This code can be removed after a successful 10.2.26 release.
+.slick--view--slideshow {
+  .slick__slider .slide__caption {
+    height: 100%;
+  }
+
+  .slick__slide .slide__caption {
+    height: 98%;
+  }
+}
+
+.media-image[data-picture-mapping="slideshow"] {
+  img {
+    border-top: 1px solid $black;
+  }
+}
+
+.region-bottom-widget-1 {
+  @include breakpoint($tab) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.block-link.family-series {
+  background: #927407 url('../images/family-tree.png') no-repeat 8%;
+  background-size: 21%;
+}
+
+#bottom_wrapper #bottom-area .column .region a.block-link.family-series {
+  &:hover,
+  &:focus {
+    background: $ash-grey url('../images/family-tree.png') no-repeat 8%;
+    background-size: 21%;
+  }
+}
+
+.block-link.history-series {
+  background: #4e813b resolve('local-history.png') no-repeat 8%;
+  background-size: 25%;
+}
+
+#bottom_wrapper #bottom-area .column .region a.block-link.history-series {
+  &:hover,
+  &:focus {
+    background: $ash-grey url('../images/local-history.png') no-repeat 8%;
+    background-size: 25%;
+  }
+}
+
+#bottom_wrapper #bottom-area .column .region a.block-link.history-series,
+#bottom_wrapper #bottom-area .column .region a.block-link.family-series {
+  padding: 8rem 6rem 3rem 25rem;
+  margin: 0 0 2rem;
+  border: 0;
+  display: block;
+
+  @include breakpoint($tab) {
+    padding: 3rem 6rem 3rem 18rem;
+    margin: 0;
+  }
+
+  &:focus {
+    outline: 3px solid $black;
+    outline-offset: -3px;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.4rem;
+  }
+
+  h2,
+  p {
+    color: $white;
+  }
+}
+
+.block-link.family-series,
+.block-link.history-series {
+  h2::after {
+    background: resolve('arrow_forward_white.svg') no-repeat;
+    right: -50px;
+    bottom: -1px;
+  }
+}
+
+.footer-area.container-wrap {
+  @media  screen and (max-width: $tab) {
+    padding: 1rem;
+  }
+
+  .column {
+    margin: 0;
+    padding: 0;
   }
 }

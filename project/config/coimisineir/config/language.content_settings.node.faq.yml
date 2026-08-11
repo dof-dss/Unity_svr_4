@@ -1,0 +1,20 @@
+uuid: 70224ea8-e29e-4a1c-aa47-b98722a1bf00
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faq
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+_core:
+  default_config_hash: I8ayC8VJob5KptRxGUk2F0KqO2kJb3v04g54EkZbaps
+id: node.faq
+target_entity_type_id: node
+target_bundle: faq
+default_langcode: site_default
+language_alterable: false

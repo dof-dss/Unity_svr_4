@@ -1,6 +1,6 @@
 project_type: unity
 project_name: 'Unity Svr 4'
-project_id: xxxxxxxxx
+project_id: wn7gul2mjyejc
 project_disk_size: 8000
 db_disk_size: 4000
 sites:
@@ -52,5 +52,55 @@ sites:
         cron_spec: '10 * * * *'
         cron_cmd: 'cd web/sites/proni ; drush core-cron'
         database: proni
+        status: development
+        default: false
+    oice:
+        name: OICE
+        url: oice.org.uk
+        solr: oice
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/oice ; drush core-cron'
+        database: oice
+        status: development
+        default: false
+    coimisineir:
+        name: 'Irish Language Commissioner'
+        url: coimisineir.org
+        solr: coimisineir
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/coimisineir ; drush core-cron'
+        database: coimisineir
+        status: development
+        default: false
+    truthrecoverystrategy:
+        name: 'Truth Recovery Strategy'
+        url: truthrecoverystrategy.com
+        solr: truthrecoverystrategy
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/truthrecoverystrategy ; drush core-cron'
+        database: truthrecoverystrategy
+        status: development
+        default: false
+    cusubt:
+        name: CUSUBT
+        url: cusubt.org.uk
+        solr: cusubt
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/cusubt ; drush core-cron'
+        database: cusubt
+        status: development
+        default: false
+    truthrecoveryredress:
+        name: 'Truth Recovery Redress'
+        url: truthrecoveryredress.org
+        solr: truthrecoveryredress
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/truthrecoveryredress ; drush core-cron'
+        database: truthrecoveryredress
         status: development
         default: false

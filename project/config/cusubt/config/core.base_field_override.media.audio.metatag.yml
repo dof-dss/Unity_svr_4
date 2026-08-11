@@ -1,0 +1,20 @@
+uuid: cdd82b43-e4aa-4e9d-aa2f-0b682f4f786e
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio
+  module:
+    - metatag
+id: media.audio.metatag
+field_name: metatag
+entity_type: media
+bundle: audio
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

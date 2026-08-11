@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/publications\r\n/publications/date/*"
+    pages: "/publications\r\n/publications/date/*\r\n/publications/type/*"

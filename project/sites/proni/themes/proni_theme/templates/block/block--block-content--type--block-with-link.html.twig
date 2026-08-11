@@ -33,6 +33,6 @@
 <a class="block-link" href="{{ content.field_link.0['#url']|render }}">
 {% block content %}
   {{ content|without(content.field_link) }}
-  <h2>{{ content.field_link.0['#title'] }}</h2>
+  <h2 class="card__title">{{ content.field_link.0['#title'] }}</h2>
 {% endblock %}
 </a>

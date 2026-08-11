@@ -1,0 +1,20 @@
+uuid: 2c9e0467-03a3-440f-9388-96b0b13f9ebc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.site_topics
+  module:
+    - metatag
+id: taxonomy_term.site_topics.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: site_topics
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

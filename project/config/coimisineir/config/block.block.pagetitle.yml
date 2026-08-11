@@ -1,0 +1,18 @@
+uuid: 20c91254-764e-4484-86e4-b70d4bbb4c76
+langcode: en
+status: true
+dependencies:
+  theme:
+    - coimisineir_theme
+id: pagetitle
+theme: coimisineir_theme
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

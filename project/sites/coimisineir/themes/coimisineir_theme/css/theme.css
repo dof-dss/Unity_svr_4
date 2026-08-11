@@ -1,0 +1,34 @@
+#block-coimisineir-theme-languageswitcher ul {
+  display: inline-flex;
+  float: right;
+  list-style: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 766px) {
+  #headerHero {
+    background-color: #fff !important;
+  }
+}
+
+#block-coimisineir-theme-languageswitcher a {
+  border: #000 solid 2px;
+  /*color: #0d4c2d;*/
+  display: block;
+  margin-right: 1em;
+  padding: .5em;
+}
+
+#block-coimisineir-theme-languageswitcher a.is-active {
+  /*background: #0d4c2d;*/
+  background: #0e6bb3;
+  color: #fff;
+}
+
+#footer {
+    border-color: #0d4c2d !important;
+}
+
+#sliding-popup .popup-content .eu-cookie-compliance-buttons .btn {
+  padding: .8rem 1rem;
+}

@@ -1,0 +1,20 @@
+uuid: a1c2fadf-c6ec-4321-ae2b-ead9d7e1231a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - coimisineir_theme
+id: coimisineir_theme_mainpagecontent
+theme: coimisineir_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

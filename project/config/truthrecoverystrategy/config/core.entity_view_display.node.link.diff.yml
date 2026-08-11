@@ -1,0 +1,43 @@
+uuid: 8aac35e2-a3cc-4b84-8688-87bb9c9fff34
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.diff
+    - field.field.node.link.field_link_url
+    - field.field.node.link.field_photo
+    - node.type.link
+  module:
+    - link
+    - user
+id: node.link.diff
+targetEntityType: node
+bundle: link
+mode: diff
+content:
+  field_link_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: landscape_float
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

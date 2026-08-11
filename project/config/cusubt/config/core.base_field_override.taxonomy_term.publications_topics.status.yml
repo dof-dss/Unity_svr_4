@@ -1,0 +1,22 @@
+uuid: 59c53045-b924-4a0d-996f-06a02cde3c2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.publications_topics
+id: taxonomy_term.publications_topics.status
+field_name: status
+entity_type: taxonomy_term
+bundle: publications_topics
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

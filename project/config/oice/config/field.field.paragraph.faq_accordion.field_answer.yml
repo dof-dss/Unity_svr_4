@@ -1,0 +1,26 @@
+uuid: 4ba5bd07-e9b0-4b31-993e-6b4cee38a61c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_answer
+    - paragraphs.paragraphs_type.faq_accordion
+  module:
+    - allowed_formats
+    - text
+_core:
+  default_config_hash: 2ZaekLqpb7jP3aV3Gi6LLJyqd8NopmFYSJXKHpW2gGc
+id: paragraph.faq_accordion.field_answer
+field_name: field_answer
+entity_type: paragraph
+bundle: faq_accordion
+label: Answer
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

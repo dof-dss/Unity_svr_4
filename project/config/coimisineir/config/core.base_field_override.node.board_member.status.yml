@@ -1,0 +1,24 @@
+uuid: 0beb20de-527b-412d-a4c6-6f45d5e091ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.board_member
+_core:
+  default_config_hash: nibKVMSsyV0UU3lk-tBJkpKaSib9-oz1N29IKyWlaiU
+id: node.board_member.status
+field_name: status
+entity_type: node
+bundle: board_member
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

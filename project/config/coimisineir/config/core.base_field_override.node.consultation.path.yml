@@ -1,0 +1,20 @@
+uuid: 50ffb3cf-468e-4137-bcc2-37ee11e1da47
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.consultation
+  module:
+    - path
+id: node.consultation.path
+field_name: path
+entity_type: node
+bundle: consultation
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

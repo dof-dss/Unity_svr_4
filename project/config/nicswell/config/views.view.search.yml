@@ -244,7 +244,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Search
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -268,7 +268,7 @@ display:
           plugin_id: search_api_spellcheck_did_you_mean
           empty: true
           search_api_spellcheck_count: 1
-          search_api_spellcheck_hide_on_result: 1
+          search_api_spellcheck_hide_on_result: true
           search_api_spellcheck_collate: true
         area:
           id: area

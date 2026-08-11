@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.slideshow
     - filter.format.basic_html
     - filter.format.basic_html_publications
     - media.type.audio
@@ -12,13 +13,16 @@ dependencies:
     - media.type.remote_video
     - node.type.basic_page
     - node.type.events
+    - node.type.feature
     - node.type.featured_content_list
+    - node.type.html_document
     - node.type.news
     - node.type.publication
     - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
     - contextual
+    - entityqueue
     - file
     - filter
     - media
@@ -48,7 +52,9 @@ permissions:
   - 'access toolbar'
   - 'add scheduled transitions node basic_page'
   - 'add scheduled transitions node events'
+  - 'add scheduled transitions node feature'
   - 'add scheduled transitions node featured_content_list'
+  - 'add scheduled transitions node html_document'
   - 'add scheduled transitions node news'
   - 'add scheduled transitions node publication'
   - 'administer main menu items'
@@ -58,8 +64,10 @@ permissions:
   - 'create basic_page content'
   - 'create document media'
   - 'create events content'
+  - 'create feature content'
   - 'create featured_content_list content'
   - 'create file media'
+  - 'create html_document content'
   - 'create image media'
   - 'create news content'
   - 'create publication content'
@@ -70,24 +78,30 @@ permissions:
   - 'delete any basic_page content'
   - 'delete any document media'
   - 'delete any events content'
+  - 'delete any feature content'
   - 'delete any featured_content_list content'
   - 'delete any file'
   - 'delete any file media'
+  - 'delete any html_document content'
   - 'delete any image media'
   - 'delete any news content'
   - 'delete any publication content'
   - 'delete any remote_video media'
   - 'delete basic_page revisions'
   - 'delete events revisions'
+  - 'delete feature revisions'
   - 'delete featured_content_list revisions'
+  - 'delete html_document revisions'
   - 'delete news revisions'
   - 'delete own audio media'
   - 'delete own basic_page content'
   - 'delete own document media'
   - 'delete own events content'
+  - 'delete own feature content'
   - 'delete own featured_content_list content'
   - 'delete own file media'
   - 'delete own files'
+  - 'delete own html_document content'
   - 'delete own image media'
   - 'delete own news content'
   - 'delete own publication content'
@@ -97,8 +111,10 @@ permissions:
   - 'edit any basic_page content'
   - 'edit any document media'
   - 'edit any events content'
+  - 'edit any feature content'
   - 'edit any featured_content_list content'
   - 'edit any file media'
+  - 'edit any html_document content'
   - 'edit any image media'
   - 'edit any news content'
   - 'edit any publication content'
@@ -107,23 +123,32 @@ permissions:
   - 'edit own audio media'
   - 'edit own basic_page content'
   - 'edit own document media'
+  - 'edit own events content'
+  - 'edit own feature content'
   - 'edit own featured_content_list content'
   - 'edit own file media'
+  - 'edit own html_document content'
   - 'edit own image media'
   - 'edit own news content'
   - 'edit own publication content'
   - 'edit own remote_video media'
+  - 'manipulate entityqueues'
   - 'reschedule scheduled transitions node basic_page'
   - 'reschedule scheduled transitions node events'
+  - 'reschedule scheduled transitions node feature'
   - 'reschedule scheduled transitions node featured_content_list'
+  - 'reschedule scheduled transitions node html_document'
   - 'reschedule scheduled transitions node news'
   - 'reschedule scheduled transitions node publication'
   - 'revert all revisions'
   - 'revert basic_page revisions'
   - 'revert events revisions'
+  - 'revert feature revisions'
   - 'revert featured_content_list revisions'
+  - 'revert html_document revisions'
   - 'revert news revisions'
   - 'revert publication revisions'
+  - 'update slideshow entityqueue'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition archive'
   - 'use nics_editorial_workflow transition create_new_draft'
@@ -141,14 +166,18 @@ permissions:
   - 'view basic_page revisions'
   - 'view content references'
   - 'view events revisions'
+  - 'view feature revisions'
   - 'view featured_content_list revisions'
+  - 'view html_document revisions'
   - 'view latest version'
   - 'view news revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view scheduled transitions node basic_page'
   - 'view scheduled transitions node events'
+  - 'view scheduled transitions node feature'
   - 'view scheduled transitions node featured_content_list'
+  - 'view scheduled transitions node html_document'
   - 'view scheduled transitions node news'
   - 'view scheduled transitions node publication'
   - 'view the administration theme'

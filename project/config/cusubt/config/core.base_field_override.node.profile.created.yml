@@ -1,0 +1,18 @@
+uuid: 51a3356e-5e8a-4a39-9238-dad4dcd9c964
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.profile
+id: node.profile.created
+field_name: created
+entity_type: node
+bundle: profile
+label: 'Authored on'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

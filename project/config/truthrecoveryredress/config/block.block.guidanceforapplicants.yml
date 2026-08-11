@@ -1,0 +1,30 @@
+uuid: b7a58e54-4fdc-42e0-bf11-24bfd0e202a9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:feature_card:39c732a4-a804-49f7-8fcb-cb11f3a8b742'
+  module:
+    - block_content
+    - system
+  theme:
+    - truthrecoveryredress_theme
+id: guidanceforapplicants
+theme: truthrecoveryredress_theme
+region: top_first
+weight: 0
+provider: null
+plugin: 'block_content:39c732a4-a804-49f7-8fcb-cb11f3a8b742'
+settings:
+  id: 'block_content:39c732a4-a804-49f7-8fcb-cb11f3a8b742'
+  label: 'Guidance for applicants'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

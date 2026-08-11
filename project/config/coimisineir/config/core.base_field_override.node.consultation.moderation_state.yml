@@ -1,0 +1,18 @@
+uuid: 490daa62-7a6b-4d2b-8385-39990d526fc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.consultation
+id: node.consultation.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: consultation
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

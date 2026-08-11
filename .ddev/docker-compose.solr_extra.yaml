@@ -7,10 +7,10 @@
 #############################################################################
 services:
     solr:
+        environment:
+            SOLR_SITES: 'legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress'
         volumes:
-            - './solr-cores/legalcommissionerni:/solr-legalcommissionerni-conf'
-            - './solr-cores/nicswell:/solr-nicswell-conf'
-            - './solr-cores/autismreviewerni:/solr-autismreviewerni-conf'
-            - './solr-cores/anotherway:/solr-anotherway-conf'
-            - './solr-cores/proni:/solr-proni-conf'
-        entrypoint: 'bash -c "VERBOSE=yes docker-entrypoint.sh precreate-core legalcommissionerni /solr-legalcommissionerni-conf; precreate-core nicswell /solr-nicswell-conf; precreate-core autismreviewerni /solr-autismreviewerni-conf; precreate-core anotherway /solr-anotherway-conf; precreate-core proni /solr-proni-conf; exec solr -f"'
+            - '${DDEV_APPROOT}/.platform/solr_configsets:/solr-configsets:ro'
+        entrypoint:
+            - bash
+            - /mnt/ddev_config/solr/create-or-refresh-cores.sh

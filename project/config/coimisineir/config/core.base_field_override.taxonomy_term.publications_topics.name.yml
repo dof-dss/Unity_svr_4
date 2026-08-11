@@ -1,0 +1,18 @@
+uuid: f004c417-1351-4036-baaa-8f2c290cdecb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.publications_topics
+id: taxonomy_term.publications_topics.name
+field_name: name
+entity_type: taxonomy_term
+bundle: publications_topics
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

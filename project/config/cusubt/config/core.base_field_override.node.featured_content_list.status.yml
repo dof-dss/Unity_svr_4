@@ -1,0 +1,24 @@
+uuid: 4de82667-cf49-4f3a-a082-6611248a29a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.featured_content_list
+_core:
+  default_config_hash: 21m7eqb6tnVzZ1p2pEwH3FjK4x1kLlPZWr5Zowik1mA
+id: node.featured_content_list.status
+field_name: status
+entity_type: node
+bundle: featured_content_list
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

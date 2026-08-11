@@ -14,11 +14,30 @@ dependencies:
   module:
     - content_moderation
     - datetime
+    - field_group
     - media_library
     - media_library_edit
     - metatag
     - path
     - text
+third_party_settings:
+  field_group:
+    group_publications:
+      children:
+        - field_attachment
+        - field_html_document
+      label: Publications
+      region: content
+      parent_name: ''
+      weight: 14
+      format_type: fieldset
+      format_settings:
+        classes: group-publications
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: 'You must provide an attachment or an HTML Document'
+        required_fields: true
 _core:
   default_config_hash: 8EG7CL4bkYhCFJykpOT74o26u9Kqd5i5boJpPLhtZWc
 id: node.publication.default
@@ -28,7 +47,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 13
+    weight: 12
     region: content
     settings:
       rows: 9
@@ -44,16 +63,16 @@ content:
     third_party_settings: {  }
   field_attachment:
     type: media_library_widget
-    weight: 15
+    weight: 17
     region: content
     settings:
       media_types: {  }
     third_party_settings:
       media_library_edit:
-        show_edit: '1'
+        show_edit: true
   field_html_document:
     type: entity_reference_autocomplete
-    weight: 26
+    weight: 18
     region: content
     settings:
       match_operator: CONTAINS
@@ -63,10 +82,11 @@ content:
     third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose
-    weight: 16
+    weight: 15
     region: content
     settings:
       sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_publication_type:
     type: options_select

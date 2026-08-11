@@ -5,6 +5,7 @@ dependencies:
   config:
     - node.type.basic_page
     - node.type.events
+    - node.type.feature
     - node.type.featured_content_list
     - node.type.html_document
     - node.type.landing_page
@@ -102,6 +103,7 @@ type_settings:
     node:
       - basic_page
       - events
+      - feature
       - featured_content_list
       - html_document
       - landing_page

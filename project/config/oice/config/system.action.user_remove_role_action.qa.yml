@@ -1,0 +1,16 @@
+uuid: e239f3d9-11e4-4a07-bcff-7f68348f8492
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.qa
+  module:
+    - user
+_core:
+  default_config_hash: aAptG_t1sq2xXrPo3W-_KoAZBy7CgdHVGU6NlPgH3Dk
+id: user_remove_role_action.qa
+label: 'Remove the Quality Assurance role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: qa

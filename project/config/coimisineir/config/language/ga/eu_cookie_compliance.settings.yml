@@ -1,0 +1,13 @@
+popup_info:
+  value: '<p>Fianáin ar shuíomh Gréasáin an Choimisinéara Teanga</p><p>Bainimid úsáid as roinnt fianán riachtanach chun an tseirbhís seo a chur ar fáil. Ba mhaith linn fianáin bhreise a shocrú ionas gur féidir linn cuimhneamh ar do chuid socruithe, tuiscint a fháil ar an dóigh a n-úsáideann daoine an tseirbhís agus feabhsuithe a dhéanamh. Ceadaíonn roinnt dár leathanaigh do thríú páirtithe roghnaithe fianáin a shocrú – mar shampla, leathanaigh ina bhfuil físeáin YouTube nó Google Maps.</p><p><a href="/node/2">Faigh tuilleadh eolais faoi mar a úsáideann muid fianáin</a></p>'
+  format: basic_html
+popup_agree_button_message: 'Glac le fianáin'
+popup_more_info_button_message: 'Faigh tuilleadh eolais faoi mar a úsáideann muid fianáin'
+disagree_button_label: 'Diúltaigh d’fhianáin'
+popup_agreed:
+  value: '<h2>Go raibh maith agat as glacadh le fianáin</h2><p>Is féidir leat an teachtaireacht seo a chur i bhfolach anois nó tuilleadh eolais a fháil faoi fhianáin.</p>'
+  format: basic_html
+withdraw_message:
+  value: '<p>Fianáin ar shuíomh gréasáin An Choimisinéara Gaeilge</p><p>Tá cead tugtha agat dúinn fianáin bhreise a shocrú ionas gur féidir linn cuimhneamh ar do chuid shocruithe, tuiscint a fháil ar an dóigh a n-úsáideann daoine an tseirbhís agus feabhsuithe a dhéanamh. Má tá d’intinn athraithe agat, is féidir leat do chead a tharraingt siar.</p><p><a href="/node/2">Faigh tuilleadh eolais faoin dóigh a n-úsáideann muid fianáin.</a></p>'
+  format: basic_html
+withdraw_action_button_label: 'Bain cead'

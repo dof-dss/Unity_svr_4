@@ -1,0 +1,18 @@
+uuid: a7bf9078-7462-4cb2-a752-e65070b2dc7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faq
+id: node.faq.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: faq
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

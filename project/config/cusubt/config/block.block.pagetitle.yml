@@ -1,0 +1,24 @@
+uuid: c6ae659a-cdbe-41b3-86b2-06709bd35cec
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cusubt_theme
+id: pagetitle
+theme: cusubt_theme
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'
