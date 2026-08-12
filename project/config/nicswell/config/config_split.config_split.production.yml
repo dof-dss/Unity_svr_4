@@ -15,5 +15,4 @@ module:
 theme: {  }
 complete_list:
   - fastly.settings
-  - fastly.settings
 partial_list: {  }
