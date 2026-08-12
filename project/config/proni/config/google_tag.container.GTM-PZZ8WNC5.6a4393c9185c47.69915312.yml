@@ -1,0 +1,34 @@
+uuid: cc5756e0-bc93-4473-aee2-9422114ccb57
+langcode: en
+status: true
+dependencies: {  }
+id: GTM-PZZ8WNC5.6a4393c9185c47.69915312
+label: GTM-PZZ8WNC5
+weight: 0
+tag_container_ids:
+  - GTM-PZZ8WNC5
+  - ''
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-PZZ8WNC5:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions: {  }
+events:
+  generate_lead:
+    value: ''
+    currency: ''
+  search: {  }
+  webform_purchase: {  }
+  custom: {  }
+  login:
+    method: CMS
+  sign_up:
+    method: CMS

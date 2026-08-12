@@ -25,6 +25,6 @@ module:
   stage_file_proxy: 0
   update: 0
 theme: {  }
-complete_list:
+complete_list: {  }
+partial_list:
   - search_api.server.solr_default
-partial_list: {  }

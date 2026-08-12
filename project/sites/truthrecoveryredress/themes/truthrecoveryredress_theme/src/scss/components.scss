@@ -4,3 +4,159 @@
  */
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+#header_wrapper {
+  border-bottom: 1px solid $brand-primary;
+  padding-bottom: 2rem;
+}
+
+#headerHero {
+  @media screen and (max-width: $tab) {
+    background-color: #fff;
+
+    .region-search {
+      input[type='text'],
+      input[type='search'] {
+        border: 1px solid #000;
+        background: #fff;
+
+      }
+    }
+  }
+}
+
+.hamburger {
+  & > span {
+    background: #000 !important;
+  }
+}
+
+#main-menu .menu-link,
+#main-menu .menu {
+  background-color: #fff;
+  color: $brand-primary;
+}
+
+#main-menu {
+  .menu-link,
+  .menu .active,
+  .menu-item.open .menu-toggle-btn {
+    color: $brand-primary;
+    @include adjust-font-size-to(16px);
+  }
+
+  .menu-link {
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+
+  .menu .menu-item .active {
+    border-bottom: none;
+    height: 4.5rem;
+  }
+
+  .menu-main_sub {
+    background: $brand-primary;
+
+    .menu-link {
+      background: $brand-primary;
+    }
+
+    .menu-item {
+      .active {
+        color: $white;
+        border-color: $white;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          background: $charcoal;
+        }
+      }
+    }
+  }
+}
+
+.region-front-welcome {
+  border-bottom: 1px solid $brand-primary;
+
+  .block {
+    width: 65%;
+
+    h2,
+    .content {
+      text-align: left;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .block {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+#top-area {
+
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+
+  .column {
+    flex: 1;
+  }
+
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    text-decoration: none;
+
+    .media-image {
+      width: 100%;
+      margin-bottom: 0;
+
+      img {
+        object-fit: contain;
+        display: block;
+        margin: auto;
+      }
+    }
+
+    &__title {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #005ea5;
+      outline-offset: 4px;
+      border-color: #005ea5;
+
+      .feature-card__title {
+        color: #fff;
+      }
+    }
+
+    &:active {
+      border-color: #005ea5;
+
+      .feature-card__title {
+        color: #fff;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
