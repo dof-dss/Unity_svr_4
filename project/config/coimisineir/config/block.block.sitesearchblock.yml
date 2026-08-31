@@ -1,22 +1,23 @@
-uuid: 20c91254-764e-4484-86e4-b70d4bbb4c76
+uuid: 78047936-1015-48c1-b0fa-fcbbbac176ba
 langcode: en
 status: true
 dependencies:
   module:
     - system
+    - unity_search_pages
   theme:
     - coimisineir_theme
-id: pagetitle
+id: sitesearchblock
 theme: coimisineir_theme
-region: content
-weight: -1
+region: search
+weight: -2
 provider: null
-plugin: page_title_block
+plugin: site_search_block
 settings:
-  id: page_title_block
-  label: 'Page title'
+  id: site_search_block
+  label: 'Site search block'
   label_display: '0'
-  provider: core
+  provider: unity_search_pages
 visibility:
   request_path:
     id: request_path
