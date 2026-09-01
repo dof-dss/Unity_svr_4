@@ -1,4 +1,4 @@
-uuid: 20c91254-764e-4484-86e4-b70d4bbb4c76
+uuid: cf33b028-4113-48f3-992a-2ef930ee30bb
 langcode: en
 status: true
 dependencies:
@@ -6,19 +6,19 @@ dependencies:
     - system
   theme:
     - coimisineir_theme
-id: pagetitle
+id: breadcrumbs
 theme: coimisineir_theme
-region: content
-weight: -1
+region: breadcrumb
+weight: 0
 provider: null
-plugin: page_title_block
+plugin: system_breadcrumb_block
 settings:
-  id: page_title_block
-  label: 'Page title'
+  id: system_breadcrumb_block
+  label: Breadcrumbs
   label_display: '0'
-  provider: core
+  provider: system
 visibility:
   request_path:
     id: request_path
     negate: true
-    pages: /search
+    pages: '<front>'
