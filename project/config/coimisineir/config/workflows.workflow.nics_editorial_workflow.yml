@@ -1,11 +1,12 @@
 uuid: 69ba95b7-ddd3-452e-ab2f-0af27d07c9c6
-langcode: en
+langcode: ga
 status: true
 dependencies:
   config:
     - node.type.basic_page
     - node.type.feature
     - node.type.featured_content_list
+    - node.type.html_document
     - node.type.news
     - node.type.publication
     - node.type.webform
@@ -101,6 +102,7 @@ type_settings:
       - basic_page
       - feature
       - featured_content_list
+      - html_document
       - news
       - publication
       - webform

@@ -1,0 +1,7 @@
+label: '403 access denied'
+tags:
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'
+  og_title: '[site:name]'
+  og_type: Website
+  og_url: '[site:url]'

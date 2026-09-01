@@ -1,0 +1,23 @@
+uuid: 36f8e036-cf5f-4564-8d48-bfe846bd031f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.html_document.field_html
+    - node.type.html_document
+  module:
+    - user
+_core:
+  default_config_hash: QTojBL3veckkNYH86qxeQntyYqKHXBrg3wUSlwKa2P8
+id: node.html_document.teaser
+targetEntityType: node
+bundle: html_document
+mode: teaser
+content: {  }
+hidden:
+  content_moderation_control: true
+  field_html: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

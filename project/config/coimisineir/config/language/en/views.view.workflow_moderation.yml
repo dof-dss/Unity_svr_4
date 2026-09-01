@@ -1,0 +1,152 @@
+label: 'Workflow: Moderation'
+description: "Unity custom views to appear under the custom 'My Dashboard' menu"
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: 'Needs Review'
+      fields:
+        nid:
+          separator: ', '
+        title:
+          label: 'Title (Published version)'
+          separator: ', '
+        link_to_latest_revision:
+          label: 'Link to latest draft'
+        type:
+          label: Type
+          separator: ', '
+        name:
+          label: 'Revised by'
+          separator: ', '
+        moderation_state:
+          label: 'Moderation State'
+          alter:
+            text: "<div>{{ moderation_state }}</div><div><a href='/node/{{ nid }}/revisions'>View moderation history</a></div>"
+          separator: ', '
+        changed:
+          label: 'Last updated'
+          separator: ', '
+        operations:
+          label: Operations
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      filters:
+        title:
+          expose:
+            label: Title
+            placeholder: 'Contains text...'
+        body_value:
+          expose:
+            label: Body
+            placeholder: 'Contains text...'
+        type:
+          expose:
+            label: Type
+  all_drafts:
+    display_title: 'All Drafts'
+    display_options:
+      title: 'All drafts'
+      filters:
+        title:
+          expose:
+            label: Title
+            placeholder: 'Contains text...'
+        body_value:
+          expose:
+            label: Body
+            placeholder: 'Contains text...'
+        type:
+          expose:
+            label: Type
+        moderation_state_1:
+          expose:
+            label: 'Moderation state'
+  my_drafts:
+    display_title: 'My Drafts'
+    display_options:
+      title: 'My Drafts'
+      filters:
+        title:
+          expose:
+            label: Title
+            placeholder: 'Contains text...'
+        body_value:
+          expose:
+            label: Body
+            placeholder: 'Contains text...'
+        type:
+          expose:
+            label: Type
+        moderation_state_1:
+          expose:
+            label: 'Moderation state'
+  needs_audit:
+    display_title: 'Needs Audit'
+    display_options:
+      title: 'Needs Audit'
+      fields:
+        nid:
+          separator: ', '
+        title:
+          label: Title
+          separator: ', '
+        type:
+          label: Type
+          separator: ', '
+        name:
+          label: 'Revised by'
+          separator: ', '
+        moderation_state:
+          label: 'Moderation State'
+          alter:
+            text: "<div>{{ moderation_state }}</div><div><a href='/node/{{ nid }}/revisions'>View moderation history</a></div>"
+          separator: ', '
+        changed:
+          label: 'Last updated'
+          separator: ', '
+        operations:
+          label: Operations
+      filters:
+        title:
+          expose:
+            label: Title
+            placeholder: 'Contains text...'
+        body_value:
+          expose:
+            label: Body
+            placeholder: 'Contains text...'
+        type:
+          expose:
+            label: Type
+  needs_review:
+    display_title: 'Needs Review'
+    display_options:
+      filters:
+        title:
+          expose:
+            label: Title
+            placeholder: 'Contains text...'
+        body_value:
+          expose:
+            label: Body
+            placeholder: 'Contains text...'
+        type:
+          expose:
+            label: Type

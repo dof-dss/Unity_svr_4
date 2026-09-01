@@ -1,9 +1,10 @@
 uuid: 65bedaf3-0fa7-4f6e-854a-1b58f026f8b0
-langcode: en
+langcode: ga
 status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.basic_html_publications
     - media.type.audio
     - media.type.document
     - media.type.file
@@ -112,6 +113,7 @@ permissions:
   - 'revert publication revisions'
   - 'use moderation sidebar'
   - 'use text format basic_html'
+  - 'use text format basic_html_publications'
   - 'view all revisions'
   - 'view all scheduled transitions'
   - 'view any unpublished content'

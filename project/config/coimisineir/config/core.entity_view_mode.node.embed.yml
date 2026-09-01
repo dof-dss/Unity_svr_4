@@ -1,0 +1,13 @@
+uuid: 866dd6ad-272f-48c4-a7f7-e72da78e96bf
+langcode: ga
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: wSOSA244-Qtf7keeRAPlhIf6ft-gkw9BT-NbRdlvAMc
+id: node.embed
+label: Embed
+description: ''
+targetEntityType: node
+cache: true

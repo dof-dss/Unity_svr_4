@@ -1,0 +1,49 @@
+label: 'HTML documents'
+display:
+  default:
+    display_title: Master
+    display_options:
+      fields:
+        entity_browser_select:
+          label: 'Entity browser bulk select form'
+        type:
+          label: Type
+          separator: ', '
+        title:
+          label: Name
+          separator: ', '
+        nothing:
+          label: 'Referenced from'
+        uid:
+          label: Author
+          separator: ', '
+        changed:
+          label: Updated
+          separator: ', '
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'No content available.'
+      filters:
+        title:
+          expose:
+            label: Title
+  browse:
+    display_title: Page
+  entity_browser_1:
+    display_title: 'Entity browser'
