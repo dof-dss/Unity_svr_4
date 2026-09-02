@@ -1,5 +1,5 @@
 uuid: c7ee813f-2a2b-44de-83b8-8006ca09f970
-langcode: en
+langcode: ga
 status: true
 dependencies:
   config:
@@ -15,7 +15,7 @@ bundle: news
 label: Photo
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

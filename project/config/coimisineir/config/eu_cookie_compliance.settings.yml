@@ -1,6 +1,6 @@
 _core:
   default_config_hash: zmkyvoZ03LGqfVeB0mtslC-pkWMOrGIU9lJl9_jqUkc
-langcode: en
+langcode: ga
 dependencies:
   config:
     - filter.format.basic_html
@@ -14,20 +14,20 @@ eu_only_js: false
 popup_position: false
 fixed_top_position: false
 popup_info:
-  value: "<h2>Cookies on the [site:name] website</h2>\r\n\r\n<p>We use some essential cookies to make this service work. We'd like to set additional cookies so we can remember your settings, understand how people use the service and make improvements. Some of our pages allow selected third parties to set cookies - for example, pages that contain YouTube videos or Google Maps.</p>\r\n\r\n<p><a href=\"/cookies\">Find out more about how we use cookies</a></p>\r\n"
+  value: '<p>Fianáin ar shuíomh Gréasáin an Choimisinéara Teanga</p><p>Bainimid úsáid as roinnt fianán riachtanach chun an tseirbhís seo a chur ar fáil. Ba mhaith linn fianáin bhreise a shocrú ionas gur féidir linn cuimhneamh ar do chuid socruithe, tuiscint a fháil ar an dóigh a n-úsáideann daoine an tseirbhís agus feabhsuithe a dhéanamh. Ceadaíonn roinnt dár leathanaigh do thríú páirtithe roghnaithe fianáin a shocrú – mar shampla, leathanaigh ina bhfuil físeáin YouTube nó Google Maps.</p><p><a href="/node/2">Faigh tuilleadh eolais faoi mar a úsáideann muid fianáin</a></p>'
   format: basic_html
 mobile_popup_info:
   value: ''
   format: basic_html
 popup_info_template: new
-popup_agree_button_message: 'Accept cookies'
-popup_more_info_button_message: 'Find out more about how we use cookies'
+popup_agree_button_message: 'Glac le fianáin'
+popup_more_info_button_message: 'Faigh tuilleadh eolais faoi mar a úsáideann muid fianáin'
 mobile_breakpoint: 768
 popup_agreed_enabled: false
 popup_hide_agreed: false
-disagree_button_label: 'Reject cookies'
+disagree_button_label: 'Diúltaigh d’fhianáin'
 popup_agreed:
-  value: "<h2>Thank you for accepting cookies</h2>\r\n\r\n<p>You can now hide this message or find out more about cookies.</p>\r\n"
+  value: '<h2>Go raibh maith agat as glacadh le fianáin</h2><p>Is féidir leat an teachtaireacht seo a chur i bhfolach anois nó tuilleadh eolais a fháil faoi fhianáin.</p>'
   format: basic_html
 popup_find_more_button_message: 'More info'
 popup_hide_button_message: Hide
@@ -63,10 +63,10 @@ automatic_cookies_removal: true
 allowed_cookies: ''
 consent_storage_method: do_not_store
 withdraw_message:
-  value: "<h2>Cookies on the [site:name] website</h2>\r\n\r\n<p>You have given your consent for us to set additional cookies&nbsp;so we can remember your settings, understand how people use the service and make improvements.&nbsp; If you have changed your mind, you can withdraw consent.</p>\r\n\r\n<p><a href=\"/cookies\">Find out more about how we use cookies</a></p>\r\n"
+  value: '<p>Fianáin ar shuíomh gréasáin An Choimisinéara Gaeilge</p><p>Tá cead tugtha agat dúinn fianáin bhreise a shocrú ionas gur féidir linn cuimhneamh ar do chuid shocruithe, tuiscint a fháil ar an dóigh a n-úsáideann daoine an tseirbhís agus feabhsuithe a dhéanamh. Má tá d’intinn athraithe agat, is féidir leat do chead a tharraingt siar.</p><p><a href="/node/2">Faigh tuilleadh eolais faoin dóigh a n-úsáideann muid fianáin.</a></p>'
   format: basic_html
 withdraw_tab_button_label: 'Cookie settings'
-withdraw_action_button_label: 'Withdraw consent'
+withdraw_action_button_label: 'Bain cead'
 withdraw_enabled: true
 withdraw_button_on_info_popup: false
 save_preferences_button_label: 'Save preferences'

@@ -1,5 +1,5 @@
 uuid: 70ec955c-823e-4cd6-b247-2ed6f55e5611
-langcode: en
+langcode: ga
 status: true
 dependencies:
   config:
@@ -14,7 +14,7 @@ bundle: news
 label: Teaser
 description: 'Enter some short teaser text for this news item. This can be displayed on the site home page.'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

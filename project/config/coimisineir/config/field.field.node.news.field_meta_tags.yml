@@ -1,5 +1,5 @@
 uuid: 507b40ad-49e5-48e4-ac27-2f10f9455927
-langcode: en
+langcode: ga
 status: true
 dependencies:
   config:
@@ -16,7 +16,7 @@ bundle: news
 label: 'Meta tags'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

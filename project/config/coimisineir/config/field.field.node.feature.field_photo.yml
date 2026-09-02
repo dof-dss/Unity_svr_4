@@ -1,5 +1,5 @@
 uuid: f833bc78-42e3-421a-aad3-5c78b5d3ccc4
-langcode: en
+langcode: ga
 status: true
 dependencies:
   config:
@@ -15,7 +15,7 @@ bundle: feature
 label: Photo
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

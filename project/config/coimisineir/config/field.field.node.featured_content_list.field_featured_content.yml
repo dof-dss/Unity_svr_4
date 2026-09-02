@@ -1,5 +1,5 @@
 uuid: 335b9c1f-992b-45ee-883a-3e69463b574d
-langcode: en
+langcode: ga
 status: true
 dependencies:
   config:
@@ -16,7 +16,7 @@ bundle: featured_content_list
 label: 'Featured content'
 description: "<p>Defines the order of feature content to appear as part of this featured content list.</p>\r\n<p>Please note: the homepage will only show the first three items defined.</p>"
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

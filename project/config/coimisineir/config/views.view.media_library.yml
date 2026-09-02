@@ -1,5 +1,5 @@
 uuid: 916ee397-304c-4913-94e9-6496b0d9a671
-langcode: en
+langcode: ga
 status: true
 dependencies:
   config:
@@ -461,7 +461,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Teanga
             description: ''
             use_operator: false
             operator: langcode_op
@@ -1061,7 +1061,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: Edit
+          text: 'Cuir in eagar'
           output_url_as_text: false
           absolute: false
       pager:
@@ -1581,7 +1581,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: Edit
+          text: 'Cuir in eagar'
           output_url_as_text: false
           absolute: false
         delete_media:
@@ -1634,7 +1634,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: Delete
+          text: Scrios
           output_url_as_text: false
           absolute: false
         rendered_entity:

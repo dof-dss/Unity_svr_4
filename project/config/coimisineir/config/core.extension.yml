@@ -28,6 +28,7 @@ module:
   contextual: 0
   csp: 0
   ctools: 0
+  date_facet_drilldown: 0
   datetime: 0
   datetime_range: 0
   diff: 0
@@ -42,6 +43,7 @@ module:
   entityqueue: 0
   facets: 0
   facets_pretty_paths: 0
+  facets_summary: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -109,6 +111,9 @@ module:
   search_api_solr: 0
   search_api_spellcheck: 0
   simplei: 0
+  slick: 0
+  slick_ui: 0
+  slick_views: 0
   structure_sync: 0
   system: 0
   taxonomy: 0
@@ -122,6 +127,7 @@ module:
   unity_common: 0
   unity_eu_cookie_compliance: 0
   unity_frontpage: 0
+  unity_html_publications: 0
   unity_image_styles: 0
   unity_search_pages: 0
   user: 0

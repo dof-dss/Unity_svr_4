@@ -1,0 +1,9 @@
+label: 'Taxonomy term'
+tags:
+  canonical_url: '[term:url]'
+  description: '[term:description]'
+  title: '[term:name] | [current-page:page-number][site:name]'
+  og_description: '[term:description]'
+  og_title: '[term:name]'
+  twitter_cards_description: '[term:description]'
+  twitter_cards_title: '[term:name]'
