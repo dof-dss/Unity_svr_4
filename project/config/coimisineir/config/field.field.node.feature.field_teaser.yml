@@ -14,7 +14,7 @@ bundle: feature
 label: Teaser
 description: 'Enter some short teaser text for this feature item. This can be displayed on the site home page.'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

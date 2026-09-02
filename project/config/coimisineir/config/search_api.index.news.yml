@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_published_date
-    - field.storage.node.field_summary
     - field.storage.node.field_teaser
     - search_api.server.solr_default
   module:
@@ -80,15 +79,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_published_date
-  field_summary:
-    label: 'Introductory paragraph'
-    datasource_id: 'entity:node'
-    property_path: field_summary
-    type: text
-    boost: 13.0
-    dependencies:
-      config:
-        - field.storage.node.field_summary
   field_teaser:
     label: Teaser
     datasource_id: 'entity:node'
@@ -141,7 +131,6 @@ processor_settings:
     all_fields: true
     fields:
       - body
-      - field_summary
       - field_teaser
       - title
     title: false

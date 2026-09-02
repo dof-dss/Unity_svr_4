@@ -1,9 +1,9 @@
-uuid: e564cf2a-e1ce-46f7-9073-c3a5e981a499
-langcode: en
+uuid: 0abcc817-a414-402e-a5f7-663c81d1426d
+langcode: ga
 status: true
 dependencies:
   config:
-    - node.type.webform
+    - node.type.html_document
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '1'
-id: node.webform
+id: node.html_document
 target_entity_type_id: node
-target_bundle: webform
+target_bundle: html_document
 default_langcode: site_default
 language_alterable: true
