@@ -1,0 +1,30 @@
+uuid: 92bd21dc-61c6-4eb5-84ae-f3bcb18dbd5e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:question_block:e2baf677-1b20-4583-adc1-76fec448e5b0'
+  module:
+    - block_content
+    - system
+  theme:
+    - coimisineir_theme
+id: question4
+theme: coimisineir_theme
+region: bottom_widget_1
+weight: 0
+provider: null
+plugin: 'block_content:e2baf677-1b20-4583-adc1-76fec448e5b0'
+settings:
+  id: 'block_content:e2baf677-1b20-4583-adc1-76fec448e5b0'
+  label: 'Question 4'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

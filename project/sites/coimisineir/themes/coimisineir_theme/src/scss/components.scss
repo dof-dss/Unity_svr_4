@@ -5,6 +5,65 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
+#main-menu {
+  background: $white;
+
+  .menu-link,
+  .menu .active,
+  .menu-item.open .menu-toggle-btn {
+    color: $black;
+    @include adjust-font-size-to(16px);
+  }
+
+  .menu
+  .menu-item
+  .active {
+    border-bottom-color: $brand-primary;
+    background: $brand-primary;
+    color: $white;
+  }
+
+  .menu-link {
+    &:hover,
+    &:focus {
+      background: $brand-primary;
+      color: $white;
+    }
+  }
+  .menu-main_sub
+  .menu-item
+  span.active {
+    @include adjust-font-size-to(14px);
+    padding: 1rem;
+  }
+
+  .menu-main_sub {
+    background: $brand-primary;
+
+    .menu-item {
+      background: $brand-primary;
+
+      .active {
+        background: $brand-primary;
+        color: $white;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          color: $white;
+          background: $brand-secondary;
+        }
+      }
+    }
+  }
+}
+
+.region-primary-menu .menu_wrapper {
+  border-top: 1px solid $brand-primary;
+  border-bottom: 1px solid $brand-primary;
+}
+
 #block-coimisineir-theme-languageswitcher {
   ul {
     display: inline-flex;
@@ -26,9 +85,126 @@
   }
 }
 
-@media screen and (max-width: 766px) {
-  #headerHero {
-    background-color: #fff !important;
+.region-front-welcome {
+  height: 8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: linear-gradient(to right, #0c4a2e 45%, #29398d 55%);
+
+  @media screen and (max-width: 961px) {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 820px) {
+    height: 10rem;
+  }
+
+  @media screen and (max-width: 440px) {
+    height: 12rem;
+  }
+
+  .block {
+    h2 {
+      padding: 2rem 0rem 0rem 2rem;
+      margin-top: 0;
+      text-align: left;
+      color: $white;
+      @include adjust-font-size-to(24px);
+
+      @media screen and (max-width: 766px) {
+        @include adjust-font-size-to(22px);
+        padding: 0;
+      }
+    }
+  }
+}
+
+#headerHero {
+  @media screen and (max-width: $tab) {
+    background-color: #fff;
+
+    .region-search {
+      input[type='text'],
+      input[type='search'] {
+        border: 1px solid #000;
+        background: #fff;
+
+      }
+    }
+  }
+}
+
+#top-area {
+  .column {
+    width: 100%;
+
+    .content {
+      text-align: left;
+      @include adjust-font-size-to(26px);
+      font-weight: bold;
+    }
+  }
+}
+
+.region-top-first {
+  padding: 2%;
+}
+
+.region-top-second {
+  padding: 2%;
+  border-bottom: solid 1px $brand-primary;
+  border-top: solid 1px $brand-primary;
+
+  h2 {
+    color: $black !important;
+  }
+
+  p {
+    @include adjust-font-size-to(18px);
+  }
+}
+
+.region-top-third {
+  padding: 5% 10% 5% 10%;
+  border-bottom: 1px solid $brand-primary;
+}
+
+#main-menu .hamburger {
+  background-color: $brand-primary;
+  top: -12.5rem;
+}
+
+#bottom-area {
+  .region-bottom-widget-1 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 50px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    @media screen and (max-width: 766px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+
+    > .block {
+      background: #e7e7e7;
+      border-bottom: 10px solid $brand-primary;
+      padding: 0 0 1rem 2rem;
+      box-sizing: border-box;
+      margin: 2%;
+      width: auto;
+    }
+  }
+
+  .btn {
+    background: $brand-primary;
+    margin: 1%;
+  }
+
+  p, h2, h3 {
+    padding: 1%;
   }
 }
 

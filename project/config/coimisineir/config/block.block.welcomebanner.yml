@@ -1,0 +1,30 @@
+uuid: 8eb7a2de-25d4-4f3b-bddc-8f4288ac48fc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:7ca62288-78f8-4e74-954d-17ca5988bf33'
+  module:
+    - block_content
+    - system
+  theme:
+    - coimisineir_theme
+id: welcomebanner
+theme: coimisineir_theme
+region: front_welcome
+weight: -5
+provider: null
+plugin: 'block_content:7ca62288-78f8-4e74-954d-17ca5988bf33'
+settings:
+  id: 'block_content:7ca62288-78f8-4e74-954d-17ca5988bf33'
+  label: 'Welcome Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

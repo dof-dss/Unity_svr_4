@@ -1,18 +1,16 @@
-uuid: 813381b2-169f-4b40-967f-d881d9eac6b3
-langcode: ga
+uuid: afdafbd8-6088-4123-a0de-ad7f2e432fde
+langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.basic_block
+    - block_content.type.question_block
     - field.storage.block_content.body
   module:
     - text
-_core:
-  default_config_hash: 70RUzbBzcmREVEYcRaIfiopRyftZu1lIb-8A3mpFCHQ
-id: block_content.basic_block.body
+id: block_content.question_block.body
 field_name: body
 entity_type: block_content
-bundle: basic_block
+bundle: question_block
 label: Body
 description: ''
 required: false
