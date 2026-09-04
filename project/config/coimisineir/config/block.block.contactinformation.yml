@@ -1,0 +1,25 @@
+uuid: c546e461-bb44-42e0-bc11-8a4dc82a2644
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:dfc22475-b2ec-4f18-b698-004d802655fa'
+  module:
+    - block_content
+  theme:
+    - coimisineir_theme
+id: contactinformation
+theme: coimisineir_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:dfc22475-b2ec-4f18-b698-004d802655fa'
+settings:
+  id: 'block_content:dfc22475-b2ec-4f18-b698-004d802655fa'
+  label: 'Contact Information'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

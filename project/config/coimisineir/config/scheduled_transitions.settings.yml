@@ -12,6 +12,9 @@ bundles:
     bundle: basic_page
   -
     entity_type: node
+    bundle: faq
+  -
+    entity_type: node
     bundle: feature
   -
     entity_type: node
