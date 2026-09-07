@@ -201,6 +201,11 @@
   .btn {
     background: $brand-primary;
     margin: 1%;
+
+    &:hover,
+    &:focus {
+      background: #666;
+    }
   }
 
   p, h2, h3 {
