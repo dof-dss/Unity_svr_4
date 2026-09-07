@@ -1,6 +1,6 @@
 _core:
   default_config_hash: Jw02kzSrlhTQFpGmF2GtP7NrIR9oS6klYkJry0ACvtI
-langcode: en
+langcode: ga
 settings:
   default_status: open
   default_page_base_path: form

@@ -1,0 +1,25 @@
+uuid: 78047936-1015-48c1-b0fa-fcbbbac176ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - unity_search_pages
+  theme:
+    - coimisineir_theme
+id: sitesearchblock
+theme: coimisineir_theme
+region: search
+weight: -2
+provider: null
+plugin: site_search_block
+settings:
+  id: site_search_block
+  label: 'Site search block'
+  label_display: '0'
+  provider: unity_search_pages
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /search

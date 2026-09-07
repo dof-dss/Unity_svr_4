@@ -1,5 +1,5 @@
 uuid: 7dc238df-11c2-472a-872c-7e9b445b31ac
-langcode: en
+langcode: ga
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ bundle: publication
 label: 'Promoted to front page'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 0

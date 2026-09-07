@@ -1,5 +1,5 @@
 uuid: 96b09182-3459-4f71-afcc-b663abb37ade
-langcode: en
+langcode: ga
 status: true
 dependencies:
   module:
@@ -480,7 +480,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Teanga
             description: ''
             use_operator: false
             operator: langcode_op

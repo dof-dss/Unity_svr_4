@@ -25,4 +25,5 @@ module:
   update: 0
 theme: {  }
 complete_list: {  }
-partial_list: {  }
+partial_list:
+  - search_api.server.solr_default

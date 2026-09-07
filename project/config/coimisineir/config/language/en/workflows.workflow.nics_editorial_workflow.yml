@@ -1,0 +1,30 @@
+label: 'NICS Editorial Workflow'
+type_settings:
+  states:
+    archived:
+      label: Archived
+    draft:
+      label: Draft
+    needs_review:
+      label: 'Needs Review'
+    published:
+      label: Published
+  transitions:
+    archive:
+      label: Archive
+    create_new_draft:
+      label: 'Create New Draft'
+    draft_of_published:
+      label: 'Draft of Published'
+    publish:
+      label: Publish
+    quick_publish:
+      label: 'Quick Publish'
+    reject:
+      label: Reject
+    restore:
+      label: Restore
+    restore_to_draft:
+      label: 'Restore to Draft'
+    submit_for_review:
+      label: 'Submit for Review'

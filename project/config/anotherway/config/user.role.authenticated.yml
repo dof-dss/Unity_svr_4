@@ -4,11 +4,12 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.webform_default
   module:
+    - file
     - filter
     - media
     - node
-    - search
     - system
 _core:
   default_config_hash: z-UB57Tg7OS627ItYHGrWlRMLhAT7P1VO2tDm6Wty0c
@@ -18,8 +19,9 @@ weight: 1
 is_admin: false
 permissions:
   - 'access content'
-  - 'search content'
+  - 'delete own files'
   - 'use text format basic_html'
+  - 'use text format webform_default'
   - 'view all revisions'
   - 'view media'
   - 'view own unpublished content'

@@ -1,5 +1,5 @@
 uuid: bf117c83-fd8f-4e0d-9a55-ec06bd542a2f
-langcode: en
+langcode: ga
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ bundle: news
 label: Published
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 0

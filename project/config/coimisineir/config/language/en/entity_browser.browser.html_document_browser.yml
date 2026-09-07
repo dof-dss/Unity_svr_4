@@ -1,0 +1,8 @@
+label: 'HTML document browser'
+display_configuration:
+  link_text: Select
+widgets:
+  e2c52f1d-ec2e-4333-b4b8-affd6b256706:
+    label: 'HTML document browser'
+    settings:
+      submit_text: Select

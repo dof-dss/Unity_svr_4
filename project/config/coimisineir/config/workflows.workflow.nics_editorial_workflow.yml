@@ -1,19 +1,13 @@
 uuid: 69ba95b7-ddd3-452e-ab2f-0af27d07c9c6
-langcode: en
+langcode: ga
 status: true
 dependencies:
   config:
     - node.type.basic_page
-    - node.type.board_member
-    - node.type.consultation
-    - node.type.contact
-    - node.type.faq
     - node.type.feature
     - node.type.featured_content_list
-    - node.type.layout_page
-    - node.type.link
+    - node.type.html_document
     - node.type.news
-    - node.type.profile
     - node.type.publication
     - node.type.webform
   module:
@@ -106,16 +100,10 @@ type_settings:
   entity_types:
     node:
       - basic_page
-      - board_member
-      - consultation
-      - contact
-      - faq
       - feature
       - featured_content_list
-      - layout_page
-      - link
+      - html_document
       - news
-      - profile
       - publication
       - webform
   default_moderation_state: draft

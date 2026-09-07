@@ -2,6 +2,8 @@ uuid: 20c91254-764e-4484-86e4-b70d4bbb4c76
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - coimisineir_theme
 id: pagetitle
@@ -15,4 +17,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/search\r\n/publications\r\n/publications/date/*\r\n/news\r\n/news/date/*"

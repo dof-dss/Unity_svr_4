@@ -1,0 +1,29 @@
+uuid: 3cbbd733-acea-45cd-9632-920d612549d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.html_document.field_html
+    - node.type.html_document
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: J2Sev6h1sQ1icGvqTjkGVnn5sO9xyCO7AoOwg2cve5s
+id: node.html_document.default
+targetEntityType: node
+bundle: html_document
+mode: default
+content:
+  field_html:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

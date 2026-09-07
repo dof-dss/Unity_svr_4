@@ -9,7 +9,7 @@ dependencies:
 id: mainpagecontent
 theme: anotherway_theme
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: system_main_block
 settings:

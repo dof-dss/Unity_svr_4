@@ -1,0 +1,47 @@
+/*
+ * @file
+ * Defines the components for the theme.
+ */
+@import 'init/index';
+@import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+#block-coimisineir-theme-languageswitcher {
+  ul {
+    display: inline-flex;
+    float: right;
+    list-style: none;
+    margin: 0;
+  }
+
+  a {
+    border: #000 solid 2px;
+    display: block;
+    margin-right: 1em;
+    padding: 0.5em;
+
+    &.is-active {
+      background: #0e6bb3;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 766px) {
+  #headerHero {
+    background-color: #fff !important;
+  }
+}
+
+#footer {
+  border-color: #0d4c2d !important;
+}
+
+#sliding-popup {
+  .popup-content {
+    .eu-cookie-compliance-buttons {
+      .btn {
+        padding: 0.8rem 1rem;
+      }
+    }
+  }
+}
