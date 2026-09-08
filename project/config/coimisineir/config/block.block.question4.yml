@@ -1,6 +1,6 @@
 uuid: 92bd21dc-61c6-4eb5-84ae-f3bcb18dbd5e
 langcode: en
-status: false
+status: true
 dependencies:
   content:
     - 'block_content:question_block:e2baf677-1b20-4583-adc1-76fec448e5b0'
