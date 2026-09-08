@@ -1,0 +1,30 @@
+uuid: c2fcafac-448c-4626-b59f-bdc573f4a7d0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:abfe96f5-d7a5-4171-a523-a4ec3485fa06'
+  module:
+    - block_content
+    - system
+  theme:
+    - coimisineir_theme
+id: homepagevideo
+theme: coimisineir_theme
+region: top_third
+weight: 0
+provider: null
+plugin: 'block_content:abfe96f5-d7a5-4171-a523-a4ec3485fa06'
+settings:
+  id: 'block_content:abfe96f5-d7a5-4171-a523-a4ec3485fa06'
+  label: 'Homepage video'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

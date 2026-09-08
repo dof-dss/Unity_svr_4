@@ -1,0 +1,30 @@
+uuid: 311b3443-11c6-4205-89f5-11a0b8896dcb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:cc232155-1e05-4f3d-afa8-d9cb5a85e766'
+  module:
+    - block_content
+    - system
+  theme:
+    - coimisineir_theme
+id: complaints
+theme: coimisineir_theme
+region: top_second
+weight: 0
+provider: null
+plugin: 'block_content:cc232155-1e05-4f3d-afa8-d9cb5a85e766'
+settings:
+  id: 'block_content:cc232155-1e05-4f3d-afa8-d9cb5a85e766'
+  label: Complaints
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

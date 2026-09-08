@@ -1,19 +1,19 @@
-uuid: 7a21a222-4e80-4b17-981b-8dd6555d83f7
-langcode: en
+uuid: 46a05584-90b7-49e2-aecf-5ab7e49b3644
+langcode: ga
 status: true
 dependencies:
   config:
-    - block_content.type.basic_block
+    - node.type.faq
   module:
     - metatag
-id: block_content.basic_block.metatag
+id: node.faq.metatag
 field_name: metatag
-entity_type: block_content
-bundle: basic_block
+entity_type: node
+bundle: faq
 label: 'Metatags (Hidden field for JSON support)'
 description: 'The computed meta tags for the entity.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
