@@ -10,13 +10,22 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - node.type.basic_page
+    - node.type.faq
+    - node.type.feature
+    - node.type.featured_content_list
+    - node.type.html_document
     - node.type.news
     - node.type.publication
+    - node.type.webform
+    - workflows.workflow.nics_editorial_workflow
   module:
+    - block_content
     - content_moderation
+    - content_translation
     - filter
     - media
     - menu_admin_per_menu
+    - menu_link_content
     - moderation_sidebar
     - node
     - path
@@ -37,39 +46,81 @@ permissions:
   - 'administer main menu items'
   - 'create audio media'
   - 'create basic_page content'
+  - 'create content translations'
   - 'create document media'
+  - 'create faq content'
+  - 'create feature content'
+  - 'create featured_content_list content'
   - 'create file media'
+  - 'create html_document content'
   - 'create image media'
   - 'create news content'
   - 'create publication content'
   - 'create remote_video media'
   - 'create url aliases'
+  - 'delete content translations'
   - 'delete own audio media'
   - 'delete own basic_page content'
   - 'delete own document media'
+  - 'delete own faq content'
+  - 'delete own feature content'
+  - 'delete own featured_content_list content'
   - 'delete own file media'
+  - 'delete own html_document content'
   - 'delete own image media'
   - 'delete own news content'
   - 'delete own publication content'
   - 'delete own remote_video media'
   - 'edit any basic_page content'
+  - 'edit any faq content'
+  - 'edit any feature content'
+  - 'edit any featured_content_list content'
+  - 'edit any html_document content'
   - 'edit any news content'
   - 'edit any publication content'
   - 'edit own audio media'
   - 'edit own basic_page content'
   - 'edit own document media'
+  - 'edit own faq content'
+  - 'edit own feature content'
+  - 'edit own featured_content_list content'
   - 'edit own file media'
+  - 'edit own html_document content'
   - 'edit own image media'
   - 'edit own news content'
   - 'edit own publication content'
   - 'edit own remote_video media'
   - 'revert basic_page revisions'
+  - 'revert faq revisions'
+  - 'revert feature revisions'
+  - 'revert featured_content_list revisions'
+  - 'revert html_document revisions'
   - 'revert news revisions'
   - 'revert publication revisions'
+  - 'translate any entity'
+  - 'translate basic_page node'
+  - 'translate block_content'
+  - 'translate editable entities'
+  - 'translate feature node'
+  - 'translate featured_content_list node'
+  - 'translate html_document node'
+  - 'translate menu_link_content'
+  - 'translate news node'
+  - 'translate publication node'
+  - 'translate webform node'
+  - 'update content translations'
   - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition submit_for_review'
   - 'use text format basic_html'
   - 'view any unpublished content'
   - 'view basic_page revisions'
+  - 'view faq revisions'
+  - 'view feature revisions'
+  - 'view featured_content_list revisions'
+  - 'view html_document revisions'
   - 'view latest version'
   - 'view news revisions'
   - 'view own unpublished content'
