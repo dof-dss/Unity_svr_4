@@ -1,0 +1,18 @@
+uuid: 28edf489-fb8f-4db3-92e4-6a648537320a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.question_block
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.question_block
+target_entity_type_id: block_content
+target_bundle: question_block
+default_langcode: site_default
+language_alterable: true

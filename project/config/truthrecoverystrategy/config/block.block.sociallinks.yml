@@ -10,8 +10,8 @@ dependencies:
     - truthrecoverystrategy_theme
 id: sociallinks
 theme: truthrecoverystrategy_theme
-region: footer
-weight: 0
+region: footer_first
+weight: -9
 provider: null
 plugin: 'block_content:3b6e365e-710f-43f9-9354-f9101d8d83cb'
 settings:

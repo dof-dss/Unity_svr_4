@@ -1,0 +1,24 @@
+uuid: afdafbd8-6088-4123-a0de-ad7f2e432fde
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.question_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.question_block.body
+field_name: body
+entity_type: block_content
+bundle: question_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

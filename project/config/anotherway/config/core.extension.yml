@@ -90,6 +90,7 @@ module:
   origins_metatag: 0
   origins_qa: 0
   origins_toc: 0
+  origins_unique_title: 0
   page_cache: 0
   path: 0
   path_alias: 0
@@ -117,6 +118,7 @@ module:
   unity_eu_cookie_compliance: 0
   unity_frontpage: 0
   unity_image_styles: 0
+  unity_search_pages: 0
   user: 0
   views_custom_cache_tag: 0
   webform: 0

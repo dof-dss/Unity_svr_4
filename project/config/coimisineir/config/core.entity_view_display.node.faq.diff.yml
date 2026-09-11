@@ -1,0 +1,38 @@
+uuid: 5ee92408-b9bf-448f-a2f1-c8023273247f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.diff
+    - field.field.node.faq.field_faq
+    - field.field.node.faq.field_meta_tags
+    - node.type.faq
+  module:
+    - entity_reference_revisions
+    - metatag
+    - user
+id: node.faq.diff
+targetEntityType: node
+bundle: faq
+mode: diff
+content:
+  field_faq:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true
