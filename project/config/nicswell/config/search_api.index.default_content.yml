@@ -85,6 +85,7 @@ field_settings:
 
 
 
+
       fields:
         - 'entity:node/title'
   body:
