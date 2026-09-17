@@ -1,11 +1,9 @@
-uuid: 00e6c439-3da2-4275-bbde-e6c1c1bd32c6
+uuid: f19acf00-10c4-4aee-a652-d475b268e99b
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.faq
-_core:
-  default_config_hash: SG2yMznfWW0WT_tzHsHqnkKcr2KEAufFB3sFG9jwt5A
 id: node.faq.promote
 field_name: promote
 entity_type: node

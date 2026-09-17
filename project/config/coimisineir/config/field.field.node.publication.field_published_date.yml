@@ -1,5 +1,5 @@
 uuid: 46ad76c1-1377-414d-93d8-1d5578c47353
-langcode: en
+langcode: ga
 status: true
 dependencies:
   config:
@@ -16,7 +16,7 @@ bundle: publication
 label: 'Published date'
 description: 'Please select the published date for this publication, or accept the default value of today.'
 required: true
-translatable: false
+translatable: true
 default_value:
   -
     default_date_type: now

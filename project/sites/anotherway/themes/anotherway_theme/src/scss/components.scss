@@ -4,3 +4,170 @@
  */
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
+
+.top_left #logo img {
+  height: 10rem;
+  @media screen and (max-width: $tab) {
+    position: relative;
+  }
+}
+
+.region-primary-menu .menu_wrapper {
+  border-top: solid 1px $brand-secondary;
+  border-bottom: solid 1px $brand-secondary;
+}
+
+#block-frontpagebanner {
+  background: resolve('AW-header.png') no-repeat 50%;
+  height: 26rem;
+  background-size: contain;
+  background-position: left -6rem center;
+  background-size: 110% auto;
+  @media screen and (max-width: $tab) {
+    display: none;
+  }
+}
+
+#main-menu {
+  background: $white;
+
+  .menu-link,
+  .menu .active,
+  .menu-item.open .menu-toggle-btn {
+    color: $black;
+    @include adjust-font-size-to(16px);
+  }
+
+  .menu
+  .menu-item
+  .active {
+    border-bottom-color: rgba(191,191,191,0.10);
+    text-decoration: underline;
+  }
+
+  .menu-link {
+    &:hover,
+    &:focus {
+      background: $brand-primary;
+      color: $white;
+    }
+  }
+  .menu-main_sub
+  .menu-item
+  span.active {
+    @include adjust-font-size-to(14px);
+    padding: 1rem;
+  }
+
+  .menu-main_sub {
+    background: $brand-primary;
+
+    .menu-item {
+      background: $brand-primary;
+
+      .active {
+        background: $brand-primary;
+        color: $white;
+      }
+
+      a {
+        &:hover,
+        &:focus {
+          color: $white;
+          background: $brand-secondary;
+        }
+      }
+    }
+  }
+}
+
+.region-front-welcome {
+  margin: auto;
+}
+
+#top-area #block-welcome {
+  text-align: left;
+  background: #e7e7e7;
+  padding: 1%;
+  margin-bottom: 3rem;
+
+  p {
+    width: 60%;
+    @media screen and (max-width: $tab) {
+      width: 100%;
+    }
+  }
+}
+
+.latest-news-home-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+#top-area .latest-news-home-wrapper h3 {
+  font-size: 2rem;
+}
+
+#top-area h2 {
+  color: $brand-primary;
+}
+
+@media (max-width: 600px) {
+  .latest-news-home-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+#top-area .column {
+  width: 100%;
+}
+
+.btn.view-all-link {
+  border-radius: 3rem;
+  margin-top: 3rem;
+  background: $brand-primary;
+}
+
+.region-top-third {
+  border-top: solid #000 3px;
+}
+
+#top-area {
+  #block-referrals {
+    text-align: left;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    width: 60%;
+    @media screen and (max-width: $tab) {
+      width: 100%;
+    }
+
+    .btn {
+      background: #0a850c;
+
+      &:hover {
+        background: #666;
+      }
+    }
+  }
+
+  #block-emergency {
+    text-align: left;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    width: 60%;
+    @media screen and (max-width: $tab) {
+      width: 100%;
+    }
+
+    h2 {
+      padding-top: 5rem;
+    }
+  }
+}
+
+

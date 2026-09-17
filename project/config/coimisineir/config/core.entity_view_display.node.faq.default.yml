@@ -1,4 +1,4 @@
-uuid: 0bcee61b-38c1-48ba-833c-c30f3ae9dba8
+uuid: 12058f2f-e64c-482b-b746-86e31b5b4f19
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
   module:
     - entity_reference_revisions
     - user
-_core:
-  default_config_hash: '-3T7E8enbNwc5SIfLwfdJAYn1xX81bXWmuPuYajnv-I'
 id: node.faq.default
 targetEntityType: node
 bundle: faq
@@ -26,7 +24,6 @@ content:
     weight: 0
     region: content
 hidden:
-  content_moderation_control: true
   field_meta_tags: true
   langcode: true
   links: true

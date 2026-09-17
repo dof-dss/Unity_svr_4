@@ -1,0 +1,180 @@
+label: 'Media library'
+description: 'Find and manage media.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      title: Media
+      fields:
+        media_bulk_form:
+          action_title: Action
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      exposed_form:
+        options:
+          submit_button: 'Apply filters'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      empty:
+        area_text_custom:
+          content: 'No media available.'
+      sorts:
+        created:
+          expose:
+            label: 'Newest first'
+        name:
+          expose:
+            label: 'Name (A-Z)'
+        name_1:
+          expose:
+            label: 'Name (Z-A)'
+      filters:
+        status:
+          expose:
+            label: 'Publishing status'
+          group_info:
+            label: Published
+            group_items:
+              1:
+                title: Published
+              2:
+                title: Unpublished
+        name:
+          expose:
+            label: Name
+        bundle:
+          expose:
+            label: 'Media type'
+          group_info:
+            label: 'Media type'
+        langcode:
+          expose:
+            label: Language
+  default_page:
+    display_title: 'Default Page'
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Action
+        thumbnail__target_id:
+          label: Preview
+          separator: ', '
+        name:
+          label: Name
+          separator: ', '
+        bundle:
+          label: 'Media type'
+          separator: ', '
+        filemime:
+          label: 'File type'
+          separator: ', '
+        status:
+          label: Published
+          separator: ', '
+        nothing:
+          label: 'Referenced from'
+        edit_media:
+          text: Edit
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      filters:
+        name:
+          expose:
+            label: Name
+            placeholder: 'Contains text...'
+        bundle:
+          expose:
+            label: 'Media type'
+          group_info:
+            label: 'Media type'
+        status:
+          expose:
+            label: Published
+          group_info:
+            label: Published
+            group_items:
+              1:
+                title: Published
+              2:
+                title: Unpublished
+  page:
+    display_title: Page
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Action
+        name:
+          separator: ', '
+        edit_media:
+          alter:
+            text: 'Edit {{ name }}'
+            alt: 'Edit {{ name }}'
+          text: Edit
+        delete_media:
+          alter:
+            text: 'Delete {{ name }}'
+            alt: 'Delete {{ name }}'
+          text: Delete
+  widget:
+    display_title: Widget
+    display_options:
+      arguments:
+        bundle:
+          exception:
+            title: All
+      filters:
+        name:
+          expose:
+            label: Name
+      header:
+        display_link_grid:
+          label: Grid
+        display_link_table:
+          label: Table
+  widget_table:
+    display_title: 'Widget (table)'
+    display_options:
+      fields:
+        thumbnail__target_id:
+          label: Thumbnail
+        name:
+          label: Name
+        nothing:
+          label: 'Referenced from'
+        uid:
+          label: Author
+        changed:
+          label: Updated
+      arguments:
+        bundle:
+          exception:
+            title: All
+      filters:
+        name:
+          expose:
+            label: Name
+      header:
+        display_link_grid:
+          label: Grid
+        display_link_table:
+          label: Table

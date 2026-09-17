@@ -1,4 +1,4 @@
-uuid: 0ccb7bcb-1c68-40f3-9d0c-2572a9945dc9
+uuid: eae6f3ba-b927-44df-bd83-d41beae22bfb
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,6 @@ dependencies:
     - paragraphs.paragraphs_type.faq_accordion
   module:
     - entity_reference_revisions
-_core:
-  default_config_hash: 4vFPSENdtLan5F2QDhfUQ_059QBu8pyDH2Vm5w9CovM
 id: node.faq.field_faq
 field_name: field_faq
 entity_type: node
@@ -28,9 +26,6 @@ settings:
     negate: 0
     target_bundles_drag_drop:
       faq_accordion:
-        weight: 3
+        weight: 2
         enabled: true
-      map:
-        weight: 4
-        enabled: false
 field_type: entity_reference_revisions

@@ -1,0 +1,30 @@
+uuid: 4ef328b5-48f3-4af2-8969-cb9fffc12b6e
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic_block:6b56c7be-8983-4a48-94e7-ebc0e058bc85'
+  module:
+    - block_content
+    - system
+  theme:
+    - anotherway_theme
+id: emergency
+theme: anotherway_theme
+region: top_third
+weight: 0
+provider: null
+plugin: 'block_content:6b56c7be-8983-4a48-94e7-ebc0e058bc85'
+settings:
+  id: 'block_content:6b56c7be-8983-4a48-94e7-ebc0e058bc85'
+  label: Emergency
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

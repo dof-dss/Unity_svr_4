@@ -9,7 +9,7 @@ dependencies:
 id: coimisineir_theme_languageswitcher
 theme: coimisineir_theme
 region: search
-weight: 0
+weight: -1
 provider: null
 plugin: 'language_block:language_interface'
 settings:

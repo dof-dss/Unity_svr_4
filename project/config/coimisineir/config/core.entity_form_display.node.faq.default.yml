@@ -1,4 +1,4 @@
-uuid: 39a9a82a-8b4f-43a1-a0af-65c713192cbc
+uuid: e7969542-ac79-40c0-b532-8381c8fd9bbb
 langcode: en
 status: true
 dependencies:
@@ -6,14 +6,11 @@ dependencies:
     - field.field.node.faq.field_faq
     - field.field.node.faq.field_meta_tags
     - node.type.faq
-    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
     - metatag
     - paragraphs
     - path
-_core:
-  default_config_hash: lbvwFroKV9__SmVGlklLXFuGgqVmbqhHn7u_QjXMr0Q
 id: node.faq.default
 targetEntityType: node
 bundle: faq
@@ -27,7 +24,7 @@ content:
     third_party_settings: {  }
   field_faq:
     type: entity_reference_paragraphs
-    weight: 122
+    weight: 121
     region: content
     settings:
       title: Paragraph
@@ -35,14 +32,15 @@ content:
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: faq_accordion
+      default_paragraph_type: ''
     third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose
-    weight: 123
+    weight: 122
     region: content
     settings:
       sidebar: true
+      use_details: true
     third_party_settings: {  }
   langcode:
     type: language_select
