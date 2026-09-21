@@ -12,8 +12,6 @@ dependencies:
     - media.type.remote_video
     - node.type.basic_page
     - node.type.faq
-    - node.type.feature
-    - node.type.featured_content_list
     - node.type.html_document
     - node.type.news
     - node.type.publication
@@ -70,8 +68,6 @@ permissions:
   - 'create content translations'
   - 'create document media'
   - 'create faq content'
-  - 'create feature content'
-  - 'create featured_content_list content'
   - 'create file media'
   - 'create html_document content'
   - 'create image media'
@@ -84,8 +80,6 @@ permissions:
   - 'delete any basic_page content'
   - 'delete any document media'
   - 'delete any faq content'
-  - 'delete any feature content'
-  - 'delete any featured_content_list content'
   - 'delete any file'
   - 'delete any file media'
   - 'delete any html_document content'
@@ -96,16 +90,12 @@ permissions:
   - 'delete basic_page revisions'
   - 'delete content translations'
   - 'delete faq revisions'
-  - 'delete feature revisions'
-  - 'delete featured_content_list revisions'
   - 'delete html_document revisions'
   - 'delete news revisions'
   - 'delete own audio media'
   - 'delete own basic_page content'
   - 'delete own document media'
   - 'delete own faq content'
-  - 'delete own feature content'
-  - 'delete own featured_content_list content'
   - 'delete own file media'
   - 'delete own html_document content'
   - 'delete own image media'
@@ -117,8 +107,6 @@ permissions:
   - 'edit any basic_page content'
   - 'edit any document media'
   - 'edit any faq content'
-  - 'edit any feature content'
-  - 'edit any featured_content_list content'
   - 'edit any file media'
   - 'edit any html_document content'
   - 'edit any image media'
@@ -130,8 +118,6 @@ permissions:
   - 'edit own basic_page content'
   - 'edit own document media'
   - 'edit own faq content'
-  - 'edit own feature content'
-  - 'edit own featured_content_list content'
   - 'edit own file media'
   - 'edit own html_document content'
   - 'edit own image media'
@@ -150,8 +136,6 @@ permissions:
   - 'revert all revisions'
   - 'revert basic_page revisions'
   - 'revert faq revisions'
-  - 'revert feature revisions'
-  - 'revert featured_content_list revisions'
   - 'revert html_document revisions'
   - 'revert news revisions'
   - 'revert publication revisions'
@@ -159,8 +143,6 @@ permissions:
   - 'translate basic_page node'
   - 'translate block_content'
   - 'translate editable entities'
-  - 'translate feature node'
-  - 'translate featured_content_list node'
   - 'translate html_document node'
   - 'translate menu_link_content'
   - 'translate news node'
@@ -184,8 +166,6 @@ permissions:
   - 'view basic_page revisions'
   - 'view content references'
   - 'view faq revisions'
-  - 'view feature revisions'
-  - 'view featured_content_list revisions'
   - 'view html_document revisions'
   - 'view latest version'
   - 'view news revisions'
