@@ -1,5 +1,5 @@
 uuid: da0d21f6-5730-4186-88d2-1a46d56c4ccf
-langcode: en
+langcode: ga
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ bundle: news
 label: 'Promoted to front page'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 0

@@ -1,4 +1,4 @@
-uuid: 415b1d1d-1d0f-45ca-a2c4-9935a4f52af4
+uuid: 09d208d2-898a-4404-ae3a-cecbc06ac737
 langcode: en
 status: true
 dependencies:
@@ -9,17 +9,15 @@ dependencies:
     - node.type.faq
   module:
     - user
-_core:
-  default_config_hash: zVu9PRxZDIOBNsQU0-gGlPIwF8xWoIQn9dmr2-522bc
 id: node.faq.teaser
 targetEntityType: node
 bundle: faq
 mode: teaser
 content:
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_faq: true

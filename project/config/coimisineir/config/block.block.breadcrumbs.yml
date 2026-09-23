@@ -1,0 +1,24 @@
+uuid: cf33b028-4113-48f3-992a-2ef930ee30bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - coimisineir_theme
+id: breadcrumbs
+theme: coimisineir_theme
+region: breadcrumb
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

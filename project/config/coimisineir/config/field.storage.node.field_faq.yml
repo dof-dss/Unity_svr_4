@@ -1,13 +1,11 @@
-uuid: c76ff26a-6ee8-47f6-959e-12d4f4bc05b8
-langcode: und
+uuid: 4d01aa46-f959-4d33-9d72-c2539378000e
+langcode: en
 status: true
 dependencies:
   module:
     - entity_reference_revisions
     - node
     - paragraphs
-_core:
-  default_config_hash: LuqYStD2EbTMQWFf3Pk_IKYMP6YQLbc9NvCz6j_emQI
 id: node.field_faq
 field_name: field_faq
 entity_type: node

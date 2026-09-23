@@ -1,0 +1,34 @@
+uuid: ded4ff44-1a7a-459b-b27b-46d4647d7569
+langcode: en
+status: true
+dependencies: {  }
+id: GTM-K747WSNC.6a7f289c1c7a63.30650222
+label: GTM-K747WSNC
+weight: 0
+tag_container_ids:
+  - GTM-K747WSNC
+  - ''
+advanced_settings:
+  consent_mode: false
+  gtm:
+    GTM-K747WSNC:
+      data_layer: dataLayer
+      include_classes: false
+      allowlist_classes: ''
+      blocklist_classes: ''
+      include_environment: false
+      environment_id: ''
+      environment_token: ''
+dimensions_metrics: {  }
+conditions: {  }
+events:
+  generate_lead:
+    value: ''
+    currency: ''
+  search: {  }
+  webform_purchase: {  }
+  custom: {  }
+  login:
+    method: CMS
+  sign_up:
+    method: CMS

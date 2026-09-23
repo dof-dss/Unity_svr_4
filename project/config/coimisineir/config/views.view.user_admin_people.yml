@@ -1,5 +1,5 @@
 uuid: db148474-16e9-4f58-a4cd-b813bdc6d7cb
-langcode: en
+langcode: ga
 status: true
 dependencies:
   module:
@@ -82,7 +82,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: Username
+          label: 'Ainm úsáideora'
           exclude: false
           alter:
             alter_text: false

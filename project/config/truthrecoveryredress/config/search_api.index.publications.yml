@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_published_date
-    - field.storage.node.field_summary
     - search_api.server.solr_default
   module:
     - node
@@ -78,15 +77,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_published_date
-  field_summary:
-    label: Summary
-    datasource_id: 'entity:node'
-    property_path: field_summary
-    type: text
-    boost: 3.0
-    dependencies:
-      config:
-        - field.storage.node.field_summary
   title:
     label: Title
     datasource_id: 'entity:node'
@@ -130,7 +120,6 @@ processor_settings:
     all_fields: true
     fields:
       - body
-      - field_summary
       - title
     title: false
     alt: true

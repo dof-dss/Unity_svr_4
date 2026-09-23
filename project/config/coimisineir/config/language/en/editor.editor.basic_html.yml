@@ -1,0 +1,8 @@
+settings:
+  plugins:
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Information notice'
+        -
+          label: Button
