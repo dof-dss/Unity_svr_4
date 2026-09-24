@@ -4,7 +4,7 @@ display:
       empty:
         area:
           content:
-            value: '<p>There are no results found.</p>'
+            value: '<p>Níor aimsíodh torthaí.</p>'
             format: basic_html
       filters:
         search_api_fulltext:
