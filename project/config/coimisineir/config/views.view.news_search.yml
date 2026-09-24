@@ -1,11 +1,10 @@
 uuid: 139e3f79-4e56-4352-a42c-0ef106c2f2b1
-langcode: ga
+langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
     - search_api.index.news
-    - system.menu.main
   module:
     - search_api
     - text
@@ -135,7 +134,20 @@ display:
       cache:
         type: search_api_none
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'There were no results found.'
+            format: basic_html
+          tokenize: false
       sorts:
         field_published_date:
           id: field_published_date
@@ -309,8 +321,8 @@ display:
           tokenize: false
       path: news
       menu:
-        type: normal
-        title: News
+        type: none
+        title: Nuacht
         description: ''
         weight: -46
         expanded: false

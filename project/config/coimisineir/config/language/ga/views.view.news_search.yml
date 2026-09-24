@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          tags:
+            next: 'Ar Aghaidh ›'
+            previous: '‹ Roimhe seo'
+            first: '« Ar dtús'
+            last: 'Deireanach »'
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: Eochairfhocail
+      empty:
+        area:
+          content:
+            value: '<p>Níor aimsíodh torthaí.</p>'
+            format: basic_html

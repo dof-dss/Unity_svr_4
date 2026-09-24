@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      empty:
+        area:
+          content:
+            value: '<p>There are no results found.</p>'
+            format: basic_html
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 'Cuardaigh an suíomh seo ...'
+            placeholder: 'Cuardaigh an suíomh'

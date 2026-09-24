@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          tags:
+            next: 'Ar Aghaidh ›'
+            previous: '‹ Roimhe seo'
+            first: '« Ar dtús'
+            last: 'deireanach »'
+      empty:
+        area:
+          content:
+            value: '<p>Níor aimsíodh torthaí.</p>'
+            format: basic_html
+      filters:
+        search_api_fulltext:
+          expose:
+            label: ''
+            placeholder: Eochairfhocail
+label: 'Cuardach Foilseachán'
