@@ -1,5 +1,5 @@
 uuid: ce3c4155-0b38-40f1-935e-b1812740e8a2
-langcode: ga
+langcode: en
 status: true
 dependencies:
   config:
