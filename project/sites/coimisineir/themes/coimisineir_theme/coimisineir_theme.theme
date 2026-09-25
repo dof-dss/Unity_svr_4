@@ -17,7 +17,6 @@ function coimisineir_theme_search_page_title() {
       return $title;
     }
   }
-
   return NULL;
 }
 
@@ -34,16 +33,52 @@ function coimisineir_theme_preprocess_page_title(&$variables) {
  * Implements hook_preprocess_breadcrumb().
  */
 function coimisineir_theme_preprocess_breadcrumb(&$variables) {
-  if (empty($variables['breadcrumb']) || !($title = coimisineir_theme_search_page_title())) {
+  if (empty($variables['breadcrumb'])) {
     return;
   }
 
-  $last = array_key_last($variables['breadcrumb']);
+  $title = coimisineir_theme_search_page_title();
 
-  if (isset($variables['breadcrumb'][$last]['text'])) {
-    $variables['breadcrumb'][$last]['text'] = $title;
+  if (!$title) {
+    return;
   }
-  elseif (isset($variables['breadcrumb'][$last]['#title'])) {
-    $variables['breadcrumb'][$last]['#title'] = $title;
+
+  /*
+   * Only translate the breadcrumb that represents the search page.
+   *
+   * Do NOT modify the last breadcrumb item because that is where
+   * the selected Facet value is displayed.
+   */
+  $page_titles = [
+    'Publications' => 'Foilseacháin',
+    'News' => 'Nuacht',
+    'Search' => 'Cuardach',
+  ];
+
+  foreach ($variables['breadcrumb'] as &$item) {
+    $text = NULL;
+
+    if (isset($item['text'])) {
+      $text = $item['text'];
+    }
+    elseif (isset($item['#title'])) {
+      $text = $item['#title'];
+    }
+
+    if ($text instanceof \Drupal\Core\StringTranslation\TranslatableMarkup) {
+      $text = $text->render();
+    }
+
+    if (isset($page_titles[$text])) {
+      if (isset($item['text'])) {
+        $item['text'] = $title;
+      }
+      elseif (isset($item['#title'])) {
+        $item['#title'] = $title;
+      }
+
+      break;
+    }
   }
+  unset($item);
 }
