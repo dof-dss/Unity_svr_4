@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * Search page titles.
+ */
+function coimisineir_theme_search_page_title() {
+  $path = \Drupal::service('path.current')->getPath();
+
+  $titles = [
+    '/publications' => 'Foilseacháin',
+    '/news' => 'Nuacht',
+    '/search' => 'Cuardach',
+  ];
+
+  foreach ($titles as $page => $title) {
+    if (strpos($path, $page) === 0) {
+      return $title;
+    }
+  }
+
+  return NULL;
+}
+
+/**
+ * Implements hook_preprocess_page_title().
+ */
+function coimisineir_theme_preprocess_page_title(&$variables) {
+  if ($title = coimisineir_theme_search_page_title()) {
+    $variables['title'] = $title;
+  }
+}
+
+/**
+ * Implements hook_preprocess_breadcrumb().
+ */
+function coimisineir_theme_preprocess_breadcrumb(&$variables) {
+  if (empty($variables['breadcrumb']) || !($title = coimisineir_theme_search_page_title())) {
+    return;
+  }
+
+  $last = array_key_last($variables['breadcrumb']);
+
+  if (isset($variables['breadcrumb'][$last]['text'])) {
+    $variables['breadcrumb'][$last]['text'] = $title;
+  }
+  elseif (isset($variables['breadcrumb'][$last]['#title'])) {
+    $variables['breadcrumb'][$last]['#title'] = $title;
+  }
+}

@@ -18,4 +18,5 @@ display:
           expose:
             label: ''
             placeholder: Eochairfhocail
+    display_title: ''
 label: 'Cuardach Foilseachán'
