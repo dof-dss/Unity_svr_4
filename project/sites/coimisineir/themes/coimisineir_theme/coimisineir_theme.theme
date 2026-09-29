@@ -5,18 +5,27 @@
  */
 function coimisineir_theme_search_page_title() {
   $path = \Drupal::service('path.current')->getPath();
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
 
   $titles = [
-    '/publications' => 'Foilseacháin',
-    '/news' => 'Nuacht',
-    '/search' => 'Cuardach',
+    'en' => [
+      '/publications' => 'Publications',
+      '/news' => 'News',
+      '/search' => 'Search',
+    ],
+    'ga' => [
+      '/publications' => 'Foilseacháin',
+      '/news' => 'Nuacht',
+      '/search' => 'Cuardach',
+    ],
   ];
 
-  foreach ($titles as $page => $title) {
+  foreach ($titles[$language] ?? $titles['en'] as $page => $title) {
     if (strpos($path, $page) === 0) {
       return $title;
     }
   }
+
   return NULL;
 }
 
@@ -50,9 +59,13 @@ function coimisineir_theme_preprocess_breadcrumb(&$variables) {
    * the selected Facet value is displayed.
    */
   $page_titles = [
-    'Publications' => 'Foilseacháin',
-    'News' => 'Nuacht',
-    'Search' => 'Cuardach',
+    'Publications' => 'Publications',
+    'News' => 'News',
+    'Search' => 'Search',
+
+    'Foilseacháin' => 'Foilseacháin',
+    'Nuacht' => 'Nuacht',
+    'Cuardach' => 'Cuardach',
   ];
 
   foreach ($variables['breadcrumb'] as &$item) {
@@ -80,5 +93,6 @@ function coimisineir_theme_preprocess_breadcrumb(&$variables) {
       break;
     }
   }
+
   unset($item);
 }
