@@ -53,14 +53,6 @@
 'https://truthrecoverystrategy.com/':
     type: redirect
     to: 'https://www.truthrecoverystrategy.com/'
-'https://www.cusubt.org.uk/':
-    type: upstream
-    upstream: 'unity_svr_4:http'
-    cache:
-        enabled: 'false'
-'https://cusubt.org.uk/':
-    type: redirect
-    to: 'https://www.cusubt.org.uk/'
 'https://www.truthrecoveryredress.org/':
     type: upstream
     upstream: 'unity_svr_4:http'
