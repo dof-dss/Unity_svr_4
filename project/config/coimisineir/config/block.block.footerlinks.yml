@@ -1,0 +1,25 @@
+uuid: 161c50f3-ac3a-4337-aca2-ddcf7c62c63a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer-links
+  module:
+    - system
+  theme:
+    - coimisineir_theme
+id: footerlinks
+theme: coimisineir_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-footer-links'
+settings:
+  id: 'system_menu_block:menu-footer-links'
+  label: 'Footer links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
