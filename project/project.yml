@@ -104,3 +104,13 @@ sites:
         database: truthrecoveryredress
         status: development
         default: false
+    justtransitioncommissionni:
+        name: 'Just Transition Commission'
+        url: justtransitioncommissionni.org.uk
+        solr: justtransitioncommissionni
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/justtransitioncommissionni ; drush core-cron'
+        database: justtransitioncommissionni
+        status: development
+        default: false

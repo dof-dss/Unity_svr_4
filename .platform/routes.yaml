@@ -61,6 +61,14 @@
 'https://truthrecoveryredress.org/':
     type: redirect
     to: 'https://www.truthrecoveryredress.org/'
+'https://www.justtransitioncommissionni.org.uk/':
+    type: upstream
+    upstream: 'unity_svr_4:http'
+    cache:
+        enabled: 'false'
+'https://justtransitioncommissionni.org.uk/':
+    type: redirect
+    to: 'https://www.justtransitioncommissionni.org.uk/'
 'https://www.{all}/':
     type: upstream
     upstream: 'unity_svr_4:http'

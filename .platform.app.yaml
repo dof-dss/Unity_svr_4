@@ -60,7 +60,7 @@ hooks:
         export FASTLY_API_SERVICE=dummyservice
 
         # For each multi site - run db-updates and import config.
-        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress
+        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress justtransitioncommissionni
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -107,7 +107,7 @@ hooks:
         export FASTLY_API_SERVICE=$temp
 
         # For each multi site - clear cache (including Fastly cache)
-        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress
+        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress justtransitioncommissionni
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -176,6 +176,8 @@ relationships:
     cusubt_solr: 'solr_9_9:cusubt'
     truthrecoveryredress: 'db:truthrecoveryredress'
     truthrecoveryredress_solr: 'solr_9_9:truthrecoveryredress'
+    justtransitioncommissionni: 'db:justtransitioncommissionni'
+    justtransitioncommissionni_solr: 'solr_9_9:justtransitioncommissionni'
 crons:
     legalcommissionerni:
         spec: '10 * * * *'
@@ -212,3 +214,6 @@ crons:
     truthrecoveryredress:
         spec: '10 * * * *'
         cmd: 'cd web/sites/truthrecoveryredress ; drush core-cron'
+    justtransitioncommissionni:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/justtransitioncommissionni ; drush core-cron'
