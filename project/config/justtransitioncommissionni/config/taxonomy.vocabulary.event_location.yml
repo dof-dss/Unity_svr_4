@@ -1,0 +1,9 @@
+uuid: bed6a342-4308-4114-8541-ed8c0c05ca44
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event Location'
+vid: event_location
+description: null
+weight: 0
+new_revision: false

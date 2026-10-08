@@ -1,0 +1,77 @@
+uuid: fcc1cd35-8d28-4ddf-aeb8-b82d89246023
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.diff
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_location
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_photo
+    - field.field.node.event.field_topics
+    - node.type.event
+  module:
+    - datetime_range
+    - text
+    - user
+id: node.event.diff
+targetEntityType: node
+bundle: event
+mode: diff
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_event_date:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: unity_date
+      from_to: both
+      separator: '-'
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_event_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_event_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: landscape_float
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_topics:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

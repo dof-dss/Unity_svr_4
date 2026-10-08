@@ -20,6 +20,7 @@ db:
             - truthrecoverystrategydb
             - cusubtdb
             - truthrecoveryredressdb
+            - justtransitioncommissionnidb
         endpoints:
             legalcommissionerni:
                 default_schema: legalcommissionernidb
@@ -61,6 +62,10 @@ db:
                 default_schema: truthrecoveryredressdb
                 privileges:
                     truthrecoveryredressdb: admin
+            justtransitioncommissionni:
+                default_schema: justtransitioncommissionnidb
+                privileges:
+                    justtransitioncommissionnidb: admin
 solr_9_9:
     type: 'solr:9.9'
     disk: 1024
@@ -91,6 +96,8 @@ solr_9_9:
                 conf_dir: !archive solr_configsets/cusubt/conf/
             truthrecoveryredress_index:
                 conf_dir: !archive solr_configsets/truthrecoveryredress/conf/
+            justtransitioncommissionni_index:
+                conf_dir: !archive solr_configsets/justtransitioncommissionni/conf/
         endpoints:
             legalcommissionerni:
                 core: legalcommissionerni_index
@@ -112,6 +119,8 @@ solr_9_9:
                 core: cusubt_index
             truthrecoveryredress:
                 core: truthrecoveryredress_index
+            justtransitioncommissionni:
+                core: justtransitioncommissionni_index
 redis:
     type: 'redis:8.0'
     configuration:
