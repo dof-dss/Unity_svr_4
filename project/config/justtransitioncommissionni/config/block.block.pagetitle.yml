@@ -1,0 +1,24 @@
+uuid: d62451f9-19f9-4014-9d8a-bdd2e528e834
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - justtransitioncommissionni_theme
+id: pagetitle
+theme: justtransitioncommissionni_theme
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/search\r\n<front>"
