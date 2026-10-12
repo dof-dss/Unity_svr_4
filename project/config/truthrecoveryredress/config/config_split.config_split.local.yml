@@ -11,8 +11,6 @@ no_patching: false
 storage: folder
 folder: ../project/config/truthrecoveryredress/local
 module:
-  clone_nodes: 0
-  easy_install: 0
   migrate: 0
   migrate_drupal: 0
   migrate_plus: 0

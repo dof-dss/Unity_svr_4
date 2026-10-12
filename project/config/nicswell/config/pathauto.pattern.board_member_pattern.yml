@@ -9,16 +9,16 @@ _core:
 id: board_member_pattern
 label: 'Champions pattern'
 type: 'canonical_entities:node'
-pattern: 'champions/[node:title]'
+pattern: '/champions/[node:title]'
 selection_criteria:
   deab68c3-c1ff-43c0-9819-7e5702ea4d30:
     id: 'entity_bundle:node'
     negate: false
-    uuid: deab68c3-c1ff-43c0-9819-7e5702ea4d30
     context_mapping:
       node: node
     bundles:
       board_member: board_member
+    uuid: deab68c3-c1ff-43c0-9819-7e5702ea4d30
 selection_logic: and
 weight: -5
 relationships: {  }

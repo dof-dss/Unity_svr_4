@@ -15,12 +15,17 @@ mode: media_library
 content:
   name:
     type: string_textfield
+    weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
-    weight: 0
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   field_media_oembed_video: true
