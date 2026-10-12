@@ -2,7 +2,7 @@ name: justtransitioncommissionni Theme
 type: theme
 description: 'Base theme for Drupal 8 sites'
 package: NICS
-core_version_requirement: ^9 || ^10
+core_version_requirement: ^9 || ^10 || ^11
 
 libraries:
   - justtransitioncommissionni_theme/site-styling

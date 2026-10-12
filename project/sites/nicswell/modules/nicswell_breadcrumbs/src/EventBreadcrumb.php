@@ -30,7 +30,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 /**
  * {@inheritdoc}
  */
-class eventBreadcrumb implements BreadcrumbBuilderInterface {
+class EventBreadcrumb implements BreadcrumbBuilderInterface {
 
   /**
    * @var \Drupal\Core\Entity\EntityTypeManagerInterface
@@ -54,7 +54,7 @@ class eventBreadcrumb implements BreadcrumbBuilderInterface {
   /**
    * Symfony\Component\HttpFoundation\RequestStack definition.
    *
-   * @var Symfony\Component\HttpFoundation\RequestStack
+   * @var \Symfony\Component\HttpFoundation\RequestStack
    */
   protected $request;
 
