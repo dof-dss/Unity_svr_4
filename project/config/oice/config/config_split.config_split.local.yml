@@ -22,6 +22,8 @@ module:
   devel: 0
   migrate_drupal_ui: 0
   unity_file_migrations: 0
+  stage_file_proxy: 0
 theme: {  }
-complete_list: {  }
+complete_list:
+  - stage_file_proxy.settings
 partial_list: {  }

@@ -23,6 +23,7 @@ module:
   unity_file_migrations: 0
   stage_file_proxy: 0
 theme: {  }
-complete_list: {  }
+complete_list:
+  - stage_file_proxy.settings
 partial_list:
   - search_api.server.solr_default
