@@ -1,0 +1,29 @@
+uuid: f89b639e-75dc-4ceb-bc5e-0b7f05f602e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.published_date
+  module:
+    - facets
+    - system
+  theme:
+    - justtransitioncommissionni_theme
+id: publisheddate_news
+theme: justtransitioncommissionni_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:published_date'
+settings:
+  id: 'facet_block:published_date'
+  label: 'Published date'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: publisheddate_news
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n/news/*"
