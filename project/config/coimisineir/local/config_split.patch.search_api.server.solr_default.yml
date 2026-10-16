@@ -9,6 +9,7 @@ adding:
       stats_cache: org.apache.solr.search.stats.LRUStatsCache
       distrib: true
       context: solr
+    index_items_with_warnings: true
 removing:
   backend_config:
     connector_config:

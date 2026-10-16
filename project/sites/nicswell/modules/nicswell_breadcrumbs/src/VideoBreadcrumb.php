@@ -30,7 +30,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 /**
  * {@inheritdoc}
  */
-class videoBreadcrumb implements BreadcrumbBuilderInterface {
+class VideoBreadcrumb implements BreadcrumbBuilderInterface {
 
   /**
    * @var \Drupal\Core\Entity\EntityTypeManagerInterface
@@ -54,7 +54,7 @@ class videoBreadcrumb implements BreadcrumbBuilderInterface {
   /**
    * Symfony\Component\HttpFoundation\RequestStack definition.
    *
-   * @var Symfony\Component\HttpFoundation\RequestStack
+   * @var \Symfony\Component\HttpFoundation\RequestStack
    */
   protected $request;
 

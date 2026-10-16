@@ -11,10 +11,8 @@ no_patching: false
 storage: folder
 folder: ../project/config/coimisineir/local
 module:
-  clone_nodes: 0
   dblog: 0
   devel: 0
-  easy_install: 0
   migrate: 0
   migrate_drupal: 0
   migrate_plus: 0
@@ -25,6 +23,7 @@ module:
   stage_file_proxy: 0
   update: 0
 theme: {  }
-complete_list: {  }
+complete_list:
+  - stage_file_proxy.settings
 partial_list:
   - search_api.server.solr_default

@@ -11,8 +11,6 @@ no_patching: false
 storage: folder
 folder: ../project/config/truthrecoveryredress/local
 module:
-  clone_nodes: 0
-  easy_install: 0
   migrate: 0
   migrate_drupal: 0
   migrate_plus: 0
@@ -24,6 +22,7 @@ module:
   unity_file_migrations: 0
   stage_file_proxy: 0
 theme: {  }
-complete_list: {  }
+complete_list:
+  - stage_file_proxy.settings
 partial_list:
   - search_api.server.solr_default

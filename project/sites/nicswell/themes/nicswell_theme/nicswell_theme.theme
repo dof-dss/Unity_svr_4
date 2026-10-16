@@ -1,9 +1,15 @@
 <?php
 
-// To output raw dates for event page twig and fix timezone issue on date range field
+/**
+ * @file
+ * Formats event dates in the site timezone.
+ */
 
 use Drupal\Core\Datetime\DrupalDateTime;
 
+/**
+ * Implements hook_preprocess_node().
+ */
 function nicswell_theme_preprocess_node(&$variables) {
   if ($variables['node']->bundle() === 'event' && $variables['view_mode'] === 'full') {
     $node = $variables['node'];

@@ -7,16 +7,16 @@ dependencies:
 id: faq_pattern
 label: 'FAQ Pattern'
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '/[node:title]'
 selection_criteria:
   32aa3cb1-c19b-4a72-b708-9a15323f5848:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 32aa3cb1-c19b-4a72-b708-9a15323f5848
     context_mapping:
       node: node
     bundles:
       faq: faq
+    uuid: 32aa3cb1-c19b-4a72-b708-9a15323f5848
 selection_logic: and
 weight: 0
 relationships: {  }
