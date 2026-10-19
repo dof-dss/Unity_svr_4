@@ -9,10 +9,10 @@ dependencies:
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_type
     - field.field.node.event.field_photo
+    - field.field.node.event.field_teaser
     - field.field.node.event.field_topics
     - node.type.event
   module:
-    - datetime_range
     - text
     - user
 id: node.event.diff
@@ -27,16 +27,10 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
-  field_event_date:
-    type: daterange_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: unity_date
-      from_to: both
-      separator: '-'
+  content_moderation_control:
+    settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: -20
     region: content
   field_event_location:
     type: entity_reference_label
@@ -63,6 +57,14 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
+  field_teaser:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
   field_topics:
     type: entity_reference_label
     label: above
@@ -72,6 +74,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_event_date: true
   langcode: true
   links: true
   search_api_excerpt: true

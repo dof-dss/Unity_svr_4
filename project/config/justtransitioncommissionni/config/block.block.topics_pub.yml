@@ -12,7 +12,7 @@ dependencies:
 id: topics_pub
 theme: justtransitioncommissionni_theme
 region: search_facets
-weight: -1
+weight: -3
 provider: null
 plugin: 'facet_block:topics'
 settings:
