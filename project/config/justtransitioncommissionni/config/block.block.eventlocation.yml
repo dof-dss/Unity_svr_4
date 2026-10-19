@@ -1,0 +1,29 @@
+uuid: e56583ef-f9c0-410a-b573-f92ecfdfc4bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_location
+  module:
+    - facets
+    - system
+  theme:
+    - justtransitioncommissionni_theme
+id: eventlocation
+theme: justtransitioncommissionni_theme
+region: search_facets
+weight: 0
+provider: null
+plugin: 'facet_block:event_location'
+settings:
+  id: 'facet_block:event_location'
+  label: 'Event Location'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: eventlocation
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/date/*\r\n/events/location/*\r\n/events/type/*\r\n/events/topic/*"

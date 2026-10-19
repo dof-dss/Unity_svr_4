@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_type
     - field.field.node.event.field_photo
+    - field.field.node.event.field_teaser
     - field.field.node.event.field_topics
     - node.type.event
   module:
@@ -17,7 +18,20 @@ id: node.event.teaser
 targetEntityType: node
 bundle: event
 mode: teaser
-content: {  }
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_teaser:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   body: true
   field_event_date: true
