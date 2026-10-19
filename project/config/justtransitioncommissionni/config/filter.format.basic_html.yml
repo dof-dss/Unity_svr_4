@@ -10,7 +10,6 @@ dependencies:
   module:
     - blazy
     - ckeditor5_allowed_html
-    - ckeditor5_premium_features
     - editor
     - entity_embed
     - linkit
@@ -39,12 +38,6 @@ filters:
         img: img
         iframe: iframe
       use_data_uri: '0'
-  ckeditor5_premium_features_collaboration_filter:
-    id: ckeditor5_premium_features_collaboration_filter
-    provider: ckeditor5_premium_features
-    status: false
-    weight: -42
-    settings: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor

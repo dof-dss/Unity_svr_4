@@ -12,9 +12,7 @@ module:
   breakpoint: 0
   ckeditor5: 0
   ckeditor5_allowed_html: 0
-  ckeditor5_premium_features: 0
   ckeditor5_premium_features_fullscreen: 0
-  ckeditor5_premium_features_import_word: 0
   clientside_validation: 0
   clientside_validation_jquery: 0
   config: 0
