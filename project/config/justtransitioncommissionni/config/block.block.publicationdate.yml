@@ -1,0 +1,29 @@
+uuid: 11b948bf-d0fc-410e-8ddc-cdc1f47ae0f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publication_date
+  module:
+    - facets
+    - system
+  theme:
+    - justtransitioncommissionni_theme
+id: publicationdate
+theme: justtransitioncommissionni_theme
+region: search_facets
+weight: -5
+provider: null
+plugin: 'facet_block:publication_date'
+settings:
+  id: 'facet_block:publication_date'
+  label: 'Publication date'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: publicationdate
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/publications\r\n/publications/date/*\r\n/publications/topics/*\r\n/publications/type/*"
