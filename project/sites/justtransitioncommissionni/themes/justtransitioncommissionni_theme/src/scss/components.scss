@@ -21,11 +21,22 @@
     }
   }
 
-  .menu .menu-item .active {
-    color: $black;
-    background: transparent;
-    text-decoration: underline;
-    border-bottom: none;
+  .menu {
+    .menu-item {
+      .active {
+        color: $black;
+        background: transparent;
+        text-decoration: underline;
+        border-bottom: none;
+      }
+    }
+  }
+
+  .menu-main_sub {
+    .menu-link,
+    .active {
+      color: $black;
+    }
   }
 }
 

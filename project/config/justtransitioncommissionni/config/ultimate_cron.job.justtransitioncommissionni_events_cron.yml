@@ -1,0 +1,17 @@
+uuid: 915505bf-ed3d-44b3-977c-821886fb0711
+langcode: en
+status: true
+dependencies:
+  module:
+    - justtransitioncommissionni_events
+title: 'Default cron handler'
+id: justtransitioncommissionni_events_cron
+weight: 0
+module: justtransitioncommissionni_events
+callback: 'justtransitioncommissionni_events#cron'
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database
