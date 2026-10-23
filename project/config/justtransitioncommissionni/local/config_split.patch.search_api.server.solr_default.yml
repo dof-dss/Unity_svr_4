@@ -1,9 +1,6 @@
 adding:
   backend_config:
     connector_config:
-      host: ddev-unity.svr.4-solr
-      port: 8983
-      core: justtransitioncommissionni_index
       skip_schema_check: true
       solr_install_dir: /opt/solr
       checkpoints_collection: ''
@@ -13,8 +10,5 @@ adding:
 removing:
   backend_config:
     connector_config:
-      host: justtransitioncommissionni_solr.internal
-      port: 8080
-      core: justtransitioncommissionni_index
       skip_schema_check: false
       solr_install_dir: ''

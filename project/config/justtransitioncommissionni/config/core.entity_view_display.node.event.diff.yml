@@ -9,10 +9,12 @@ dependencies:
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_type
     - field.field.node.event.field_photo
+    - field.field.node.event.field_published_date
     - field.field.node.event.field_teaser
     - field.field.node.event.field_topics
     - node.type.event
   module:
+    - datetime
     - text
     - user
 id: node.event.diff
@@ -56,6 +58,15 @@ content:
       link: false
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_published_date:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: unity_date
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_teaser:
     type: string
