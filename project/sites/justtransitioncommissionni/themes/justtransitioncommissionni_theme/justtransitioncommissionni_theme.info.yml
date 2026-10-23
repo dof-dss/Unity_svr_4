@@ -6,6 +6,7 @@ core_version_requirement: ^9 || ^10
 
 libraries:
   - justtransitioncommissionni_theme/site-styling
+  - nicsdru_unity_theme/board_member
 
 libraries-override:
   nicsdru_unity_theme/unity-global-styling:
@@ -32,6 +33,7 @@ regions:
   bottom_widget_1: 'Bottom widget 1'
   bottom_widget_2: 'Bottom widget 2'
   bottom_widget_3: 'Bottom widget 3'
+  bottom_widget_4: 'Bottom widget 4'
   translate: 'Translate'
   footer_first: 'First Bottom'
   footer_second: 'Second Bottom'
