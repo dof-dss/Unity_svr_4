@@ -1,0 +1,25 @@
+uuid: 0570314d-2318-47f9-b73a-39f236d33cc7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:052ef77e-5a28-43df-8b75-1bac8158b3a5'
+  module:
+    - block_content
+  theme:
+    - cusubt_theme
+id: sociallinks
+theme: cusubt_theme
+region: footer_fourth
+weight: -2
+provider: null
+plugin: 'block_content:052ef77e-5a28-43df-8b75-1bac8158b3a5'
+settings:
+  id: 'block_content:052ef77e-5a28-43df-8b75-1bac8158b3a5'
+  label: 'Social links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

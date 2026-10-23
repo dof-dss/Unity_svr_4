@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: IqFDJOUXgoqYSm39bzsb0BVMDSkw3b4-KD4YSUgMw7U
+langcode: en
+uuid: 9c84b350-bb78-4eba-b721-6e3bec18e57a
+name: 'Just Transition Commission NI'
+mail: noreply@email.justtransitioncommissionni.org.uk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+frontpage_title: 'Welcome to the Just Transition Commission NI'
+frontpage_show_title: false
