@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.board_member.field_meta_tags
     - node.type.board_member
   module:
-    - text
     - user
 _core:
   default_config_hash: iLbyzpQj6xkSEqQH4_QICp9TBeUnnjBnScTtM36cf1g
@@ -18,31 +17,25 @@ targetEntityType: node
 bundle: board_member
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_member_image:
     type: entity_reference_entity_view
-    weight: 1
     label: hidden
     settings:
-      view_mode: portrait_float
+      view_mode: member_small_image
       link: false
     third_party_settings: {  }
+    weight: 0
     region: content
   field_member_role:
-    weight: 0
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
 hidden:
+  body: true
   content_moderation_control: true
   field_meta_tags: true
   langcode: true
