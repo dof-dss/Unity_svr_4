@@ -1,0 +1,16 @@
+uuid: 6944b843-97af-4617-96ce-0a7428e20260
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: Hosted
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/justtransitioncommissionni/hosted
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }
