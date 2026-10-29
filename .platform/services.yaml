@@ -6,7 +6,7 @@
 # is built.                                                                 #
 #############################################################################
 db:
-    type: 'mariadb:10.4'
+    type: 'mariadb:10.11'
     disk: 4000
     configuration:
         schemas:
