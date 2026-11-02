@@ -1,0 +1,91 @@
+uuid: fcc1cd35-8d28-4ddf-aeb8-b82d89246023
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.diff
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_location
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_photo
+    - field.field.node.event.field_published_date
+    - field.field.node.event.field_teaser
+    - field.field.node.event.field_topics
+    - node.type.event
+  module:
+    - datetime
+    - text
+    - user
+id: node.event.diff
+targetEntityType: node
+bundle: event
+mode: diff
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_event_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_event_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: landscape_float
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_published_date:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: unity_date
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_teaser:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_topics:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_event_date: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

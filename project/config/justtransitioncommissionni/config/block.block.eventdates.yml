@@ -1,0 +1,29 @@
+uuid: 6e547edb-382d-4058-9c08-4f5ba8ffef28
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_date
+  module:
+    - facets
+    - system
+  theme:
+    - justtransitioncommissionni_theme
+id: eventdates
+theme: justtransitioncommissionni_theme
+region: search_facets
+weight: -2
+provider: null
+plugin: 'facet_block:event_date'
+settings:
+  id: 'facet_block:event_date'
+  label: 'Event date(s)'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: eventdates
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/date/*\r\n/events/location/*\r\n/events/type/*\r\n/events/topic/*"

@@ -1,0 +1,25 @@
+uuid: dc536dc3-c5d2-4b0d-b463-5d87f2c73d87
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:731fa695-3560-4beb-921c-df1d886936fb'
+  module:
+    - block_content
+  theme:
+    - justtransitioncommissionni_theme
+id: contactus
+theme: justtransitioncommissionni_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:731fa695-3560-4beb-921c-df1d886936fb'
+settings:
+  id: 'block_content:731fa695-3560-4beb-921c-df1d886936fb'
+  label: 'Contact Us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

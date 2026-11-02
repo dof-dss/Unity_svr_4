@@ -1,0 +1,20 @@
+uuid: 594b55ec-1b17-442a-9ceb-4d8e584f862d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_event_location
+field_name: field_event_location
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

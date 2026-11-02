@@ -1,0 +1,29 @@
+uuid: 33c87d35-520f-48e1-8ddb-d56b0807f322
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.event_type
+  module:
+    - facets
+    - system
+  theme:
+    - justtransitioncommissionni_theme
+id: eventtype
+theme: justtransitioncommissionni_theme
+region: search_facets
+weight: -1
+provider: null
+plugin: 'facet_block:event_type'
+settings:
+  id: 'facet_block:event_type'
+  label: 'Event Type'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: eventtype
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/events/date/*\r\n/events/location/*\r\n/events/type/*\r\n/events/topic/*"
