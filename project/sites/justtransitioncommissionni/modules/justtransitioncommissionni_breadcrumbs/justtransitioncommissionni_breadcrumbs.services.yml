@@ -1,0 +1,11 @@
+services:
+  justtransitioncommissionni_breadcrumbs.breadcrumb.event:
+    class: Drupal\justtransitioncommissionni_breadcrumbs\EventBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }
+  justtransitioncommissionni_breadcrumbs.breadcrumb.board:
+    class: Drupal\justtransitioncommissionni_breadcrumbs\BoardBreadcrumb
+    arguments: ['@entity_type.manager', '@title_resolver', '@request_stack']
+    tags:
+      - { name: breadcrumb_builder, priority: 105 }

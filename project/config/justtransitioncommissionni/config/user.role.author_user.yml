@@ -11,8 +11,10 @@ dependencies:
     - media.type.remote_video
     - node.type.basic_page
     - node.type.board_member
+    - node.type.event
     - node.type.news
     - node.type.publication
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
     - filter
@@ -40,6 +42,7 @@ permissions:
   - 'create basic_page content'
   - 'create board_member content'
   - 'create document media'
+  - 'create event content'
   - 'create file media'
   - 'create image media'
   - 'create news content'
@@ -50,6 +53,7 @@ permissions:
   - 'delete own basic_page content'
   - 'delete own board_member content'
   - 'delete own document media'
+  - 'delete own event content'
   - 'delete own file media'
   - 'delete own image media'
   - 'delete own news content'
@@ -57,12 +61,14 @@ permissions:
   - 'delete own remote_video media'
   - 'edit any basic_page content'
   - 'edit any board_member content'
+  - 'edit any event content'
   - 'edit any news content'
   - 'edit any publication content'
   - 'edit own audio media'
   - 'edit own basic_page content'
   - 'edit own board_member content'
   - 'edit own document media'
+  - 'edit own event content'
   - 'edit own file media'
   - 'edit own image media'
   - 'edit own news content'
@@ -70,13 +76,19 @@ permissions:
   - 'edit own remote_video media'
   - 'revert basic_page revisions'
   - 'revert board_member revisions'
+  - 'revert event revisions'
   - 'revert news revisions'
   - 'revert publication revisions'
   - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition submit_for_review'
   - 'use text format basic_html'
   - 'view any unpublished content'
   - 'view basic_page revisions'
   - 'view board_member revisions'
+  - 'view event revisions'
   - 'view latest version'
   - 'view news revisions'
   - 'view own unpublished content'

@@ -1,0 +1,25 @@
+uuid: 021da401-4f89-4210-b723-0407a6d559ad
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:42f58a37-82ba-4b51-9ff3-36b4dbcfafa1'
+  module:
+    - block_content
+  theme:
+    - justtransitioncommissionni_theme
+id: sociallinks
+theme: justtransitioncommissionni_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:42f58a37-82ba-4b51-9ff3-36b4dbcfafa1'
+settings:
+  id: 'block_content:42f58a37-82ba-4b51-9ff3-36b4dbcfafa1'
+  label: 'Follow Us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

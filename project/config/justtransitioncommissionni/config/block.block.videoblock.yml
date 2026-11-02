@@ -1,0 +1,30 @@
+uuid: 5f25f184-ee8e-4bf6-9bd7-1a0f7fc07a2f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:de6c0a08-327f-4e1a-84df-fb52f292b801'
+  module:
+    - block_content
+    - system
+  theme:
+    - justtransitioncommissionni_theme
+id: videoblock
+theme: justtransitioncommissionni_theme
+region: front_welcome
+weight: -8
+provider: null
+plugin: 'block_content:de6c0a08-327f-4e1a-84df-fb52f292b801'
+settings:
+  id: 'block_content:de6c0a08-327f-4e1a-84df-fb52f292b801'
+  label: 'Video block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

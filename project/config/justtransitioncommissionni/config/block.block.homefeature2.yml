@@ -1,0 +1,30 @@
+uuid: c00a4a64-0fe3-4771-9b72-456d6188ed18
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:73e035c6-e310-42be-9fc7-968346621afe'
+  module:
+    - block_content
+    - system
+  theme:
+    - justtransitioncommissionni_theme
+id: homefeature2
+theme: justtransitioncommissionni_theme
+region: bottom_widget_2
+weight: 0
+provider: null
+plugin: 'block_content:73e035c6-e310-42be-9fc7-968346621afe'
+settings:
+  id: 'block_content:73e035c6-e310-42be-9fc7-968346621afe'
+  label: 'Home feature 2'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

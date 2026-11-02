@@ -1,0 +1,29 @@
+uuid: 8cb228ec-78dd-429f-9c14-bfd27848c9e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_publications
+  module:
+    - system
+    - views
+  theme:
+    - justtransitioncommissionni_theme
+id: views_block__latest_publications_latest_publications
+theme: justtransitioncommissionni_theme
+region: top_second
+weight: 0
+provider: null
+plugin: 'views_block:latest_publications-latest_publications'
+settings:
+  id: 'views_block:latest_publications-latest_publications'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: '3'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

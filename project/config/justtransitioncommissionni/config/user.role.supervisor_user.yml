@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.board_members_queue
     - filter.format.basic_html
     - media.type.audio
     - media.type.document
@@ -11,12 +12,17 @@ dependencies:
     - media.type.remote_video
     - node.type.basic_page
     - node.type.board_member
+    - node.type.event
     - node.type.news
     - node.type.publication
+    - workflows.workflow.nics_editorial_workflow
   module:
     - content_moderation
+    - contextual
+    - entityqueue
     - file
     - filter
+    - layout_builder
     - media
     - menu_admin_per_menu
     - moderation_sidebar
@@ -38,16 +44,25 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
+  - 'access contextual links'
   - 'access files overview'
   - 'access media overview'
   - 'access toolbar'
+  - 'add scheduled transitions node basic_page'
+  - 'add scheduled transitions node board_member'
+  - 'add scheduled transitions node event'
+  - 'add scheduled transitions node news'
+  - 'add scheduled transitions node publication'
+  - 'add scheduled transitions node webform'
   - 'administer main menu items'
   - 'administer redirects'
   - 'audit content'
+  - 'create and edit custom blocks'
   - 'create audio media'
   - 'create basic_page content'
   - 'create board_member content'
   - 'create document media'
+  - 'create event content'
   - 'create file media'
   - 'create image media'
   - 'create news content'
@@ -59,6 +74,7 @@ permissions:
   - 'delete any basic_page content'
   - 'delete any board_member content'
   - 'delete any document media'
+  - 'delete any event content'
   - 'delete any file'
   - 'delete any file media'
   - 'delete any image media'
@@ -67,11 +83,13 @@ permissions:
   - 'delete any remote_video media'
   - 'delete basic_page revisions'
   - 'delete board_member revisions'
+  - 'delete event revisions'
   - 'delete news revisions'
   - 'delete own audio media'
   - 'delete own basic_page content'
   - 'delete own board_member content'
   - 'delete own document media'
+  - 'delete own event content'
   - 'delete own file media'
   - 'delete own image media'
   - 'delete own news content'
@@ -82,6 +100,7 @@ permissions:
   - 'edit any basic_page content'
   - 'edit any board_member content'
   - 'edit any document media'
+  - 'edit any event content'
   - 'edit any file media'
   - 'edit any image media'
   - 'edit any news content'
@@ -92,17 +111,35 @@ permissions:
   - 'edit own basic_page content'
   - 'edit own board_member content'
   - 'edit own document media'
+  - 'edit own event content'
   - 'edit own file media'
   - 'edit own image media'
   - 'edit own news content'
   - 'edit own publication content'
   - 'edit own remote_video media'
+  - 'manipulate entityqueues'
+  - 'reschedule scheduled transitions node basic_page'
+  - 'reschedule scheduled transitions node board_member'
+  - 'reschedule scheduled transitions node event'
+  - 'reschedule scheduled transitions node news'
+  - 'reschedule scheduled transitions node publication'
+  - 'reschedule scheduled transitions node webform'
   - 'revert all revisions'
   - 'revert basic_page revisions'
   - 'revert board_member revisions'
+  - 'revert event revisions'
   - 'revert news revisions'
   - 'revert publication revisions'
+  - 'update board_members_queue entityqueue'
   - 'use moderation sidebar'
+  - 'use nics_editorial_workflow transition archive'
+  - 'use nics_editorial_workflow transition create_new_draft'
+  - 'use nics_editorial_workflow transition draft_of_published'
+  - 'use nics_editorial_workflow transition publish'
+  - 'use nics_editorial_workflow transition reject'
+  - 'use nics_editorial_workflow transition restore'
+  - 'use nics_editorial_workflow transition restore_to_draft'
+  - 'use nics_editorial_workflow transition submit_for_review'
   - 'use text format basic_html'
   - 'view all revisions'
   - 'view all scheduled transitions'
@@ -110,8 +147,16 @@ permissions:
   - 'view basic_page revisions'
   - 'view board_member revisions'
   - 'view content references'
+  - 'view event revisions'
   - 'view latest version'
   - 'view news revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'
+  - 'view publication revisions'
+  - 'view scheduled transitions node basic_page'
+  - 'view scheduled transitions node board_member'
+  - 'view scheduled transitions node event'
+  - 'view scheduled transitions node news'
+  - 'view scheduled transitions node publication'
+  - 'view scheduled transitions node webform'
   - 'view the administration theme'

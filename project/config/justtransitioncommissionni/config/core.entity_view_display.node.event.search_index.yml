@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_type
     - field.field.node.event.field_photo
+    - field.field.node.event.field_published_date
     - field.field.node.event.field_teaser
     - field.field.node.event.field_topics
     - node.type.event
@@ -50,6 +51,7 @@ hidden:
   field_event_location: true
   field_event_type: true
   field_photo: true
+  field_published_date: true
   field_topics: true
   langcode: true
   links: true

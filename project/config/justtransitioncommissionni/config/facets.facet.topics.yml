@@ -17,7 +17,7 @@ weight: 0
 min_count: 1
 missing: false
 missing_label: others
-url_alias: topics
+url_alias: topic
 facet_source_id: 'search_api:views_page__publications_search__publication_search_page'
 field_identifier: field_topics
 query_operator: and

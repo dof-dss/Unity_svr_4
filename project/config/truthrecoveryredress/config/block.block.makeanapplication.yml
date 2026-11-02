@@ -1,6 +1,6 @@
 uuid: cd6aebce-8afa-4206-a888-ada073adb73a
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:feature_card:9209382c-8530-400a-ab62-0162969a61ac'
