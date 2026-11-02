@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * @file
+ * Module hooks for just transition commission NI site.
+ */
+
+/**
  * Implements hook_cron().
  */
 function justtransitioncommissionni_events_cron() {
@@ -15,17 +20,17 @@ function justtransitioncommissionni_events_cron() {
 
   foreach ($events as $event) {
 
-    // Skip nodes that are already archived
+    // Skip nodes that are already archived.
     if ($event->moderation_state->value === 'archived') {
       continue;
     }
 
     // Convert end_value to a UTC datetime string.
     $event_end_timestamp = strtotime(
-      $event->get('field_event_date')->end_value
+      $event->get('field_event_date')->first()?->get('end_value')->getValue()
     );
 
-    // Archive node when end date passes
+    // Archive node when end date passes.
     if ($event_end_timestamp <= $now) {
 
       \Drupal::logger('unity_events')->notice(

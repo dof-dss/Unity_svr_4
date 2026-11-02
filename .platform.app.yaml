@@ -69,6 +69,9 @@ hooks:
             if [ "$result2" = "Enabled" ]; then
               echo "****** $site deployment ******"
               cd /app/web/sites/$site
+              # Repair prerequisites and update schema before route/cache operations.
+              drush -l "$site" upgrade-preflight || exit 1
+              drush -l "$site" -y updatedb
               # Disable Fastly logging
               drush -l $site disable-fastly-logging
               # Readonlymode module should be installed on all sites,
@@ -77,7 +80,6 @@ hooks:
               # Set site to readonly just in case editors are logged on.
               drush -l $site cset readonlymode.settings enabled 1 -y
               drush -l $site -y cache-rebuild
-              drush -l $site -y updatedb
               drush -l $site -y config-import
               # Clear up any erroneous redirects
               drush -l $site delete-redirects

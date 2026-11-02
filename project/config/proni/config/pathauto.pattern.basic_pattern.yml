@@ -7,17 +7,17 @@ dependencies:
 id: basic_pattern
 label: 'Basic pattern'
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '/[node:title]'
 selection_criteria:
   614c7934-7bb2-47ad-8c07-7d3cd81d80fd:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 614c7934-7bb2-47ad-8c07-7d3cd81d80fd
     context_mapping:
       node: node
     bundles:
       basic_page: basic_page
       webform: webform
+    uuid: 614c7934-7bb2-47ad-8c07-7d3cd81d80fd
 selection_logic: and
 weight: 0
 relationships: {  }

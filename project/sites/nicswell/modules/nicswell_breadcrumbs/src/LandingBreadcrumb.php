@@ -28,7 +28,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 /**
  * {@inheritdoc}
  */
-class landingBreadcrumb implements BreadcrumbBuilderInterface {
+class LandingBreadcrumb implements BreadcrumbBuilderInterface {
 
   /**
    * @var \Drupal\Core\Entity\EntityTypeManagerInterface
@@ -52,7 +52,7 @@ class landingBreadcrumb implements BreadcrumbBuilderInterface {
   /**
    * Symfony\Component\HttpFoundation\RequestStack definition.
    *
-   * @var Symfony\Component\HttpFoundation\RequestStack
+   * @var \Symfony\Component\HttpFoundation\RequestStack
    */
   protected $request;
 

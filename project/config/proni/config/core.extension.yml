@@ -9,7 +9,6 @@ module:
   blazy: 0
   block: 0
   block_content: 0
-  block_content_permissions: 0
   block_field: 0
   breakpoint: 0
   ckeditor5: 0
@@ -49,7 +48,6 @@ module:
   field_group: 0
   field_ui: 0
   file: 0
-  file_delete_ui: 0
   filelog: 0
   filter: 0
   flag: 0
