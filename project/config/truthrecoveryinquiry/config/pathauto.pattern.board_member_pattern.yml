@@ -1,0 +1,16 @@
+uuid: a1ac2282-52da-4b4b-b83c-54998cb436b0
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: LZwfVv6F9IKZsU6v4f720MvChOytuo0t2-gb7VvBico
+id: board_member_pattern
+label: 'Board member pattern'
+type: 'canonical_entities:node'
+pattern: '/board-members/[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: -5
+relationships: {  }

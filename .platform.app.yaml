@@ -60,7 +60,7 @@ hooks:
         export FASTLY_API_SERVICE=dummyservice
 
         # For each multi site - run db-updates and import config.
-        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress justtransitioncommissionni
+        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress justtransitioncommissionni truthrecoveryinquiry
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -69,9 +69,6 @@ hooks:
             if [ "$result2" = "Enabled" ]; then
               echo "****** $site deployment ******"
               cd /app/web/sites/$site
-              # Repair prerequisites and update schema before route/cache operations.
-              drush -l "$site" upgrade-preflight || exit 1
-              drush -l "$site" -y updatedb
               # Disable Fastly logging
               drush -l $site disable-fastly-logging
               # Readonlymode module should be installed on all sites,
@@ -80,6 +77,7 @@ hooks:
               # Set site to readonly just in case editors are logged on.
               drush -l $site cset readonlymode.settings enabled 1 -y
               drush -l $site -y cache-rebuild
+              drush -l $site -y updatedb
               drush -l $site -y config-import
               # Clear up any erroneous redirects
               drush -l $site delete-redirects
@@ -109,7 +107,7 @@ hooks:
         export FASTLY_API_SERVICE=$temp
 
         # For each multi site - clear cache (including Fastly cache)
-        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress justtransitioncommissionni
+        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress justtransitioncommissionni truthrecoveryinquiry
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -141,7 +139,7 @@ web:
                 ^\/sites\/.+\/themes\/.+\/images\/favicons\/.+\.webmanifest$:
                     allow: true
                     expires: 2w
-                ^/\.well-known/*?\.txt$:
+                ^/\.well-known/security\.txt$:
                     allow: true
                 ^/sites/sites\.php$:
                     scripts: false
@@ -180,6 +178,8 @@ relationships:
     truthrecoveryredress_solr: 'solr_9_9:truthrecoveryredress'
     justtransitioncommissionni: 'db:justtransitioncommissionni'
     justtransitioncommissionni_solr: 'solr_9_9:justtransitioncommissionni'
+    truthrecoveryinquiry: 'db:truthrecoveryinquiry'
+    truthrecoveryinquiry_solr: 'solr_9_9:truthrecoveryinquiry'
 crons:
     legalcommissionerni:
         spec: '10 * * * *'
@@ -219,3 +219,6 @@ crons:
     justtransitioncommissionni:
         spec: '10 * * * *'
         cmd: 'cd web/sites/justtransitioncommissionni ; drush core-cron'
+    truthrecoveryinquiry:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/truthrecoveryinquiry ; drush core-cron'
