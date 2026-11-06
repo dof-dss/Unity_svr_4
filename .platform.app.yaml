@@ -71,7 +71,7 @@ hooks:
               cd /app/web/sites/$site
               # Repair prerequisites and update schema before route/cache operations.
               drush -l "$site" upgrade-preflight || exit 1
-              drush -l $site -y updatedb
+              drush -l "$site" -y updatedb
               # Disable Fastly logging
               drush -l $site disable-fastly-logging
               # Readonlymode module should be installed on all sites,
