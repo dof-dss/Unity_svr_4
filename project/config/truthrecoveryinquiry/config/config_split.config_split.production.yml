@@ -1,0 +1,18 @@
+uuid: d8d0a37d-2702-4ce8-bc0c-7ea444af9120
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/truthrecoveryinquiry/production
+module:
+  fastly: 0
+theme: {  }
+complete_list:
+  - fastly.settings
+partial_list: {  }

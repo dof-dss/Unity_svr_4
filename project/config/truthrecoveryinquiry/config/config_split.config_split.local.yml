@@ -1,0 +1,27 @@
+uuid: ed01f4a6-3fae-4e27-ad5b-349a18d59d5d
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: local
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/truthrecoveryinquiry/local
+module:
+  dblog: 0
+  devel: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  migrate_upgrade: 0
+  stage_file_proxy: 0
+  unity_file_migrations: 0
+  views_ui: 0
+theme: {  }
+complete_list: {  }
+partial_list:
+  - search_api.server.solr_default
