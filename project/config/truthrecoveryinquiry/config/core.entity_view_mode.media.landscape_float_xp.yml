@@ -1,0 +1,13 @@
+uuid: cfda8080-ec16-414d-ae1f-6458e59daf76
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: k_n39qDDMAHhd_n12Sl1UpEkznOQJ9yAqH4dI0u42zU
+id: media.landscape_float_xp
+label: 'Landscape float XP'
+description: null
+targetEntityType: media
+cache: true
