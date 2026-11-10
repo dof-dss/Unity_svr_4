@@ -9,8 +9,8 @@ name: unity_svr_4
 type: 'php:8.3'
 
 variables:
-  env:
-    N_PREFIX: /app/.global
+    env:
+        N_PREFIX: /app/.global
 dependencies:
     nodejs:
         n: '11.0.0'
