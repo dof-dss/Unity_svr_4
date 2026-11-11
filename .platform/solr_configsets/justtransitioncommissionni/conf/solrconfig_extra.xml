@@ -32,6 +32,7 @@
 <searchComponent name="suggest" class="solr.SuggestComponent">
     <lst name="suggester">
       <str name="name">en</str>
+      <str name="indexPath">./en</str>
       <str name="lookupImpl">AnalyzingInfixLookupFactory</str>
       <str name="dictionaryImpl">DocumentDictionaryFactory</str>
       <str name="field">twm_suggest</str>
@@ -43,6 +44,7 @@
 
     <lst name="suggester">
       <str name="name">und</str>
+      <str name="indexPath">./und</str>
       <str name="lookupImpl">AnalyzingInfixLookupFactory</str>
       <str name="dictionaryImpl">DocumentDictionaryFactory</str>
       <str name="field">twm_suggest</str>
