@@ -114,3 +114,13 @@ sites:
         database: justtransitioncommissionni
         status: development
         default: false
+    truthrecoveryinquiry:
+        name: 'Truth Recovery Inquiry'
+        url: truthrecoveryinquiry.org
+        solr: truthrecoveryinquiry
+        www: true
+        cron_spec: '10 * * * *'
+        cron_cmd: 'cd web/sites/truthrecoveryinquiry ; drush core-cron'
+        database: truthrecoveryinquiry
+        status: development
+        default: false

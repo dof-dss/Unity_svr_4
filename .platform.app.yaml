@@ -7,7 +7,13 @@
 #############################################################################
 name: unity_svr_4
 type: 'php:8.3'
+
+variables:
+    env:
+        N_PREFIX: /app/.global
 dependencies:
+    nodejs:
+        n: '11.0.0'
     php:
         composer/composer: ^2
 runtime:
@@ -46,6 +52,12 @@ build:
 hooks:
     build: |
         set -e
+        echo ">>> Install the pinned, patched Node.js version"
+        # installs the pinned version from .nvmrc
+        n auto
+        export PATH="$N_PREFIX/bin:$PATH"
+        # clears cached command locations so the shell finds the new copy.
+        hash -r
         echo "Update robots.txt with Unity customisations"
         cp -f web/robots_unity.txt web/robots.txt
     post_deploy: |
@@ -60,7 +72,7 @@ hooks:
         export FASTLY_API_SERVICE=dummyservice
 
         # For each multi site - run db-updates and import config.
-        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress justtransitioncommissionni
+        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress justtransitioncommissionni truthrecoveryinquiry
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -109,7 +121,7 @@ hooks:
         export FASTLY_API_SERVICE=$temp
 
         # For each multi site - clear cache (including Fastly cache)
-        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress justtransitioncommissionni
+        for site in legalcommissionerni nicswell autismreviewerni anotherway proni oice coimisineir truthrecoverystrategy cusubt truthrecoveryredress justtransitioncommissionni truthrecoveryinquiry
         do
           result=$(drush -l $site st | grep "Drupal bootstrap : Successful" | awk {'print $4'})
           if [ "$result" = "Successful" ]; then
@@ -180,6 +192,8 @@ relationships:
     truthrecoveryredress_solr: 'solr_9_9:truthrecoveryredress'
     justtransitioncommissionni: 'db:justtransitioncommissionni'
     justtransitioncommissionni_solr: 'solr_9_9:justtransitioncommissionni'
+    truthrecoveryinquiry: 'db:truthrecoveryinquiry'
+    truthrecoveryinquiry_solr: 'solr_9_9:truthrecoveryinquiry'
 crons:
     legalcommissionerni:
         spec: '10 * * * *'
@@ -219,3 +233,6 @@ crons:
     justtransitioncommissionni:
         spec: '10 * * * *'
         cmd: 'cd web/sites/justtransitioncommissionni ; drush core-cron'
+    truthrecoveryinquiry:
+        spec: '10 * * * *'
+        cmd: 'cd web/sites/truthrecoveryinquiry ; drush core-cron'

@@ -1,0 +1,13 @@
+uuid: c6a69a5a-0ed9-40ae-8f5a-abb7200f6113
+langcode: en
+status: true
+dependencies:
+  module:
+    - path_alias
+_core:
+  default_config_hash: GiQY8TcbkMat1Lpyz5z9WMUYl6KWQ46XSdW-b5GOKrQ
+id: path_alias.token
+label: Token
+description: null
+targetEntityType: path_alias
+cache: true

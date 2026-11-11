@@ -1,0 +1,16 @@
+uuid: 72a7a485-d2ec-468c-8c49-e5c086529244
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: iSPIJFMzDFjSTD-zEaYnfnNgYCwAT4Q7sfOOcxwCP8A
+id: news_pattern
+label: 'News pattern'
+type: 'canonical_entities:node'
+pattern: '/news/[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: -5
+relationships: {  }
