@@ -323,7 +323,6 @@ display:
             field_photo: '0'
           optionset: nicswell
           class: ''
-          id: ''
           image: ''
           link: ''
           overlay: ''
@@ -331,11 +330,12 @@ display:
           vanilla: true
           layout: ''
           cache: 0
-          skin: default
-          style: ''
           grid: ''
           grid_medium: ''
           grid_small: ''
+          style: ''
+          id: ''
+          skin: default
           overridables:
             arrows: '0'
             autoplay: '0'

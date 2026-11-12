@@ -1,0 +1,7 @@
+hotlink: false
+origin: https://www.coimisineir.org
+origin_dir: files/coimisineir
+proxy_headers: ''
+use_imagecache_root: true
+verify: true
+excluded_extensions: ''

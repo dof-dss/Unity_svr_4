@@ -1,0 +1,16 @@
+uuid: fcf870af-758c-438d-87ca-ff6cb4dcb5e4
+langcode: en
+status: true
+dependencies: {  }
+id: hosted
+label: hosted
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../project/config/truthrecoveryinquiry/hosted
+module: {  }
+theme: {  }
+complete_list: {  }
+partial_list: {  }

@@ -1,0 +1,25 @@
+uuid: 46a539cf-678a-4c10-bdee-b9fba0a1995e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer-links
+  module:
+    - system
+  theme:
+    - truthrecoveryinquiry_theme
+id: footerlinks
+theme: truthrecoveryinquiry_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-footer-links'
+settings:
+  id: 'system_menu_block:menu-footer-links'
+  label: 'Footer links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

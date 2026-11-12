@@ -1,0 +1,25 @@
+uuid: fb8fc9f0-6c92-480a-ab16-808c80346ab3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - truthrecoveryinquiry_theme
+id: mainmenu
+theme: truthrecoveryinquiry_theme
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

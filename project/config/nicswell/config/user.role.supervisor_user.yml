@@ -21,7 +21,7 @@ dependencies:
     - node.type.video
     - workflows.workflow.nics_editorial_workflow
   module:
-    - block_content_permissions
+    - block_content
     - content_moderation
     - contextual
     - entityqueue
