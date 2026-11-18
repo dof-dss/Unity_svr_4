@@ -42,7 +42,7 @@ backend_config:
   connector_config:
     scheme: http
     host: justtransitioncommissionni_solr.internal
-    port: 8983
+    port: 8080
     path: /
     core: justtransitioncommissionni_index
     timeout: 5
