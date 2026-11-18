@@ -540,3 +540,16 @@
     }
   }
 }
+
+#headerHero {
+  @media screen and (max-width: $tab) {
+    .region-search {
+      input[type='text'],
+      input[type='search'],
+      input[type='submit']{
+        border: 1px solid #fff;
+      }
+    }
+  }
+}
+
