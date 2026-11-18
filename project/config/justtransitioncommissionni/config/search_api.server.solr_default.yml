@@ -41,8 +41,8 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: ddev-unity.svr.4-solr
-    port: 8983
+    host: justtransitioncommissionni_solr.internal
+    port: 8080
     path: /
     core: justtransitioncommissionni_index
     timeout: 5
