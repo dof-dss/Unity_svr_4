@@ -1,0 +1,32 @@
+uuid: 903050e4-5ad2-4b51-97ea-3111df1b9d91
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_news
+  module:
+    - node
+    - views
+  theme:
+    - justtransitioncommissionni_theme
+id: views_block__latest_news_latest_news_list
+theme: justtransitioncommissionni_theme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:latest_news-latest_news_list'
+settings:
+  id: 'views_block:latest_news-latest_news_list'
+  label: 'Latest News'
+  label_display: visible
+  provider: views
+  views_label: 'Latest News'
+  items_per_page: null
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news: news
