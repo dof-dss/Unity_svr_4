@@ -44,7 +44,7 @@ backend_config:
     host: ddev-unity.svr.4-solr
     port: 8983
     path: /
-    core: justtransitioncommissionni_index
+    core: justtransitioncommissionni_solr.internal
     timeout: 5
     index_timeout: 5
     optimize_timeout: 10
