@@ -16,6 +16,7 @@ dependencies:
     - linkit
     - media
     - noreferrer
+    - origins_common
     - slick
     - token_filter
 _core:
@@ -142,6 +143,13 @@ filters:
     status: true
     weight: -50
     settings: {  }
+  origins_media_cookie_content_blocker_embed_filter:
+    id: origins_media_cookie_content_blocker_embed_filter
+    provider: origins_common
+    status: false
+    weight: 0
+    settings:
+      replacement_text: 'Click here to view the video content'
   slick_filter:
     id: slick_filter
     provider: slick
