@@ -32,7 +32,7 @@ settings:
       - undo
       - redo
       - '|'
-      - fullScreen
+      - fullscreen
   plugins:
     ckeditor5_heading:
       enabled_headings:
