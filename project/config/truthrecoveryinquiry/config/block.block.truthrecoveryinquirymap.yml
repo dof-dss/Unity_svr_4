@@ -1,9 +1,9 @@
-uuid: 093d65f9-abaa-4163-a495-e3a8e9466700
+uuid: 03f0e199-63fe-4b2f-9ab5-f6b19c7a3afe
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:map:561eecc6-7714-4117-9218-5c614ddba090'
+    - 'block_content:map:883fba48-e7c0-46bc-8995-dd1f6a13dc53'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: truthrecoveryinquiry_theme
 region: content
 weight: 0
 provider: null
-plugin: 'block_content:561eecc6-7714-4117-9218-5c614ddba090'
+plugin: 'block_content:883fba48-e7c0-46bc-8995-dd1f6a13dc53'
 settings:
-  id: 'block_content:561eecc6-7714-4117-9218-5c614ddba090'
+  id: 'block_content:883fba48-e7c0-46bc-8995-dd1f6a13dc53'
   label: 'Truth Recovery Inquiry Map'
   label_display: '0'
   provider: block_content
