@@ -1,4 +1,4 @@
-uuid: 3280091d-73bb-420c-afdc-c289b1b962fc
+uuid: 03f0e199-63fe-4b2f-9ab5-f6b19c7a3afe
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - system
   theme:
     - truthrecoveryinquiry_theme
-id: truthrecoveryinquirymap_1
+id: truthrecoveryinquirymap
 theme: truthrecoveryinquiry_theme
 region: content
 weight: 0
