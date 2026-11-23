@@ -5,8 +5,87 @@
 @import 'init/index';
 @import '../../node_modules/nicsdru_unity_theme/src/scss/3_components/index';
 
-.top_left #logo img {
-  height: 95px;
+.top_left {
+  #site-title {
+    float: none;
+
+    #site-description {
+      font-size: 3.2rem;
+      text-align: left;
+      color: $white;
+      float: none;
+      font-style: normal;
+
+      p {
+        font-size: 20px;
+        line-height: normal;
+      }
+
+      h2, p {
+        text-align: left;
+        color: $white;
+      }
+
+    }
+  }
+
+  #logo img {
+    height: 95px;
+  }
+
+  #block-frontpagebanner {
+    p {
+      font-size: 2rem;
+      color: $white;
+    }
+  }
+}
+
+#header {
+  background: linear-gradient(to right, #6a1c7e 35%, #134533 100%);
+  margin: 0 auto;
+  padding: 2.5rem;
+  //padding: 10px 25px 20px 25px;
+}
+
+.top_left #site-title {
+  float: none;
+
+  #site-description {
+    font-size: 3.2rem;
+    text-align: left;
+    color: $white;
+    float: none;
+
+    p {
+      font-size: 20px;
+      line-height: normal;
+    }
+
+    h2, p {
+      text-align: left;
+      color: $white;
+    }
+
+  }
+}
+
+.search-form {
+  input[type="submit"] {
+    background: #ededf1 resolve('search-icon-black.png') no-repeat 12px 10px;
+    background-size: 3rem;
+
+    &:hover,
+    &:focus {
+      outline: 3px solid #ffff00;
+      outline-offset: -2px;
+    }
+
+  }
+  input[type="text"] {
+    border-right: 1px solid $text;
+    height: 4.6rem;
+  }
 }
 
 #main-menu {
@@ -59,42 +138,42 @@
   }
 }
 
-#block-frontpagebanner {
-  background: linear-gradient(to right, #6a1c7e 35%, #134533 100%);
-  padding: 10px 25px 20px 25px;
-
-  .content {
-    max-width: 55%;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  p {
-    font-size: 20px;
-    line-height: normal;
-  }
-
-  h2, p {
-    text-align: left;
-    color: $white;
-  }
-
-  @media (max-width: 766px) {
-    .content {
-      max-width: 100%;
-    }
-
-    h2 {
-      font-size: 26px;
-    }
-
-    p {
-      font-size: 18px;
-    }
-  }
-}
+//#block-frontpagebanner {
+//  background: linear-gradient(to right, #6a1c7e 35%, #134533 100%);
+//  padding: 10px 25px 20px 25px;
+//
+//  .content {
+//    max-width: 55%;
+//  }
+//
+//  h2 {
+//    font-size: 32px;
+//  }
+//
+//  p {
+//    font-size: 20px;
+//    line-height: normal;
+//  }
+//
+//  h2, p {
+//    text-align: left;
+//    color: $white;
+//  }
+//
+//  @media (max-width: 766px) {
+//    .content {
+//      max-width: 100%;
+//    }
+//
+//    h2 {
+//      font-size: 26px;
+//    }
+//
+//    p {
+//      font-size: 18px;
+//    }
+//  }
+//}
 
 .front .page-content {
   > div {

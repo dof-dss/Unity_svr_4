@@ -42,7 +42,6 @@ module:
   facets: 0
   facets_pretty_paths: 0
   facets_summary: 0
-  fastly: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -119,7 +118,6 @@ module:
   unity_breadcrumbs: 0
   unity_common: 0
   unity_eu_cookie_compliance: 0
-  unity_frontpage: 0
   unity_image_styles: 0
   unity_internal_link_checker: 0
   unity_map_block: 0
