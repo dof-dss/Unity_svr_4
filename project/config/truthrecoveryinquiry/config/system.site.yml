@@ -4,7 +4,7 @@ langcode: en
 uuid: 6df55ee5-695e-47b0-b960-07f946e8b4fc
 name: 'Truth Recovery Inquiry'
 mail: noreply@email.truthrecoveryinquiry.org
-slogan: ''
+slogan: 'Truth Recovery Public Inquiry'
 page:
   403: ''
   404: ''
@@ -12,4 +12,3 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-frontpage_title: 'Welcome to Truth Recovery Inquiry'
