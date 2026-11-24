@@ -12,21 +12,15 @@
  * - site_slogan: Slogan for site as defined in Site information settings.
  */
 #}
-{% if site_logo %}
-  <div id="logo">
-    {% if not is_front %}
-      <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
-    {% endif %}
-        <img src="{{ site_logo }}" alt="{{ site_name }}" />
-    {% if not is_front %}
-      </a>
-    {% endif %}
-  </div>
-{% endif %}
+<div id="logo">
+  <span class="logo_lg-txt">Truth Recovery Public Inquiry</span>
+  <span class="logo_rg-txt">into Mother and Baby Institutions, Magdalene Laundries and Workhouses.</span>
+</div>
+
 {% if site_slogan %}
   <div id="site-title">
-    <h2 id="site-description">
+    <div id="site-description">
       {{ site_slogan }}
-    </h2>
+    </div>
   </div>
 {% endif %}
