@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Theme override for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ */
+#}
+<div id="logo">
+  <span class="logo_lg-txt">Truth Recovery Public Inquiry</span>
+  <span class="logo_rg-txt">into Mother and Baby Institutions, Magdalene Laundries and Workhouses.</span>
+</div>
+
+{% if site_slogan %}
+  <div id="site-title">
+    <div id="site-description">
+      {{ site_slogan }}
+    </div>
+  </div>
+{% endif %}
