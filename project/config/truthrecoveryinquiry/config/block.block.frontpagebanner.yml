@@ -11,8 +11,8 @@ dependencies:
     - truthrecoveryinquiry_theme
 id: frontpagebanner
 theme: truthrecoveryinquiry_theme
-region: header
-weight: -4
+region: front_welcome
+weight: 0
 provider: null
 plugin: 'block_content:9a67237c-fd57-4e15-8cc5-0ec303e664e8'
 settings:
