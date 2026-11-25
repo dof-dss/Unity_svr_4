@@ -3,6 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.accordion_menu
+    - block_content.type.banner_deep
+    - block_content.type.basic_block
+    - block_content.type.block_link
+    - block_content.type.card_contact
+    - block_content.type.card_nested_standard
+    - block_content.type.card_nested_wide
+    - block_content.type.card_standard
+    - block_content.type.card_wide
+    - block_content.type.information_notice
+    - block_content.type.plain_cards
+    - block_content.type.text
+    - block_content.type.video
+    - block_content.type.video_and_caption
     - core.entity_view_display.node.landing_page.default
     - entityqueue.entity_queue.slideshow
     - filter.format.basic_html
@@ -189,20 +203,6 @@ permissions:
   - 'revert publication revisions'
   - 'revert stories revisions'
   - 'revert video revisions'
-  - 'update any accordion_menu block content'
-  - 'update any banner_deep block content'
-  - 'update any basic_block block content'
-  - 'update any block_link block content'
-  - 'update any card_contact block content'
-  - 'update any card_nested_standard block content'
-  - 'update any card_nested_wide block content'
-  - 'update any card_standard block content'
-  - 'update any card_wide block content'
-  - 'update any information_notice block content'
-  - 'update any plain_cards block content'
-  - 'update any text block content'
-  - 'update any video block content'
-  - 'update any video_and_caption block content'
   - 'update slideshow entityqueue'
   - 'use moderation sidebar'
   - 'use nics_editorial_workflow transition archive'
