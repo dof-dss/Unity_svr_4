@@ -19,13 +19,13 @@ elements: |-
     enter_your_query:
       '#type': textarea
       '#title': 'Enter your query'
-      '#description': 'Plain text only (3,000 characters maximum)'
+      '#description': 'Plain text only (600 characters maximum)'
       '#title_display': invisible
       '#description_display': before
       '#required': true
       '#required_error': 'You must fill in this field'
       '#counter_type': character
-      '#counter_maximum': 3000
+      '#counter_maximum': 600
   your_details:
     '#type': fieldset
     '#title': 'Your details'
@@ -272,6 +272,7 @@ handlers:
       attachments: false
       twig: false
       theme_name: ''
+      langcode: ''
       parameters: {  }
       debug: false
 variants: {  }
