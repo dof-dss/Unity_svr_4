@@ -17196,8 +17196,7 @@
                 "issues": "https://github.com/dof-dss/maestro-core/issues",
                 "source": "https://github.com/dof-dss/maestro-core/tree/1.0.5"
             },
-            "time": "2024-11-12T14:06:57+00:00",
-            "published-time": "2024-11-12T14:08:03+00:00"
+            "time": "2024-11-12T14:06:57+00:00"
         },
         {
             "name": "dof-dss/maestro-hosting",
@@ -17237,8 +17236,7 @@
                 "issues": "https://github.com/dof-dss/maestro-hosting/issues",
                 "source": "https://github.com/dof-dss/maestro-hosting/tree/1.4.3"
             },
-            "time": "2026-11-20T13:20:10+00:00",
-            "published-time": "2026-11-20T13:23:57+00:00"
+            "time": "2026-11-20T13:20:10+00:00"
         },
         {
             "name": "dof-dss/maestro-shell",
